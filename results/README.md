@@ -1,6 +1,7 @@
 # Results
 
-One directory for each model and parameter combination, named `<provider>~<model>@<effort>`.
+One directory for each model and parameter combination, named `<provider>~<model>@<effort>`. Each
+combination is run 5 times, in the subdirectories `1` to `5`. Each run has these files:
 
 | File             | Description                                                                      |
 | ---------------- | -------------------------------------------------------------------------------- |
@@ -11,6 +12,17 @@ One directory for each model and parameter combination, named `<provider>~<model
 
 In `extracted.json`, each value must be an exact substring of `response.md`, or `null` if the model
 did not transcribe that part. `deno test` checks this.
+
+## Extraction rules
+
+- **`header`**: from the first character of the title to the end of the "สำหรับ…" line, before
+  section 1.
+- **`forward`** / **`return`**: the text below the "เที่ยวไป" / "เที่ยวกลับ" label, without the label.
+- **`footer`**: the transcribed text after the `<figure>`. A description of the footer (for example,
+  inside the `<figure>`, or an English note such as "Signature block area…") is not a transcription,
+  so it is not included.
+- Markdown and HTML markup at the start and end of a value is not included. Markup inside a value
+  cannot be removed, because the value must be an exact substring. The scoring removes it.
 
 ## License
 

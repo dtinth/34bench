@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790599225-mWmNUy7iIPDCa1mo2h2Q",
+  "object": "chat.completion",
+  "created": 1790599225,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและจังหวัดที่มีเส้นทางต่อเนื่อง  \nหมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง ระยะทาง 32 กม.  \nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. <ins>รายละเอียดเส้นทาง</ins>  \n   <u>เที่ยวไป</u>  \n   เริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง  \n   <u>เที่ยวกลับ</u>  \n   เริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. <ins>แผนที่สังเขป</ins>\n\n<figure>\nภาพแผนที่สังเขปแสดงเส้นทางการเดินรถประจำทาง หมวด 1 สายที่ 34 จากรังสิตถึงหัวลำโพง ระบุจุดสำคัญและถนนต่างๆ ได้แก่ รังสิต, ถนนวิภาวดีรังสิต, อนุสาวรีย์หลักสี่, ไปนนทบุรี, ถนนพหลโยธิน, ไปมีนบุรี, ลาดพร้าว, ไปบางกะปิ, สะพานควาย, อนุสาวรีย์ชัยฯ, ถ.พญาไท, ถ.รองเมือง, ถ.เจริญเมือง, ถ.จรัสเมือง, ถนนพระราม 4 และ หัวลำโพง\n</figure>\n\nเอกสารแนบท้ายใบอนุญาตประกอบการขนส่ง  \nประจำทางเลขที่... (b)  \nลงวันที่.... เดือน...........พ.ศ. 2521  \nกองวิชาการและวางแผน",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "signature": "AY89a19pqN+gB6ST/Kkg3XQBlnPF9E1R+eukpwricbEKPoueztPMr0SmOUtlBZ4GwNjj/vAo41dYxBWzE2w0QRIkQ1Vk+YfJ19JINXpxobLHVlVHFQ==",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 429,
+    "total_tokens": 1559,
+    "cost": 0.0024316875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00245625,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.00160875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

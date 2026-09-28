@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790599409-nrIKmilUetwVr38PE1Mx",
+  "object": "chat.completion",
+  "created": 1790599409,
+  "model": "google/gemini-3.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในกรุงเทพมหานครและจังหวัดใกล้เคียงต่อเนื่อง\nหมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง ระยะทาง 34 กม.\nสำหรับองค์การขนส่งมงคลกรุงเทพ\n\n1. รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานข้ามพิจิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ\nถนนพญาไท เลี้ยววาไปทางถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยววาไปทาง\nถนนเจริญเมือง เลี้ยววาไปทางถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 ต่อไปตามเส้นทางเดิม\nจนถึงรังสิต\n2. แผนที่สังเขป\n\n<figure>\nA hand-drawn map detailing the route of bus line 34 from Rangsit to Hua Lamphong. Key locations along the route such as Rangsit, Anusawari Chai Samoraphum, Saphan Khwai, and Hua Lamphong are marked.\n</figure>",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "signature": "AY89a1+nKwdwha3LYSnc3oBfPnNGRJyf+jtwLx0g1CEM7LuyCy2R6kCSQRRnb9GinqyUxkd0xs7NIeOXUSLkWXcnpclyTLYdR3gnvtS+vU024r+9Z7KicBy5",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 274,
+    "total_tokens": 1404,
+    "cost": 0.00101376,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001024,
+      "upstream_inference_prompt_cost": 0.000339,
+      "upstream_inference_completions_cost": 0.000685
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790599225-med2ukrNBYDJRk0CmzuX",
+  "object": "chat.completion",
+  "created": 1790599225,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและจังหวัดที่มีเส้นทางต่อเนื่อง  \nหมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.  \nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. รายละเอียดเส้นทาง  \n<u>เที่ยวไป</u>  \nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง  \n<u>เที่ยวกลับ</u>  \nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจารุเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต  \n\n2. แผนที่สังเขป\n\n<figure>\nแผนที่เส้นทางเดินรถโดยสารประจำทาง สายที่ 34 รังสิต – หัวลำโพง แสดงเส้นทางวิ่งตามแนวถนนพหลโยธินและถนนวิภาวดีรังสิต โดยมีจุดสำคัญและทางแยกต่าง ๆ ระบุไว้ ได้แก่ รังสิต, อนุสาวรีย์หลักสี่, แยกไปมีนบุรี, ไปนนทบุรี, ลาดพร้าว, ไปบางกะปิ, สะพานควาย, อนุสาวรีย์ชัยฯ, ถนนพญาไท, ถนนพระราม 4, ถนนรองเมือง, ถนนเจริญเมือง, ถนนจารุเมือง และสิ้นสุดที่หัวลำโพง\n</figure>\n\nเอกสารแนบท้ายใบอนุญาตฯ  \nฉบับที่ .................... (b)  \nลงวันที่ 19 ก.พ. 2523  \nกองวิชาการและวางแผน  \n\n---",
+        "refusal": null,
+        "reasoning": "**Transcribing Thai Bus Routes**\n\nI'm currently focused on accurately transcribing the Thai text from the image, which details bus routes in Bangkok, and will then represent the map diagram in a suitable Markdown format.\n\n**Decoding Thai Bus Lines**\n\nI'm deciphering the Thai script to extract specific bus route details, focusing on the 'to' and 'return' directions for line 34, originating from Rangsit and terminating at Hua Lamphong.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "**Transcribing Thai Bus Routes**\n\nI'm currently focused on accurately transcribing the Thai text from the image, which details bus routes in Bangkok, and will then represent the map diagram in a suitable Markdown format.\n\n**Decoding Thai Bus Lines**\n\nI'm deciphering the Thai script to extract specific bus route details, focusing on the 'to' and 'return' directions for line 34, originating from Rangsit and terminating at Hua Lamphong.\n\n",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 812,
+    "total_tokens": 1942,
+    "cost": 0.003853575,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0038925,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.003045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 390,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

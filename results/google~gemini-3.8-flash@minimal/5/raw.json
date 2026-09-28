@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790599245-dCOjrq9IzhLYhesfwOzQ",
+  "object": "chat.completion",
+  "created": 1790599245,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและจังหวัดที่มีเส้นทางต่อเนื่อง  \nหมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง ระยะทาง 32 กม.  \nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n### 1. รายละเอียดเส้นทาง\n\n**เที่ยวไป**  \nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n**เที่ยวกลับ**  \nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจารุเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n### 2. แผนที่สังเขป\n\n<figure>\nA hand-drawn transit route map showing the bus path connecting Rangsit to Hua Lamphong. Notable locations and streets labeled along the route include รังสิต (Rangsit), ถนนวิภาวดีรังสิต (Vibhavadi Rangsit Road), อนุสาวรีย์หลักสี่ (Lak Si Monument), ไปนนทบุรี (To Nonthaburi), ไปมีนบุรี (To Min Buri), ถนนพหลโยธิน (Phahonyothin Road), ลาดพร้าว (Lat Phrao), สะพานควาย (Saphan Khwai), ไปบางกะปิ (To Bang Kapi), อนุสาวรีย์ชัยฯ (Victory Monument), ถ.ปทุมวัน (Pathum Wan Road), ถนนพญาไท (Phaya Thai Road), ถ.รองเมือง (Rong Mueang Road), ถนนพญาไท (Phaya Thai Road), หัวลำโพง (Hua Lamphong), ถนนพระราม 4 (Rama IV Road), and ถ.จารุเมือง (Charu Mueang Road).\n</figure>\n\nเอกสารแนบท้ายใบอนุญาตประกอบการขนส่ง  \nประจำทางเลขที่ ...(b)...  \nลงวันที่ ... เดือน ... พ.ศ. 2521  \nกองวิชาการและวางแผน",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "signature": "AY89a18oAgrDG9ql+WOy76TRbUAWDo5knnTjL52bqKUkK9Jmvd0ux/fEUySEuk4IJhfK6WdWZm4EsCVgpBExdedwO9BHnzzkByg+KeJpRi1wYaQvzQ==",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 502,
+    "total_tokens": 1632,
+    "cost": 0.0027027,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00273,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.0018825
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

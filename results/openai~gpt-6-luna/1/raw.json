@@ -1,0 +1,74 @@
+{
+  "id": "gen-1790599409-mkOQWQFKWU73OmrKZ6WY",
+  "object": "chat.completion",
+  "created": 1790599409,
+  "model": "openai/gpt-6-luna",
+  "provider": "Azure",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "<figure>\n<p>Figure: A technical line graph with labeled axes, several plotted curves, and a prominent sharp peak near the center. Most labels and surrounding text are illegible in the image.</p>\n</figure>",
+        "refusal": null,
+        "reasoning": "**Decoding the rotated image**\n\nI'm trying to figure out why the text in this image appears rotated. It looks like the page is landscape-oriented, but the text is showing up sideways. The dimensions are 4096x?, and it seems that everything is upside down, possibly with a 180° rotation. I should inspect the top line for recognizable content if I mentally rotate it. It seems like it’s a scientific document, so I'll need to extract the text carefully.**Analyzing the chart**\n\nI need to approach this with a broad semantic understanding. The lower chart labels are currently upside down, which complicates things. It looks like it's a scientific page, maybe even a map? The central plot features two peaked curves, along with axis labels and a line legend. The surrounding text appears to be a technical caption, possibly upside down due to scanning. I need to mentally rotate it 180° to view the graph correctly and identify the main elements and captions.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.summary",
+            "summary": "**Decoding the rotated image**\n\nI'm trying to figure out why the text in this image appears rotated. It looks like the page is landscape-oriented, but the text is showing up sideways. The dimensions are 4096x?, and it seems that everything is upside down, possibly with a 180° rotation. I should inspect the top line for recognizable content if I mentally rotate it. It seems like it’s a scientific document, so I'll need to extract the text carefully.**Analyzing the chart**\n\nI need to approach this with a broad semantic understanding. The lower chart labels are currently upside down, which complicates things. It looks like it's a scientific page, maybe even a map? The central plot features two peaked curves, along with axis labels and a line legend. The surrounding text appears to be a technical caption, possibly upside down due to scanning. I need to mentally rotate it 180° to view the graph correctly and identify the main elements and captions.",
+            "format": "azure-openai-responses-v1",
+            "index": 0
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqumER2iFLxi67e-UmJVh-cNJoqEzjQPzC1KS2eyBOjnQ-vry58uJ-qL5xuUh-7WEQLdqmd6xkjpDKWPsIPS8yJD_aqbeJTaY7gwDwc2qTuPYg8hAw_pfliob_5_JBPrQyukXm9YJM9A9RoVTWVTAMeUV83OU9ZqS6b6PWXXw5zdOliorG11lXxua72RzaINSVeMT77s2NAbq2IJNrK6-E1mZnTpwz7vgN13QwBbF7hLa1Fc9zKjYF8my7fPKmsUPkslCl-yvB6fgS4crS-D330HAH8QGvaaVHGuQQl9mUAyHbgPLm_0EwbAeXplVzqy-6fTEEe9oBI71HDfSXd5yp8VqLF25B8EhAKXvAFxB8fYZ-C0EtHlv7qE8EbXYsngjduRdmpd_1J9OLfvDTBsXde2GrNZItQLYEV75GEs6s3Rrur73zpBOjPrwtgYmc2M59Fii2M0gn9CwPnOtLzv57IcCZD8irYb6lyM3E5zmk3zA1E7pmgfwd1e2PdMomoyA54cayEcfnYqp6ZfGKglG8sFSj29dc19zxYEmPKYmMBnCfAoeXXdklPOV19w3pgO3_0_9nR_7CF_0Krsku9jt_gwOqxIKbZmaIVu29nhmag33dBfjIWC-kHfkrwjJT_lV36YFJvZQg2yLtnf14Zm8Stufvig1BkmPjlk6Xbl5kT-GWrklV6235rLSTBEyVKX6cw6QG1aHqtJGC0acA4jEtf9cWlp2sPKW678FZ5IJMx8DLcpW7F4em8wpLJy0UMV4h26fpsQMuhGM2WYMQL2DCTE4w_0Efm6LhuX2TkwS6dpPa8eempKqfG1BTwkXbL6m3p8PUenNs9evH3yitJOrvv_a4GtJFtCJo1Nl1Q-6zrruro0cPT9WmSRAb9e4AhDg0jF4wWaA-lc1EO2BHNl1fxdU-pP8z4nRTOe0FfF4UHpNf4pATpOk8pKT32j2wuc1fnJXil7GsBPrqChGC0AcHITD6DzktuRdsGu0mNwRQp-Mly3x_NpeGIY3_M5KMhsGJUkFNXHUjziBlGdSngCbL3YaYi8Ib5wPzvneDWawcvHh-AyJ6s6rXGAZiuWSHInAyLz0oKPzsRkYp8TzSE7iielfHm_M2Zq4EouNETFbjLfB7Dow6OXN2ctGcE_GJg8_cCUWuZs888cZKQs08UK29-y1Im050_pTM1ikdl-n5gawLJL5ZSi0ig6ANIKq_6oKgBF5cxDq1WXSx_rp3AdmqTbgPHd5czoinpVAeR0P8T_eV_lGV3hrU-5KgcygRecFWmGxO-gVU3eb2NRiHC4fzXAdnmFgbVgrTloN10x8_UsdoT5rPppZE7PrjuHQM52vr_XaSz-S-FC3tc0MOFPbxAzLDP20bpIffQYPg7YcFzr3X6xRGy99wu5tHUK758TCSl_-SZwVuwLJdWWRu2WjtelJsqQZunnR96I19VfxNizT8KLLS_z6itWGgtrWoAuUuVJWlgGR70Ma3Y0jzwKoO4jQzj2dtDnuahRp3brCJQiEqTbRyEVRA4ZmwjpbmV82nuA_h8j-VcabmZ398ToNgHakPIHYGC_tf5Dpz0gmnxrMx7iNs3ZBgf8KeXtE1zPuc_SnJAhTvdIG8t79bQ6iiqa02MiTTRp3e_gfwpYJPTBAZpB1g-VwKc_aHN7pGJzM11NPuTM18mvBrqhgSiXlFX-yEzX31WqEFqyli631nuhQKPhbmYjRdaXvvO-dhikf-OyqSG_E-5-Rr80JbXqmTFYQtFXREifQl-MIogWZ7VJctSJ1AuU5d0paBo6vlu9sJVJUAEp4s_kB1v5pFRjw3Whxl_uVzpu2lyzRPAMNzmQCYHubySEtWagLPv3xk_WQ8k_MsLti4nbjpsizNXqr7l6I8vdPdYb0o8bhiNVY4c_NCs6-INhu13JT8gIT2RqzLP0FwZ-AdGkq0NSJjiRKgnAcum-6KP9HiykFC8mG_TEXyW5Rtp4jvv1kcW1qCyZihmU0WY0SBvhRr2hyR2X8RnaavqKTbeyyQ9XOIBj0U2YFJbyy70OBjFhxRZaVVR5z00z9vG49RQl4-N9iEDtuEDgrH4U1yxuA4c5JDhLjURO8Rb2KmawPXlme9s5PTiI56a0t1dyPSZGWvpVFi24bT7SqlEGy6iUqZsuuJ40L0dVbvP6EoNjtHbQRE75UYqVBjeGt0gYz057BL_CkXdYoNxuWU7efHeaedSRIVxvhEkpWO23VKQs3rfacXImfh6VGG1S-i9MZDVnK3asQ9eJA78kl4VTer0CAEcfSvLofoIyjwiXFCqnulNBgNvJUj2EVBAiEySTryPyF5kC_1qPEuY4jBD7odQc-XbCzbD8kIYhCpvnk7R3fF5g1xuDAvUDlPNcx4uFX4Da30uNOq0_5Fo0yn2JMbMQbQ0xF6m5aqYcUZJzHdOgIMukQveDf1aZPOD76jN3jprfmsveycJDDFYhwMIdusZQ5DkVL1DCeZns9U36yVpkoxpvPcdOc7M4RphOTXkJ8EuZt4aBn8YA4aIaIkTJDHeHqBHawAJkTedEn1tROIYSgZn939r1PUqAu2gjuACu2XYP0jCenTQ_LXnDtUPj5Zm-3efjpJQ699hcsdCXRRZmf4eeDH0MDhfCZ6YRYM7v1RkV6wJ1XQ8KRsYiPAmtPtAybKcqDxa_NSwPq1BHDVkVsJtviy6T-3H_1TRPNRb89MbmA2GCokXs0tGUS-CS4T79xlRk63VYJBPFtToHGnEnxPmwP3NilMory7saVVpNdvCPuCOGAnB_CK4nttPG4G4KV0I0edcxOyztPKzx3Dg1vksJEkJpA-jxdLqiC17jmIOI8XzGCXNkskfi59QXHUmHzFtH028JuigngGSl-4H83SW8kVU74xBSW0j9XTRJ9t6fulaKFPzzRtUE1v_NROFz_WQxv-8XYTMeY44RIArLHHZjLJKAxdT6yeWkMmblxRjQNoBhrHcmv9tvAcpTLQrnpO3-KVcH7nxIbKs8LeER5j9TS2PUXYh_Ob9r4jr7v9VtqnVg94Lk5_1Qtlp-Ez3O3VFLrfQKQV5MxH18CjReUYcDEmX10Vd3HwqdhG2QVP23qpcPkFu_ujbMzG9km9nz-3KFPv0AoFWgxO8c2riZKu9g8CKzz38STZWieCl52DrYvCslfi6Ul3HYVBYZ21JA55B9I_9961HEpA9xAEJOQFMg2bdysOBUP-2B_rKrBzP9teEcDlljX6qhwpDN0bIPfgKd9hMbuV3ZtG5bD0VPovSHjNG9VubycaNDpw_N2COQAABuGrLSzm5t1JqhFfG20FHLsbKwwVHyUcvdlcQHjKX6kMKGHusvcg2dYXMkh-gJhem8-L9vjJWdU-ZJTJMbSBUBQH8cPVNhjzNqogUDc1usOGIdgEkoAOByJxNGVNgXXhu3RUvrRN3BV2ufLm3knotpvJWxk--Py3urijOg9csfMLD6oh6qhyMVlCDGRqORiNAvcsqkfFONye6F3qmfp7eLScLSIxMaYsNysNfo6dZTtm-t_e_lbH-CfcYc8AnoZVpb1LZV-l7acWLTLuK4j_BwIe2In0IjMN0qB8JcJLnuQlS_n4IaViTssFG6tZzq4QZ4VfwrFAsqMrPO_A-RrwJkE2o2_8c8WRcR9hmgKEo8zg52RcI52e4Acxdvs_y6EUN_hIeFq19jw3KSpG7W4ZiHIgchoDHAjxxEtMmrbIlbuJZZGqJL10i3pw-gEzfj4syq_bumTijAKPvgqH_dXElUaOvQqq2fTamhWkqaCBPqfGsUOI_VJXa6C2Z7sd2cKOndHEeA9pCXfF7HvwfN-V-wqeaoNOUG3L_9zef2ZBrX12uClT2YrSZrJ5wt_hMuZyTf1UyODwD3WN2PZ5trpnNR_9Z_zgkYA0jV93ngVL-PpC9w2hygNf2HGtlzImpO1xuB5j1yhfppg4wNbb_s8k8veuaK4HVkSkK4Y4MtUvbcSb3ph4K290ZX261P9p3sjZkPiYchxliZSSsFc9nMQ3NI_3Y--XbdYXrj4MADB_LDIjtrZcAhuTdn7h8vg54Bv74q9lrEPsPpkU-yqnTZm1lFZ_Hgoq_ktba-blnz7n5TrIXc9uvBIxRHq_3UPMWyeqW8z4lcAMFrUZJOFDhKK-BqH-iebIYNPp0_C-rm3GX1FxZ1Ey1M72hWSTJYRqcK49J9pFKFn7fke68a_r0NAwC1E9nq3W4h6yJE75BmtPkrQDovjH8SwklP1qlwiO6rSDIPGp-lBvGfg-wOkkIvWpQmi1jp4-QrIagB14Kk-PTkHTFrqLRLnvm02m6aJTQALoXUO7dlwVuaiNtTzvr1g0m9Q0y7HuTwHji4gAva5MAWQctW0uB5r1WiGvOe9dktKsfmfAYnnqOIgLrsoGuq54r__qup-oLoduRr0_kZwtRm_6Wa_Y6FZDh4WAIOGFLKJy4-ywADfJ6ld8u67L1NPywV2sEXNag18Ru2aqYM6-oW8wpISxLsCI8hbA8RJRga029nUJYdvFBXgPu2wnb23N0DZCpB0ufuG2U35q5BxqsbauT4sXRMYtl7y--I51vhGtQuxtMLJku4o-IuPWI2xe05JFdU1GAZqLpLU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8YXp1cmUifQ",
+            "format": "azure-openai-responses-v1",
+            "id": "rs_04ab21b32bd0dab6016aba61087be481938c8ca767f47cfa51",
+            "index": 1
+          },
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing a scientific figure**\n\nI'm trying to distinguish the figure boundaries on a white page. It looks like there are multiple labels and possibly three subplots, with one being a line plot featuring curves peaking around x = 2200. The axes are labeled, but the text is largely illegible due to image quality. As I rotate my perspective, I realize the letters seem rotated 180 degrees rather than just upside down. I’ll provide a minimal markup noting this along with a figure description.",
+            "format": "azure-openai-responses-v1",
+            "index": 2
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqumEaN9qrWdQgxfX6dyQ6UusJ5dWpPJwPisH4LQPYf3g-pgAG_Ig-ckYjPnbWEgANvz4LZyEgOfxes8YXETUpoinjwpXzbeyro7_LhkSaPdRtBnq8QDMCKFLc3vDUolQOjmyS4d2HT4B7SUO0l6Rn3hgLL-nAk95RtNk5eiYlt25IFM-yTlpCtokWB4onRaZKnt4DE5sdUJHOkSPyI7qR_-7LMA11S8RHH9XJeSsseVicnT_h1Nf6v8AR6Yw4mxMmjTqmx23pFevfvEJvzvH9jiuBAlgd--65SefhOXfZyg_liUgHNiZ5KqxAKAjBzysDwkgEkWYKYV0ovixGg1npU8rnfAvnvzvK0GOiDlMJN4r_9eWVAn1n7zhNQlwcDe5GtUwLv6rfiwiHlrQQtoP6boPXTI4lz_QlDIyBLmPmdxUeYweQELinwuqthhEj2P_3am9lbRGTX8E8Pn3sp6zfnIgcyRpabJtaUuXiCQEp3y90PMF2NPdv0mrvkEXfJ7aQB15dcAzxIjtvIImwDTaLH1RTQihOlr86A-8nM1OSIy_oMjD4T3MH4i-nOPI2WNht2I_9hHQdCRZWoi4ruPSPajZqKnkACYS-mihRDLlZlp-MB4saDTbOGdtaiZjJHX0WcI0tnLaGT5-T9OlitEK9yen7wcdgKzE7AukQzRmUwmm1dtH4UpigJXx5pI49uI0VsaOmvCEWN85uBNBi9HEoDIY3mWMs8OldRZRpSkdzC-XTJn9VsyWOF-1hr_-dtlccASthqcKP4yhybfkWiDOud1U1mFfzc_DDWmhLeWuJqOVZQbDaaG1ESWRayecetOSRcYTfsFbcsNTpU1tIKIW8sCZJCctZtJ2Q0uO065Hbyklttz1dGNwb6ShMqEzKZPqI7vMV1onoo8WL8ikVFlONbKCw-X4lKZm_vRhP_qnvKZ4vIcDvAH7KosW07Xk8eDZpMpusMTvDX0Hf2LVhZaMn-A6DKKNdn8yYEgOY6LRsyOndp4oSO0xh0kU4IcweqthqQ8MjyeG9H2vb0BsRrH3GOc_2PyudDp-JAymwQchGFZKA7mllE8AzUsRinmybDK-rdo9uMmsx09vmti0rM1BshVLiKWrBZQb2zqjZnP0dvwSoqNipmAgf19DRd2ccja6yLsNzjSMGpL1yIpUKpKjXwO_-Dj21BG-QPqBPnKcvrpp1LiZGu49Wplf3Nq9RmG0_16X-nOIkEN-YHZEic3I9iJ4QZEfEm1Y8eVmOSKSdrFxB2_4lSUTsWTqFtC91ABUHVLP6Og2pJpjK2gftJopDY02FHPWwUij97cjse-StLlnfmZ2Tz0I2df_sO8B9Jdj4RxsxF4UCFqRDf__32GdFjPkUp6osOHZ3uJMePro4tibxp_-4ECswo399kGyPtZeTCfidfhc2plbShsYWIarmn-HeG2Ba2Zu3EuZ8HhiUb4wZqHmcxyeVp4AorV94mJ9p-E4eWK1QJ1jZnNpwdEGADIOksTW42OWbrGVt6NToqw8hB6IO_5NocI76dRHaPHgDa3NA_VigLVdREY0U8sIfn9amHkNTCQVbDs7CoFtte_dBWyhQpOC1RZyT5K9kUlkMd3rC-0nix1M4rO5W7OjzfpQQ4PvLAPhmRbne4GikVfeveJTHCURPXtjTa6GnwQrjV2HWJYN_GbX7d0mKteonHZ-YVtX7E2rrW-T6LRUsCnzL87cnskYK3sHtRHavsqhy-Wj7hiqvwUtv-VmEwJ_8KoGzgIn4bqUU1xWuM4o2nhZuY8VV50yCcXC5H79rH_IPc9Pjb-BrXIvP2c2bHZObOCYWYlqj3MZQUMajDtlV_0zSLG-Dkti6745_xPi0CVa6d0jz6youOFFDC47wZ3NZH8J6Nq4J_KGf1u1Y_tRUL_wQeLk6AEHbap_lHsClvX2cEiV2QJHa-JkF-7V3G4T2EdUs6mva4Sf3F8Tf7RunIpGoZlrdC8souuhlpVMQDUfgohXxY4k2JyOp1b6aVQi2UaLKy5b5QXJ7-UXkQGd4fGblUYZmVXHCt0-ZeppjFryQJbspIoFvpfWQY3wwGqe3vqRKzdGzPTcU_Jqzf07ejYDXPc7bBXCq-tWqPoV5QOfys-U150xGeqxqL9rQdh0xTHSxAT-4swnnmfYxPJg1LLiaK53JkwrCs_y2CbWLJtRZDXzLsmIuqd8Roy5iBfqEC0nKeOl0wh7N-TiOvgn4Y3Z3C3bDPs-dVDTz9t0YLVB6VS1MAlaPyEse4mKZCbrES3D1lASOqnmcPGEout6dWF9EbZ7LML2U0C9lGM3PZY6Px0fpnNvnsvK8JNbb2WpBRWzP4OV1s9vXp4yq0DXAV6JI8bcP7q5Fpi_j6QhEH4lF_l1HA2FSPX3SuBmIn-XnnDtJhH3hBHK82P27f1VQftd25ZLP5DLdl5bR-eRvp0a8xylhu4QPrSvuGmzylziJ_MsyrO6Bv227GooCJW3EiY8px41MEbrngG9zHfEHhcDL_Pz0jsKaBB8ugrylmO4nOVlBzOnspdxjhSDyKS_b31V6wpDpROmp5CVvHfBE5CVQa1O2S21j0MseBfDEhrby-_Z-1BdXmbFxyVbvyToGFFS-G4okCFGcOKYEySvcQl16ctLmvbLDBZrIMOgkBEMQDDPYB4ZLQwaMTzU2zkDU4lVMfppefapd6-RAEg7wHMzyOZA8VfEYNJzsi4WM5YwBe_apwsSKE1vaJVCILrp-vwUAQV1SMpOPmIMDpzYm4DxmzrVPcZf7Spqf0Cv2MmkIySSFKzfhwUwwRBw-Bll1l9y1EjOjGkBXCthTEmj9v8hiP1rkLOfukwq5cechNBj6JaHExfPJk4uHBNTF5fXdNHN08MmqMAPVX74TKKklcXpPJmSkYRV-GJU0JCXvtOIFY6B5tNp8rAWkUQjUP6A-ukQw6cgNQbpDsA9rKR12IVNeE3SzHGCupQtRDCZoWhjc0r4D_vMIIrKoudtFw5fSYyeWM9pm5Nq5H90nu1qYPyu3Js9vNHRzk7FqMSUFI6gDPNqeJ77_Mhqbuz2Gzam5UIiveJImkHIMvLrCItOPFM8YCI9lBLTGN0IpXsaJNrGlblrNVMP974z2mWAycbwvCWCqnEUPu2IDDe-f7F0zU2XJCI3edU9_PbxVVEPSN3le71em4H2ZLrMaV-NRE-z4uvCeuc5aQcw-VeSOYSyJqbCQf3qvDmfe0yYO4za0x4jlz73kiOP8LY2JkTbX3upa5Wlad6fF2BW1XwI16tvQXiqhHL1jyfImg4Ce3ZnQEgMFXWDRMmJr9jQPrLVOSTf-mt7yx_W9jb8jzedkp081dtA0dHlHWV0ILfvgRXoxN_DbjCY4mbZA81tqktmJ7CKrIwpwd-qb-f7CWa5JnGpu61t_K00C3YJiAoPy6jkuGxSXK_Cd1yK1pX5etxBky63LZepAnw6it0uaoXh1j6lsmaNU-WsdtguCMyFJxvHac82udo-2RSJgzvluCDZfNgVwdkyCojQ7vwd1ysORgfuVBrTZkpdcq0oDncDxDW3lgYgBJUT5pvkhwKBj4aJNpwYIjYpgKtuWwrwGWj4VQ7jXKZIIOo_hdMI4auXD-ateigBPOfleCRKzgi4bwFNxFhICJtBaQa1OdyvTv4CDKNnGWRkBWm8hEYU1P3H92CjIiqHYzSe5IYsLXxxvK9GeuUSTJyMgbTPi6EGH4plKfbYvbgQxa3p4ub5y9vzWg5YLBj475r7YJ92jqeN8RsZZ4u_3ptSKG0WtXnv3K4SO-huCLPRKFAs6hJUPJUxnEWqwOhc3NJ6yl966XNEocaSp9wsydhZfS6JAINKuf1sTxXNe1xVKcuO04fWYmYZUXK1kTfy9nWI_bDum8LUNKVupAEe3XqzklKwbjIfeDQVXruMwVnKppB78N6FB9Ie_whXEIwIESd_vF8GSi1p5gImqEuhX2OghX2nEjyqR-AiSvoLbz_J_GttN8RqYdjxL37OZuNiQALdg7HnrLvvRRowjDdfPmK1trprbrJgwUlL2ppI0CoaNa0pcF3QUNanxFDxxO782DwDiAMONph-eB1_hIdVyEtr9paZtqz83QM_t_yEtuD-emhO8rUgymQ2mxzhtQoCjja4c7k9Z4Mnzj2Lhof7lNze-fiJmr1qj07bDfv9Z2fs9rUNrDKcNW9uGwstjQWaIeu5vxJ3V9YvoFNpF5Q7bjwEmiBG7fqpvf0yL1oGofVsRFJ2VtDQ3iQFNArft53LZ8JwICqMnn_-Dq8EI-MqvFcppmqziVG1TxZw5bdadD4eezmsbPgPXrKvB6ko2Zm4FkyPPcVIGwPi6Z2yv5QSi4t_KJ-fXhX00eyXt6UQW5AHkFMtvybmDGGvQ3vkkFRN5Fnceta2dqj8e1P__PvU2iNASune17KK-CsYUXEwN45puB3O5nHX5cx6yf2BKtWKvAWuOLtNI290IJ7EMJgDi7J6VGbo5-p351r1x7Wsvr0AgCReCU_RFku6Up1CVa0hkrtcNpJu3J846456k4SOX9iVdwUrgZmuCeZr2BZrZU7O5cRYa0MQQ8KH2Ow6JTe15UpMMlfUVTOx_c0PwrS5b6KW1YnDUbCyErZbcRtTfBbaiEvXHcFnoMYMrJhGkAi900fop7gaLLsVKPvGyCXMwIUKNqpSpDLOiBA_SqC9npIIBI3-f.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8YXp1cmUifQ",
+            "format": "azure-openai-responses-v1",
+            "id": "rs_04ab21b32bd0dab6016aba611123c0819388009153ed790231",
+            "index": 3
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 41229,
+    "completion_tokens": 1085,
+    "total_tokens": 42314,
+    "cost": 0.0056390895,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 41226,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00569605,
+      "upstream_inference_prompt_cost": 0.00515355,
+      "upstream_inference_completions_cost": 0.0005425
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1034,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
