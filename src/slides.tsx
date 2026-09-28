@@ -107,14 +107,21 @@ function rank(metric: Metric, configs: ConfigScore[], c: ConfigScore) {
   const values = configs.map((x) => metric.value(x)).filter((v): v is number => v !== null);
   const v = metric.value(c);
   if (v === null) return null;
-  // Models with the same value (as shown) get the same rank and verdict.
-  const shown = metric.format(v);
-  const better =
-    values.filter((x) => metric.format(x) !== shown && (metric.lowerIsBetter ? x < v : x > v))
-      .length;
-  const tied = values.filter((x) => metric.format(x) === shown).length > 1;
-  const grade = gradeOf(better, values.length);
-  return { rank: better + 1, of: values.length, grade, value: v, tied };
+  // No ties: with the same value, the model that is higher in the ranking (more accurate, then
+  // cheaper, then faster) comes first. For accuracy, this is the order of the ranking itself.
+  const order = configs
+    .filter((x) => metric.value(x) !== null)
+    .sort((a, b) =>
+      (metric.lowerIsBetter ? 1 : -1) * (metric.value(a)! - metric.value(b)!) ||
+      configs.indexOf(a) - configs.indexOf(b)
+    );
+  const position = order.indexOf(c);
+  return {
+    rank: position + 1,
+    of: values.length,
+    grade: gradeOf(position, values.length),
+    value: v,
+  };
 }
 
 /** The best, middle, and worst third of a ranking. */
@@ -259,7 +266,7 @@ function Tile({ metric, configs, c }: { metric: Metric; configs: ConfigScore[]; 
         })}
       </div>
       <div class="tile-rank">
-        <span>{r.tied ? "tied " : ""}{ordinal(r.rank)} {metric.best}</span>
+        <span>{ordinal(r.rank)} {metric.best}</span>
         <span>of {r.of}</span>
       </div>
     </div>
@@ -269,37 +276,14 @@ function Tile({ metric, configs, c }: { metric: Metric; configs: ConfigScore[]; 
 // ---------------------------------------------------------------------------------------------
 // Slides
 
-function TitleSlide({ count }: { count: number }) {
-  const [w, h] = images.sizes.page;
+function TitleSlide() {
+  const [w, h] = images.sizes["page-top"];
   return (
     <Slide cls="title">
-      <div class="title-text">
-        <div class="kicker">34bench</div>
-        <h1>
-          Can AI read a <span class="hl">faded</span> Thai bus route document?
-        </h1>
-        <p class="lead">
-          AI models and OCR services transcribed this page: the route of Bangkok bus 34, Rangsit –
-          Hua Lamphong.
-        </p>
-      </div>
-      <div class="stats">
-        <div>
-          <b>{count}</b>models and OCR services
-        </div>
-        <div>
-          <b>4</b>scored parts
-        </div>
-        <div>
-          <b>3</b>runs each (1 for the most expensive)
-        </div>
-      </div>
-      <p class="credit">
-        Source: Bangkok Metropolitan Administration
-        <br />
-        open data · GFDL 1.3
-      </p>
-      <img class="page" src="images/page.jpg" width={w} height={h} />
+      <h1>
+        <span class="hl">Bus No.34</span> Benchmark
+      </h1>
+      <img class="page-top" src="images/page-top.jpg" width={w} height={h} />
     </Slide>
   );
 }
@@ -342,17 +326,10 @@ function ModelSlide({ c, configs, gt }: {
   const parts = Object.fromEntries(
     COLUMNS.map((col) => [col, partClass(partAccuracy(m, col))]),
   ) as Record<Column, string>;
-  const acc = rank(METRICS[0], configs, c)!;
-  const kicker = [
-    `${acc.tied ? "tied " : ""}#${acc.rank} of ${configs.length}`,
-    vendor,
-    provider && `via ${provider}`,
-    image && `${image} image`,
-    c.runs.length > 1 ? `median of ${c.runs.length} runs` : "1 run",
-  ].filter(Boolean).join(" · ");
-  const how: [string, string] = k === "vlm"
+  const how: string[] = k === "vlm"
     ? [
-      "Standard prompt · default effort",
+      "Standard prompt",
+      "Default effort",
       thinking > 0 ? `${thinking.toLocaleString("en")}\u00a0thinking tokens` : "No thinking tokens",
     ]
     : k === "ocr-api"
@@ -360,15 +337,16 @@ function ModelSlide({ c, configs, gt }: {
     : ["OCR model", "Its own fixed prompt"];
   return (
     <Slide>
-      <Head kicker={kicker} title={model} />
+      <header class="head model-head">
+        <h2>
+          <span class="rank">#{configs.indexOf(c) + 1}</span>
+          {model}
+        </h2>
+      </header>
       <Preview parts={parts} />
       <div class="tiles" style={{ top: `${TOP + PREVIEW_H + 28}px` }}>
         {METRICS.map((metric) => <Tile metric={metric} configs={configs} c={c} />)}
-        <div class="how">
-          {how[0]}
-          <br />
-          {how[1]}
-        </div>
+        <div class="how">{how.map((line) => <div>{line}</div>)}</div>
       </div>
       <div class="cards">
         {COLUMNS.map((col) => {
@@ -486,10 +464,8 @@ function placeLabels(labels: Label[], maxX: number, segments: number[][] = []) {
   return placed;
 }
 
-/** "#9", or "#9=" when tied. */
 function rankLabel(configs: ConfigScore[], c: ConfigScore) {
-  const r = rank(METRICS[0], configs, c)!;
-  return `#${r.rank}${r.tied ? "=" : ""}`;
+  return `#${configs.indexOf(c) + 1}`;
 }
 
 function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
@@ -608,7 +584,7 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
       </svg>
       <p class="note">
         Line and lime dots: the Pareto frontier. No other model is both cheaper and more accurate.
-        Larger dots: the top 10 models (= means tied). Each dot is the median run of one model.
+        Larger dots: the top 10 models. Each dot is the median run of one model.
       </p>
     </Slide>
   );
@@ -668,23 +644,15 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .head .sub { font-size: 17px; line-height: 1.45; color: var(--soft); margin-top: 8px;
   max-width: 900px; }
 
-.title .title-text { position: absolute; left: ${M + 8}px; top: 88px; width: 300px; }
-.title .kicker { color: var(--lime-deep); }
-.title h1 { font-size: 48px; line-height: 1.06; font-weight: 800; margin-top: 22px;
-  letter-spacing: -0.025em; }
-.title h1 .hl { background: var(--lime); padding: 0 6px; border-radius: 6px; }
-.title .lead { font-size: 20px; line-height: 1.5; margin-top: 28px; color: var(--soft); }
-.title .stats { position: absolute; left: ${M + 8}px; top: 560px; width: 300px;
-  display: flex; flex-direction: column; gap: 18px; }
-.title .stats div { font-size: 15px; color: var(--soft); line-height: 1.3; }
-.title .stats b { display: block; font-size: 40px; line-height: 1; font-weight: 800;
-  color: var(--ink); letter-spacing: -0.02em; margin-bottom: 4px; }
-.title .stats b::after { content: ""; display: block; width: 28px; height: 5px; margin-top: 8px;
-  background: var(--lime); border-radius: 3px; }
-.title .credit { position: absolute; left: ${M + 8}px; bottom: ${M}px; width: 300px;
-  font-size: 13px; line-height: 1.5; color: var(--muted); }
-.title .page { position: absolute; right: ${M}px; top: 90px; border-radius: 3px; background: white;
-  box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
+.title h1 { position: absolute; left: ${M}px; top: ${M - 6}px; font-size: 56px; line-height: 72px;
+  font-weight: 800; letter-spacing: -0.025em; }
+.title h1 .hl { background: var(--lime); padding: 0 12px; border-radius: 10px; }
+.title .page-top { position: absolute; left: ${M}px; bottom: 0; border-radius: 4px 4px 0 0;
+  background: white; box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
+
+.model-head h2 { display: flex; align-items: center; gap: 16px; margin-top: 30px; }
+.model-head .rank { font-size: 30px; line-height: 50px; padding: 0 14px; border-radius: 12px;
+  background: var(--lime); color: var(--ink); letter-spacing: -0.01em; }
 
 .preview { position: absolute; left: ${M}px; top: ${TOP}px; background: white; z-index: 2;
   border-radius: 3px; box-shadow: 0 10px 30px rgba(40,50,30,.16), 0 0 0 1px rgba(0,0,0,.06); }
@@ -727,7 +695,7 @@ mark.miss { background: var(--miss-bg); box-shadow: inset 0 -2px 0 var(--miss); 
 mark.wrong { background: var(--wrong-bg); box-shadow: inset 0 -2px 0 var(--wrong); }
 .empty { color: var(--muted); }
 
-.tiles { position: absolute; left: ${M}px; width: ${GUTTER_X - M - 16}px; z-index: 2;
+.tiles { position: absolute; left: ${M}px; width: ${PREVIEW_W}px; z-index: 2;
   display: flex; flex-direction: column; gap: 10px; }
 .tile { border-radius: 14px; padding: 12px 14px 11px; background: var(--panel);
   border: 1px solid var(--line); box-shadow: 0 4px 16px rgba(40,50,30,.06); }
@@ -818,7 +786,7 @@ async function main() {
   );
   const top = configs.slice(0, 10);
   const slides = [
-    <TitleSlide count={configs.length} />,
+    <TitleSlide />,
     <PartsSlide gt={gt} />,
     ...top.map((c, i) => ({ c, r: i + 1 })).reverse().map(({ c, r }) => (
       <ModelSlide c={c} configs={configs} gt={gt} />

@@ -123,7 +123,12 @@ export async function loadScores(root = new URL("../", import.meta.url)): Promis
     runs.sort((a, b) => a.cer - b.cer);
     configs.push({ config: config.name, runs, median: runs[Math.floor((runs.length - 1) / 2)] });
   }
-  configs.sort((a, b) => a.median.cer - b.median.cer || a.config.localeCompare(b.config));
+  // No ties: with the same CER, the cheaper model is first, then the faster one.
+  const cost = (c: ConfigScore) => c.median.costThb ?? Infinity;
+  configs.sort((a, b) =>
+    a.median.cer - b.median.cer || cost(a) - cost(b) ||
+    a.median.meta.durationMs - b.median.meta.durationMs || a.config.localeCompare(b.config)
+  );
   return configs;
 }
 

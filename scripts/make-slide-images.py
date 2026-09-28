@@ -14,6 +14,7 @@ OUT = ROOT / "slides" / "images"
 ZOOM = 0.16
 PREVIEW_WIDTH = 190
 PAGE_HEIGHT = 900
+TOP_WIDTH, TOP_HEIGHT = 968, 912
 
 BOXES = json.loads((DIR / "crop-boxes.json").read_text())
 image = Image.open(DIR / "route34.png")
@@ -29,6 +30,12 @@ def save(img, name, width):
 sizes = {
     "page": save(image, "page.jpg", round(image.width * PAGE_HEIGHT / image.height)),
     "preview": save(image, "preview.jpg", PREVIEW_WIDTH),
+    # The top of the page, for the title slide: full slide width minus margins.
+    "page-top": save(
+        image.crop((0, 0, image.width, round(image.width * TOP_HEIGHT / TOP_WIDTH))),
+        "page-top.jpg",
+        TOP_WIDTH,
+    ),
 }
 for name, box in BOXES.items():
     crop = image.crop(tuple(box))
