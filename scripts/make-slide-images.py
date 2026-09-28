@@ -14,8 +14,8 @@ OUT = ROOT / "slides" / "images"
 ZOOM = 0.16
 PREVIEW_WIDTH = 190
 PAGE_HEIGHT = 900
-# Slide 1 shows the page down to the end of the map (y on route34.png), at this height.
-MAP_BOTTOM, MAP_HEIGHT = 5650, 830
+# Slide 1 shows the page at this width, from its top edge to the bottom of the slide.
+TITLE_WIDTH, TITLE_HEIGHT = 729, 912
 # The ground truth slides show the top or the bottom of the page at this size.
 PART_WIDTH, PART_HEIGHT = 968, 912
 
@@ -33,18 +33,21 @@ def save(img, name, width):
 sizes = {
     "page": save(image, "page.jpg", round(image.width * PAGE_HEIGHT / image.height)),
     "preview": save(image, "preview.jpg", PREVIEW_WIDTH),
-    # Slide 1: the page from the top to the end of the map.
-    "page-map": save(image.crop((0, 0, image.width, MAP_BOTTOM)), "page-map.jpg",
-                     round(image.width * MAP_HEIGHT / MAP_BOTTOM)),
-    # The two ground truth slides: the top and the bottom of the page, in full slide width.
+    # Slide 1: the top of the page, at a smaller width. It continues past the bottom of the slide.
+    "page-map": save(
+        image.crop((0, 0, image.width, round(image.width * TITLE_HEIGHT / TITLE_WIDTH))),
+        "page-map.jpg",
+        TITLE_WIDTH,
+    ),
+    # Slide 2: the top of the page, in full slide width.
     "page-top": save(
         image.crop((0, 0, image.width, round(image.width * PART_HEIGHT / PART_WIDTH))),
         "page-top.jpg",
         PART_WIDTH,
     ),
+    # Slide 3: the rest of the page, from where slide 2 ends.
     "page-bottom": save(
-        image.crop((0, image.height - round(image.width * PART_HEIGHT / PART_WIDTH), image.width,
-                    image.height)),
+        image.crop((0, round(image.width * PART_HEIGHT / PART_WIDTH), image.width, image.height)),
         "page-bottom.jpg",
         PART_WIDTH,
     ),

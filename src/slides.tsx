@@ -291,34 +291,68 @@ function TitleSlide() {
   );
 }
 
-const PAGE_HEIGHT = 7016;
 const [PART_W, PART_H] = images.sizes["page-top"];
 const PART_TOP = SIZE - PART_H; // the page images end at the bottom edge of the slide
 const PART_K = PART_W / SOURCE_WIDTH;
+
+/** Annotation color of each part on the ground truth slides. */
+const PART_COLORS: Record<Column, string> = {
+  header: "#8cc800",
+  forward: "#2f7de1",
+  return: "#f08a1c",
+  footer: "#a45ad6",
+};
+
+/** All configurations, in alphabetical order. */
+function ConfigList({ configs, top }: { configs: ConfigScore[]; top: number }) {
+  const items = configs
+    .map((c) => ({ c, d: describe(c.config) }))
+    .sort((a, b) => `${a.d.vendor}/${a.d.model}`.localeCompare(`${b.d.vendor}/${b.d.model}`));
+  return (
+    <div class="config-list" style={{ top: `${top}px` }}>
+      <h3>{configs.length} configurations tested</h3>
+      <ol>
+        {items.map(({ d }) => (
+          <li>
+            <span class="vendor">{d.vendor}/</span>
+            <b>{d.model}</b>
+            {d.provider && <span class="tag">via {d.provider}</span>}
+            {d.image && <span class="tag">{d.image} image</span>}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
 
 /**
  * One of the two "Ground Truth" slides: the top or the bottom of the page, with a rectangle on each
  * scored part, and a card with its ground truth. `cards` gives each card's position on the slide.
  */
-function GroundTruthSlide({ gt, half, cards }: {
+function GroundTruthSlide({ gt, half, cards, configs }: {
   gt: Record<Column, string>;
   half: "top" | "bottom";
+  configs?: ConfigScore[];
   cards: Partial<
     Record<Column, { left: number; top: number; width: number; route?: "left" }>
   >;
 }) {
+  // The bottom half continues the page of the top half, from the top edge of the slide.
+  const [w, h] = images.sizes[`page-${half}`];
+  const top = half === "top" ? PART_TOP : 0;
   // The first row of route34.png that is in the image.
-  const y0 = half === "top" ? 0 : PAGE_HEIGHT - Math.round(PART_H / PART_K);
+  const y0 = half === "top" ? 0 : Math.round(PART_H / PART_K);
   return (
     <Slide cls="gt-slide">
-      <Head title="Ground Truth" />
+      {half === "top" && <Head title="Ground Truth" />}
       <img
-        class="page-part"
+        class={`page-part ${half}`}
         src={`images/page-${half}.jpg`}
-        width={PART_W}
-        height={PART_H}
-        style={{ left: `${M}px`, top: `${PART_TOP}px` }}
+        width={w}
+        height={h}
+        style={{ left: `${M}px`, top: `${top}px` }}
       />
+      {configs && <ConfigList configs={configs} top={h + 44} />}
       {(Object.keys(cards) as Column[]).map((c) => {
         const [l, t, r, b] = boxes[c];
         const pos = cards[c]!;
@@ -327,9 +361,11 @@ function GroundTruthSlide({ gt, half, cards }: {
             <div
               class="gt-mark"
               data-link={c}
+              data-color={PART_COLORS[c]}
               style={{
+                borderColor: PART_COLORS[c],
                 left: `${M + l * PART_K - 2}px`,
-                top: `${PART_TOP + (t - y0) * PART_K - 2}px`,
+                top: `${top + (t - y0) * PART_K - 2}px`,
                 width: `${(r - l) * PART_K + 4}px`,
                 height: `${(b - t) * PART_K + 4}px`,
               }}
@@ -338,7 +374,12 @@ function GroundTruthSlide({ gt, half, cards }: {
               class="card gt-card"
               data-link-target={c}
               data-route={pos.route ?? ""}
-              style={{ left: `${pos.left}px`, top: `${pos.top}px`, width: `${pos.width}px` }}
+              style={{
+                left: `${pos.left}px`,
+                top: `${pos.top}px`,
+                width: `${pos.width}px`,
+                borderColor: PART_COLORS[c],
+              }}
             >
               <PartLabel c={c} />
               <div class="truth">“{flat(gt[c])}”</div>
@@ -686,16 +727,27 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .title h1 { position: absolute; left: ${M}px; top: ${M - 6}px; font-size: 56px; line-height: 72px;
   font-weight: 800; letter-spacing: -0.025em; }
 .title h1 .hl { background: var(--lime); padding: 0 12px; border-radius: 10px; }
-.title .page-map { position: absolute; left: ${M}px; bottom: ${M}px; border-radius: 4px;
+.title .page-map { position: absolute; left: ${M}px; bottom: 0; border-radius: 4px 4px 0 0;
   background: white; box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
 .title .credit { position: absolute; right: ${M}px; bottom: ${M}px; width: 190px; text-align: right;
   font-size: 13px; line-height: 1.5; color: var(--muted); }
 
 .gt-slide .page-part { position: absolute; background: white; border-radius: 4px 4px 0 0;
   box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
-.gt-mark { position: absolute; z-index: 2; border: 3px solid var(--ink); border-radius: 4px;
-  background: rgba(215,252,112,.28); }
-.gt-card { position: absolute; z-index: 4; padding: 14px 18px;
+.gt-slide .page-part.bottom { border-radius: 0 0 4px 4px; }
+.gt-mark { position: absolute; z-index: 2; border: 4px solid; border-radius: 5px; }
+.gt-slide .rays { z-index: 6; }
+.config-list { position: absolute; left: ${M}px; right: ${M}px; z-index: 2; }
+.config-list h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 14px; }
+.config-list ol { list-style: none; columns: 3; column-gap: 28px; }
+.config-list li { font-size: 14.5px; line-height: 21px; padding: 5px 0; break-inside: avoid;
+  border-bottom: 1px solid var(--line); }
+.config-list .vendor { color: var(--muted); }
+.config-list b { font-weight: 700; }
+.config-list .tag { display: inline-block; margin-left: 6px; font-size: 11.5px; line-height: 18px;
+  padding: 0 7px; border-radius: 999px; background: #e3e6dc; color: var(--soft); }
+.gt-card { position: absolute; z-index: 4; padding: 12px 16px; border: 3px solid;
   box-shadow: 0 12px 34px rgba(40,50,30,.20), 0 0 0 1px rgba(0,0,0,.04); }
 .gt-card .truth { font-size: 17px; line-height: 26px; margin-top: 2px; }
 
@@ -857,13 +909,15 @@ document.fonts.ready.then(() => {
       const line = document.createElementNS(ns, 'polyline');
       line.setAttribute('points', points.map((pt) => pt.join(',')).join(' '));
       line.setAttribute('fill', 'none');
-      line.setAttribute('stroke', '#161b12');
-      line.setAttribute('stroke-width', '2.5');
+      const color = mark.dataset.color;
+      line.setAttribute('stroke', color);
+      line.setAttribute('stroke-width', '3');
+      line.setAttribute('stroke-linejoin', 'round');
       svg.appendChild(line);
       for (const [cx, cy] of [p, q]) {
         const dot = document.createElementNS(ns, 'circle');
         dot.setAttribute('cx', cx); dot.setAttribute('cy', cy); dot.setAttribute('r', '4.5');
-        dot.setAttribute('fill', '#161b12');
+        dot.setAttribute('fill', color);
         svg.appendChild(dot);
       }
     }
@@ -892,7 +946,8 @@ async function main() {
     <GroundTruthSlide
       gt={gt}
       half="bottom"
-      cards={{ footer: { left: M + 16, top: 800, width: 460 } }}
+      cards={{ footer: { left: M + 16, top: 150, width: 460 } }}
+      configs={configs}
     />,
     ...top.map((c, i) => ({ c, r: i + 1 })).reverse().map(({ c, r }) => (
       <ModelSlide c={c} configs={configs} gt={gt} />
