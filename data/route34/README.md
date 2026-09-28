@@ -38,6 +38,11 @@ published version, so we use version 1.3.
    - Converted `route34.png` to `route34.webp` (lossy, quality 80) for use in the main README.
    - Resized `route34.png` to half size (Lanczos, 2480×3508, 300 ppi) and saved it as
      `route34-300dpi.png`, for models that do not accept the full-size image.
+   - Cropped the header, forward trip, return trip, and footer from `route34.png`, and saved them in
+     `crops/` (WebP, quality 80). See `scripts/make-crops.py`.
+   - Transcribed the header, forward trip, return trip, and footer into `ground-truth.json`. The
+     footer was read with help from the same footer block on the route 20 document of the same
+     dataset, and from section 31 (๖) of the Land Transport Act B.E. 2522.
 
 ## Files
 
@@ -46,3 +51,5 @@ published version, so we use version 1.3.
 | `route34.png`        | Input image for the models.                                        |
 | `route34.webp`       | Smaller copy of the same image, for the README.                    |
 | `route34-300dpi.png` | Half-size copy, for models that do not accept the full-size image. |
+| `crops/*.webp`       | Crops of the 4 scored parts, for the results table.                |
+| `ground-truth.json`  | Human transcription of the 4 scored parts.                         |

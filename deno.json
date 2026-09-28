@@ -3,9 +3,14 @@
     "run": "deno run --allow-read --allow-write=results --allow-env --allow-net=openrouter.ai src/run.ts",
     "test": "deno test --allow-read",
     "paxa": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.paxalabs.com src/paxa.ts",
-    "iapp": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.iapp.co.th src/iapp.ts"
+    "iapp": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.iapp.co.th src/iapp.ts",
+    "render": "deno run --allow-read --allow-write=results.svg --allow-env src/render.tsx"
   },
   "fmt": {
     "lineWidth": 100
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact@10"
   }
 }

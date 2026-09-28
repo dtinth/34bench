@@ -5,7 +5,9 @@
     "jsr:@std/cli@1": "1.0.32",
     "jsr:@std/dotenv@0.225": "0.225.8",
     "jsr:@std/encoding@1": "1.0.11",
-    "jsr:@std/internal@^1.0.12": "1.0.14"
+    "jsr:@std/internal@^1.0.12": "1.0.14",
+    "npm:preact-render-to-string@6": "6.7.0_preact@10.29.8",
+    "npm:preact@10": "10.29.8_preact-render-to-string@6.7.0"
   },
   "jsr": {
     "@std/assert@1.0.19": {
@@ -26,5 +28,27 @@
     "@std/internal@1.0.14": {
       "integrity": "291516b3d4c35024d6ffbc0a9df5bf4c64116e05b50012cf846710152d2ffdf7"
     }
+  },
+  "npm": {
+    "preact-render-to-string@6.7.0_preact@10.29.8": {
+      "integrity": "sha512-Z4WR8fmLMRpdYqJ9i7vrlXSsSrxVJydwrkEXHapexfARbWfGb7vGcnvNQnIzN0cXciMVOlz/XLoiMCi9gUsy9Q==",
+      "dependencies": [
+        "preact"
+      ]
+    },
+    "preact@10.29.8_preact-render-to-string@6.7.0": {
+      "integrity": "sha512-ej2aVZ+vZ8WO7tvlQWRM9N63A0KzF9q4mWJfDUHgYaIofWY9hu74QdnQrjoPMmZi2/nZ5gN0bJCQF49xQqx09Q==",
+      "dependencies": [
+        "preact-render-to-string"
+      ],
+      "optionalPeers": [
+        "preact-render-to-string"
+      ]
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:preact@10"
+    ]
   }
 }

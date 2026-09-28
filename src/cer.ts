@@ -21,9 +21,22 @@ export function stripMarkup(text: string): string {
     .replace(/\*+|__+/g, "");
 }
 
-/** Remove markup, then collapse runs of whitespace into one space and trim the ends. */
+/**
+ * Prepare text for scoring:
+ * - remove markup;
+ * - make all dashes the same, because a typewriter dash can look like "-" or "–";
+ * - remove dot leaders (3 or more "." or any "…"), because models write different numbers of dots
+ *   for a dotted line;
+ * - collapse runs of whitespace into one space and trim the ends.
+ *
+ * Thai and Arabic digits are not made the same, because the document uses both.
+ */
 export function normalize(text: string): string {
-  return stripMarkup(text).replace(/\s+/g, " ").trim();
+  return stripMarkup(text)
+    .replace(/[‐-―−]/g, "-")
+    .replace(/\.{3,}|…+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 export type DiffOp =
@@ -83,6 +96,38 @@ export function align(expected: string, actual: string): Alignment {
     }
   }
   return { distance: d[n][m], ops: reversed.reverse() };
+}
+
+/**
+ * Make a diff easier to read: an equal part that is shorter than `minEqual` graphemes, between two
+ * changes, becomes part of the changes. Then each group of changes is shown as one delete and one
+ * insert. This is for display only; it does not change the distance.
+ */
+export function cleanupOps(ops: DiffOp[], minEqual = 3): DiffOp[] {
+  const out: DiffOp[] = [];
+  let del = "";
+  let ins = "";
+  const flush = () => {
+    if (del) out.push({ type: "delete", text: del });
+    if (ins) out.push({ type: "insert", text: ins });
+    del = ins = "";
+  };
+  ops.forEach((op, i) => {
+    if (op.type === "delete") del += op.text;
+    else if (op.type === "insert") ins += op.text;
+    else {
+      const between = (del || ins) && i < ops.length - 1;
+      if (between && graphemes(op.text).length < minEqual) {
+        del += op.text;
+        ins += op.text;
+      } else {
+        flush();
+        out.push(op);
+      }
+    }
+  });
+  flush();
+  return out;
 }
 
 /**
