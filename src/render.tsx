@@ -18,7 +18,7 @@ const W = {
   rank: 36,
   model: 210,
   best: 64,
-  median: 72,
+  median: 80,
   worst: 64,
   time: 70,
   cost: 80,
@@ -54,7 +54,7 @@ tr.truth td { border-bottom: 2px solid #8c959f; }
 .ins { background: #ffd7d5; color: #82071e; }
 .miss { display: inline-block; width: 4px; height: 14px; margin: 0 1px; vertical-align: -2px;
   border-radius: 1px; background: #cf222e; }
-.cer { font-size: 13px; font-weight: 400; color: #57606a; }
+.cer { font-size: 13px; font-weight: 400; color: #57606a; white-space: nowrap; }
 .cer.median { font-size: 16px; font-weight: 700; color: #1f2328; }
 .remarks { font-size: 12px; line-height: 17px; color: #57606a; }
 .empty { color: #8c959f; font-style: italic; }
@@ -272,7 +272,11 @@ async function main() {
                 </td>
                 <td class="num">{(m.meta.durationMs / 1000).toFixed(1)} s</td>
                 <td class="num">
-                  {m.costThb === null ? "—" : `฿${m.costThb.toFixed(m.costThb < 1 ? 3 : 2)}`}
+                  {m.costThb === null
+                    ? "—"
+                    : m.costThb === 0
+                    ? "Free"
+                    : `฿${m.costThb.toFixed(m.costThb < 1 ? 3 : 2)}`}
                 </td>
                 {COLUMNS.map((k) => (
                   <td>

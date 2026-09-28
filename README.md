@@ -20,7 +20,8 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
 - Each model gets [`route34.png`](data/route34/route34.png) and this prompt (see
   [`src/run.ts`](src/run.ts)): "Transcribe this image into a Markdown document. Output only the
   Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description
-  of the figure inside it." OCR services (Paxa, iApp) get only the image.
+  of the figure inside it." OCR services (Paxa, iApp) get only the image. Typhoon OCR gets its own
+  prompt and image size, as its official client sends them (see [`src/typhoon.ts`](src/typhoon.ts)).
 - From each response, the header, forward trip, return trip, and footer are extracted into
   `extracted.json`. The map (section 2) is not scored. See
   [`results/README.md`](results/README.md#extraction-rules).
@@ -41,6 +42,7 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
 deno task run --model google/gemini-3.8-flash --runs 3                # OpenRouter
 deno task paxa --runs 3                                              # Paxa Labs OCR
 deno task iapp --runs 3                                              # iApp OCR
+deno task typhoon --runs 3                                           # Typhoon OCR
 deno task test                                                       # check extracted.json
 deno run --allow-read src/score.ts                                   # print scores
 deno task render                                                     # write results.svg
@@ -49,4 +51,5 @@ deno task render                                                     # write res
 Remarks for the table are in [`results/remarks.json`](results/remarks.json). The table uses the
 [Sarabun](fonts/) font, embedded in the SVG.
 
-API keys are read from `.env`: `OPENROUTER_API_KEY`, `PAXA_API_KEY`, `IAPP_API_KEY`.
+API keys are read from `.env`: `OPENROUTER_API_KEY`, `PAXA_API_KEY`, `IAPP_API_KEY`,
+`TYPHOON_API_KEY`.

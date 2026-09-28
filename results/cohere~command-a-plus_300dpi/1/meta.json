@@ -1,0 +1,35 @@
+{
+  "model": "cohere/command-a-plus",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "300dpi",
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-28T18:06:06.661Z",
+  "durationMs": 384875,
+  "cost": 0.025337367,
+  "usage": {
+    "prompt_tokens": 3381,
+    "completion_tokens": 16386,
+    "total_tokens": 19767,
+    "cost": 0.025337367,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0255933,
+      "upstream_inference_prompt_cost": 0.0010143,
+      "upstream_inference_completions_cost": 0.024579
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22551,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Cohere",
+  "finishReason": "length"
+}

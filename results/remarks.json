@@ -10,5 +10,14 @@
   "qwen~qwen3.8-flash": "Most of the text is made up. Some runs are a different document.",
   "qwen~qwen3.8-27b+alibaba": "Most of the text is made up. Some runs are a different document.",
   "iapp~document-ocr": "OCR service. Plain text output (no Markdown). No prompt. Same output in all runs.",
-  "paxa~paxa-ocr-lite-v1": "OCR service. No prompt. Same output in all runs."
+  "paxa~paxa-ocr-lite-v1": "OCR service. No prompt. Same output in all runs.",
+  "typhoon~typhoon-ocr": "OCR model. Uses its own prompt and a 1800 px image, as its official client does. Free API (rate limited).",
+  "cohere~command-a-plus_300dpi": "Rejects the full-size image (more than 20 million pixels), so it gets the 300 dpi copy. No answer: the reasoning reached the 16,384-token limit. 1 run so far.",
+  "x-ai~grok-4.7": "1 run so far.",
+  "qwen~qwen3.8-omni-flash": "A different, made-up document (a water-pipe project). 1 run so far.",
+  "meta~muse-spark-1.3-contributor": "1 run so far.",
+  "meta~muse-spark-1.3": "1 run so far.",
+  "z-ai~glm-5.3-flash+z-ai": "No answer: the reasoning reached the 16,384-token limit. 1 run so far.",
+  "bytedance-seed~seed-2-1-turbo": "Much of the text is made up. 1 run so far.",
+  "moonshotai~kimi-k3+moonshotai": "A different, made-up document. 1 run so far."
 }

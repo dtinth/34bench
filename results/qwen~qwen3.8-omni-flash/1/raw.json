@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790618310-ty2LopsfCwwDRJbcWGKO",
+  "object": "chat.completion",
+  "created": 1790618310,
+  "model": "qwen/qwen3.8-omni-flash",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แผนก่อสร้างโครงการประปาภายในเขตเทศบาลเมืองพังงา จังหวัดพังงา\nหมวด 1 ทางที่ 34 ฝางลึก – ถนนเพชรเกษม – หัวว่าโทะ ระยะทาง 32 กม.\nสร้างรับงบประมาณ กรมทางหลวงชนบท\n\n1. รายละเอียดแนวแปลง\n\n**ปัจจุบัน**\nเริ่มจากที่ว่าการอำเภอ (เชิงสะพานเกาะสิรุธ) ไปตามถนนสายโพธิ์ ถึงอนุสาวรีย์ท้าวเทพกระษัตรี ท้าวศรีสุนทร แล้วไปออกถนนหมายเลข 4 เพื่อเข้าเมืองหัวว่าโทะ\n\n**อนาคต**\nเริ่มจากหัวว่าโทะ ไปตามถนนทุ่งเจดีย์ แล้วไปออกถนนเมืองใหม่ เลี้ยวขวาไปตามถนนตรีเทพ แล้วไปออกถนนตรีเมฆ เลี้ยวขวาไปตามถนนหมายเลข 4 แล้วไปออกตามทางเดิม ถึงฝางลึก\n\n2. แผนที่สังเขป\n\n<figure>\nแผนที่แสดงแนวสายท่อประปาวิ่งจาก “ฝางลึก” (ด้านบน) ลงมาทางใต้ ผ่าน “อ.อนุสาวรีย์ท้าวเทพกระษัตรี ท้าวศรีสุนทร”, “อ.โพธิ์”, “สะพานโคกกลอย”, “อ.อนุสาวรีย์ท้าวศรีสุนทร”, “สะพานควน”, “ต.โคกกลอย”, “ถนนเพชรเกษม”, “อ.ถา”, “ถนนหมายเลข 4”, “อ.ท้ายเหมือง” จนถึง “หัวว่าโทะ” (ด้านล่าง) โดยมีเส้นแบ่งเป็น “ไปตำบลโพธิ์” และ “ไปบางตะกั่ว”\n</figure>\n\n(บ.)",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a Thai document containing text and a map/diagram. I need to preserve the structure: header lines, numbered sections with subheadings (ปัจจุบัน/อนาคต), body paragraphs, and then a figure section (แผนที่สังเขป) which I will represent as an HTML figure element describing the map. The text is typewritten Thai, somewhat faded. Let me transcribe carefully.\n\nHeader: \"แผนก่อสร้างโครงการประปาภายในเขตเทศบาลเมือง... จังหวัดพังงา\" roughly. Then \"หมวด 1 ทางที่ 34 ฝั่งลึก - ถนนเพชรเกษม - หัวว่าโทะ ระยะทาง 32 กม.\" Then \"สร้างรับงบประมาณ กรมทางหลวงชนบท\".\n\nSection 1: รายละเอียดแนวแปลง\nปัจจุบัน: เริ่มจากที่ว่าการอำเภอ (เชิงสะพานเกาะสิรุธ) ไปตามถนนสายโพธิ์ ถึงอนุสาวรีย์ท้าวเทพกระษัตรี ท้าวศรีสุนทร แล้วไปออกถนนหมายเลข 4 เพื่อเข้าเมืองหัวว่าโทะ (approx)\nอนาคต: เริ่มจากหัวว่าโทะ ไปตามถนนทุ่งเจดีย์ แล้วไปออกถนนเมืองใหม่ เลี้ยวขวาไป... ถนนตรีเทพ แล้วไปออกถนนตรีเมฆ เลี้ยวขวาไปตามถนนหมายเลข 4 แล้วไปออกตามทางเดิม ถึงฝั่งลึก\n\nSection 2: แผนที่สังเขป -> figure.\n\nI'll produce a reasonable transcription. Given image quality, some words are uncertain but I'll do my best.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a Thai document containing text and a map/diagram. I need to preserve the structure: header lines, numbered sections with subheadings (ปัจจุบัน/อนาคต), body paragraphs, and then a figure section (แผนที่สังเขป) which I will represent as an HTML figure element describing the map. The text is typewritten Thai, somewhat faded. Let me transcribe carefully.\n\nHeader: \"แผนก่อสร้างโครงการประปาภายในเขตเทศบาลเมือง... จังหวัดพังงา\" roughly. Then \"หมวด 1 ทางที่ 34 ฝั่งลึก - ถนนเพชรเกษม - หัวว่าโทะ ระยะทาง 32 กม.\" Then \"สร้างรับงบประมาณ กรมทางหลวงชนบท\".\n\nSection 1: รายละเอียดแนวแปลง\nปัจจุบัน: เริ่มจากที่ว่าการอำเภอ (เชิงสะพานเกาะสิรุธ) ไปตามถนนสายโพธิ์ ถึงอนุสาวรีย์ท้าวเทพกระษัตรี ท้าวศรีสุนทร แล้วไปออกถนนหมายเลข 4 เพื่อเข้าเมืองหัวว่าโทะ (approx)\nอนาคต: เริ่มจากหัวว่าโทะ ไปตามถนนทุ่งเจดีย์ แล้วไปออกถนนเมืองใหม่ เลี้ยวขวาไป... ถนนตรีเทพ แล้วไปออกถนนตรีเมฆ เลี้ยวขวาไปตามถนนหมายเลข 4 แล้วไปออกตามทางเดิม ถึงฝั่งลึก\n\nSection 2: แผนที่สังเขป -> figure.\n\nI'll produce a reasonable transcription. Given image quality, some words are uncertain but I'll do my best.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1352,
+    "completion_tokens": 628,
+    "total_tokens": 1980,
+    "cost": 0.0004929804,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00049796,
+      "upstream_inference_prompt_cost": 0.0002028,
+      "upstream_inference_completions_cost": 0.00029516
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 299,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
