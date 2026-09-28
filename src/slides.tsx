@@ -358,7 +358,7 @@ function GroundTruthSlide({ gt, half, cards, configs }: {
         height={h}
         style={{ left: `${M}px`, top: `${top}px` }}
       />
-      {configs && <ConfigList configs={configs} top={h + 44} />}
+      {configs && <ConfigList configs={configs} top={h + 76} />}
       {(Object.keys(cards) as Column[]).map((c) => {
         const [l, t, r, b] = boxes[c];
         const pos = cards[c]!;
@@ -745,13 +745,13 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .gt-slide .rays { z-index: 6; }
 .config-list { position: absolute; left: ${M}px; right: ${M}px; z-index: 2; }
 .config-list h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 14px; }
+  color: var(--muted); margin-bottom: 22px; }
 .config-list ol { list-style: none; columns: 3; column-gap: 28px; }
 .config-list li { font-size: 16.5px; line-height: 24px; padding: 5px 0; break-inside: avoid;
   border-bottom: 1px solid var(--line); }
 .config-list .vendor { color: var(--muted); }
 .config-list b { font-weight: 700; }
-.config-list .links { margin-top: 22px; font-size: 16px; line-height: 1.6; color: var(--soft); }
+.config-list .links { margin-top: 36px; font-size: 16px; line-height: 1.6; color: var(--soft); }
 .config-list .links a { color: var(--ink); font-weight: 700; text-decoration: none;
   border-bottom: 3px solid var(--lime); }
 .config-list .tag { display: inline-block; margin-left: 6px; font-size: 11.5px; line-height: 18px;
