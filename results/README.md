@@ -1,7 +1,7 @@
 # Results
 
 One directory for each model and parameter combination, named `<provider>~<model>@<effort>`. Each
-combination is run 5 times, in the subdirectories `1` to `5`. Each run has these files:
+combination is run up to 3 times, in the subdirectories `1` to `3`. Each run has these files:
 
 | File             | Description                                                                      |
 | ---------------- | -------------------------------------------------------------------------------- |

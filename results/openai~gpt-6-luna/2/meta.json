@@ -1,0 +1,35 @@
+{
+  "model": "openai/gpt-6-luna",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-28T14:30:38.060Z",
+  "durationMs": 72680,
+  "cost": 0.0056380995,
+  "usage": {
+    "prompt_tokens": 41229,
+    "completion_tokens": 1083,
+    "total_tokens": 42312,
+    "cost": 0.0056380995,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 41226,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00569505,
+      "upstream_inference_prompt_cost": 0.00515355,
+      "upstream_inference_completions_cost": 0.0005415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1034,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Azure",
+  "finishReason": "stop"
+}

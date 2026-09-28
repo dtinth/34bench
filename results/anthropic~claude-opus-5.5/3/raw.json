@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790605793-sodBr1a48gsSHDmrJzqc",
+  "object": "chat.completion",
+  "created": 1790605793,
+  "model": "anthropic/claude-opus-5.5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "# เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานคร และจังหวัดที่มีเขตต่อเนื่อง\n\n**หมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.**\n\n**สำหรับองค์การขนส่งมวลชนกรุงเทพ**\n\n---\n\n1. <u>รายละเอียดเส้นทาง</u>\n\n<u>เที่ยวไป</u>\n\nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานเก่ามิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n<u>เที่ยวกลับ</u>\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนน**รองเมือง เลี้ยวขวาไป**ตามถนนเจริญเมือง เลี้ยวขวาไปตามถนน**จรัสเมือง เลี้ยวซ้าย**ไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. <u>แผนที่สังเขป</u>\n\n<figure>\nA hand-drawn sketch map of the bus route. The route is drawn as a double line running diagonally from Rangsit (รังสิต) at the top right, south-west along Phahonyothin Road (ถนนพหลโยธิน), past Lak Si Monument (อนุสาวรีย์หลักสี่, marked with a circle), where a dashed cross road labelled Vibhavadi Rangsit Road (ถนนวิภาวดีรังสิต) runs toward Nonthaburi (ไปนนทบุรี) and Minburi (ไปมีนบุรี). Further south it passes Lat Phrao (ลาดพร้าว), with a road branching toward Bang Kapi (ไปบางกะปิ), then Saphan Khwai (สะพานควาย), and reaches Victory Monument (อนุสาวรีย์ชัยฯ, marked with a circle). The route continues along Phaya Thai Road (ถนนพญาไท / ถ.พญาไท) to Rama 4 Road (ถนนพระราม 4) and ends at Hua Lamphong (หัวลำโพง). A small loop near Hua Lamphong shows the return route via ถ.รองเมือง, ถ.เจริญเมือง and ถ.จรัสเมือง, with handwritten labels and arrows. Numerous dashed lines indicate cross streets.\n</figure>\n\n---\n\nแนบท้ายใบอนุญาตประกอบการขนส่ง ...\n\nที่ ......(2)......\n\n...... พ.ศ. 2522\n\n...............\n\n(ลงชื่อ) ...............",
+        "refusal": null,
+        "reasoning": "This looks like a Thai document detailing bus route 34, running from Rangsit through Phahonyothin Road to Hua Lamphong, covering 32 km, operated by the Bangkok Mass Transit Authority. I'm working through the route details, starting with the outbound trip description.\n\nThe outbound journey passes Victory Monument and Phaya Thai Road, turning onto Rama IV Road to end at Hua Lamphong railway station. The return trip starts at Hua Lamphong, follows Rong Mueang, Charoen Mueang, and Jarat Mueang roads before rejoining Rama IV Road back toward Rangsit. There's also a simplified route map showing landmarks like Rangsit, Vibhavadi Rangsit Road, Lak Si Monument, Phahonyothin Road, Lat Phrao, Saphan Khwai, and Victory Monument.\n\nI'm looking at a faint stamp at the bottom that appears to be an attachment notice referencing a transport operating license, though the exact wording including dates and issuing authority is too unclear to render with confidence, so I'll present it as a tentative approximation.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "This looks like a Thai document detailing bus route 34, running from Rangsit through Phahonyothin Road to Hua Lamphong, covering 32 km, operated by the Bangkok Mass Transit Authority. I'm working through the route details, starting with the outbound trip description.\n\nThe outbound journey passes Victory Monument and Phaya Thai Road, turning onto Rama IV Road to end at Hua Lamphong railway station. The return trip starts at Hua Lamphong, follows Rong Mueang, Charoen Mueang, and Jarat Mueang roads before rejoining Rama IV Road back toward Rangsit. There's also a simplified route map showing landmarks like Rangsit, Vibhavadi Rangsit Road, Lak Si Monument, Phahonyothin Road, Lat Phrao, Saphan Khwai, and Victory Monument.\n\nI'm looking at a faint stamp at the bottom that appears to be an attachment notice referencing a transport operating license, though the exact wording including dates and issuing authority is too unclear to render with confidence, so I'll present it as a tentative approximation.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "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"
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 2220,
+    "total_tokens": 7045,
+    "cost": 0.063063,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0637,
+      "upstream_inference_prompt_cost": 0.0193,
+      "upstream_inference_completions_cost": 0.0444
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1141,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

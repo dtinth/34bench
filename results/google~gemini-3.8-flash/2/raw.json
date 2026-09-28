@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790605785-k6JiDaPWIrXydG4qmVgA",
+  "object": "chat.completion",
+  "created": 1790605785,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางหมวด 1 ในเขตกรุงเทพมหานครและจังหวัดที่มีเส้นทางต่อเนื่อง  \nหมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง ระยะทาง 32 กม.  \nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. <ins>รายละเอียดเส้นทาง</ins>  \n<u>เที่ยวไป</u>  \nเริ่มจากตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง  \n<u>เที่ยวกลับ</u>  \nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจารุเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. <ins>แผนที่สังเขป</ins>\n\n<figure>\nA hand-drawn route map diagram illustrating bus route 34 in Bangkok, Thailand, from Rangsit (รังสิต) in the north down to Hua Lamphong (หัวลำโพง) in the south.\n\nKey locations, intersections, and street names marked along the route from top to bottom include:\n- รังสิต (Rangsit) at the northern terminal\n- ถนนวิภาวดีรังสิต (Thanon Vibhavadi Rangsit) branching off\n- อนุสาวรีย์หลักสี่ (Lak Si Monument)\n- ไปนนทบุรี (To Nonthaburi) indication\n- ถนนพหลโยธิน (Thanon Phahonyothin) running centrally\n- ไปมีนบุรี (To Min Buri) indication\n- ลาดพร้าว (Lat Phrao)\n- ไปบางกะปิ (To Bang Kapi) indication\n- สะพานควาย (Saphan Khwai)\n- อนุสาวรีย์ชัยฯ (Victory Monument)\n- ถ.ปทุมวัน / จ.ปทุมวัน (Pathum Wan)\n- ถนนพญาไท (Thanon Phaya Thai)\n- ถ.รองเมือง (Thanon Rong Mueang)\n- ถนนพระราม 4 (Thanon Rama IV)\n- หัวลำโพง (Hua Lamphong) terminus loop with local streets (ถนนเจริญเมือง, ถนนจารุเมือง)\n</figure>\n\nเอกสารแนบท้ายใบอนุญาตประกอบการขนส่ง  \nสายที่ 34 (6)  \nแผ่นที่ 1 ในจำนวน 1 แผ่น (พ.ศ. 2521)  \nกองวิชาการและวางแผน",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "signature": "AY89a18bI7+MZJmBMU5ofV90yfMYISNDZhE+ZNfUhZXaw9X9AZX+jg3EeNIUFPptXkDoIdgpSzLEjMM0NJx7+WOW9fHth1dcowhCV7EbfvlG7fxZBA==",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 600,
+    "total_tokens": 1730,
+    "cost": 0.003066525,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030975,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.00225
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

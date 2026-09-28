@@ -24,18 +24,19 @@ const W = {
   forward: 440,
   return: 440,
   footer: 300,
+  remarks: 220,
 };
 const PAD = 8;
 const FONT_SIZE = 13;
 const LINE_HEIGHT = 20;
 /** A safe upper estimate of the average width of one grapheme, in pixels. */
-const GRAPHEME_WIDTH = 7.6;
+const GRAPHEME_WIDTH = 7.8;
 
 const WIDTH = Object.values(W).reduce((a, b) => a + b, 0);
 
 const CSS = `
 * { box-sizing: border-box; }
-.t { font-family: "Noto Sans Thai", "Sarabun", "Thonburi", "Leelawadee UI", sans-serif;
+.t { font-family: "Sarabun", sans-serif;
   font-size: ${FONT_SIZE}px; line-height: ${LINE_HEIGHT}px; color: #1f2328; background: #fff;
   width: ${WIDTH}px; }
 table { border-collapse: collapse; table-layout: fixed; width: ${WIDTH}px; }
@@ -52,7 +53,10 @@ tr.truth td { border-bottom: 2px solid #8c959f; }
 .runs { font-size: 11px; color: #57606a; }
 .runs b { color: #1f2328; text-decoration: underline; }
 .ins { background: #ffd7d5; color: #82071e; }
-.del { background: #d1f0da; color: #116329; text-decoration: line-through; }
+.miss { display: inline-block; width: 4px; height: 14px; margin: 0 1px; vertical-align: -2px;
+  border-radius: 1px; background: #1a7f37; }
+.nofooter { font-size: 11px; color: #57606a; }
+.remarks { font-size: 12px; line-height: 17px; color: #57606a; }
 .empty { color: #8c959f; font-style: italic; }
 .legend { padding: ${PAD}px; font-size: 12px; color: #57606a; }
 img { display: block; width: 100%; }
@@ -73,6 +77,10 @@ function describe(config: string) {
   return { name: m[1].replace("~", "/"), tags };
 }
 
+/**
+ * The model's own text. Wrong or extra text is red. Where ground truth text is missing, a small
+ * green marker is shown instead of the missing text.
+ */
 function Diff({ run, column }: { run: RunScore; column: Column }) {
   const { ops, actual } = run.columns[column];
   if (!actual) return <span class="empty">(empty)</span>;
@@ -81,10 +89,33 @@ function Diff({ run, column }: { run: RunScore; column: Column }) {
       {cleanupOps(ops).map((op) =>
         op.type === "equal"
           ? op.text
-          : <span class={op.type === "insert" ? "ins" : "del"}>{op.text}</span>
+          : op.type === "insert"
+          ? <span class="ins">{op.text}</span>
+          : <span class="miss" />
       )}
     </>
   );
+}
+
+/** Embed the Sarabun font. An SVG in an <img> cannot load web fonts. */
+async function fontFaces(root: URL) {
+  const ranges: Record<string, string> = {
+    thai: "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC",
+    latin: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, " +
+      "U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+  };
+  let css = "";
+  for (const subset of ["thai", "latin"]) {
+    for (const weight of [400, 600, 700]) {
+      const bytes = await Deno.readFile(
+        new URL(`fonts/sarabun-${subset}-${weight}-normal.woff2`, root),
+      );
+      css += `@font-face { font-family: "Sarabun"; font-weight: ${weight}; ` +
+        `src: url(data:font/woff2;base64,${encodeBase64(bytes)}) format("woff2"); ` +
+        `unicode-range: ${ranges[subset]}; }\n`;
+    }
+  }
+  return css;
 }
 
 /** Estimate the height of a text cell. */
@@ -103,6 +134,10 @@ function Row(
 async function main() {
   const root = new URL("../", import.meta.url);
   const configs: ConfigScore[] = await loadScores(root);
+  const remarks: Record<string, string> = JSON.parse(
+    await Deno.readTextFile(new URL("results/remarks.json", root)),
+  );
+  const fonts = await fontFaces(root);
   const truth = configs[0].median.columns;
 
   const crops = {} as Record<Column, { src: string; height: number }>;
@@ -128,8 +163,12 @@ async function main() {
     };
   }
 
-  const rowHeight = (texts: Record<Column, string>) =>
-    Math.max(3 * LINE_HEIGHT + 2 * PAD, ...COLUMNS.map((c) => textHeight(texts[c], W[c])));
+  const rowHeight = (texts: Record<Column, string>, remark = "") =>
+    Math.max(
+      3 * LINE_HEIGHT + 2 * PAD,
+      ...COLUMNS.map((c) => textHeight(texts[c], W[c])),
+      Math.ceil(textHeight(remark, W.remarks) * 17 / LINE_HEIGHT),
+    );
 
   const legendHeight = LINE_HEIGHT + 2 * PAD;
   const headHeight = LINE_HEIGHT + 2 * PAD + 1;
@@ -138,11 +177,15 @@ async function main() {
     Object.fromEntries(COLUMNS.map((c) => [c, truth[c].expected])) as Record<Column, string>,
   );
   const rows = configs.map((c) => {
-    // A diff shows both the wrong text and the missing text, so it is longer than either.
+    // The cell shows the model's own text, plus one narrow marker for each missing part.
     const texts = Object.fromEntries(
-      COLUMNS.map((k) => [k, cleanupOps(c.median.columns[k].ops).map((o) => o.text).join("")]),
+      COLUMNS.map((k) => [
+        k,
+        cleanupOps(c.median.columns[k].ops).map((o) => o.type === "delete" ? "ii" : o.text)
+          .join(""),
+      ]),
     ) as Record<Column, string>;
-    return { c, height: rowHeight(texts) };
+    return { c, height: rowHeight(texts, remarks[c.config] ?? "") };
   });
   const height = legendHeight + headHeight + imageHeight + truthHeight +
     rows.reduce((a, r) => a + r.height, 0);
@@ -155,12 +198,12 @@ async function main() {
       }
       class="t"
     >
-      <style>{CSS}</style>
+      <style>{fonts + CSS}</style>
       <div class="legend" style={{ height: `${legendHeight}px` }}>
         34bench: transcription of the Bangkok bus route 34 document. Ranked by character error rate
         (CER, lower is better) of the median run. <span class="ins">Red</span>: wrong or extra text.
         {" "}
-        <span class="del">Green</span>: missing text. Prices in THB (1 USD = 35 THB).
+        <span class="miss" />: missing text. Prices in THB (1 USD = 35 THB).
       </div>
       <table>
         <colgroup>
@@ -174,6 +217,7 @@ async function main() {
             <th class="num">Time</th>
             <th class="num">Cost</th>
             {COLUMNS.map((c) => <th>{LABELS[c]}</th>)}
+            <th>Remarks</th>
           </Row>
         </thead>
         <tbody>
@@ -191,6 +235,7 @@ async function main() {
                 />
               </td>
             ))}
+            <td></td>
           </Row>
           <Row cls="truth" height={truthHeight}>
             <td></td>
@@ -199,6 +244,7 @@ async function main() {
             <td></td>
             <td></td>
             {COLUMNS.map((c) => <td>{truth[c].expected}</td>)}
+            <td></td>
           </Row>
           {rows.map(({ c, height }, i) => {
             const { name, tags } = describe(c.config);
@@ -212,6 +258,7 @@ async function main() {
                 </td>
                 <td>
                   <div class="cer">{percent(m.cer)}</div>
+                  <div class="nofooter">without footer: {percent(m.cerNoFooter)}</div>
                   {c.runs.length > 1 && (
                     <div class="runs">
                       {c.runs.map((r, j) => (
@@ -232,6 +279,7 @@ async function main() {
                     <Diff run={m} column={k} />
                   </td>
                 ))}
+                <td class="remarks">{remarks[c.config] ?? ""}</td>
               </Row>
             );
           })}

@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790605768-HTufxnDCeqSkXMljyUrk",
+  "object": "chat.completion",
+  "created": 1790605768,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "provider": "DeepSeek",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แนบท้ายโครงการการจ้างออกแบบและวางแผนแม่บทและผังแม่บท เพื่อการฟื้นฟูและพัฒนาเมืองเก่า\nขนาด 1 : 1,000,000 (จังหวัดนครศรีธรรมราช - จังหวัดพัทลุง - จังหวัดสงขลา)\nรายละเอียดโครงการและขอบเขตงาน\n\n1. ความเป็นมาและความสำคัญ\nความเป็นมา\nเนื่องจากจังหวัดนครศรีธรรมราช (เดิมชื่อเมืองลิกอร์) ในอดีตเป็นเมืองท่าที่สำคัญ\nบนคาบสมุทรไทย เคยเป็นศูนย์กลางการค้าและเป็นเมืองท่าที่ติดต่อกับต่างประเทศ\nความเป็นมา\nเนื่องจากเมืองนครศรีธรรมราช มีความเจริญรุ่งเรืองมาตั้งแต่อดีต ทำให้มี\nศาสนสถานและโบราณสถานที่สำคัญเป็นจำนวนมาก กระจายอยู่ทั่วไปในเขตเทศบาล\nนครศรีธรรมราช\n\n2. วัตถุประสงค์\n<figure>\n  <img src=\"https://via.placeholder.com/400x300?text=Map+of+Nakhon+Si+Thammarat\" alt=\"แผนที่แสดงโบราณสถานในเขตเทศบาลนครศรีธรรมราช\">\n  <figcaption>แผนที่แสดงโบราณสถานในเขตเทศบาลนครศรีธรรมราช</figcaption>\n</figure>\n\n---\n(ลงชื่อ)......................................................ผู้เสนอ\n(นายสุชาติ สุขสวัสดิ์)\nประธานคณะทำงานฯ\n(ลงชื่อ)......................................................ผู้เห็นชอบ\n(นายแพทย์...)\nที่ปรึกษา...\n(ลงชื่อ)......................................................ผู้อนุมัติ\n(นาย...)\nผู้ว่าราชการจังหวัดนครศรีธรรมราช",
+        "refusal": null,
+        "reasoning": "Oh, I need to extract the text from the image.\nThe image shows a scanned document with Thai text, likely a formal report or technical paper. The text is clear and well-aligned, no rotation or blur issues. There are two main sections: a header with project details and a figure caption, followed by numbered sections with descriptions. The figure is a simple line drawing with labels in Thai. I'll transcribe the text accurately, ensuring the Markdown structure preserves the original formatting. The user requested only Markdown output with HTML `<figure>` elements for each image, so I'll embed the figure description inside the `<figure>` tag. I will output only the Markdown, no commentary.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Oh, I need to extract the text from the image.\nThe image shows a scanned document with Thai text, likely a formal report or technical paper. The text is clear and well-aligned, no rotation or blur issues. There are two main sections: a header with project details and a figure caption, followed by numbered sections with descriptions. The figure is a simple line drawing with labels in Thai. I'll transcribe the text accurately, ensuring the Markdown structure preserves the original formatting. The user requested only Markdown output with HTML `<figure>` elements for each image, so I'll embed the figure description inside the `<figure>` tag. I will output only the Markdown, no commentary.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1071,
+    "completion_tokens": 502,
+    "total_tokens": 1573,
+    "cost": 0.00032683662,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 896,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000330138,
+      "upstream_inference_prompt_cost": 0.000028938,
+      "upstream_inference_completions_cost": 0.0003012
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 140,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

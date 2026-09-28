@@ -1,0 +1,17 @@
+{
+  "model": "paxa/paxa-ocr-lite-v1",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": null,
+  "date": "2026-09-28T14:29:35.860Z",
+  "durationMs": 10449,
+  "cost": null,
+  "credits": 6.5,
+  "usage": {
+    "pages": 1,
+    "credits": 6.5
+  },
+  "provider": "Paxa Labs",
+  "finishReason": null
+}

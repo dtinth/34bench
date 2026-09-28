@@ -29,19 +29,24 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
   cluster (`Intl.Segmenter`), so a Thai mark counts with its base character. Before scoring, markup
   is removed, all dashes are the same, dot leaders are removed, and whitespace is collapsed. Thai
   and Arabic digits are different.
-- Each configuration can have up to 5 runs. The table shows the run with the median CER.
+- Each model runs with its default reasoning effort. Each configuration has 3 runs (1 for the most
+  expensive models). The table shows the run with the median CER, and also the CER without the
+  footer.
 - Prices are in THB: 1 USD = 35 THB; Paxa: 329 THB per 10,000 credits; iApp: 1.25 THB per IC (list
   prices).
 
 ## Commands
 
 ```sh
-deno task run --model google/gemini-3.8-flash --effort low --runs 5   # OpenRouter
-deno task paxa --runs 1                                              # Paxa Labs OCR
-deno task iapp --runs 1                                              # iApp OCR
+deno task run --model google/gemini-3.8-flash --runs 3                # OpenRouter
+deno task paxa --runs 3                                              # Paxa Labs OCR
+deno task iapp --runs 3                                              # iApp OCR
 deno task test                                                       # check extracted.json
 deno run --allow-read src/score.ts                                   # print scores
 deno task render                                                     # write results.svg
 ```
+
+Remarks for the table are in [`results/remarks.json`](results/remarks.json). The table uses the
+[Sarabun](fonts/) font, embedded in the SVG.
 
 API keys are read from `.env`: `OPENROUTER_API_KEY`, `PAXA_API_KEY`, `IAPP_API_KEY`.

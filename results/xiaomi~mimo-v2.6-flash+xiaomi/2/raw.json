@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790605770-pLPrXqN6NtXtA5XyHsNF",
+  "object": "chat.completion",
+  "created": 1790605770,
+  "model": "xiaomi/mimo-v2.6-flash",
+  "provider": "Xiaomi",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "...\n### 2. ส่วนประกอบของระบบ\n\n<figure>\nA schematic diagram of a pipeline or channel system, possibly related to irrigation or water transport, labeled in Thai. The diagram shows a long, winding channel connected to a tank or reservoir at the bottom left. Key components labeled include \"อ.ไชยแพ้\" (a location or pump station), \"คันเหมือง\" (levee/bank), \"งบ.ส.ภาค 4\" (Project budget allocation), \"ต.คลองตาล\", \"ส่วนปากคันเหมือง\" (mouth of the channel), and \"น้ำทางเข้า\" (inlet water). The path is marked with \"ปากคันเหมือง\" (channel mouth) at various points along the length.\n</figure>\n...",
+        "refusal": null,
+        "reasoning": "The user wants a Markdown transcription of an image containing a technical document with a diagram.\nI need to identify the text sections and the central diagram.\nThe text appears to be in Thai.\nI will structure the output using Markdown headers and bullet points for the text sections.\nFor the diagram, I must use an HTML `<figure>` tag as requested.\nI will write a description of the diagram inside the `<figure>` tag, noting that it's a schematic of a pipeline or channel with various labels and component details.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a Markdown transcription of an image containing a technical document with a diagram.\nI need to identify the text sections and the central diagram.\nThe text appears to be in Thai.\nI will structure the output using Markdown headers and bullet points for the text sections.\nFor the diagram, I must use an HTML `<figure>` tag as requested.\nI will write a description of the diagram inside the `<figure>` tag, noting that it's a schematic of a pipeline or channel with various labels and component details.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4075,
+    "completion_tokens": 271,
+    "total_tokens": 4346,
+    "cost": 0.000092257704,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 4032,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0000931896,
+      "upstream_inference_prompt_cost": 0.0000173096,
+      "upstream_inference_completions_cost": 0.00007588
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

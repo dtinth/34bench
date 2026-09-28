@@ -7,7 +7,7 @@ export const PROMPT =
   "For each figure, write an HTML `<figure>` element with a description of the figure inside it.";
 
 /** Number of runs for each model and parameter combination. */
-export const RUNS = 5;
+export const RUNS = 3;
 
 /**
  * Output token limit. OpenRouter reserves credit for the full limit before the request, so a

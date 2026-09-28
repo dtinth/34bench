@@ -1,0 +1,14 @@
+{
+  "anthropic~claude-fable-5.1": "1 run (cost).",
+  "openai~gpt-6-astra": "1 run (cost).",
+  "openai~gpt-6-sol_300dpi": "Rejects the full-size image, so it gets the 300 dpi copy. In all runs, wrote placeholders such as \"[ข้อความจาง อ่านไม่ชัด]\" instead of text.",
+  "openai~gpt-6-luna": "Did not transcribe in any run: described the page as \"a technical line graph\", or wrote that the text is too faint.",
+  "deepseek~deepseek-v4.1-flash+deepseek": "All runs: a different, made-up document (for example, research on mango diseases).",
+  "xiaomi~mimo-v2.6-pro+xiaomi": "All runs: a different, made-up document (for example, a ring-road project).",
+  "xiaomi~mimo-v2.6-flash+xiaomi": "Run 1: no answer (the reasoning looped until the 16,384-token limit). Other runs: only \"...\", or a made-up document.",
+  "qwen~qwen3.8-max-0902": "Most of the text is made up. Some runs are a different document.",
+  "qwen~qwen3.8-flash": "Most of the text is made up. Some runs are a different document.",
+  "qwen~qwen3.8-27b+alibaba": "Most of the text is made up. Some runs are a different document.",
+  "iapp~document-ocr": "OCR service. Plain text output (no Markdown). No prompt. Same output in all runs.",
+  "paxa~paxa-ocr-lite-v1": "OCR service. No prompt. Same output in all runs."
+}

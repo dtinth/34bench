@@ -1,0 +1,35 @@
+{
+  "model": "openai/gpt-6-sol",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "300dpi",
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-28T14:30:30.713Z",
+  "durationMs": 31729,
+  "cost": 0.009111564,
+  "usage": {
+    "prompt_tokens": 10341,
+    "completion_tokens": 713,
+    "total_tokens": 11054,
+    "cost": 0.009111564,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10338,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0092036,
+      "upstream_inference_prompt_cost": 0.0020736,
+      "upstream_inference_completions_cost": 0.00713
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 516,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "OpenAI",
+  "finishReason": "stop"
+}

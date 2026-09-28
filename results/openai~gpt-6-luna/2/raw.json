@@ -1,0 +1,68 @@
+{
+  "id": "gen-1790605769-9UqEA2YyNkXUhTTpiDJF",
+  "object": "chat.completion",
+  "created": 1790605769,
+  "model": "openai/gpt-6-luna",
+  "provider": "Azure",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "[The text is too faint and distorted to transcribe reliably.]\n\n<figure>\nA technical diagram showing several parallel diagonal lines and smaller connecting or branching elements, with labels and annotations that are illegible.\n</figure>",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqunn5QAiJNBmC4HFNvdGp6kofRSPBPGvrUZ1aNTYTDPB0KOgEIp_xC-WP3HxXhVzRZsii2sHcF3j-Nso0f9PSnQ5CblktKJkvg8FfUJhRwLEKZMjySnmk7xQ3AcD6RyM8x1FtVmmlBNLGPbOiYukFQgQvriRYwkyUkvcYXCFQrCmjWYNUjeTpG6ojVfV6c8HV-JnDDP2LPrneJO1yBn3n41eM4TLjPdI6RPeYVK5unB8oveEcqW_BSje304kPf79evBNSUT9RByOrFdqj7u_cBNVDUfcFMngNNluVoRrf-OelL_OziGC8GZclRfryIcFecEtITX1eyKY0vKbL_C6boMgAir3N16MWKgo4fQaPbKB9vBc9lShQqlujTPrxTXO7z_UEO4IhuCZTmgU9CcA2O1erO8UQxQ5w1EcJWens1ic7OHsjRYc1RvIcrUBmh_O-uUlrj182PXidzys24B0PrTSPHeOfBXIMC603pZvGK6Yr_uIJkcS8vWF8M2rWu2q1bjajNdLoe079ZRtqckGKl5U1imI-ydUfGf7ARbgYE4GalhA9B4E1-26g59aIAfAtahli7-b1SJcBw7M5JcDSAt4fwOsrbr7nHxIRH7V-oawc88JPOf7N1C6zdtuAIPGHKl-rsJBYd2fno7dOI6Y-mST3IebBdhTW0ePVXRUkFpw_XBsjWBF59VTXgmVsnZUHbuH3wRrwbsjJ0hFpmwsXefIX3_7b9_sEC-QG6JS1MvDBGl7eqHo8i_B5GX32qgse2-IiifxnxJqTxhjgrxdpy2DnVJr2RtuH89SR7tp8ESo72lXdJ0n3J5I2PHb4wxaFCwpXsyqNHmiQVlrzEdNrQsT2dL0r2qLBJGBqlkWRf9-hLE_HEu-b5RxvFveZ0lZRXbaR-iUcudXD37OmY9dqnqDeDwffXW6zPoYmOtgLUKmy2NyaurBKBoosV3xNuCs1Cm6mtrauZu8n1OrkQZtFOt6WsdPPo7ZpZ5WhFD2OlxrICRh1U1AR1J5ucr9NPuqtA5YhOOoYNbaQieKzmGw0uWcxaRUVJQcNILmiK-AMaJas3yFRIk9m_1-V46jvYTJWnnjNVAFKmKKDvA-_chjmSVWlMRq7eaaeoaoZ-DJ16b_yZn5V4vV6Ll3BmefdaXVKFQBt-Fr3InXHnOw9k-oRDvjfoLHr8G4tkKQkqUH90wcWUoZwXrYZ8dR_IGYAtcjWCbYiZ8CwtL0dLE05zWzvMXSk1ENPpyGncFtRudregcA_-AcWQIB49iIiWZcmOQJtFuhYgpryd6FV5brQzFpJuNbJcd6e4SzB3MQ0SG7RbR7QxlBMA3k536a4E7S8Y3CkseMA8cc4H_sdkLByChfbK9qnarYiI1lFOETldzcsTF40cnMxBNLqG6IkM3cGa3YvO36USztMn5dco9HBYiFpQMUpkNTkCCNgjbjFd_vhqKZMce2JHRE5v2Ri1NmIAXus4HpmpUnphUyxdEkfYr-PIVkhRzTm7uplhtQ3agkxSCv59xUrO4Gpiq_K-PKtiDUVHgjs5LARDqVkZicnEMDWtvjd8xtZ-W-bpxMjBgjTalHb-mbHGwbPWSNTh1_1vTdHH9Ta7XQ9mSDfO_DvlweVxARFf2xvmRgAVJ95KmaSSuPOmJ6iMQ7vdxU8LsKKkWJYHqrsxFejgGj4Z-lJ-e0zytY2_cePSpHAfUbdy4V6DfXa42OK5HEeU5Wyb6NOZUO_txJZFyTHutoFMjn6lDQEiKxKjtJn4cqTUvS06wnI0cH_9SAn94-QWiP5tuOz8MTToyvl4I5LUUX18a5MBhm1iz76kP2r2m9Gl8RX3XSPIeLZeStWNxKpcWQl_IFpeGDftbw68T7vY3VmjNmhxYYw7NpUIjz15UtWGSeegFbFs2MPlu3X3s31CqWluN2QjVGcJ3zLF5yfU_K9iV9x-Xgymm28rxuKqVVvCk4UNqY-dWLw7n5rzZjsabphhNxTxwJl1qcUlSk_kPJmYjdK0Dsrr2_S70BkuYJZpgztl6JNMy5WmGOEavh_qxz5-Yb-GCY9GWkE4ZxiCqxJIqQBRuWML6Hbyqg6i1_N8YmT3mjwImopyw9ajaLPs2ADSOUFuU8zhkY488Y3e7M9_FnLt5TrPOJ38_KQyASPZHqnN3zW2BgG6VnSE2Jx2B5XYLMa1EPdCE_gPzRrnuFgePL8weLrVMjpC9BtpB29s1jC65X1DevZCPBJBMbOzeH5SKz_DiUvUP9_0fiJtkFC-v7XHhiEvpSyf3cjb9GcdqErcweYUViSwhVqbNTHdYmKpldNsXeQGKKOYYroZ1qCfBGBTh2lrjRNsoP3ro6hdVvJOlN7tYh3_6jvpdN7yZm60VAeG0np0nymPfOsdiFnNHjz8_srxFUtsSlsAnTcxpbAs7gmHUFgvOkC_HN3KPsKPG2VMpLWZeeEW2mIDXsBLjQJ9eD5uDnqbqfkfHFucluZ7qYjXnzwny6aybtXLduPB3SmcJpjHH5nXiwtYH7fkwtjXNexIMSTMkyUdPYUdEtY8QAVkB1U3s1pg6i0hsHVpVJiMNshRlYn1RiozQckmMnIwMaJql1Sa8-rURc5cxuUdGUKNCwHownGidbaTNxFcVm-1TGpcfDS0YsXiAbQHj0qhYeDqxxGsWCGyzvleEHlHLXquA0YJb4OmKguzSRXQ4gqPnRM3bcm7xOGO3hUBfrT5mSfmTREoV5mZrRZpSwGFOKZzimZxEnYn6J0dSJdPPn8MKUjfLjMEwzBZVdcKY-499wi7Y3NXwq0CQq6wDOs6nVbNzsKCLXZqUySAjObxA3pbUMxXec1D0tFkc39IrS3sqZybM6gUfjXyxD8tWbBtS_TKHLJ7TkWHbrjuWFfpb8fKQJSvANhKg_f0A8p_LvYY_kMTeqSaAxBSQzo0RZ2Sj0Oh-XTnEGwIhCpGu57aX89KOzXINQcz9uIDmcypCPH3azPoBgobGwA6tpVWyQ_qEXnoIv9HrKjM5ttb_jopQXvmhEjmWWeolHM0kZK8yURBvkW2utNtPZX3bWvXPvsA5bk6bO4MU5zs07ZVXMVH7LaN7EoKO6nfWkEP0uwqQFDb7PbbPWSSUvTfSjmAs61RtbyslNbGjFAF0GqXTWFR8q3P995gDQC19oKxIo4PqJiO6bKyfTsR0oEFWFailW3nnVKxsyI5ZfP10AHpbHzZIuvy1UhGEpmlH8QTDjLMsoSEegx43SXGu3wnlomGejPjhjeJhHXlCsdSoP_BInmfNElpGp1FYE_aC3YWxRRuB20NJt4dSYQAva1GfTkaFTsohYZcss1u2KsYNV0tT_bL8HsPkDgcVyCJfOGMA0_coc9t85DKuQ0ddcUTrmedYkuvHJwZ6e0nw_coJg6loSkvW-u_bO_4LA_BfJoVr43cFnsWukkl6mSqtWN2691QPFL3cTInpdnZLp7LnFFVgt47yMuJC5Ip9YdIt-P5VBa8qsmaF_o0XiCzSkCjAEg6ZVLPIhfeqUK5yTEzr45f5IXGd-3SHF_iy1UfYNYAEOaY2LbOMTBFb4KHmHcB29efGp2FtmKRiCtvVLHtxCOcTZHx_7TM8P5-l2_ownvB5SnvZQZ9FPf6oTfdI_JYY8FR6qw3irE09HG-2ciTl-c5TXjp4OZAvQa0KDoh-sa-XE64D1J9Gau35GYCVfnMDC1Fk1XhHfS8sx13TBQk3A4T7uvnC2Tp6DtSxn_55m6gtjTVpgNFxANisQEvUzbheQUylpl6kVtY9qISpIBxvdxDA03Cy6qDNADGP2mD062AtQ0X9E34FhjT6LuSb40OVaAbq6gHWDg6Y15ePo7pQsRgTsccgvgRw0CYj7mv7RHJ4sBn1yA5N-FMvZQQ8YszSvOxA7IyLLbgKF6i-adAHX76EYeDl8GcQK9DWcGGESMX1NzOVrLozl-hJpPxuFhCOg1SypYR3YgrnXdRKWzCmFUmssHobDRte-P9AllSMC3CkLvEPu65EQ-GFlLW_45zbIK3bbOq72Y_ioTnEjwb-8ZsS9taPAAQ7af-kJokN1WEOR6TJZsMcvQtZv106NoHozvbfTViv-E3oFxLcBk9eXM4sE0hEjoIRiZ_ZcTO7gu6XeEkXMIub4mwdN4x6-Y9-eeQXwS1T15w6ZrEBFOCf9eTRnDQ-rpzRm6E9668K0Yuz_DxIkrZJ1lgswnNIQfgrrO7IFRS7nxPNujnpvhdYOFXKNdcLT0WIf90KeUhzeuwqN7w78r_LBSMM2a5Artkl81zH036Rn0Nns5Bv1TBeoP0feu7npQGFvivPCBk_LDXhd0X9G-9S7oNgEV3Z6Cf6IDaU1kwEYgmMecrqNiOpxYcKvxD9ojX-0jK6ylL-lrp76et4G2wciQrDTsbU4fbmarQap3nU8UlXXZToVynUeu7cQuEoWyfKz7fSKXpm9PiwlyKzKTIKQdOUZAmfP0SITbSDgtziOXcZj8GDpt_7Fc2l7qVnwB2GdaJvrlzK_QZvFKu8gVH8XkKZQtwJup7_xoA8Ub38PY15frAJX69VKemAkI1xs8rOdnUKeUvPFpwQR2ARtwQ85KONsyeQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8YXp1cmUifQ",
+            "format": "azure-openai-responses-v1",
+            "id": "rs_00accb37ca54c218016aba79dc4a288194901649e441023c8e",
+            "index": 0
+          },
+          {
+            "type": "reasoning.summary",
+            "summary": "**Analyzing figure captions and text**\n\nI’m considering the page layout and whether there are figure captions at the bottom. I want to describe what I can read, noting any illegible parts. The image quality might be poor—perhaps due to overexposure—but black text is readable at the original resolution if I zoom in. The text could be in a language that mixes Chinese characters and Latin glyphs, or it might even be handwritten. There’s also a possibility that the diagram is oriented sideways. I’ll format my findings in markdown appropriately.",
+            "format": "azure-openai-responses-v1",
+            "index": 1
+          },
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqunoNhPMruGjqCowXH2rVPaohcw5z1r7itNJzVnylDjrNRPJGvt0ZyWs4Kme8hEX8Ewpo_kLiyp-pmPrOU6GpX80F377OtEXl28gNJhX8UWw6G6gIFNHWm-xjD7Czeq9dvV3z_rYjmwcZmfDDwlYTJPMZmh2Ns8rBDNfQVKAiVILpipkJ0q1s8ConRJk-gxbajk2oJHBD22_v1PtLhJlWQN4eoWGFdeXN-IV0LjxxqE0e1XRLL2eOFKfLAlDeKx0_2H_1xil_IhdSoA76txNcQ8rO6KHAC_nUdfmtY9ZIGGw5qq74yk5dcEJJqAWhhAbFLMYLlyS-cDih-E2whhlYeGXW9N-hh4hw3JGwFO1tH7I8eSsEVnklbEoQKx6nk4hS-ULqP8EanOFJXaca_VUeuBH7ChmZgAT2KfCDcqVfPtiIFHY0_WcMBsYRP71khPGrd_nt_12HRiblzxYhiYtby62-qWvMzjjfRGhT__x-yLR8rQZuSwhToUWqrRwRKDUf-NePrLUj5V_cRNFPGWgON-IKPXDaP9UhX1I6jYFP_Omj1PP_g69PP6XEk5l8ICC2FPgj6eNKanzllg69Bo5VlySkloWEA5s6kb8IH4dCrKy89-qpF6BHomUBRO-wTBkH5TycihqfCqlCeubsr_ug-ED_vktshEIVJTU2_Xd7f5w9-8TPMru9rAFjIuhAQgpQ7KAEJ8WcqpTslOevbWQcDdcCEDO43XnQ-rN5V19jK5Ht_bp-G6mGxfD4kc3hoNQ17rVCPNy5o7JRVv-avYXPBx_o2cyKAYnAoJLCo_mgMl9jdLSx-6Jw8TB87FkxBMtKYVqS8bapcU6Nj9xoP8hM-xJ6WhDj5G9Q1Fgtumm0BK_mABOY24AuTO5iw_ME02slr_V8CtYYyWCpXTtbIa6YXzf0C4tX7Y8i4-zMDQgyBcBiV7_xWr5Ii2-IuxAOZLl1onWHitG8gl8snMb5WO_aLL011L8LcjJeXQ-ZVjpcsjeukJ4WXV25HUU949VS9DrONfkqfuY7ZHjvh0SKXKozQT_IipdNeFKP6A4XlsoD7NY4m9C5cGLO1IsP5e8Now89UcLxUJZcpt4pmVvwb2UpwrKzMFmA_SleUlWjFMHhjJPE6b3H3NAvWjK90dxMffVDDXwWxfl3run0ggcUTCbDuR88HCCH50t5lHLGDnC0xbnfhHRpEr7wUnqcMsvABf0aah7r1OsjVo1GIKfzp3Ys61nWFS_c3SHHz98bd7ho1Hps_-PDPappks5D4MDHMwZhjuW8Qvap_YTT-peJnmzHeFVvXkWPmTZZ8S_2EmPUiRL3OEKqvdjAYEMoV9Y5-AXLJ-d1FQYtUMw7pYG5HcJhRB73xu8u1LUWlHhCEVLU0hslwZFLH8rNFwzV6mfKkuKrMIciCEIsCUstf8-fjJ79F4dD7t7sgIC4OJKXYReQq3ellIOQK3mVIbvG4mN7BQjajDY5q5s4aD-Xd-zNQ0PLQeCkerlAG09XMNyI1trcrstoAo1LHBSO3AmQO8FlXtTTbrqfL_4UHDpjSiucC8koi5tirRkO-rtaY3o0F3wRr9f0qp6aOP75e345bRWfLxRLMJZ3rSViPpw6G1ygy0DQ6_GhKdcKWLihgX2qf7iCajtUNT84woy8tUDVOAT8jnx8OCTWfn296tnAH8vfxmSs-fLD8rePWhubbVN_hZ7r-qM0ZZDFJF58MBrSHcH6VWSPhUJTPgPfMMC_9sWwpbHfcJqzUbpaugMFRIvJ5G5cUt4uXGgA7yHAs11f3nO5g9Yk2jCdHcYNltpo-XrJztZiwGKgN-_sgo4z3mApRwLRVLVZ8ljz80OHi8ZOCX3EGgRlBgqJ8pYbaa7k0BzXOpgbFzZKYh1tzQj5xZ5JdxDNkx1agLmA0mzU2iOjsevyWVR2xej6Z7NelBpMgE4r1O8l9PzEOc8QQa2xraz_b_2jOirhTohSnLXtfxNUhe6QydmYbvp57bVThJbWkGqIHfxZfUgMT3sw2_55G6pcZwWP_0SLFV-tQ1I8_Oujvk8ltXx6if9zyJyPQpTPDXlpIi5pknEhMxs_Rt_t8oSeC6q_aQu2avBxURgH86VDW3Bxy5HfPm91UeJqiSrrWXAuMW0YBlDIUH9Uyq9otS3EGsxRag4f7d1VAwvuPwxLqv7JumNHnr6eyLGGaeLZuADXT7o5lKLHVvEYPc_CPYHHhnqBIuLtBbCGrzTVNDJyrsPz1zqeRr1HpfN6J18OfsHBpw7DOcp7FgchQDkKRGB5McLryuWgKo7sOYSa-Bcyjw2pK9NPmVxE1D_ni2Fi2OUmNLw3AMYSKGGcgv8yymVeev-c_eIyU9kl6sTLJ9_pNwZkvWqoRbclG1JCawcyAAK1qMfqXsG-JyMlHTGdD2Xn3z79lip38dvN2D_IN9QKnJHK09qjgqxY8T8JkoOXeqxBGU6VRqEer1WDvOerroHfw1TbOj1VgExM4OAbFQzj_04JoNmci7wClejzCBAcNdOZ2vBZjkHV7KWQkkFICoqpvQZGrVc1aUSnNCVaai09ZTw05W7UVVKR8nM1AoseAaa9wBmuc98aESsvIwtsMX9N0ID_Dbp44VTXbjVGfKwO5ZjVQX1okiWFES_31uUkhBKQJJbmKClHrXWNBh0fvBM0uPeHbyd58d3YxFWTDa5_4D0sOI_yETs2pQ-UpQhlNMXHOd9x296b_R-gFhrtEDkoJQfGEFqkRxmnNwhflyiX7szuLSkA96iWhicEdLMdxy_qFeBpia50hnEWOaSEGQyEuxPJLLrnd7ykySAwz21V42XDc7svcGZfMWHkyYlemJoebuSQYOcW82PeterYjW-hoXREl-izNwVKqgN525jVjT1a16BBV-uhXk78nxdl8YV82VDNAFzX5G-2n0xJeauXOCambp-QJeVPGwDX49eGhl-6XaMz9DhMoN5sCHRWQd6dbbVoK5wb-kKZv_XYxHPo_MkribS2VBQG5MUcGnDapx6an9Yjp4DaTWwV9pB_Pp8N8G14DI4eOKcf_45hAUWZSVrwKzWpZqZycxObTWL8LbNgGCwOfbPPj0WRyaBo_3JwLibnJfnKQxSFrF0N_qkB6xbejED4-0s_FKwg3W2yRUZbJ3NfVL4Za5-cNM-V1n2Wjbd5ZdJx_uPbvuBeFL6zr2gLe32GglJGggr_iu4a5SNKtO4Wwi0gPEKFf85WDCFxefSOM44_iUKssY0IsGyHzzX_2dfP0KOM5p_bGcePJPmGcCJKDj1S6sA74lczXtdiSZZhunpiAObKtqA-XRskRvHudhXQujJqlsefK2V8q1D_lM9VW7lKb1r5RGdKsupgR3HRPIDdK-CUw73UtQaLVQCR1PgAJvnC6jNV7EhRcXjz46JAJm9PCt6_s61yQTDnA6zInO6MlNdtyZGQGP1iUwse3IS5bfJAcveqkvPd1YQ7lA0US41JpSs282orvwmNJsfMqnsWApETnv68Jbdbveu4oHzJnse0_Gt7pbTG6H8G-SausutcPd9Cn08gRN1FpmvAYJW48wgnqdOTxJBjW1E55uRa-RiL5urYYpbJF2Zfi8lmrjgY7sNIznuL1EJ6g8sdzJ5qZwWftB6-4SaFjb4EfDQBm7Zk6N1mmMqYAIA-WRz9qTT6XKxOVrudMsRARlvOc-s5TKysR3t1AqXPvHDfwviERSqt0WWHx2YEBPk_Xns16C86t_KXamv2y8W4whvaxcjcmsMQbiII3t53HMC7N3TEhp8ps9RrQJJKhTd28PE_8zDN2XwoKX0YPOfSIGQRiVg1hkZkwNLND7DnCzNfqDgVA35u_KcHo4fIkdRMa3w5aP_ENjJbO688Skr4GWUEmAZEbYSfsmEeVq1-RrsDbYYISAKaAdzLWDyfVinbcxq2RXPLMyz9T1QaYXQEXdol3QDP9E_QVH-icYfc60IsxIR07rgix3YyjYD1Ff6rsFU1l2LeoLz7WZx-P7KtPF9Qps5xvCOiX1oXpH9FMacB5MEAkM6AbvGMVclmE9-4ba_2GVWL_iHhckYuz0yEtSOx1avDP1AYF9N--A1lzIAuygMYkc_K7dG20hS_83OTrwKXJFU7dFjqwUmkB59OulbuikOT_23ytz7YaCNTxUtjbwzkOdTYtdRUIULMJze4s3VF-PP1d07mhl3J-CZjLCDeJhaD-bRMMRHEcuk5iyKvP5lttZeDQlt8d-zp0Au2Ebqf3Zn8qODmq62s-4cB2NeuY0xdOVw15pnBrf_oL96oRFD7DSs-E0A5fbka7qMowjRvLVx0jvPR1Lq8dIyb4yrOxSbOsN_Ntq2ksVMge8o2kH4ZD4QjHIi-arjavrIsIdN1kmHLWMHf0kQZWHtcSxQKRKld-irLU11-I-Gic2XKbmKaIo1AlY3kud3n0s8fVTN_xQkfluBOrpntsQOCLE4kONosSrppS1iZDaygmaSP0Z-oVb4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8YXp1cmUifQ",
+            "format": "azure-openai-responses-v1",
+            "id": "rs_00accb37ca54c218016aba79f9c70881949e6882db5b63b556",
+            "index": 2
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 41229,
+    "completion_tokens": 1083,
+    "total_tokens": 42312,
+    "cost": 0.0056380995,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 41226,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00569505,
+      "upstream_inference_prompt_cost": 0.00515355,
+      "upstream_inference_completions_cost": 0.0005415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1034,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

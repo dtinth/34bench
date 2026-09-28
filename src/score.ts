@@ -35,6 +35,8 @@ export interface RunScore {
   run: string;
   meta: Meta;
   cer: number;
+  /** CER of the header, forward trip, and return trip only. */
+  cerNoFooter: number;
   costThb: number | null;
   columns: Record<Column, ColumnScore>;
 }
@@ -58,7 +60,7 @@ export function costThb(meta: Meta): number | null {
 export function scoreRun(
   groundTruth: Columns,
   extracted: Columns,
-): { cer: number; columns: Record<Column, ColumnScore> } {
+): { cer: number; cerNoFooter: number; columns: Record<Column, ColumnScore> } {
   let distance = 0;
   let length = 0;
   const columns = {} as Record<Column, ColumnScore>;
@@ -71,7 +73,12 @@ export function scoreRun(
     distance += d;
     length += l;
   }
-  return { cer: distance / length, columns };
+  const f = columns.footer;
+  return {
+    cer: distance / length,
+    cerNoFooter: (distance - f.distance) / (length - f.length),
+    columns,
+  };
 }
 
 export async function loadScores(root = new URL("../", import.meta.url)): Promise<ConfigScore[]> {
@@ -87,9 +94,14 @@ export async function loadScores(root = new URL("../", import.meta.url)): Promis
       if (!run.isDirectory) continue;
       const dir = new URL(`${config.name}/${run.name}/`, resultsDir);
       const meta: Meta = JSON.parse(await Deno.readTextFile(new URL("meta.json", dir)));
-      const extracted: Columns = JSON.parse(
-        await Deno.readTextFile(new URL("extracted.json", dir)),
-      );
+      let extracted: Columns;
+      try {
+        extracted = JSON.parse(await Deno.readTextFile(new URL("extracted.json", dir)));
+      } catch (e) {
+        if (!(e instanceof Deno.errors.NotFound)) throw e;
+        console.error(`Skipped ${config.name}/${run.name}: no extracted.json yet.`);
+        continue;
+      }
       runs.push({
         config: config.name,
         run: run.name,
@@ -108,7 +120,8 @@ export async function loadScores(root = new URL("../", import.meta.url)): Promis
 
 if (import.meta.main) {
   for (const c of await loadScores()) {
-    const cols = COLUMNS.map((k) => `${k}=${c.median.columns[k].distance}`).join(" ");
+    const cols = COLUMNS.map((k) => `${k}=${c.median.columns[k].distance}`).join(" ") +
+      ` noFooter=${(c.median.cerNoFooter * 100).toFixed(1)}%`;
     console.log(
       `${(c.median.cer * 100).toFixed(1).padStart(6)}%  ${c.config.padEnd(45)} runs=${
         c.runs.map((r) => (r.cer * 100).toFixed(1)).join(",")
