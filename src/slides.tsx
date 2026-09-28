@@ -285,7 +285,9 @@ function TitleSlide() {
       </h1>
       <img class="page-map" src="images/page-map.jpg" width={w} height={h} />
       <p class="credit">
-        Source: Bangkok Metropolitan Administration open data · GFDL 1.3
+        Source: Bangkok Metropolitan Administration open data
+        <br />
+        GFDL 1.3
       </p>
     </Slide>
   );
@@ -316,11 +318,15 @@ function ConfigList({ configs, top }: { configs: ConfigScore[]; top: number }) {
           <li>
             <span class="vendor">{d.vendor}/</span>
             <b>{d.model}</b>
-            {d.provider && <span class="tag">via {d.provider}</span>}
-            {d.image && <span class="tag">{d.image} image</span>}
           </li>
         ))}
       </ol>
+      <p class="links">
+        Code and results: <a href="https://github.com/dtinth/34bench">github.com/dtinth/34bench</a>
+        <br />
+        The whole discussion:{" "}
+        <a href="https://github.com/dtinth/34bench/issues/1">github.com/dtinth/34bench/issues/1</a>
+      </p>
     </div>
   );
 }
@@ -741,10 +747,13 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .config-list h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 14px; }
 .config-list ol { list-style: none; columns: 3; column-gap: 28px; }
-.config-list li { font-size: 14.5px; line-height: 21px; padding: 5px 0; break-inside: avoid;
+.config-list li { font-size: 16.5px; line-height: 24px; padding: 5px 0; break-inside: avoid;
   border-bottom: 1px solid var(--line); }
 .config-list .vendor { color: var(--muted); }
 .config-list b { font-weight: 700; }
+.config-list .links { margin-top: 22px; font-size: 16px; line-height: 1.6; color: var(--soft); }
+.config-list .links a { color: var(--ink); font-weight: 700; text-decoration: none;
+  border-bottom: 3px solid var(--lime); }
 .config-list .tag { display: inline-block; margin-left: 6px; font-size: 11.5px; line-height: 18px;
   padding: 0 7px; border-radius: 999px; background: #e3e6dc; color: var(--soft); }
 .gt-card { position: absolute; z-index: 4; padding: 12px 16px; border: 3px solid;
@@ -938,7 +947,7 @@ async function main() {
       gt={gt}
       half="top"
       cards={{
-        header: { left: 430, top: 40, width: SIZE - M - 430 },
+        header: { left: 430, top: 76, width: SIZE - M - 430 },
         forward: { left: M + 16, top: 720, width: 460, route: "left" },
         return: { left: SIZE - M - 16 - 460, top: 720, width: 460 },
       }}
