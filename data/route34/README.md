@@ -7,7 +7,8 @@
 - **Document:** หมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง
 - **Publisher:** Bangkok Metropolitan Administration (กรุงเทพมหานคร), via the BMA open data portal
 - **Dataset maintainer:** กองสารสนเทศภูมิศาสตร์
-- **Source URL:** https://data.bangkok.go.th/dataset/route1/resource/fe46b39e-d99f-4eb4-b5a9-dc43606f7eb1
+- **Source URL:**
+  https://data.bangkok.go.th/dataset/route1/resource/fe46b39e-d99f-4eb4-b5a9-dc43606f7eb1
 - **Original license:** GNU Free Documentation License (no version given)
 
 ## License
@@ -28,17 +29,20 @@ published version, so we use version 1.3.
 1. **2023-12-14** — "หมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง". Published by the Bangkok
    Metropolitan Administration on the BMA open data portal as a 1-page PDF scan, at the source URL
    above.
-2. **2026-09-28** — "34bench input image — Bangkok bus route 34". Modified by 34bench
-   contributors. Changes:
+2. **2026-09-28** — "34bench input image — Bangkok bus route 34". Modified by 34bench contributors.
+   Changes:
    - Extracted the embedded grayscale JPEG image (7016×4961, 600 ppi) from the PDF, without
      rendering the page.
    - Rotated the image 90° counter-clockwise, to match the `/Rotate 270` of the PDF page.
    - Saved the result as `route34.png` (lossless, 4961×7016).
    - Converted `route34.png` to `route34.webp` (lossy, quality 80) for use in the main README.
+   - Resized `route34.png` to half size (Lanczos, 2480×3508, 300 ppi) and saved it as
+     `route34-300dpi.png`, for models that do not accept the full-size image.
 
 ## Files
 
-| File           | Description                                     |
-| -------------- | ----------------------------------------------- |
-| `route34.png`  | Input image for the models.                     |
-| `route34.webp` | Smaller copy of the same image, for the README. |
+| File                 | Description                                                        |
+| -------------------- | ------------------------------------------------------------------ |
+| `route34.png`        | Input image for the models.                                        |
+| `route34.webp`       | Smaller copy of the same image, for the README.                    |
+| `route34-300dpi.png` | Half-size copy, for models that do not accept the full-size image. |

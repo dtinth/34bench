@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790599740-LSrKFcrWk13tadp9OOhO",
+  "object": "chat.completion",
+  "created": 1790599740,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "provider": "DeepSeek",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\nแผนงานวิจัยเรื่อง การตรวจวัดในห้องปฏิบัติการ ตามโครงการวิจัยเรื่อง ผลของสารสกัดจากพืชสมุนไพร\nบางชนิด ต่อการยับยั้งเชื้อรา สาเหตุโรคผลเน่า และการเกิดโรคหลังการเก็บเกี่ยวของมะม่วงพันธุ์น้ำดอกไม้\nทะวาย\n\n---\n\n1. ชื่อเรื่อง/โครงการ\n### โครงการ\nเรื่อง ผลของสารสกัดจากพืชสมุนไพร (เจลจากว่านหางจระเข้) ในการควบคุมโรคแอนแทรคโนส ในมะม่วงพันธุ์น้ำดอกไม้ ทะวาย\n### โครงการย่อย\nเรื่อง ผลของสารสกัดจากพืชสมุนไพร ในการควบคุมโรคแอนแทรคโนส ของมะม่วงพันธุ์น้ำดอกไม้ ทะวาย ในระดับห้องปฏิบัติการ\n\n2. หลักการและเหตุผล\n<figure>\n  <img src=\"https://via.placeholder.com/400x600?text=Diagram\" alt=\"Diagram of mango fruit with labeled parts in Thai\">\n  <figcaption>แผนภาพผลมะม่วงพันธุ์น้ำดอกไม้ทะวาย แสดงส่วนต่างๆ ได้แก่ ขั้วผล, เปลือก, เนื้อ, เมล็ด, และจุดที่เกิดโรคแอนแทรคโนส</figcaption>\n</figure>\n\n---\n\n(ลงชื่อ) .....................................................\n(.......................................................)\nตำแหน่ง .....................................................\nวันที่ ................ เดือน .................... พ.ศ. ................\n```",
+        "refusal": null,
+        "reasoning": "Oh, I need to extract the text from the image.\nThe image shows a document with Thai text, likely a scientific or technical report. The text is clear and well-spaced, no rotation or blur issues. There's a figure with labels in Thai, which I need to describe in an HTML `<figure>` element. The user wants only Markdown output, no commentary. I'll transcribe the text accurately, ensuring the figure description is inside the `<figure>` tag. The content includes a title, sections, and a diagram with labeled parts. I'll structure it as a Markdown document with headings, paragraphs, and the figure element. I must not add any extra text outside the Markdown.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Oh, I need to extract the text from the image.\nThe image shows a document with Thai text, likely a scientific or technical report. The text is clear and well-spaced, no rotation or blur issues. There's a figure with labels in Thai, which I need to describe in an HTML `<figure>` element. The user wants only Markdown output, no commentary. I'll transcribe the text accurately, ensuring the figure description is inside the `<figure>` tag. The content includes a title, sections, and a diagram with labeled parts. I'll structure it as a Markdown document with headings, paragraphs, and the figure element. I must not add any extra text outside the Markdown.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1071,
+    "completion_tokens": 464,
+    "total_tokens": 1535,
+    "cost": 0.0004346595,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00043905,
+      "upstream_inference_prompt_cost": 0.00016065,
+      "upstream_inference_completions_cost": 0.0002784
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 142,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

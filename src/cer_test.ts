@@ -1,5 +1,5 @@
 import { assertEquals } from "jsr:@std/assert@1";
-import { align, cer, graphemes } from "./cer.ts";
+import { align, cer, graphemes, normalize } from "./cer.ts";
 
 Deno.test("graphemes keeps Thai marks with the base character", () => {
   assertEquals(graphemes("ที่"), ["ที่"]);
@@ -28,4 +28,11 @@ Deno.test("cer sums distances over the total ground truth length", () => {
 
 Deno.test("cer ignores whitespace differences", () => {
   assertEquals(cer([{ expected: "a  b\nc", actual: " a b c " }]), 0);
+});
+
+Deno.test("normalize removes Markdown and HTML markup", () => {
+  assertEquals(
+    normalize("ไปตามถนน**รองเมือง เลี้ยวขวาไป**ตาม\n## หมวด 1<br>\n<u>สาย</u>&nbsp;&nbsp;34"),
+    "ไปตามถนนรองเมือง เลี้ยวขวาไปตาม หมวด 1 สาย 34",
+  );
 });

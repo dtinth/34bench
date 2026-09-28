@@ -15,16 +15,32 @@ export const RUNS = 5;
  */
 export const MAX_TOKENS = 16384;
 
-const IMAGE_PATH = new URL("../data/route34/route34.png", import.meta.url);
+/** Input images. `full` is the default. `300dpi` is for models that reject the full size. */
+export const IMAGES: Record<string, string> = {
+  full: "../data/route34/route34.png",
+  "300dpi": "../data/route34/route34-300dpi.png",
+};
 
-/** Directory name for one model + parameter combination, e.g. `google~gemini-3.8-flash@high`. */
-export function runId(model: string, effort?: string): string {
-  return model.replace("/", "~") + (effort ? `@${effort}` : "");
+/**
+ * Directory name for one model + parameter combination, e.g. `google~gemini-3.8-flash@high`, or
+ * `deepseek~deepseek-v4.1-flash+deepseek` when the inference provider is fixed, or
+ * `openai~gpt-6-sol_300dpi` when a smaller image is used.
+ */
+export function runId(model: string, effort?: string, provider?: string, image?: string): string {
+  return model.replace("/", "~") + (effort ? `@${effort}` : "") + (provider ? `+${provider}` : "") +
+    (image && image !== "full" ? `_${image}` : "");
 }
 
 /** Send the image to the model once, and save the result in `dir`. */
-async function runOnce(apiKey: string, model: string, effort: string | undefined, dir: URL) {
-  const image = encodeBase64(await Deno.readFile(IMAGE_PATH));
+async function runOnce(
+  apiKey: string,
+  model: string,
+  effort: string | undefined,
+  provider: string | undefined,
+  imageName: string,
+  dir: URL,
+) {
+  const image = encodeBase64(await Deno.readFile(new URL(IMAGES[imageName], import.meta.url)));
   const request = {
     model,
     messages: [{
@@ -36,6 +52,8 @@ async function runOnce(apiKey: string, model: string, effort: string | undefined
     }],
     max_tokens: MAX_TOKENS,
     ...(effort ? { reasoning: { effort } } : {}),
+    // Some models are served by many providers, and their outputs can differ. This fixes one.
+    ...(provider ? { provider: { only: [provider], allow_fallbacks: false } } : {}),
     usage: { include: true },
   };
 
@@ -60,6 +78,8 @@ async function runOnce(apiKey: string, model: string, effort: string | undefined
   const meta = {
     model,
     effort: effort ?? null,
+    requestedProvider: provider ?? null,
+    image: imageName,
     prompt: PROMPT,
     date: new Date().toISOString(),
     durationMs,
@@ -87,24 +107,34 @@ async function exists(url: URL) {
 }
 
 async function main() {
-  const args = parseArgs(Deno.args, { string: ["model", "effort", "runs"] });
+  const args = parseArgs(Deno.args, { string: ["model", "effort", "provider", "image", "runs"] });
   const model = args.model;
-  if (!model) throw new Error("Usage: deno task run --model <id> [--effort <level>] [--runs <n>]");
+  if (!model) {
+    throw new Error(
+      "Usage: deno task run --model <id> [--effort <level>] [--provider <slug>] [--image <name>] [--runs <n>]",
+    );
+  }
   const effort = args.effort;
+  const provider = args.provider;
+  const imageName = args.image ?? "full";
+  if (!(imageName in IMAGES)) throw new Error(`Unknown image: ${imageName}`);
   const runs = Number(args.runs ?? RUNS);
 
   const env = await load();
   const apiKey = Deno.env.get("OPENROUTER_API_KEY") ?? env.OPENROUTER_API_KEY;
   if (!apiKey) throw new Error("OPENROUTER_API_KEY is not set.");
 
-  const configDir = new URL(`../results/${runId(model, effort)}/`, import.meta.url);
-  const label = `${model}${effort ? `@${effort}` : ""}`;
+  const configDir = new URL(
+    `../results/${runId(model, effort, provider, imageName)}/`,
+    import.meta.url,
+  );
+  const label = runId(model, effort, provider, imageName);
   // Runs are numbered 1..n. Only the missing runs are sent, so it is safe to run this again.
   for (let n = 1; n <= runs; n++) {
     const dir = new URL(`${n}/`, configDir);
     if (await exists(new URL("response.md", dir))) continue;
     console.error(`[${label}] run ${n}/${runs}...`);
-    const meta = await runOnce(apiKey, model, effort, dir);
+    const meta = await runOnce(apiKey, model, effort, provider, imageName, dir);
     console.error(
       `[${label}] run ${n}/${runs} done in ${
         (meta.durationMs / 1000).toFixed(1)

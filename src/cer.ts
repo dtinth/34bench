@@ -5,9 +5,25 @@ export function graphemes(text: string): string[] {
   return Array.from(segmenter.segment(text), (s) => s.segment);
 }
 
-/** Collapse runs of whitespace into one space and trim the ends. */
+/**
+ * Remove Markdown and HTML formatting that a model added around the text, e.g. `**`, `<u>`,
+ * `<br>`, `&nbsp;`, and heading markers. The document has no formatting that we score.
+ */
+export function stripMarkup(text: string): string {
+  return text
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/<\/?[a-z][^>]*>/gi, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/^[ \t]*#{1,6}[ \t]+/gm, "")
+    .replace(/\*+|__+/g, "");
+}
+
+/** Remove markup, then collapse runs of whitespace into one space and trim the ends. */
 export function normalize(text: string): string {
-  return text.replace(/\s+/g, " ").trim();
+  return stripMarkup(text).replace(/\s+/g, " ").trim();
 }
 
 export type DiffOp =

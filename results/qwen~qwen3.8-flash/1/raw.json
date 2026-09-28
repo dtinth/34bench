@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790599741-FyQlGekApDu27LSN2y46",
+  "object": "chat.completion",
+  "created": 1790599741,
+  "model": "qwen/qwen3.8-flash",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แผนทางรถโลหะการก่อสร้างทาง ไป–มา กลุ่ม ... จังหวัด ... ...\nหมวด 1 ทางที่ 3.4 รังสิต – สมุทรปราการ – ตัวลำแพน ระยะทาง 32 กม.\nสำนักงานกองกำกับการ แขวงกรุงเทพ\n\n---\n\n## 1. รายละเอียดเส้นทาง\n\n**เที่ยวไป**\n\nเริ่มต้นที่ถนนรังสิต (เชิงสะพานก่อนมีนบุรี) ไปตามถนนสายใน ผ่านอุปถัมภ์ข้ามลงภูมี ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่ตลาดน้อยหัวลำโพง\n\n**เที่ยวกลับ**\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไป... ถนนเจริญกรุง เลี้ยวขวาไปตามถนนเจริสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 กลับไปตามเส้นทางเดิม จนถึงรังสิต\n\n## 2. แผนที่สังเขป\n\n<figure>\n  <img alt=\"แผนที่สังเขปแสดงเส้นทาง\">\n  <figcaption>แผนที่สังเขปแสดงแนวเส้นทางจากปลายทางเหนือ (รังสิต) ลงมาทางใต้จนถึงตัวลำโพง โดยแนวเส้นทางหลักวิ่งผ่านสถานีภาคลูรังสิต, อุรุถลาวัณหลกที่…, ถนนพหลโยธิน, สะพานควาย, อุรุถลาวัณชั้นใน, ถนนพญาไท และถนนพระราม 4 มีสายแยกไปบ่นบุรี (สองจุด), ไปบางกะปิ, ลาดพร้าว, ไทรม้า และจากเหนือกำกับไว้บนแผนที่</figcaption>\n</figure>\n\n... (๒) ...\nลงวันที่ ... พ.ศ. ๒๕๒๑",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a faded Thai document into Markdown. The document appears to be a route description for a road construction or survey project. There is a hand-drawn map/figure in the middle. I need to transcribe the Thai text as accurately as possible given the faded quality, and represent the figure as an HTML <figure> element with a description.\n\nLet me read the text carefully.\n\nHeader:\nแผนทางรถโลหะการก่อสร้างทาง ไป-มา กลุ่ม ... จังหวัด... ...\nหมวด 1 ทางที่ 3.4 รังสิต – สมุทรปราการ – ตัวลำแพน ระยะทาง 32 กม.\nสำนักงานกองกำกับการ แขวงกรุงเทพ\n\n1. รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ถนนรังสิต (เชิงสะพานก่อนมีนบุรี) ไปตามถนนสายใน ผ่านอุปถัมภ์ข้ามลงภูมี\nถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่ตลาดน้อยหัวลำโพง\n\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไป...\nถนนเจริญกรุง เลี้ยวขวาไปตามถนนเจริสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 กลับไปตามเส้นทางเดิม\nจนถึงรังสิต\n\n2. แผนที่สังเขป\n\nThen a figure (map) with labels:\nรังสิต\nสถานีภาคลูรังสิต\nอุรุถลาวัณหลกที่...\nไปบ่นบุรี\nไปบ่นบุรี\nถนนพหลโยธิน\nลาดพร้าว\nไปบางกะปิ\nสะพานควาย\nอุรุถลาวัณชั้นใน\n1.ไทรน้อย(?)\nถนนพญาไท\nถ.พญาไท\nตัวลำโพง\nถ.พหล\nถนนพระราม 4\nจากเหนือ\n\nBottom text (faded):\n... (๒) ...\n\nI'll transcribe what's legible. The text is quite faded and OCR-like errors are expected. I'll do my best to produce a coherent transcription matching the visible Thai.\n\nLet me settle on a reasonable transcription. I'll keep the structure with headings and a figure.\n\nFor the figure, I'll write a description of the hand-drawn route map.\n\nBottom faded lines: \"แผนผังสังเขปนี้ ... (๒) ... ลงวันที่ ... พ.ศ. ๒๕๒๑\" hard to read. I'll include a placeholder-ish transcription of legible bits.\n\nI'll output only Markdown.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a faded Thai document into Markdown. The document appears to be a route description for a road construction or survey project. There is a hand-drawn map/figure in the middle. I need to transcribe the Thai text as accurately as possible given the faded quality, and represent the figure as an HTML <figure> element with a description.\n\nLet me read the text carefully.\n\nHeader:\nแผนทางรถโลหะการก่อสร้างทาง ไป-มา กลุ่ม ... จังหวัด... ...\nหมวด 1 ทางที่ 3.4 รังสิต – สมุทรปราการ – ตัวลำแพน ระยะทาง 32 กม.\nสำนักงานกองกำกับการ แขวงกรุงเทพ\n\n1. รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ถนนรังสิต (เชิงสะพานก่อนมีนบุรี) ไปตามถนนสายใน ผ่านอุปถัมภ์ข้ามลงภูมี\nถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่ตลาดน้อยหัวลำโพง\n\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไป...\nถนนเจริญกรุง เลี้ยวขวาไปตามถนนเจริสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 กลับไปตามเส้นทางเดิม\nจนถึงรังสิต\n\n2. แผนที่สังเขป\n\nThen a figure (map) with labels:\nรังสิต\nสถานีภาคลูรังสิต\nอุรุถลาวัณหลกที่...\nไปบ่นบุรี\nไปบ่นบุรี\nถนนพหลโยธิน\nลาดพร้าว\nไปบางกะปิ\nสะพานควาย\nอุรุถลาวัณชั้นใน\n1.ไทรน้อย(?)\nถนนพญาไท\nถ.พญาไท\nตัวลำโพง\nถ.พหล\nถนนพระราม 4\nจากเหนือ\n\nBottom text (faded):\n... (๒) ...\n\nI'll transcribe what's legible. The text is quite faded and OCR-like errors are expected. I'll do my best to produce a coherent transcription matching the visible Thai.\n\nLet me settle on a reasonable transcription. I'll keep the structure with headings and a figure.\n\nFor the figure, I'll write a description of the hand-drawn route map.\n\nBottom faded lines: \"แผนผังสังเขปนี้ ... (๒) ... ลงวันที่ ... พ.ศ. ๒๕๒๑\" hard to read. I'll include a placeholder-ish transcription of legible bits.\n\nI'll output only Markdown.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2608,
+    "completion_tokens": 863,
+    "total_tokens": 3471,
+    "cost": 0.0007888419,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00079681,
+      "upstream_inference_prompt_cost": 0.0003912,
+      "upstream_inference_completions_cost": 0.00040561
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 515,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
