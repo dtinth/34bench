@@ -1,7 +1,9 @@
 {
   "tasks": {
     "run": "deno run --allow-read --allow-write=results --allow-env --allow-net=openrouter.ai src/run.ts",
-    "test": "deno test --allow-read"
+    "test": "deno test --allow-read",
+    "paxa": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.paxalabs.com src/paxa.ts",
+    "iapp": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.iapp.co.th src/iapp.ts"
   },
   "fmt": {
     "lineWidth": 100

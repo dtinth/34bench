@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790600973-lJRACRa8T0gph1Efyubf",
+  "object": "chat.completion",
+  "created": 1790600973,
+  "model": "qwen/qwen3.8-27b",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "เทศบาลกรุงเทพมหานคร ได้เสนอโครงการปรับปรุงระบบการระบายน้ำบริเวณ\nซ.สุขุมวิท 1 ถึง ซ.สุขุมวิท 34 รังสิต – บางปะอิน – อำเภอเมือง กรุงเทพมหานคร\nสำรับองค์การบริหารส่วนจังหวัดกรุงเทพมหานคร\n\n---\n\n1. รายละเอียดเบื้องต้น\n\n**เนื้อหาโดย**\n\nเริ่มตั้งแต่ทางรังสิต (บริเวณสะพานข้ามฟาก) ไปตามถนนบางปะอิน ผ่านอุโมงค์ริมรั้ววังธนบุรี ถนนราชวิถี ถึงบริเวณปากคลองถนนพระร่วง 4 จุดเส้นทางติดกับคลองให้ตัดผ่าน\n\n**เนื้อหาโดย**\n\nเริ่มตั้งแต่ที่ทางหลวง ไปตามถนนรองเมือง เมื่อถึงสะพานคลองเมือง เลี้ยวขวาไป ถนนเจริญเมือง เมื่อถึงปากคลองเจริญเมือง เลี้ยวซ้ายไปตามถนนพระร่วง 4 จุดไปตามถนนรังสิต จนจรังสิต\n\n2. **แผนที่สังเขป**\n\n<figure>\n<img src=\"\" alt=\"แผนที่สังเขป แสดงเส้นทางโครงการปรับปรุงระบบการระบายน้ำ ตั้งแต่รังสิต ผ่านถนนบางปะอิน ถนนราชวิถี ถนนเจริญเมือง ถนนพระร่วง 4 จุด ไปจนถึงรังสิต\">\n<figcaption>แผนที่สังเขป แสดงเส้นทางโครงการ ระบุจุดต่าง ๆ ได้แก่ รังสิต, ถนนบางกะปิรังสิต, ถนนพระอาทิตย์หลักสี่, ไปบางบุมิ, ไปบางบุรีย์, ถนนพระอินทร์, จากพระร่วง, ไปบางกระปิ, สระตามถววย, อ.ทุ่งนาย (ถนนพระอาทิตย์รัชดา), ถนนราชวิถี, ตัวอำเภอ, อ.บางปะอิน, จ.พระอินทร์, จ.พระร่วง, ถนนพระร่วง 4, อ.บางเขน</figcaption>\n</figure>\n\nเสนอโดยนาย... (b)\nผู้เสนอเรื่อง ... วันที่ ... เดือน ... พ.ศ. 2521\nผู้รับผิดชอบ ...",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a Thai document into Markdown. I need to read the text carefully, preserving the structure including headers, numbered lists, and the figure. The figure is a hand-drawn map/diagram with Thai labels. I'll create an HTML figure element with a description.\n\nLet me transcribe the text. The header text is faint. Let me look closely.\n\nTop header lines:\n\"เทศบาลกรุงเทพมหานคร ได้เสนอโครงการปรับปรุงระบบการระบายน้ำบริเวณ\"\n\"ซ.สุขุมวิท 1 ถึง ซ.สุขุมวิท 34 รังสิต - บางปะอิน - อำเภอเมือง กรุงเทพมหานคร\"\n\"สำรับองค์การบริหารส่วนจังหวัดกรุงเทพมหานคร\" (approximately)\n\nThen a horizontal line.\n\nThen:\n\"1. รายละเอียดเบื้องต้น\"\n\"เนื้อหาโดย\" (underlined)\n\"เริ่มตั้งแต่ทางรังสิต (บริเวณสะพานข้ามฟาก) ไปตามถนนบางปะอิน ผ่านอุโมงค์ริมรั้ววังธนบุรี ถนนราชวิถี ถึงบริเวณปากคลองถนนพระร่วง 4 จุดเส้นทางติดกับคลองให้ตัดผ่าน\" (approximately)\n\"เนื้อหาโดย\" (underlined)\n\"เริ่มตั้งแต่ที่ทางหลวง ไปตามถนนรองเมือง เมื่อถึงสะพานคลองเมือง เลี้ยวขวาไป ถนนเจริญเมือง เมื่อถึงปากคลองเจริญเมือง เลี้ยวซ้ายไปตามถนนพระร่วง 4 จุดไปตามถนนรังสิต\"\n\"จนถึงรังสิต\"\n\"2. แผนที่สังเขป\" (underlined)\n\nThen the figure (map).\n\nThen bottom right faint text:\n\"เสนอโดยนาย... (b) ...\"\n\"ผู้เสนอเรื่อง ... วันที่ ... \"\n\nThis is quite faint and hard to read. I'll do my best.\n\nLet me write the Markdown.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a Thai document into Markdown. I need to read the text carefully, preserving the structure including headers, numbered lists, and the figure. The figure is a hand-drawn map/diagram with Thai labels. I'll create an HTML figure element with a description.\n\nLet me transcribe the text. The header text is faint. Let me look closely.\n\nTop header lines:\n\"เทศบาลกรุงเทพมหานคร ได้เสนอโครงการปรับปรุงระบบการระบายน้ำบริเวณ\"\n\"ซ.สุขุมวิท 1 ถึง ซ.สุขุมวิท 34 รังสิต - บางปะอิน - อำเภอเมือง กรุงเทพมหานคร\"\n\"สำรับองค์การบริหารส่วนจังหวัดกรุงเทพมหานคร\" (approximately)\n\nThen a horizontal line.\n\nThen:\n\"1. รายละเอียดเบื้องต้น\"\n\"เนื้อหาโดย\" (underlined)\n\"เริ่มตั้งแต่ทางรังสิต (บริเวณสะพานข้ามฟาก) ไปตามถนนบางปะอิน ผ่านอุโมงค์ริมรั้ววังธนบุรี ถนนราชวิถี ถึงบริเวณปากคลองถนนพระร่วง 4 จุดเส้นทางติดกับคลองให้ตัดผ่าน\" (approximately)\n\"เนื้อหาโดย\" (underlined)\n\"เริ่มตั้งแต่ที่ทางหลวง ไปตามถนนรองเมือง เมื่อถึงสะพานคลองเมือง เลี้ยวขวาไป ถนนเจริญเมือง เมื่อถึงปากคลองเจริญเมือง เลี้ยวซ้ายไปตามถนนพระร่วง 4 จุดไปตามถนนรังสิต\"\n\"จนถึงรังสิต\"\n\"2. แผนที่สังเขป\" (underlined)\n\nThen the figure (map).\n\nThen bottom right faint text:\n\"เสนอโดยนาย... (b) ...\"\n\"ผู้เสนอเรื่อง ... วันที่ ... \"\n\nThis is quite faint and hard to read. I'll do my best.\n\nLet me write the Markdown.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2608,
+    "completion_tokens": 719,
+    "total_tokens": 3327,
+    "cost": 0.0029124315,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00294185,
+      "upstream_inference_prompt_cost": 0.0011084,
+      "upstream_inference_completions_cost": 0.00183345
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 351,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
