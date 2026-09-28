@@ -14,7 +14,10 @@ OUT = ROOT / "slides" / "images"
 ZOOM = 0.16
 PREVIEW_WIDTH = 190
 PAGE_HEIGHT = 900
-TOP_WIDTH, TOP_HEIGHT = 968, 912
+# Slide 1 shows the page down to the end of the map (y on route34.png), at this height.
+MAP_BOTTOM, MAP_HEIGHT = 5650, 830
+# The ground truth slides show the top or the bottom of the page at this size.
+PART_WIDTH, PART_HEIGHT = 968, 912
 
 BOXES = json.loads((DIR / "crop-boxes.json").read_text())
 image = Image.open(DIR / "route34.png")
@@ -30,11 +33,20 @@ def save(img, name, width):
 sizes = {
     "page": save(image, "page.jpg", round(image.width * PAGE_HEIGHT / image.height)),
     "preview": save(image, "preview.jpg", PREVIEW_WIDTH),
-    # The top of the page, for the title slide: full slide width minus margins.
+    # Slide 1: the page from the top to the end of the map.
+    "page-map": save(image.crop((0, 0, image.width, MAP_BOTTOM)), "page-map.jpg",
+                     round(image.width * MAP_HEIGHT / MAP_BOTTOM)),
+    # The two ground truth slides: the top and the bottom of the page, in full slide width.
     "page-top": save(
-        image.crop((0, 0, image.width, round(image.width * TOP_HEIGHT / TOP_WIDTH))),
+        image.crop((0, 0, image.width, round(image.width * PART_HEIGHT / PART_WIDTH))),
         "page-top.jpg",
-        TOP_WIDTH,
+        PART_WIDTH,
+    ),
+    "page-bottom": save(
+        image.crop((0, image.height - round(image.width * PART_HEIGHT / PART_WIDTH), image.width,
+                    image.height)),
+        "page-bottom.jpg",
+        PART_WIDTH,
     ),
 }
 for name, box in BOXES.items():

@@ -277,36 +277,75 @@ function Tile({ metric, configs, c }: { metric: Metric; configs: ConfigScore[]; 
 // Slides
 
 function TitleSlide() {
-  const [w, h] = images.sizes["page-top"];
+  const [w, h] = images.sizes["page-map"];
   return (
     <Slide cls="title">
       <h1>
         <span class="hl">Bus No.34</span> Benchmark
       </h1>
-      <img class="page-top" src="images/page-top.jpg" width={w} height={h} />
+      <img class="page-map" src="images/page-map.jpg" width={w} height={h} />
+      <p class="credit">
+        Source: Bangkok Metropolitan Administration open data · GFDL 1.3
+      </p>
     </Slide>
   );
 }
 
-function PartsSlide({ gt }: { gt: Record<Column, string> }) {
+const PAGE_HEIGHT = 7016;
+const [PART_W, PART_H] = images.sizes["page-top"];
+const PART_TOP = SIZE - PART_H; // the page images end at the bottom edge of the slide
+const PART_K = PART_W / SOURCE_WIDTH;
+
+/**
+ * One of the two "Ground Truth" slides: the top or the bottom of the page, with a rectangle on each
+ * scored part, and a card with its ground truth. `cards` gives each card's position on the slide.
+ */
+function GroundTruthSlide({ gt, half, cards }: {
+  gt: Record<Column, string>;
+  half: "top" | "bottom";
+  cards: Partial<
+    Record<Column, { left: number; top: number; width: number; route?: "left" }>
+  >;
+}) {
+  // The first row of route34.png that is in the image.
+  const y0 = half === "top" ? 0 : PAGE_HEIGHT - Math.round(PART_H / PART_K);
   return (
-    <Slide cls="parts-slide">
-      <Head title="Ground truth" />
-      <Preview />
-      <div class="cards">
-        {COLUMNS.map((c) => {
-          const [w, h] = images.sizes[c];
-          return (
-            <div class={`card part-card part-${c}`} data-ray-target={c}>
+    <Slide cls="gt-slide">
+      <Head title="Ground Truth" />
+      <img
+        class="page-part"
+        src={`images/page-${half}.jpg`}
+        width={PART_W}
+        height={PART_H}
+        style={{ left: `${M}px`, top: `${PART_TOP}px` }}
+      />
+      {(Object.keys(cards) as Column[]).map((c) => {
+        const [l, t, r, b] = boxes[c];
+        const pos = cards[c]!;
+        return (
+          <>
+            <div
+              class="gt-mark"
+              data-link={c}
+              style={{
+                left: `${M + l * PART_K - 2}px`,
+                top: `${PART_TOP + (t - y0) * PART_K - 2}px`,
+                width: `${(r - l) * PART_K + 4}px`,
+                height: `${(b - t) * PART_K + 4}px`,
+              }}
+            />
+            <div
+              class="card gt-card"
+              data-link-target={c}
+              data-route={pos.route ?? ""}
+              style={{ left: `${pos.left}px`, top: `${pos.top}px`, width: `${pos.width}px` }}
+            >
               <PartLabel c={c} />
-              <div class="part-body">
-                <img class="crop" src={`images/${c}.jpg`} width={w} height={h} />
-                <div class="truth">“{flat(gt[c])}”</div>
-              </div>
+              <div class="truth">“{flat(gt[c])}”</div>
             </div>
-          );
-        })}
-      </div>
+          </>
+        );
+      })}
     </Slide>
   );
 }
@@ -647,8 +686,18 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .title h1 { position: absolute; left: ${M}px; top: ${M - 6}px; font-size: 56px; line-height: 72px;
   font-weight: 800; letter-spacing: -0.025em; }
 .title h1 .hl { background: var(--lime); padding: 0 12px; border-radius: 10px; }
-.title .page-top { position: absolute; left: ${M}px; bottom: 0; border-radius: 4px 4px 0 0;
+.title .page-map { position: absolute; left: ${M}px; bottom: ${M}px; border-radius: 4px;
   background: white; box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
+.title .credit { position: absolute; right: ${M}px; bottom: ${M}px; width: 190px; text-align: right;
+  font-size: 13px; line-height: 1.5; color: var(--muted); }
+
+.gt-slide .page-part { position: absolute; background: white; border-radius: 4px 4px 0 0;
+  box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
+.gt-mark { position: absolute; z-index: 2; border: 3px solid var(--ink); border-radius: 4px;
+  background: rgba(215,252,112,.28); }
+.gt-card { position: absolute; z-index: 4; padding: 14px 18px;
+  box-shadow: 0 12px 34px rgba(40,50,30,.20), 0 0 0 1px rgba(0,0,0,.04); }
+.gt-card .truth { font-size: 17px; line-height: 26px; margin-top: 2px; }
 
 .model-head h2 { display: flex; align-items: center; gap: 16px; margin-top: 30px; }
 .model-head .rank { font-size: 30px; line-height: 50px; padding: 0 14px; border-radius: 12px;
@@ -775,6 +824,50 @@ document.fonts.ready.then(() => {
       }
     }
   }
+  // Straight links on the ground truth slides: from a rectangle on the page to its card.
+  for (const slide of document.querySelectorAll('.slide')) {
+    const svg = slide.querySelector('svg.rays');
+    const base = slide.getBoundingClientRect();
+    const ns = 'http://www.w3.org/2000/svg';
+    for (const card of slide.querySelectorAll('[data-link-target]')) {
+      const mark = slide.querySelector('[data-link="' + card.dataset.linkTarget + '"]');
+      const a = mark.getBoundingClientRect(), b = card.getBoundingClientRect();
+      const ca = [(a.left + a.right) / 2, (a.top + a.bottom) / 2];
+      const cb = [(b.left + b.right) / 2, (b.top + b.bottom) / 2];
+      // The point where the line from one center to the other leaves the rectangle.
+      const exit = (r, c, to) => {
+        const dx = to[0] - c[0], dy = to[1] - c[1];
+        const t = Math.min(
+          dx ? ((dx > 0 ? r.right : r.left) - c[0]) / dx : Infinity,
+          dy ? ((dy > 0 ? r.bottom : r.top) - c[1]) / dy : Infinity,
+        );
+        return [c[0] + dx * t - base.left, c[1] + dy * t - base.top];
+      };
+      let p = exit(a, ca, cb), q = exit(b, cb, ca), points;
+      if (card.dataset.route === 'left') {
+        // Go left out of the rectangle, then down to the card, so that the line does not cross
+        // another rectangle.
+        const x = b.left + 24 - base.left;
+        p = [a.left - base.left, ca[1] - base.top];
+        q = [x, b.top - base.top];
+        points = [p, [x, p[1]], q];
+      } else {
+        points = [p, q];
+      }
+      const line = document.createElementNS(ns, 'polyline');
+      line.setAttribute('points', points.map((pt) => pt.join(',')).join(' '));
+      line.setAttribute('fill', 'none');
+      line.setAttribute('stroke', '#161b12');
+      line.setAttribute('stroke-width', '2.5');
+      svg.appendChild(line);
+      for (const [cx, cy] of [p, q]) {
+        const dot = document.createElementNS(ns, 'circle');
+        dot.setAttribute('cx', cx); dot.setAttribute('cy', cy); dot.setAttribute('r', '4.5');
+        dot.setAttribute('fill', '#161b12');
+        svg.appendChild(dot);
+      }
+    }
+  }
   document.body.dataset.ready = '1';
 });
 `;
@@ -787,7 +880,20 @@ async function main() {
   const top = configs.slice(0, 10);
   const slides = [
     <TitleSlide />,
-    <PartsSlide gt={gt} />,
+    <GroundTruthSlide
+      gt={gt}
+      half="top"
+      cards={{
+        header: { left: 430, top: 40, width: SIZE - M - 430 },
+        forward: { left: M + 16, top: 720, width: 460, route: "left" },
+        return: { left: SIZE - M - 16 - 460, top: 720, width: 460 },
+      }}
+    />,
+    <GroundTruthSlide
+      gt={gt}
+      half="bottom"
+      cards={{ footer: { left: M + 16, top: 800, width: 460 } }}
+    />,
     ...top.map((c, i) => ({ c, r: i + 1 })).reverse().map(({ c, r }) => (
       <ModelSlide c={c} configs={configs} gt={gt} />
     )),
