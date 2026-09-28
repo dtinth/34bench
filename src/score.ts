@@ -1,4 +1,10 @@
-import { align, type DiffOp, graphemes, normalize } from "./cer.ts";
+import {
+  alignIgnoringWhitespace,
+  type DiffOp,
+  graphemes,
+  normalize,
+  removeWhitespace,
+} from "./cer.ts";
 
 export const COLUMNS = ["header", "forward", "return", "footer"] as const;
 export type Column = (typeof COLUMNS)[number];
@@ -67,8 +73,8 @@ export function scoreRun(
   for (const column of COLUMNS) {
     const expected = normalize(groundTruth[column]);
     const actual = normalize(extracted[column]);
-    const { distance: d, ops } = align(expected, actual);
-    const l = graphemes(expected).length;
+    const { distance: d, ops } = alignIgnoringWhitespace(expected, actual);
+    const l = graphemes(removeWhitespace(expected)).length;
     columns[column] = { expected, actual, distance: d, length: l, ops };
     distance += d;
     length += l;

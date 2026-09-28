@@ -98,6 +98,43 @@ export function align(expected: string, actual: string): Alignment {
   return { distance: d[n][m], ops: reversed.reverse() };
 }
 
+/** Remove all whitespace. Whitespace is ignored when texts are compared. */
+export function removeWhitespace(text: string): string {
+  return text.replace(/\s+/g, "");
+}
+
+/**
+ * Align `actual` against `expected`, ignoring whitespace. The returned ops still contain the
+ * whitespace of `actual` (as equal text), so that they can be displayed.
+ */
+export function alignIgnoringWhitespace(expected: string, actual: string): Alignment {
+  const { distance, ops } = align(removeWhitespace(expected), removeWhitespace(actual));
+  const spaced = graphemes(actual);
+  let i = 0;
+  const out: DiffOp[] = [];
+  const push = (type: DiffOp["type"], text: string) => {
+    const last = out[out.length - 1];
+    if (last && last.type === type) last.text += text;
+    else out.push({ type, text });
+  };
+  const spaces = () => {
+    while (i < spaced.length && /^\s+$/.test(spaced[i])) push("equal", spaced[i++]);
+  };
+  for (const op of ops) {
+    if (op.type === "delete") {
+      push("delete", op.text);
+      continue;
+    }
+    for (const g of graphemes(op.text)) {
+      spaces();
+      push(op.type, g);
+      i++;
+    }
+  }
+  spaces();
+  return { distance, ops: out };
+}
+
 /**
  * Make a diff easier to read: an equal part that is shorter than `minEqual` graphemes, between two
  * changes, becomes part of the changes. Then each group of changes is shown as one delete and one
@@ -138,8 +175,8 @@ export function cer(pairs: { expected: string; actual: string }[]): number {
   let distance = 0;
   let length = 0;
   for (const { expected, actual } of pairs) {
-    const e = normalize(expected);
-    distance += align(e, normalize(actual)).distance;
+    const e = removeWhitespace(normalize(expected));
+    distance += align(e, removeWhitespace(normalize(actual))).distance;
     length += graphemes(e).length;
   }
   return length === 0 ? 0 : distance / length;

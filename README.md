@@ -27,11 +27,11 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
 - The score is the character error rate (CER): the sum of the edit distances of the 4 parts, divided
   by the total length of the [ground truth](data/route34/ground-truth.json). The unit is a grapheme
   cluster (`Intl.Segmenter`), so a Thai mark counts with its base character. Before scoring, markup
-  is removed, all dashes are the same, dot leaders are removed, and whitespace is collapsed. Thai
-  and Arabic digits are different.
+  is removed, all dashes are the same, dot leaders are removed, and whitespace is ignored. Thai and
+  Arabic digits are different.
 - Each model runs with its default reasoning effort. Each configuration has 3 runs (1 for the most
-  expensive models). The table shows the run with the median CER, and also the CER without the
-  footer.
+  expensive models). The table shows the run with the median CER, and the CER of the best and the
+  worst run.
 - Prices are in THB: 1 USD = 35 THB; Paxa: 329 THB per 10,000 credits; iApp: 1.25 THB per IC (list
   prices).
 

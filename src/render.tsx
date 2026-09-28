@@ -17,13 +17,15 @@ const LABELS: Record<Column, string> = {
 const W = {
   rank: 36,
   model: 210,
-  score: 120,
+  best: 64,
+  median: 72,
+  worst: 64,
   time: 70,
   cost: 80,
-  header: 440,
-  forward: 440,
-  return: 440,
-  footer: 300,
+  header: 352,
+  forward: 352,
+  return: 352,
+  footer: 210,
   remarks: 220,
 };
 const PAD = 8;
@@ -49,13 +51,11 @@ tr.truth td { border-bottom: 2px solid #8c959f; }
 .model { font-weight: 600; }
 .tag { display: inline-block; font-size: 11px; line-height: 16px; padding: 0 5px; margin: 2px 2px 0 0;
   border-radius: 8px; background: #eaeef2; color: #57606a; font-weight: 400; }
-.cer { font-size: 16px; font-weight: 700; }
-.runs { font-size: 11px; color: #57606a; }
-.runs b { color: #1f2328; text-decoration: underline; }
 .ins { background: #ffd7d5; color: #82071e; }
 .miss { display: inline-block; width: 4px; height: 14px; margin: 0 1px; vertical-align: -2px;
-  border-radius: 1px; background: #1a7f37; }
-.nofooter { font-size: 11px; color: #57606a; }
+  border-radius: 1px; background: #cf222e; }
+.cer { font-size: 13px; font-weight: 400; color: #57606a; }
+.cer.median { font-size: 16px; font-weight: 700; color: #1f2328; }
 .remarks { font-size: 12px; line-height: 17px; color: #57606a; }
 .empty { color: #8c959f; font-style: italic; }
 .legend { padding: ${PAD}px; font-size: 12px; color: #57606a; }
@@ -78,19 +78,22 @@ function describe(config: string) {
 }
 
 /**
- * The model's own text. Wrong or extra text is red. Where ground truth text is missing, a small
- * green marker is shown instead of the missing text.
+ * The model's own text. Wrong or extra text is red. Where ground truth text is missing and there is
+ * no red text next to it, a small red marker is shown.
  */
 function Diff({ run, column }: { run: RunScore; column: Column }) {
   const { ops, actual } = run.columns[column];
   if (!actual) return <span class="empty">(empty)</span>;
+  const clean = cleanupOps(ops);
   return (
     <>
-      {cleanupOps(ops).map((op) =>
+      {clean.map((op, i) =>
         op.type === "equal"
           ? op.text
           : op.type === "insert"
           ? <span class="ins">{op.text}</span>
+          : clean[i - 1]?.type === "insert" || clean[i + 1]?.type === "insert"
+          ? null
           : <span class="miss" />
       )}
     </>
@@ -201,9 +204,9 @@ async function main() {
       <style>{fonts + CSS}</style>
       <div class="legend" style={{ height: `${legendHeight}px` }}>
         34bench: transcription of the Bangkok bus route 34 document. Ranked by character error rate
-        (CER, lower is better) of the median run. <span class="ins">Red</span>: wrong or extra text.
-        {" "}
-        <span class="miss" />: missing text. Prices in THB (1 USD = 35 THB).
+        (CER, lower is better) of the median run. Best and worst: the other runs.{" "}
+        <span class="ins">Red</span>: wrong or extra text.{" "}
+        <span class="miss" />: missing text. Whitespace is ignored. Prices in THB (1 USD = 35 THB).
       </div>
       <table>
         <colgroup>
@@ -213,7 +216,9 @@ async function main() {
           <Row height={headHeight}>
             <th class="num">#</th>
             <th>Model</th>
-            <th>CER (runs)</th>
+            <th class="num">Best</th>
+            <th class="num">CER</th>
+            <th class="num">Worst</th>
             <th class="num">Time</th>
             <th class="num">Cost</th>
             {COLUMNS.map((c) => <th>{LABELS[c]}</th>)}
@@ -224,6 +229,8 @@ async function main() {
           <Row cls="image" height={imageHeight}>
             <td></td>
             <td class="model">Image</td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -243,6 +250,8 @@ async function main() {
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
             {COLUMNS.map((c) => <td>{truth[c].expected}</td>)}
             <td></td>
           </Row>
@@ -256,19 +265,10 @@ async function main() {
                   <div class="model">{name}</div>
                   {tags.map((t) => <span class="tag">{t}</span>)}
                 </td>
-                <td>
-                  <div class="cer">{percent(m.cer)}</div>
-                  <div class="nofooter">without footer: {percent(m.cerNoFooter)}</div>
-                  {c.runs.length > 1 && (
-                    <div class="runs">
-                      {c.runs.map((r, j) => (
-                        <>
-                          {j > 0 && ", "}
-                          {r === m ? <b>{percent(r.cer)}</b> : percent(r.cer)}
-                        </>
-                      ))}
-                    </div>
-                  )}
+                <td class="num cer">{c.runs.length > 1 ? percent(c.runs[0].cer) : ""}</td>
+                <td class="num cer median">{percent(m.cer)}</td>
+                <td class="num cer">
+                  {c.runs.length > 1 ? percent(c.runs[c.runs.length - 1].cer) : ""}
                 </td>
                 <td class="num">{(m.meta.durationMs / 1000).toFixed(1)} s</td>
                 <td class="num">

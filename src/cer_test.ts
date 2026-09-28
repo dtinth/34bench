@@ -1,5 +1,5 @@
 import { assertEquals } from "jsr:@std/assert@1";
-import { align, cer, cleanupOps, graphemes, normalize } from "./cer.ts";
+import { align, alignIgnoringWhitespace, cer, cleanupOps, graphemes, normalize } from "./cer.ts";
 
 Deno.test("graphemes keeps Thai marks with the base character", () => {
   assertEquals(graphemes("ที่"), ["ที่"]);
@@ -51,5 +51,14 @@ Deno.test("cleanupOps joins changes that have a short equal part between them", 
     { type: "delete", text: "bcd" },
     { type: "insert", text: "XcY" },
     { type: "equal", text: "efgh" },
+  ]);
+});
+
+Deno.test("alignIgnoringWhitespace ignores spaces but keeps them for display", () => {
+  const { distance, ops } = alignIgnoringWhitespace("ถนน พญาไท", "ถนนพญา ไท X");
+  assertEquals(distance, 1);
+  assertEquals(ops, [
+    { type: "equal", text: "ถนนพญา ไท " },
+    { type: "insert", text: "X" },
   ]);
 });
