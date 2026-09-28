@@ -1,0 +1,85 @@
+const segmenter = new Intl.Segmenter("th", { granularity: "grapheme" });
+
+/** Split text into grapheme clusters, so Thai marks stay with their base character. */
+export function graphemes(text: string): string[] {
+  return Array.from(segmenter.segment(text), (s) => s.segment);
+}
+
+/** Collapse runs of whitespace into one space and trim the ends. */
+export function normalize(text: string): string {
+  return text.replace(/\s+/g, " ").trim();
+}
+
+export type DiffOp =
+  | { type: "equal"; text: string }
+  | { type: "delete"; text: string } // in the ground truth, missing from the output
+  | { type: "insert"; text: string }; // in the output, not in the ground truth
+
+export interface Alignment {
+  distance: number;
+  ops: DiffOp[];
+}
+
+/** Grapheme-level Levenshtein alignment of `actual` against `expected`. */
+export function align(expected: string, actual: string): Alignment {
+  const a = graphemes(expected);
+  const b = graphemes(actual);
+  const n = a.length;
+  const m = b.length;
+  const d: Uint32Array[] = [];
+  for (let i = 0; i <= n; i++) {
+    d.push(new Uint32Array(m + 1));
+    d[i][0] = i;
+  }
+  for (let j = 0; j <= m; j++) d[0][j] = j;
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= m; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+    }
+  }
+
+  // Walk back to get the edit script. A substitution becomes a delete plus an insert.
+  const reversed: DiffOp[] = [];
+  const push = (type: DiffOp["type"], text: string) => {
+    const last = reversed[reversed.length - 1];
+    if (last && last.type === type) last.text = text + last.text;
+    else reversed.push({ type, text });
+  };
+  let i = n;
+  let j = m;
+  while (i > 0 || j > 0) {
+    if (i > 0 && j > 0 && a[i - 1] === b[j - 1] && d[i][j] === d[i - 1][j - 1]) {
+      push("equal", a[i - 1]);
+      i--;
+      j--;
+    } else if (i > 0 && j > 0 && d[i][j] === d[i - 1][j - 1] + 1) {
+      push("insert", b[j - 1]);
+      push("delete", a[i - 1]);
+      i--;
+      j--;
+    } else if (i > 0 && d[i][j] === d[i - 1][j] + 1) {
+      push("delete", a[i - 1]);
+      i--;
+    } else {
+      push("insert", b[j - 1]);
+      j--;
+    }
+  }
+  return { distance: d[n][m], ops: reversed.reverse() };
+}
+
+/**
+ * Character error rate over several columns: the sum of the per-column edit
+ * distances divided by the total ground truth length, in grapheme clusters.
+ */
+export function cer(pairs: { expected: string; actual: string }[]): number {
+  let distance = 0;
+  let length = 0;
+  for (const { expected, actual } of pairs) {
+    const e = normalize(expected);
+    distance += align(e, normalize(actual)).distance;
+    length += graphemes(e).length;
+  }
+  return length === 0 ? 0 : distance / length;
+}

@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790598639-UR1oWpcpGEhVi9GyDgA7",
+  "object": "chat.completion",
+  "created": 1790598639,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและจังหวัดที่มีเส้นทางต่อเนื่อง  \nหมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.  \nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n1. รายละเอียดเส้นทาง  \n<u>เที่ยวไป</u>  \nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง  \n<u>เที่ยวกลับ</u>  \nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจารุเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. แผนที่สังเขป\n\n<figure>\nแผนที่สังเขปแสดงแนวเส้นทางรถโดยสารประจำทาง หมวด 1 สายที่ 34 (รังสิต – ถนนพหลโยธิน – หัวลำโพง)\nรายละเอียดจุดและถนนสำคัญตามแนวเส้นทาง:\n- รังสิต (จุดเริ่มต้น)\n- ถนนวิภาวดีรังสิต แยกไปทางทิศตะวันตกเฉียงใต้ และมีทางแยก \"ไปนนทบุรี\"\n- อนุสาวรีย์หลักสี่ และมีทางแยก \"ไปมีนบุรี\"\n- ถนนพหลโยธิน\n- ลาดพร้าว และมีทางแยก \"ไปบางกะปิ\"\n- สะพานควาย\n- อนุสาวรีย์ชัยฯ\n- ถนนพญาไท / ถ.พญาไท\n- ถ.เจริญเมือง, ถ.รองเมือง, ถ.จารุเมือง\n- ถนนพระราม 4\n- หัวลำโพง (จุดปลายทาง)\n</figure>\n\nเอกสารแนบท้ายประกาศกรมการขนส่งทางบก  \nหมายเลขระวาง (6)  \nลงวันที่ ......................... พ.ศ. 2521  \nกองวิชาการและวางแผน",
+        "refusal": null,
+        "reasoning": "**Transcribing Bus Routes**\n\nI'm currently focused on accurately transcribing the Thai text from the provided image into a Markdown document. My immediate task is to carefully read and record the header text, which appears to be: \"เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและ\".\n\n**Detailing Route Information**\n\nI'm now transcribing the route details, specifically focusing on the \"เที่ยวไป\" (outbound journey) and \"เที่ยวกลับ\" (return journey) segments for Route 34. This involves meticulously recording the street names and landmarks to ensure accuracy.\n\n**Mapping Route Connections**\n\nI am now analyzing the route description, noting the turns and landmarks from \"เมือง\" towards \"รังสิต.\" I'm cross-referencing these with the diagram, identifying key road names like \"ถนนจารุเมือง\" and \"ถนนพระราม 4,\" and tracing the \"ถนนวิภาวดีรังสิต\" and \"ถนนพหลโยธิน\" pathways.\n\n**Mapping Route Junctions**\n\nI'm now detailing the routes branching off Phahonyothin Road, specifically noting destinations like Nonthaburi and Min Buri. I'm also tracing the connections around Victory Monument and identifying intersections with Charoen Mueang and Rong Mueang roads, leading towards Hua Lamphong station.\n\n**Verifying Stamped Text**\n\nI'm now focusing on clarifying the stamped text, specifically the year. I'm re-examining it to confirm whether it reads 2521 or 2522, as the characters are somewhat faint.\n\n**Analyzing Route 34 Details**\n\nI'm now detailing Route 34's outbound journey from Rangsit market, noting its path along Phahonyothin Road, past Victory Monument, and then via Rama IV Road to Hua Lamphong train station. The return journey begins at Hua Lamphong.\n\n**Clarifying Textual Details**\n\nI'm now cross-referencing the current route descriptions with the accompanying diagram. I'm noting the turns specified, such as right onto Charoen Mueang Road and then right onto Jarumueang Road, followed by a left onto Rama IV Road, before rejoining the original route to Rangsit. I am also considering transcribing the stamp text within the Markdown.\n\n**Confirming Stamp Date**\n\nI am now meticulously examining the stamped text at the bottom of the document. My current focus is on definitively confirming the year, whether it is 2521 or 2522, as the characters are quite faded. I am also noting the other text within the stamp.\n\n**Refining Route 34 Path**\n\nI'm currently detailing Route 34's outbound journey, confirming whether \"ถนนพญาไท\" is on the same line as the preceding text or a new line. I'm also transcribing the return journey, noting the turns onto Rong Mueang Road.\n\n**Tracing Route Junctions**\n\nI am now confirming the sequence of turns for the route, specifically noting the progression from Charoen Mueang Road to Jarumueang Road, and then the turn onto Rama IV Road. I am also ensuring this sequence accurately leads back towards Rangsit, and am considering how to represent the map diagram's details, including branches to Nonthaburi and Min Buri.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "**Transcribing Bus Routes**\n\nI'm currently focused on accurately transcribing the Thai text from the provided image into a Markdown document. My immediate task is to carefully read and record the header text, which appears to be: \"เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและ\".\n\n**Detailing Route Information**\n\nI'm now transcribing the route details, specifically focusing on the \"เที่ยวไป\" (outbound journey) and \"เที่ยวกลับ\" (return journey) segments for Route 34. This involves meticulously recording the street names and landmarks to ensure accuracy.\n\n**Mapping Route Connections**\n\nI am now analyzing the route description, noting the turns and landmarks from \"เมือง\" towards \"รังสิต.\" I'm cross-referencing these with the diagram, identifying key road names like \"ถนนจารุเมือง\" and \"ถนนพระราม 4,\" and tracing the \"ถนนวิภาวดีรังสิต\" and \"ถนนพหลโยธิน\" pathways.\n\n**Mapping Route Junctions**\n\nI'm now detailing the routes branching off Phahonyothin Road, specifically noting destinations like Nonthaburi and Min Buri. I'm also tracing the connections around Victory Monument and identifying intersections with Charoen Mueang and Rong Mueang roads, leading towards Hua Lamphong station.\n\n**Verifying Stamped Text**\n\nI'm now focusing on clarifying the stamped text, specifically the year. I'm re-examining it to confirm whether it reads 2521 or 2522, as the characters are somewhat faint.\n\n**Analyzing Route 34 Details**\n\nI'm now detailing Route 34's outbound journey from Rangsit market, noting its path along Phahonyothin Road, past Victory Monument, and then via Rama IV Road to Hua Lamphong train station. The return journey begins at Hua Lamphong.\n\n**Clarifying Textual Details**\n\nI'm now cross-referencing the current route descriptions with the accompanying diagram. I'm noting the turns specified, such as right onto Charoen Mueang Road and then right onto Jarumueang Road, followed by a left onto Rama IV Road, before rejoining the original route to Rangsit. I am also considering transcribing the stamp text within the Markdown.\n\n**Confirming Stamp Date**\n\nI am now meticulously examining the stamped text at the bottom of the document. My current focus is on definitively confirming the year, whether it is 2521 or 2522, as the characters are quite faded. I am also noting the other text within the stamp.\n\n**Refining Route 34 Path**\n\nI'm currently detailing Route 34's outbound journey, confirming whether \"ถนนพญาไท\" is on the same line as the preceding text or a new line. I'm also transcribing the return journey, noting the turns onto Rong Mueang Road.\n\n**Tracing Route Junctions**\n\nI am now confirming the sequence of turns for the route, specifically noting the progression from Charoen Mueang Road to Jarumueang Road, and then the turn onto Rama IV Road. I am also ensuring this sequence accurately leads back towards Rangsit, and am considering how to represent the map diagram's details, including branches to Nonthaburi and Min Buri.\n\n",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 2518,
+    "total_tokens": 3648,
+    "cost": 0.0101871,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01029,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.0094425
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2039,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

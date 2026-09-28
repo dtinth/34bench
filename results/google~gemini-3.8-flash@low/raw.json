@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790598607-0Roj4l8cUoI7GR7BVd2e",
+  "object": "chat.completion",
+  "created": 1790598607,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและจังหวัดที่มีเส้นทางต่อเนื่อง  \nหมวด 1 สายที่ 34 รังสิต - ถนนพหลโยธิน - หัวลำโพง ระยะทาง 32 กม.  \nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n1. **รายละเอียดเส้นทาง**  \n<u>เที่ยวไป</u>  \nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง  \n<u>เที่ยวกลับ</u>  \nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต  \n\n2. **<u>แผนที่สังเขป</u>**\n\n<figure>\nA route map sketch for Bus Route 34 from Rangsit to Hua Lamphong.\nThe diagram depicts the primary route running along Phahonyothin Road and Vibhavadi Rangsit Road, showing key landmarks and intersecting roads:\n- Top terminal: รังสิต (Rangsit)\n- Along the route: ถ.วิภาวดีรังสิต (Vibhavadi Rangsit Rd.), อนุสาวรีย์หลักสี่ (Lak Si Monument), ไปมีนบุรี (To Min Buri), ไปนนทบุรี (To Nonthaburi), ถนนพหลโยธิน (Phahonyothin Rd.), ลาดพร้าว (Lat Phrao), ไปบางกะปิ (To Bang Kapi), สะพานควาย (Saphan Khwai), อนุสาวรีย์ชัยฯ (Victory Monument), ถ.พญาไท (Phaya Thai Rd.), ถนนพระราม 4 (Rama IV Rd.), ถ.รองเมือง (Rong Mueang Rd.), ถ.เจริญเมือง (Charoen Mueang Rd.), and terminal at หัวลำโพง (Hua Lamphong).\n- At the bottom right, an official approval note or registration stamp is visible with handwriting referencing an appendix/item \"(6)\".\n</figure>",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "signature": "AY89a1/8bXRoCw/07oDtbp6tFJvI9WvfNlvVVUbHeYLmpd13wDclWmm65OagovLW6yppkA5XRzXWQMIfw80MvJV537VVgMc68suHvT637iOVCgX4NQ==",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 493,
+    "total_tokens": 1623,
+    "cost": 0.0026692875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00269625,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.00184875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

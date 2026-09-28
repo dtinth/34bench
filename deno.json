@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "run": "deno run --allow-read --allow-write=results --allow-env --allow-net=openrouter.ai src/run.ts",
+    "test": "deno test --allow-read"
+  },
+  "fmt": {
+    "lineWidth": 100
+  }
+}
