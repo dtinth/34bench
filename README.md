@@ -10,7 +10,7 @@ GFDL 1.3. See [data/route34](data/route34/).
 
 ## Results
 
-![Results table. For each model: rank, character error rate, time, cost in THB, and the transcribed header, forward trip, return trip, and footer, with wrong text in red and missing text in green.](results.svg)
+![Results table. For each model: rank, character error rate, time, cost in THB, and the transcribed header, forward trip, return trip, and footer, with wrong text in red and a red marker where text is missing.](results.svg)
 
 The results table is a derivative of the document (it contains crops, the ground truth, and model
 transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYING).
@@ -29,7 +29,7 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
   by the total length of the [ground truth](data/route34/ground-truth.json). The unit is a grapheme
   cluster (`Intl.Segmenter`), so a Thai mark counts with its base character. Before scoring, markup
   is removed, all dashes are the same, dot leaders are removed, and whitespace is ignored. Thai and
-  Arabic digits are different.
+  Arabic digits are the same.
 - Each model runs with its default reasoning effort. Each configuration has 3 runs (1 for the most
   expensive models). The table shows the run with the median CER, and the CER of the best and the
   worst run.

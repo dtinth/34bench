@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790619532-HHuhsJ0hYfDNblh9uOwj",
+  "object": "chat.completion",
+  "created": 1790619532,
+  "model": "bytedance-seed/seed-2-1-turbo",
+  "provider": "Seed",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "# แผนการจัดโครงการประกวดหาไหว้พระกระทุ่ม เทศบาลเมือง จังหวัดที่มีเจ้าของ 1 องค์ เนื่อง\nหมวด 1 วันที่ 34 รังสิก - รถเมล์สายอิน - หัวลำโพง ระยะทาง 34 กม.\nสำหรับองค์การบริหารส่วนตำบลกรุงเทพ\n\n---\n\n## 1. เหมาะเก็บคะแนนทาง\n### ที่พิกุล\n#### เส้นทางไป\nเริ่มต้นที่สถานีรังสิ (เชิงสะพานคลองมีนคร) ไปตามถนนบางปะอิน ผ่านอนุสาวรีย์ชัยสมรภูมิ จนแยกคูคต เลี้ยวขวาไปตามถนนพระราม 4 จุดสิ้นทางที่สถานีรถไฟหัวลำโพง\n\n#### เส้นทางกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนสุมางเมือง เลี้ยวซ้ายไปตามถนนพระรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนแจ้งวัฒนะ เลี้ยวซ้ายเข้าถนนพระราม 4 แล้วเดินทางตรงจนถึงสถานีรังสิ\n\n## 2. แผนที่เส้นทาง\n<figure>แผนที่วาดมือแสดงเส้นทางการเดิน ที่เริ่มจากสถานีรังสิที่จุดบนสุด ผ่านแยกถนนและจุดสำคัญต่างๆ ลงมาตามถนนพระราม 4 จนถึงจุดหมายที่หัวลำโพงที่จุดล่างสุด มีข้อความกำกับชื่อถนน สะพานแยก และจุดสำคัญบนเส้นทาง</figure>",
+        "refusal": null,
+        "reasoning": "Got it,\n\nI'm starting to transcribe this Thai project document step by step. I've already finished transcribing the document's header and the first section on route suitability for evaluation, and will proceed to transcribe the remaining content.\n\nI've finished transcribing the second section on route evaluation details, and confirmed the core content of the document's official route map section, which covers all key landmarks along the route from Rangsit to Hua Lamphong. I'm now organizing the transcription content in proper markdown format, and will continue to process the remaining content next.\n\nI've finished transcribing the venue route map. Some content is faded and hard to read, so I've only transcribed the legible parts without adding any extra information.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Got it,\n\nI'm starting to transcribe this Thai project document step by step. I've already finished transcribing the document's header and the first section on route suitability for evaluation, and will proceed to transcribe the remaining content.\n\nI've finished transcribing the second section on route evaluation details, and confirmed the core content of the document's official route map section, which covers all key landmarks along the route from Rangsit to Hua Lamphong. I'm now organizing the transcription content in proper markdown format, and will continue to process the remaining content next.\n\nI've finished transcribing the venue route map. Some content is faded and hard to read, so I've only transcribed the legible parts without adding any extra information.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1377,
+    "completion_tokens": 1662,
+    "total_tokens": 3039,
+    "cost": 0.004795065,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1336,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0048435,
+      "upstream_inference_prompt_cost": 0.0006885,
+      "upstream_inference_completions_cost": 0.004155
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1164,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

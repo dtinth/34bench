@@ -1,0 +1,36 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "effort": null,
+  "requestedProvider": "z-ai",
+  "image": "full",
+  "maxTokens": 65536,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-28T18:34:44.793Z",
+  "durationMs": 671585,
+  "cost": 0.024124122,
+  "usage": {
+    "prompt_tokens": 8002,
+    "completion_tokens": 48255,
+    "total_tokens": 56257,
+    "cost": 0.024124122,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8000,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0243678,
+      "upstream_inference_prompt_cost": 0.0002403,
+      "upstream_inference_completions_cost": 0.0241275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47116,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Z.AI",
+  "finishReason": "stop"
+}

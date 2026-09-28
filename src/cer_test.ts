@@ -32,9 +32,9 @@ Deno.test("cer ignores whitespace differences", () => {
 
 Deno.test("normalize makes dashes the same and removes dot leaders", () => {
   assertEquals(normalize("รังสิต – ถนนพหลโยธิน — หัวลำโพง"), "รังสิต - ถนนพหลโยธิน - หัวลำโพง");
-  assertEquals(normalize("ตามมาตรา 31.........(๖)……"), "ตามมาตรา 31 (๖)");
+  assertEquals(normalize("ตามมาตรา 31.........(๖)……"), "ตามมาตรา 31 (6)");
   assertEquals(normalize("พ.ร.บ.การขนส่งทางบก"), "พ.ร.บ.การขนส่งทางบก");
-  assertEquals(normalize("(๖) (6)"), "(๖) (6)");
+  assertEquals(normalize("(๖) (6) ๒๕๒๒"), "(6) (6) 2522");
 });
 
 Deno.test("normalize removes Markdown and HTML markup", () => {

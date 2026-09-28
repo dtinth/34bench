@@ -38,6 +38,7 @@ async function runOnce(
   effort: string | undefined,
   provider: string | undefined,
   imageName: string,
+  maxTokens: number,
   dir: URL,
 ) {
   const image = encodeBase64(await Deno.readFile(new URL(IMAGES[imageName], import.meta.url)));
@@ -50,7 +51,7 @@ async function runOnce(
         { type: "image_url", image_url: { url: `data:image/png;base64,${image}` } },
       ],
     }],
-    max_tokens: MAX_TOKENS,
+    max_tokens: maxTokens,
     ...(effort ? { reasoning: { effort } } : {}),
     // Some models are served by many providers, and their outputs can differ. This fixes one.
     ...(provider ? { provider: { only: [provider], allow_fallbacks: false } } : {}),
@@ -80,6 +81,7 @@ async function runOnce(
     effort: effort ?? null,
     requestedProvider: provider ?? null,
     image: imageName,
+    maxTokens,
     prompt: PROMPT,
     date: new Date().toISOString(),
     durationMs,
@@ -107,16 +109,20 @@ async function exists(url: URL) {
 }
 
 async function main() {
-  const args = parseArgs(Deno.args, { string: ["model", "effort", "provider", "image", "runs"] });
+  const args = parseArgs(Deno.args, {
+    string: ["model", "effort", "provider", "image", "runs", "max-tokens"],
+  });
   const model = args.model;
   if (!model) {
     throw new Error(
-      "Usage: deno task run --model <id> [--effort <level>] [--provider <slug>] [--image <name>] [--runs <n>]",
+      "Usage: deno task run --model <id> [--effort <level>] [--provider <slug>] [--image <name>] [--runs <n>] [--max-tokens <n>]",
     );
   }
   const effort = args.effort;
   const provider = args.provider;
   const imageName = args.image ?? "full";
+  // Some models reason for longer than MAX_TOKENS. A higher limit reserves more credit.
+  const maxTokens = Number(args["max-tokens"] ?? MAX_TOKENS);
   if (!(imageName in IMAGES)) throw new Error(`Unknown image: ${imageName}`);
   const runs = Number(args.runs ?? RUNS);
 
@@ -134,7 +140,7 @@ async function main() {
     const dir = new URL(`${n}/`, configDir);
     if (await exists(new URL("response.md", dir))) continue;
     console.error(`[${label}] run ${n}/${runs}...`);
-    const meta = await runOnce(apiKey, model, effort, provider, imageName, dir);
+    const meta = await runOnce(apiKey, model, effort, provider, imageName, maxTokens, dir);
     console.error(
       `[${label}] run ${n}/${runs} done in ${
         (meta.durationMs / 1000).toFixed(1)

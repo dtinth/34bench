@@ -1,5 +1,5 @@
 {
-  "anthropic~claude-fable-5.1": "1 run (cost).",
+  "anthropic~claude-fable-5.1": "3 runs.",
   "openai~gpt-6-astra": "1 run (cost).",
   "openai~gpt-6-sol_300dpi": "Rejects the full-size image, so it gets the 300 dpi copy. In all runs, wrote placeholders such as \"[ข้อความจาง อ่านไม่ชัด]\" instead of text.",
   "openai~gpt-6-luna": "Did not transcribe in any run: described the page as \"a technical line graph\", or wrote that the text is too faint.",
@@ -12,12 +12,10 @@
   "iapp~document-ocr": "OCR service. Plain text output (no Markdown). No prompt. Same output in all runs.",
   "paxa~paxa-ocr-lite-v1": "OCR service. No prompt. Same output in all runs.",
   "typhoon~typhoon-ocr": "OCR model. Uses its own prompt and a 1800 px image, as its official client does. Free API (rate limited).",
-  "cohere~command-a-plus_300dpi": "Rejects the full-size image (more than 20 million pixels), so it gets the 300 dpi copy. No answer: the reasoning reached the 16,384-token limit. 1 run so far.",
-  "x-ai~grok-4.7": "1 run so far.",
-  "qwen~qwen3.8-omni-flash": "A different, made-up document (a water-pipe project). 1 run so far.",
-  "meta~muse-spark-1.3-contributor": "1 run so far.",
-  "meta~muse-spark-1.3": "1 run so far.",
-  "z-ai~glm-5.3-flash+z-ai": "No answer: the reasoning reached the 16,384-token limit. 1 run so far.",
-  "bytedance-seed~seed-2-1-turbo": "Much of the text is made up. 1 run so far.",
-  "moonshotai~kimi-k3+moonshotai": "A different, made-up document. 1 run so far."
+  "cohere~command-a-plus_300dpi": "Rejects the full-size image (more than 20 million pixels), so it gets the 300 dpi copy. Run with max_tokens 65,536. One run looped in English until the limit; the others are a different, made-up document.",
+  "qwen~qwen3.8-omni-flash": "Much of the text is made up, or a different document.",
+  "z-ai~glm-5.3-flash+z-ai": "Run with max_tokens 65,536 (its reasoning is very long). All runs: a different, made-up document.",
+  "bytedance-seed~seed-2-1-turbo": "Much of the text is made up.",
+  "moonshotai~kimi-k3+moonshotai": "A different, made-up document. 1 run (cost).",
+  "x-ai~grok-4.7": "Writes placeholders such as \"[อ่านไม่ออก]\" for unreadable text."
 }

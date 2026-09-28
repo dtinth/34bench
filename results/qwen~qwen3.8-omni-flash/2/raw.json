@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790619410-yDHLFpBhd1FbN03KnjqW",
+  "object": "chat.completion",
+  "created": 1790619410,
+  "model": "qwen/qwen3.8-omni-flash",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "เป็นทางธงสายการประมาณไปจากจุดถนนสายพหลโยธิน ฝั่งหัวโค้ง ไปทางทิศเหนือ\nยาว ๑ ราวถึง ๓๔ ฝั่งกอก - ถนนสุขาภิบาล - วัดหัวบ่อ ระยะทาง ๓๔ วา.\nกว้างทั้งธงสาย ราว ๒๐ วา. ตามรูปแผนที่\n\n---\n\n**๑. รายละเอียดแนวธง**\n\n**เดิมไป**\nเริ่มแต่ฝั่งกอกครั้งกอก (เชิงสะพานแก้วนิกร) ไปตามถนนสายพหลโยธิน ผ่านอนุสาวรีย์ศรีสุริยะ\nถนนสุขุไท เบี้ยวขวาไปตามถนนพระราม ๔ สุดเขตทุ่งที่คลองประปา หัวลำโพง\n\n**เดิมจาก**\nเริ่มแต่หัวลำโพง ไปตามถนนรองเมือง เบี้ยวซ้ายไปตามถนนรองเมือง เบี้ยวขวาไป\nถนนเจริญกรุง เบี้ยวขวาไปตามถนนเจริญเมือง เบี้ยวซ้ายไปตามถนนพระราม ๔ แล้วไปตามแนวคลองผี\nจนถึงฝั่งกอก\n\n**๒. แผนที่สังเขป**\n\n<figure>\n\n```\n                              ฝั่งกอก\n                                 |\n                                 |\n        ถนนวิภาวดีรังสิต ---- o   |\n                                 |   o ถนนสายหลักสี่\n       ไปบางซื่อ  \\               |            /  ไปบางกะปิ\n                  \\              |           /\n                   \\     ถนนพหลโยธิน      /\n                    \\          |         /\n                     \\    จากกลาง  /\n                      \\     |     /\n                       \\    |    /   ไปบางกะปิ\n                        \\   |   /\n                         \\  |  /\n        สะพานควาย -- o    | /\n                     /     |/\n   ต.บางเขน (      /   o ถนนลาดพร้าว\n                  /      /\n   ถนนสุขุไท     /      /\n   ลาดพร้าว     /      /\n   หัวลำโพง -- o      /   ต.บางกะปิ\n                /|   /\n               / |  /\n              /  | /  ถนนพระราม ๔\n             /   |/\n           จากนอก (\n```\n\n*แผนผังสังเขปแสดงแนวธง เริ่มแต่ฝั่งกอก ลงมาตามถนนพหลโยธิน ผ่านสะพานควาย ถนนลาดพร้าว ถนนสุขุมวิท หัวลำโพง จนถึงถนนพระราม ๔*\n\n</figure>\n\n(๖.)",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a Thai document containing text and a map/diagram. I need to transcribe the Thai text as accurately as possible and represent the diagram as an HTML figure element with a description.\n\nLet me read through the document carefully. It appears to be a land/road description document (possibly related to expropriation or road construction).\n\nTop section: mentions distances, \"ทางหลวง\" (highway), \"จังหวัด\" (province), etc.\n\nThen numbered sections:\n1. รายละเอียดแนวธง (details of the line)\n- เดิมไป...\n- เดิมจาก...\n\n2. แผนที่สังเขป (sketch map)\n\nThen a diagram with labels like ฝั่งกอก, ถนนสุขาภิบาล, ไปบางบุรี, ฯลฯ.\n\nI'll transcribe what I can read and put the map in a figure element.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a Thai document containing text and a map/diagram. I need to transcribe the Thai text as accurately as possible and represent the diagram as an HTML figure element with a description.\n\nLet me read through the document carefully. It appears to be a land/road description document (possibly related to expropriation or road construction).\n\nTop section: mentions distances, \"ทางหลวง\" (highway), \"จังหวัด\" (province), etc.\n\nThen numbered sections:\n1. รายละเอียดแนวธง (details of the line)\n- เดิมไป...\n- เดิมจาก...\n\n2. แผนที่สังเขป (sketch map)\n\nThen a diagram with labels like ฝั่งกอก, ถนนสุขาภิบาล, ไปบางบุรี, ฯลฯ.\n\nI'll transcribe what I can read and put the map in a figure element.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1352,
+    "completion_tokens": 694,
+    "total_tokens": 2046,
+    "cost": 0.0005236902,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00052898,
+      "upstream_inference_prompt_cost": 0.0002028,
+      "upstream_inference_completions_cost": 0.00032618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 179,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

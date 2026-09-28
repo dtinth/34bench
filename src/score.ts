@@ -45,6 +45,8 @@ export interface RunScore {
   cerNoFooter: number;
   costThb: number | null;
   columns: Record<Column, ColumnScore>;
+  /** The extracted text, before normalization. */
+  extracted: Columns;
 }
 
 export interface ConfigScore {
@@ -113,6 +115,7 @@ export async function loadScores(root = new URL("../", import.meta.url)): Promis
         run: run.name,
         meta,
         costThb: costThb(meta),
+        extracted,
         ...scoreRun(groundTruth, extracted),
       });
     }

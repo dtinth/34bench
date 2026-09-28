@@ -29,10 +29,12 @@ export function stripMarkup(text: string): string {
  *   for a dotted line;
  * - collapse runs of whitespace into one space and trim the ends.
  *
- * Thai and Arabic digits are not made the same, because the document uses both.
+ * - make Thai digits the same as Arabic digits (๖ = 6), because the document uses Arabic digits
+ *   and a Thai digit is an acceptable reading of them.
  */
 export function normalize(text: string): string {
   return stripMarkup(text)
+    .replace(/[๐-๙]/g, (d) => String(d.charCodeAt(0) - 0x0e50))
     .replace(/[‐-―−]/g, "-")
     .replace(/\.{3,}|…+/g, " ")
     .replace(/\s+/g, " ")
