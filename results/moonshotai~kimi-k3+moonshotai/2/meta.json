@@ -1,0 +1,36 @@
+{
+  "model": "moonshotai/kimi-k3",
+  "effort": null,
+  "requestedProvider": "moonshotai",
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T09:05:46.389Z",
+  "durationMs": 221707,
+  "cost": 0.17006814,
+  "usage": {
+    "prompt_tokens": 11782,
+    "completion_tokens": 9096,
+    "total_tokens": 20878,
+    "cost": 0.17006814,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.171786,
+      "upstream_inference_prompt_cost": 0.035346,
+      "upstream_inference_completions_cost": 0.13644
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8268,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Moonshot AI",
+  "finishReason": "stop"
+}
