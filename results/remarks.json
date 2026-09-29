@@ -17,5 +17,6 @@
   "z-ai~glm-5.3-flash+z-ai": "Run with max_tokens 65,536 (its reasoning is very long). All runs: a different, made-up document.",
   "bytedance-seed~seed-2-1-turbo": "Much of the text is made up.",
   "moonshotai~kimi-k3+moonshotai": "A different, made-up document. 1 run (cost).",
-  "x-ai~grok-4.7": "Writes placeholders such as \"[อ่านไม่ออก]\" for unreadable text."
+  "x-ai~grok-4.7": "Writes placeholders such as \"[อ่านไม่ออก]\" for unreadable text.",
+  "anthropic~claude-sonnet-5.5": "Run 3 has no header: it starts at section 1. Runs 1 and 2 describe the footer as unreadable, instead of transcribing it."
 }

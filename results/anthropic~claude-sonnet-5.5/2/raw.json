@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790671310-MarVOcoxAcSSJIOakg63",
+  "object": "chat.completion",
+  "created": 1790671310,
+  "model": "anthropic/claude-sonnet-5.5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\nเส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานคร จังหวัดนนทบุรี และปทุมธานี ต่อเนื่อง\nหมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. <u>รายละเอียดเส้นทาง</u>\n\n<u>เที่ยวไป</u>\n\nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n<u>เที่ยวกลับ</u>\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. <u>แผนที่สังเขป</u>\n\n<figure>\nA hand-drawn sketch map of the bus route running from Rangsit (top right) down to Hua Lamphong (bottom left), drawn as a long double line running roughly north–south, slanting from upper right to lower left. Labels along the route include: รังสิต (top), ถนนวิภาวดีรังสิต, อนุสาวรีย์หลักสี่, ไปนนทบุรี, ไปปทุมธานี, ถนนพหลโยธิน, จตุจักร (probably), ไปบางกะปิ, สะพานควาย, อนุสาวรีย์ชัย, ถนนพญาไท, ถ.พญาไท, ถนนพระราม 4, and หัวลำโพง at the bottom left, with small handwritten labels for streets near the terminus (ถ.เจริญเมือง, ถ.รองเมือง, ถ.จรัสเมือง). Dashed lines show intersecting roads, and small circles mark the monuments at Laksi and Victory Monument.\n</figure>\n\n(ลายมือลงนามและตราประทับที่มุมขวาล่าง อ่านไม่ชัดเจน)\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 934,
+    "total_tokens": 5759,
+    "cost": 0.0188001,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01899,
+      "upstream_inference_prompt_cost": 0.00965,
+      "upstream_inference_completions_cost": 0.00934
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
