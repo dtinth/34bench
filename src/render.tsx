@@ -56,14 +56,22 @@ tr.truth td { border-bottom: 2px solid #8c959f; }
   border-radius: 1px; background: #cf222e; }
 .cer { font-size: 13px; font-weight: 400; color: #57606a; white-space: nowrap; }
 .cer.median { font-size: 16px; font-weight: 700; color: #1f2328; }
+.cer.median.good { color: #4d8a00; } .cer.median.okay { color: #b86e00; }
+.cer.median.poor { color: #c8352a; }
 .remarks { font-size: 12px; line-height: 17px; color: #57606a; }
 .empty { color: #8c959f; font-style: italic; }
 .legend { padding: ${PAD}px; font-size: 12px; color: #57606a; }
 img { display: block; width: 100%; }
 `;
 
-function percent(x: number) {
-  return `${(x * 100).toFixed(1)}%`;
+/** Accuracy = 1 − CER, as a percentage. It is 0% when the CER is more than 100%. */
+function accuracy(cer: number) {
+  return `${(Math.max(0, 1 - cer) * 100).toFixed(1)}%`;
+}
+
+/** Color class of the median accuracy: the best, middle, or worst third of the ranking. */
+function grade(index: number, of: number) {
+  return ["good", "okay", "poor"][Math.min(2, Math.floor((3 * index) / of))];
 }
 
 /** Split a config directory name such as `openai~gpt-6-sol_300dpi` into a name and tags. */
@@ -203,8 +211,8 @@ async function main() {
     >
       <style>{fonts + CSS}</style>
       <div class="legend" style={{ height: `${legendHeight}px` }}>
-        34bench: transcription of the Bangkok bus route 34 document. Ranked by character error rate
-        (CER, lower is better) of the median run. Best and worst: the other runs.{" "}
+        34bench: transcription of the Bangkok bus route 34 document. Ranked by accuracy (1 −
+        character error rate) of the median run. Best and worst: the other runs.{" "}
         <span class="ins">Red</span>: wrong or extra text.{" "}
         <span class="miss" />: missing text. Whitespace is ignored. Prices in THB (1 USD = 35 THB).
       </div>
@@ -217,7 +225,7 @@ async function main() {
             <th class="num">#</th>
             <th>Model</th>
             <th class="num">Best</th>
-            <th class="num">CER</th>
+            <th class="num">Accuracy</th>
             <th class="num">Worst</th>
             <th class="num">Time</th>
             <th class="num">Cost</th>
@@ -265,10 +273,10 @@ async function main() {
                   <div class="model">{name}</div>
                   {tags.map((t) => <span class="tag">{t}</span>)}
                 </td>
-                <td class="num cer">{c.runs.length > 1 ? percent(c.runs[0].cer) : ""}</td>
-                <td class="num cer median">{percent(m.cer)}</td>
+                <td class="num cer">{c.runs.length > 1 ? accuracy(c.runs[0].cer) : ""}</td>
+                <td class={`num cer median ${grade(i, rows.length)}`}>{accuracy(m.cer)}</td>
                 <td class="num cer">
-                  {c.runs.length > 1 ? percent(c.runs[c.runs.length - 1].cer) : ""}
+                  {c.runs.length > 1 ? accuracy(c.runs[c.runs.length - 1].cer) : ""}
                 </td>
                 <td class="num">{(m.meta.durationMs / 1000).toFixed(1)} s</td>
                 <td class="num">

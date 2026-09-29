@@ -10,7 +10,7 @@ GFDL 1.3. See [data/route34](data/route34/).
 
 ## Results
 
-![Results table. For each model: rank, character error rate, time, cost in THB, and the transcribed header, forward trip, return trip, and footer, with wrong text in red and a red marker where text is missing.](results.svg)
+![Results table. For each model: rank, accuracy, time, cost in THB, and the transcribed header, forward trip, return trip, and footer, with wrong text in red and a red marker where text is missing.](results.svg)
 
 The results table is a derivative of the document (it contains crops, the ground truth, and model
 transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYING).
@@ -31,8 +31,8 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
   is removed, all dashes are the same, dot leaders are removed, and whitespace is ignored. Thai and
   Arabic digits are the same.
 - Each model runs with its default reasoning effort. Each configuration has 3 runs (1 for the most
-  expensive models). The table shows the run with the median CER, and the CER of the best and the
-  worst run.
+  expensive models). The table shows the accuracy (1 − CER) of the median run, and of the best and
+  the worst run.
 - Prices are in THB: 1 USD = 35 THB; Paxa: 329 THB per 10,000 credits; iApp: 1.25 THB per IC (list
   prices).
 

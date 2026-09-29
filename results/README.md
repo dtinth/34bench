@@ -27,12 +27,14 @@ the text is wrong, made up, or about a different document.
   the first paragraph of section 1. The label is not part of the value.
 - **`return`**: the text of the second sub-part of section 1. This is normally below a "เที่ยวกลับ"
   label (or "เมื่อกลับ"). The label is not part of the value.
-- **`footer`**: the text after the `<figure>` element. If the response has no text after the
-  `<figure>`, look for a transcription of the footer elsewhere, outside the `<figure>`. A
-  description of the footer (for example, inside the `<figure>`, or an English note such as
-  "Signature block area…") is not a transcription, so it is not a footer value.
-- A placeholder that the model wrote at a position (for example, "[ข้อความจาง อ่านไม่ชัด]") is the value
-  for that position. Extract it as it is.
+- **`footer`**: the text after the `<figure>` element, but not map labels (they are part of section
+  2). If the response has no text after the `<figure>`, look for the footer elsewhere, outside the
+  `<figure>`. Text inside the `<figure>` is not a footer value, because the `<figure>` is the map.
+- Whatever the model wrote at a position is the value for that position, also when it is not a
+  transcription. This includes a placeholder (for example, "[ข้อความจาง อ่านไม่ชัด]") and a description
+  (for example, "(Signature block area with official stamp/seal marks…)" or "(ลายมือลงนาม / ตราประทับ
+  ท้ายเอกสาร อ่านไม่ชัดเจน)"). Extract it as it is. Then an empty value shows that the model wrote
+  nothing, and a description shows that it saw the part but did not transcribe it.
 - Use `""` only when the response has nothing at all at that position. For example, use `""` for
   `forward` and `return` when the response is only a `<figure>`, with no section 1.
 - Remove all Markdown and HTML markup (for example `**`, `#`, `<u>`, `<br>`, `&nbsp;`). Keep only
