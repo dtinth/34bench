@@ -196,9 +196,15 @@ function Slide({ children, cls }: { children: ComponentChildren; cls?: string })
   );
 }
 
-function Head({ kicker, title, sub }: { kicker?: string; title: string; sub?: string }) {
+function Head({ kicker, title, sub, big }: {
+  kicker?: string;
+  title: string;
+  sub?: string;
+  /** The same size as the model slide headings. */
+  big?: boolean;
+}) {
   return (
-    <header class={kicker ? "head" : "head no-kicker"}>
+    <header class={`head${kicker ? "" : " no-kicker"}${big ? " big-head" : ""}`}>
       {kicker && <div class="kicker">{kicker}</div>}
       <h2>{title}</h2>
       {sub && <p class="sub">{sub}</p>}
@@ -619,7 +625,7 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
   const mid = (freeX + x0) / 2;
   return (
     <Slide>
-      <Head title="Pareto Frontier" />
+      <Head title="Pareto Frontier" big />
       <svg class="chart" width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
         {[0, 0.25, 0.5, 0.75, 1].map((a) => (
           <g>
@@ -762,6 +768,7 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
   box-shadow: 0 12px 34px rgba(40,50,30,.20), 0 0 0 1px rgba(0,0,0,.04); }
 .gt-card .truth { font-size: 24px; line-height: 34px; margin-top: 4px; }
 
+.head.big-head h2 { font-size: 69px; line-height: 88px; margin-top: 14px; }
 .model-head h2 { display: flex; align-items: center; gap: 20px; margin-top: 14px; line-height: 88px; }
 .model-head .rank { font-size: 42px; line-height: 70px; padding: 0 18px; border-radius: 16px;
   background: var(--lime); color: var(--ink); letter-spacing: -0.01em; }
