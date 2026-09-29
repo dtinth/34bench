@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790719830-h8D7M56whOGpPUkxN3Qe",
+  "object": "chat.completion",
+  "created": 1790719831,
+  "model": "openai/gpt-6.1-sol",
+  "provider": "Azure",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "[อ่านไม่ชัด] ถนนพหลโยธิน  \nผนวก 1 [อ่านไม่ชัด] 34 รังสิต - ถนนพหลโยธิน - อนุสาวรีย์ฯ พระราม 4  \nสำนักงาน[อ่านไม่ชัด]ทหารกรุงเทพ\n\n---\n\n## 1. ภูมิประเทศเส้นทาง\n\n### ทั่วไป\n\nเส้นทางจากรังสิต ([อ่านไม่ชัด]) ไปจนถึงบ้าน[อ่านไม่ชัด] อำเภอ[อ่านไม่ชัด] จังหวัด[อ่านไม่ชัด] ถนนพญาไท เส้นทางไปจากถนนพระราม 4 จุดเส้นทางที่มีรถยนต์ไปมาได้สะดวก\n\n### เส้นทาง\n\nเส้นทางรถไฟ[อ่านไม่ชัด] ไปตามถนน[อ่านไม่ชัด] เมื่อผ่านตลาด[อ่านไม่ชัด] เมื่อมาเข้า[อ่านไม่ชัด] ถนนวิภาวดีรังสิต [อ่านไม่ชัด] เมื่อวิ่งไปตามถนนพระราม 4 [อ่านไม่ชัด] จนถึงรังสิต\n\n## 2. แผนที่สังเขป\n\n<figure>\n<figcaption>แผนที่สังเขปเส้นทางจากรังสิตลงมาถึงถนนพระราม 4 แสดงแนวถนนยาวในแนวเหนือ–ใต้ จุดวงกลม ทางแยก และเส้นประเชื่อมสถานที่ต่าง ๆ ป้ายที่อ่านได้ ได้แก่ รังสิต, อนุสาวรีย์หลักสี่, วัดพระศรีมหาธาตุ, ไปรษณีย์, สะพานควาย, พหลโยธิน, จตุจักร, ไปบางกะปิ, อนุสาวรีย์ชัยฯ, ถนนพญาไท, หัวลำโพง และถนนพระราม 4 มีคำกำกับที่เขียนด้วยลายมือ ได้แก่ ด.เต็มพอไช, ด.รอยไช, ถ.พญาไท และ ด.จารุเมือง ข้อความบางส่วนจางและอ่านไม่ชัด</figcaption>\n</figure>\n\n[ตราประทับและข้อความด้านล่างอ่านไม่ชัด]",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqvDdkeIc4l2hOwT-JYdQOv18Fv36QAl2ChCKAH4sIDbYV_pWGP19k8ozoJNjqJ2zuj9OWWfk9UcW1osm2AZH0eGlOUXjX0n4hlnGn44UbFf5ykUbkh6LANLaucH_i1BURiwO4FEzAy1kGCxAOLyoxi_-gsu87GugnNiA5-1Z1nzIwGzD1qiCCyj8HSex-EwpGexS-7x109jG6DwhXaI_MgTrslKmW6d796YD9tQ8JqhVNUwcbxbz_uCnY3JtSkBZ2lRvwWliQmMWuo9Hr60DydsUYzzth_e5sMwNdsJzre99T3csofKeB8_evg-qcAbstjLzRDWH91RA1IOTtoSeX44waDyEXwiveDU97uLydVxNCeUBmqqjdb3MQ4-RRnPLk8U86Z3Mot5suf4wXVysCwYC1KACM5EYYsDzT7kpNA4dDABR9BywPnA_jkD3RIPZisA6l93Pb_BG0VPCOpSQ4gJLQlsaE8ZwyR-Y24v-fidQ3XLpw5IxwWlVAvbcSW4r0zkq0VXgWVNjtGybIKkvKwkh6hl-oM2yDBI0bbfygXhkXrfNjJIfBi0YVlQWhpY4bhJhF4-D9DLqpQ7pNEqsMxbhoohTDoHV6jeSQpNMQ0rbie4YoK1bcygCsH5_PfT6DQltPSh_C1dcLE8dgc02cj9h3EvrVnNzEcoYdcLtKcyqJlRVppFmiEDKgqO8tfEVgv22pbYO6449NyyxT9YJCwPhI3bffcCjkpdrzRaz1IKHTqY0sBFBFUzaTkCE9xdDn5J2xPmN4DbczcUAGIXMcFJIkvly49qidMLgmy_OrM1IPnBY4x4kGxwmLyTdg2M_bi8c8Rcjq1Tdf02FXJGsuPP9yIae4z2SBe3uXAH677rPwaVY63n5Ggo9mHHhi83XWoA7ngE_iKhM5Qq5ujreks9FpsFi3xEkvR647666___jp71plD_ko-1pcJkUBvAv3FvMugkI8NNEmeS-11zvf5fNUPM9IsJIORxN2S2toJAw4OAvfzj9Cu5KpGG05m4i3AQJu0ioTLt4qA_W8atAn48RP5nkXgQQ8Mldkxk_aEgRMvGB41A-wPSipCTdE5ehSczHcP3QEEO7phlukdJq-F-eei3Qkdjy51Tv_HeeKXtls5g8OqPkpsufSjaT_imbprRulfNb0AaVyorWl2VXMUdzc63HQtCkatmy6fwhxGAxcSZhHy3w2Ww7AsQPC81klWOA7Pis6ob5vwdmWvdOKvEGaNxv0GJaew0leTJpTTU2RqbsqPMKgSicFC9CYaylLoveA0MJrpOWOxZEjSOPpT2_YEGkiI0ULNqnrpdtPn5Hx7t9q7f57ZwE84OovNDf1q057wKND0A1jSySOWKL8m3bnpmQO0N8liGTna92G5DZSfYPT_XDp2KIEksKwTF5BtUuLWaECKS1FMmOULIoFwnD_qG2E0S1lxI3i4TL4Vn-uJ2FUp5RmVD4Ht6LHVk8i4-8X4Ib-ZFSjj9heTIoKSFoDty2ZvoPmYMDKSJXUZSNNMk3QDiBAhywl1wwRPzGK3p3jD9QQW_6qJkKz5wJKj4guxYryqyNb7FHKX2l-_TqVYmvkeyllfdp-Qm_eRjgGiPMR5lt9GRJwZSgB-ZevchiNwk_1DWlLaB50vWLlBO5UKQQ4H1eZvGvRBNvwzMV2hpS3Y1FUX47DoSVu5OOBefC8jY7uMbg5DGq1Zem4A8DUCmyta5d72iqtP-jCGocIhoBymK6L1KWmudK9T_3-AO-4nbeZqo7bhgml3umoIzGrlUgMnyGlmTkLMc1mca8GqSmjkhcYy2Zjl-RwngVkeWolm_IJe-i3stVy5GwL35qm-gAyIfkXDS-wGJ4DSDFMySSLlmU_LF4H-mLaGthYkib8LAFOuBJd09nx64AzRLaQOZWVD79h9ZQOm1TMkZS4JYJ0-o8L7g1kJv9cZaYomJuhx2QjtQvgoOkA0CspW8hPLc8Nt3jSx_KxerQ0CBJGGg0RVBuOw59oKBYo_QvvlgQ65oHD6GoT9ZGkfKFDqMUgXZXo4ly32lQ0hurrTE5Bka7jhaP4FX9K7ng0qVy4C15d0HwrrGo-dG-FTVLFDuthAzYaMJpUyb_Adb9iGqLS6JdPpYakwS4MyqdaORaEwit3ruz47gvhAe511g-tP-CM5WiJIWgTBRGGkg0hh-9JihAYJryWTlRkK60GBHL3i7Y5TSpXalDlE0622SwtSsR0hE5RZ-8UvxN6nebPxhOfx8HwcevmL9n4Rtgf9ehF6WJ2FC4Zt9Dsn8p2DzZpomlBgYq9DbJCcBuX9DNqeI0FcdSZKkjQEBTr7hmqQ75KTgFM8xavU7Xwa5Rig9gIpG-7gDZx47IaMN_FmGGXbh028xgQJxjtuRF-0nwfVZZJQQ999z-sfXLT1_V-l3ssE0oEB4bgx2ZN_rGrRN05RorgNIY7aZSgNyT82l7ik7gRORY0GKbztwvWNnGMwbyVLEff30Wc4P7nT2xNLfDz9SUmdKE1r4ORCWL0FMRuyYLaeKYxSi2TrCC5XBz2hYLmxvKpTYKTMPrntta2ICZNBV8u9HKGvqmzSYFe5IvHWIKsnRdKm20j5cVhOCTCtRbD8W_rToXAopyErt2em12b4WV0A3HOKffrHtHgy4vkEpPb68ntFWYGuCJ7vyrqkBca_51IJW_Uyig2cMFbFdc6Xq-D0LA7B_t3XoNPd28P6jXdy3ZvFzQwfy0_jkopmlV8HNfDzjlzourzu3ymcAvqPmumD7tT.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fGF6dXJlIn0",
+            "format": "azure-openai-responses-v1",
+            "id": "rs_0adeaeec2f724fb0016abc375ffdd08193b2f72e04f0fae523",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 41229,
+    "completion_tokens": 724,
+    "total_tokens": 41953,
+    "cost": 0.011254914,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 41226,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0113686,
+      "upstream_inference_prompt_cost": 0.0041286,
+      "upstream_inference_completions_cost": 0.00724
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 230,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

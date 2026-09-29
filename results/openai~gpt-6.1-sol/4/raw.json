@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790719873-CqLzBk918OFvs5XWOh0l",
+  "object": "chat.completion",
+  "created": 1790719873,
+  "model": "openai/gpt-6.1-sol",
+  "provider": "Azure",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "[ข้อความเลือนอ่านไม่ชัด]\n\nหมวด 1 ตอนที่ 34 รังสิต – สนามหลวง – หัวลำโพง ระยะทาง 34 กม.\n\nสำนักงานทางหลวง [อ่านไม่ชัด] กรุงเทพฯ\n\n---\n\n## 1. ภูมิประเทศเส้นทาง\n\n### ทั่วไป\n\nเริ่มต้นที่สถานีรังสิต (จังหวัดปทุมธานี) ไปตามถนนพหลโยธิน ผ่านองค์การร้อยลวด [อ่านไม่ชัด] กรุงเทพใน เขตบางเขนไปตามถนนพระราม 4 จุดเส้นทางที่สถานีหัวลำโพง\n\n### เฉพาะ\n\nเริ่มต้นระหว่าง [อ่านไม่ชัด] ไปรษณีย์เมือง [อ่านไม่ชัด] เลี้ยวขวาไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนพระราม 4 เข้าสถานีหัวลำโพง จนถึงรังสิต\n\n## 2. แผนที่สังเขป\n\n<figure>\nแผนที่สังเขปแสดงแนวเส้นทางจากรังสิตลงมาทางกรุงเทพฯ เป็นเส้นคู่คดโค้ง มีวงกลมและเส้นประระบุจุดสำคัญตามเส้นทาง ป้ายที่อ่านได้ ได้แก่ รังสิต, อนุสาวรีย์หลักสี่, ไปรษณีย์, สะพานควาย, ลาดพร้าว, อนุสาวรีย์ชัยฯ, ถนนพญาไท, หัวลำโพง และสนามหลวง 4 มีลูกศรและบันทึกด้วยลายมือเพิ่มเติม เช่น ถ.พญาไท, ถ.เพชรบุรี, ถ.ร้อยเอ็ด และ ถ.จารุเมือง ข้อความบางส่วนเลือนอ่านไม่ชัด\n</figure>\n\n[ตราประทับและข้อความด้านล่างเลือนอ่านไม่ชัด]",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqvDeRnq8QtLwYb3gCcf0VSfkSVm8Sq6JLvisPYlXsgKFVY8sCAEnpyQE-99-bdOfMmLqStRo9P7AaCGSHgE8kQBTGUhwmGboz64I3I_8NGh4jejLNf2y6ovSFIBClzHL5eZdYizGv8jc3ddzUmoD2sRb8zn4-fqRdIg2DF6rPr6LbYoOOv7R65jwSwTsXy6fsOKAcPb1aeXhFxjetVQuHoye34iOJrq4OFxlYvfa7_EJz4MqdKR12d6YuLHYCLpmiV61fIt2bOs1W7s6HbRV1S0wM4qAmLVrtlcyWnoKEu6LTn7QQHWXFjYMP4-I98MxvMiRgcHAkO69-TKGcmXofnW_5MzzNFiFm0BT7X5PySS-pujhIn6b15MqOIs99p-fNYI9gPzz4FsYT5r87_REeUAQ2j_JDAN2XLI1sElHlnh5pJXmUzfoQoW8Pz1oqyfjj7c9bm8mOkPhAMdzo8xR3OAUgZQoh6qWYtLPwIkSSt_4_ygvizgrcIqKD_beCqtGd-ZgfJM1T0_C5kN5Ua68XjkKMXrXqICHSjNwOkyeL_E8EqEyy3RnDl9RVrvFaD2BCZ3hnxvQHuV-zgKmiZMNVJm1qsYYJetibjVZE00lAT8E_CBxF42q2gfRMNHTL0MPNkrgNvCEg55OO-zXNBkUtnaP02_JgYL0EHq9ZdVzzvl-94fEEXaB4UkrWfLRA0a_Su5exUPPLUmlBjmNFRwVphvr5odT8vg4O185y6OwjPkg0BKby-WMH2ajTsAc9y1iPNtwRDqnmPaIdStqPD6tmGwJL5rh3C9LJ7dX7WfgNgHB239xJ557V5VsdU6LQ7QcmQkxasePpdoqCZi2SYEhMjNTZIkncVeDcPGAku2xxmLZ9LN9zmApanPG2oKTSW9ePiq9Hhg_OvenFvywPDUtiGhWFri1H7WYglKyRttVdGLcPOsJyfMY8_ctvfeDMypQJV04QqE5HWyHhTcff1uG9kBXmKQmwC5VXhWILaXhQI84Vu9b-AJUt4RdyuGMjOTV0yUsM1gWSLHl-kr1eNg1JV9bLIuGR-FgvmRf0svUIXFarHq8zQ9K85Az0u6NYmtOdiBg1NWY6Y4bfl5DM2P_DLmZg1zFC58NX4X1STAAVHOqIO3e8CfeAEHHvjNXHluNFtGCoZBoATWNSeF7RAicDj6jWexgGpFnJ9MvHMtK6aT9pj-uI8RcbZcZxJMfahaqaO4acPbub2F3SZG0S6GPkEMxZMNfBqMCrK2oc5Zmjirnf7sec7J0vxGW1ooL3FfIJ-037DtGn-BUxn8BXFnEPqHY--m3yntrRzK8ERoBYQZIBCa07Cb09_ohT3DuA3V2VrmspVScsce8xOE9kVqbo1L5dAxhMHKTVt6_wI_0VfEwBh2lalgvoc9YaiFTAmSuxuVjOVlOSt94ue2oHwOIbqfD0O2c73NpDV1VWOupci1Fn7x4zTzZhjTZpUT13LoV06rbeyfZEBMDbAikELgmvKqnYStUw8mnJaH7qh96d_iyXx5eHSVWCcCSYbA2XC701zciU6UH5xQoMVyLsc4GMEbo04ItkqeDWnTDVvW5eB37n3m2Aqoi02b5a7f9AVbn0xS3k2qIx8v9wz4PJhGPzX6XJgcFmBrg6QzrSzoAh4uHYidFmyi5QQ78sl2mHrH7z-SCKHidd0hs8yTJbpkyIG-pxSzqKDnyhbBZoJ_dDXh7vUcjfaXuxDrLx3FJ_G4eJ0xBvIt5RF0I4NRJSguF4eGwZlpLVRqEmkUcC0UHYjyvMBZtzQl9IDQzA613CHZ4321CUBbGFtpCwWnf7EPzCzac-CXWMxQ8DA_QbsDs24OMXZrikeTk7luh2U-WhsALsdJDkJMmmDSxlwhDptfFzMDd20Bvw2Ac3Cdp6S0NkzkzzrCFdo3OFb8X2vSsoqRjlbs7YWaEi_a0Ka5Qo5bWOG-fP6hodBJg7RstBqmsDOem8xwMc0-hMif5402H6GA-cd41RJ2u__1atwGStbZX1dDjO7652YVKrZSvFj8F3AeL3T68xOvJuOozZKVtdTC97WL3llFPz9pzCYueD4ZUWIjv57unuzN5ZhX0JnwceBvCoxErv0NDvMGnewnaHY499ooKiOqWX5Mc1KKGB13kCOT2rmMnabKk7CTHUzf-tKgRY_Cm0AWSZdogH4RDO0yjh74C5fn_bIey3LehXpu-r5EaKDtppMsnSB5XbTdgnwzA-VpFXli0OatUdezgIF6Kg3b3Bb9AZcZHBvDn7gnrrGHAkuMGs5VzdnJitn_7Qx6qtkZ7vv5BB29H32PZ3sksrqnaJZ9AxCEwZxKYVnkamK8RX_gKW5JaAZRG8jGRcijguRYWZdzH3vMwLMosshXRDFsXUamnKBepwUUfXiyI3TkTJYmGySdm8unR-Xrf4YxKtDlHNme9DvX0PtRteEzZP2O-UtIH9Myr4qS21sFoWmgg8E5dwkyx2YwKFvgiPt_PYwXg89dXJ8E6TYwe3rCp7YW0iAN1rmpgy4cBXiB4g_7HkxlO9GOr9om8M2JjUIrgYzdB44iXDClIMbABdt17OuZdX4APR4NxKB43-Lffq6gAYvzdG_prqi0-w__vaEnG-HgHiJbuc6LH-9Th2Ls9ai6_MrNQoxGSQrxqdbK4n9e7fFy1nN5XweyGILARtmZ98G2lI41rskrbeju54NBynmidp5HAYN3tGCESygD2bE77gRZN16ZA9PAXZS7E5EhTIVL09cwnc8qHEHwI6n-i2BxPabwqEvxi5lTzQtCLVCAeJA-VCMP3Fb7YVyDdontosNYw_vwCNZ5lvU0FQKssD4rd6H3Rxc1Eu6qEj9CN4JC9vw3ZPy7Eq-eH3g8gdczrojhUsy69qn1Ul-19AvnUDRfZ2_FgauNhsMnmw-MayiDqln4DBfvNxsTykXSvk0zdAAO8nWU40Q4ghErVWhunJT3NoqCTKr-BsNS16IVJdTXP7g9ntoGEDLTVrcVgDZV5ztmdqkFT4bN2lxRh7OEzCZELPl3RNMYruY-JRQp_gZl7N4g_bQEgKVsuKou0BcqmJ-9eW02sB2rQ_e3JlTHUs0BByqFPJpkiHCzL5sbFoQOmOtgeUubYcggrjaWP_Nw_yT3GRcVokIBNi94BFpa0vRBfjCf1gNjvOnq8orlZ0Cch_nq7ddvi164yQjdtngnVY503Vg_Hb1ZZljHxQfkYDJGCQdXKkl8FN-w0eRXrWArM3K1F7XAPB76Jd-boW7AeR4qNHJFJ2p1zucOcP1ydDCWfAhTaGTwQUv2CiBL9R8n4KheKYOTlPcUxjcOCq5Wa4QoOvzBobj7n-DTWVF3lw7M6DaRqVz_mrgt1yj-F0V2iDZyVkG6V79nlCJWzMBYnW4bLSJGwZ_96q2fSRwL1xgLnv-mJww9V9mRNf8l4Wj5pehAntL72aFZQOU4ll7xRJ57aO5wCC5skcZxCtHqK2Q2TL4S6Ja2VwRgDFimPUCPc5kXsVTP-dT_J3Dof5wR5FHSap1sw_oLkx4BJBLawtWgGALefaVBsTS13wwr5RCImso6uhdo1Zg7gQdC61fBHz0zkDKcRSZvncCXeHyDCslo2LUFcZwO_S2iMWVZnFCu0Pr3op2Q-3XtpI3s1hKRYofgM7g5_Zdulsrm3fmxNJVUzN8LF97PSFUnO2G1XNRdnkd7f7krhvUUb4I9CfsUfqCRTdfpIzxJ-kb_-JUxdN45C9YfPDP7osMvMp9u-tV4qfu5O1u1Sk5hce4G9g5g1vIq46yp-F7psAoaCQsYACzY4JwwwAXQfxW_9sXe-atbJlBspn_asYiZkPUqyeW7dZ2Bxeld0HbpbjwEp64SpKfB2LHxHPFp3ZU_GfvXpzMWuTNEVSHgWoRO-RSEI6pyvFI5YzQDRBsUQvDxYSvO5ev7kVp7Fu1xUG93_0XNwLE9P8ZpQigBGFnWXUSeufjrF3gFXEpvzLYuf60k6fuH_czKsvRDhaGnxMOkPFAIqrAQqtWbsu3ojV_P9mEr4GjBqFIz1Fc51aGjUNmUl1vnPkfKTkjl6GOc0ww7qHaf0vOblZ9MESabR7QhBJI__Hxu-pCmWPaoxTRLxNMiUl3JaiV1bVoGHVqW57ZnEWQiGf6P4PRAZDjOgbsYgeszRdryeYU0f6KXuERRrQBtdn1cB6wPkD.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fGF6dXJlIn0",
+            "format": "azure-openai-responses-v1",
+            "id": "rs_00c39069898bc886016abc378abd28819088c9ee3865bf660b",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 41229,
+    "completion_tokens": 859,
+    "total_tokens": 42088,
+    "cost": 0.012591414,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 41226,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0127186,
+      "upstream_inference_prompt_cost": 0.0041286,
+      "upstream_inference_completions_cost": 0.00859
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 427,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
