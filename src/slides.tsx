@@ -327,12 +327,6 @@ function ConfigList({ configs, top }: { configs: ConfigScore[]; top: number }) {
           </li>
         ))}
       </ol>
-      <p class="links">
-        Code and results: <a href="https://github.com/dtinth/34bench">github.com/dtinth/34bench</a>
-        <br />
-        The whole discussion:{" "}
-        <a href="https://github.com/dtinth/34bench/issues/1">github.com/dtinth/34bench/issues/1</a>
-      </p>
     </div>
   );
 }
@@ -571,7 +565,7 @@ function rankLabel(configs: ConfigScore[], c: ConfigScore) {
 }
 
 function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
-  const W = SIZE - 2 * M, H = 780, L = 58, R = 8, T = 16, B = 56;
+  const W = SIZE - 2 * M, H = 720, L = 58, R = 8, T = 16, B = 56;
   const pts = configs
     .map((c, i) => ({ c, i, cost: c.median.costThb, acc: accuracy(c.median) }))
     .filter((p): p is typeof p & { cost: number } => p.cost !== null);
@@ -674,6 +668,9 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
       <p class="note">
         Line and lime dots: the Pareto frontier. No other model is both cheaper and more accurate.
         Larger dots: the top 10 models. Each dot is the median run of one model.
+      </p>
+      <p class="repo">
+        <a href="https://github.com/dtinth/34bench">github.com/dtinth/34bench</a>
       </p>
     </Slide>
   );
@@ -847,9 +844,10 @@ mark.wrong { background: var(--wrong-bg); box-shadow: inset 0 -2px 0 var(--wrong
 .lab.top { fill: var(--soft); }
 .lab.dim { fill: var(--faint); }
 .leader { stroke: #9aa294; stroke-width: 1; }
-.note { position: absolute; left: ${M}px; bottom: ${
-  M - 22
-}px; font-size: 13px; color: var(--muted); }
+.note { position: absolute; left: ${M}px; bottom: ${M + 44}px; font-size: 13px;
+  color: var(--muted); }
+.repo { position: absolute; left: ${M}px; bottom: ${M - 10}px; font-size: 22px; font-weight: 700; }
+.repo a { color: var(--ink); text-decoration: none; border-bottom: 4px solid var(--lime); }
 `;
 
 /** Draw a connector from each marked area on the preview to its card on the same slide. */

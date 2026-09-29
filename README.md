@@ -2,6 +2,9 @@
 
 A benchmark: can a model read this scanned document for Bangkok bus route 34, and transcribe it?
 
+The whole design discussion, with every decision, is in
+[issue #1](https://github.com/dtinth/34bench/issues/1).
+
 ![A faded scan of a typewritten Thai document for bus route 34, Rangsit – Phahonyothin Road – Hua Lamphong. It has a text description of the outbound and return trips, a hand-drawn route map, and a faint footer.](data/route34/route34.webp)
 
 Image derived from
