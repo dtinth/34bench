@@ -1,0 +1,16 @@
+{
+  "model": "mistral/mistral-ocr-4-0",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": null,
+  "date": "2026-09-29T15:16:27.747Z",
+  "durationMs": 5314,
+  "cost": 0.004,
+  "usage": {
+    "pages_processed": 1,
+    "doc_size_bytes": 3647006
+  },
+  "provider": "Mistral",
+  "finishReason": null
+}

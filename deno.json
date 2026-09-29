@@ -5,7 +5,8 @@
     "paxa": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.paxalabs.com src/paxa.ts",
     "iapp": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.iapp.co.th src/iapp.ts",
     "render": "deno run --allow-read --allow-write=results.svg --allow-env src/render.tsx",
-    "typhoon": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.opentyphoon.ai src/typhoon.ts"
+    "typhoon": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.opentyphoon.ai src/typhoon.ts",
+    "mistral": "deno run --allow-read --allow-write=results --allow-env --allow-net=api.mistral.ai src/mistral.ts"
   },
   "fmt": {
     "lineWidth": 100
