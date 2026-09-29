@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790683667-50MzbyMdwe8ToDjIrRFn",
+  "object": "chat.completion",
+  "created": 1790683667,
+  "model": "anthropic/claude-sonnet-5.5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "# เส้นทางรถโดยสารประจำทางในกรุงเทพ\n\nหมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\n\nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. <u>รายละเอียดเส้นทาง</u>\n\n<u>เที่ยวไป</u>\n\nเริ่มต้นที่คลองรังสิต (เชิงสะพานข้ามคลอง) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n<u>เที่ยวกลับ</u>\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. <u>แผนผังเส้นทาง</u>\n\n<figure>\nHand-drawn route map of bus line 34, running from Rangsit at the top (north) down to Hua Lamphong at the bottom (south-west). The route is drawn as a double line running roughly north–south along Phahon Yothin Road. Labeled points along the way include: รังสิต (Rangsit), ถนนวิภาวดีรังสิต, อนุสาวรีย์หลักสี่, ไปนนทบุรี, ไปปทุมธานี, ถนนพหลโยธิน, จตุจักร (จาตุรบาท), ไปบางกะปิ, สะพานควาย, อนุสาวรีย์ชัย (Victory Monument), ถนนพญาไท, ถนนเจริญเมือง, ถนนรองเมือง, ถนนจรัสเมือง, หัวลำโพง (Hua Lamphong), and ถนนพระราม 4. Dashed lines show crossing roads, and small arrows near Hua Lamphong show the loop of the route through the streets there.\n</figure>\n\n(Stamp and handwritten signature block at the bottom right, largely illegible.)",
+        "refusal": null,
+        "reasoning": "This looks like a low-quality scan of a Thai bus route document, likely describing bus line 34 running from Rangsit through Phahonyothin Road to Hua Lamphong, covering about 32 km, operated by the Bangkok Mass Transit Authority. I'm trying to piece together the route details section, though the outbound trip description is cut off partway through.\n\nThe return trip seems to go from Hua Lamphong back along Rong Mueang, Charoen Mueang, Charat Mueang, and Rama 4 roads before rejoining the original path back to Rangsit, and there's a route map diagram following the text description.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "This looks like a low-quality scan of a Thai bus route document, likely describing bus line 34 running from Rangsit through Phahonyothin Road to Hua Lamphong, covering about 32 km, operated by the Bangkok Mass Transit Authority. I'm trying to piece together the route details section, though the outbound trip description is cut off partway through.\n\nThe return trip seems to go from Hua Lamphong back along Rong Mueang, Charoen Mueang, Charat Mueang, and Rama 4 roads before rejoining the original path back to Rangsit, and there's a route map diagram following the text description.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "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"
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 1447,
+    "total_tokens": 6272,
+    "cost": 0.0238788,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02412,
+      "upstream_inference_prompt_cost": 0.00965,
+      "upstream_inference_completions_cost": 0.01447
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 570,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

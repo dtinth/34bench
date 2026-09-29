@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683666-AyvNUWKKM3Ktzp4wFVV4",
+  "object": "chat.completion",
+  "created": 1790683666,
+  "model": "qwen/qwen3.8-flash",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางการโดยสารประจำทาง ในเขตกรุงเทพมหานคร ระหว่างท่าเรือรังสิต กับ ท่าเรือหัวลำโพง\nหมวด 1 สายที่ 34 รังสิต – แยกถนนโยธี – หัวลำโพง ระยะทาง 3.2 กม.\nคำสั่งองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ท่าเรือรังสิต (เชิงสะพานกษัตริย์ศึก) ไปตามถนนมาบุญครอง อุรุทัยขึ้นถนนภูริ\nถนเพชรบุรี เลี้ยวขวาไปถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไฟ\nถนนเจริญเมือง เลี้ยวขวาไปถนนແຈรtsเมือง เลี้ยวซ้ายไปถนนพระราม 4 ตรงไปถนนเ...งเก็น\nจนถึงรังสิต\n\n2. แผนที่สังเขป\n\n<figure>\n<p>แผนที่สังเขปแสดงเส้นทางเดินรถโดยสาร สายที่ 34 จากจุดเริ่มต้น \"รังสิต\" ด้านบน วิ่งลงตามแนว \"ถนนวิภาวดีรังสิต\" ผ่าน \"สะพานควาย\" และ \"อนุสาวรีย์ชัยสมรภูมิ\" โดยมีเส้นทางแยกไป \"ไปนนทบุรี\" และ \"ไปปทุมฯ / ไปนครนายก\" ตามแนว \"ถนนพหลโยธิน\" และ \"ทางคู่ขนาน\" มีเส้นทางแยก \"ไปบางกะปิ\" ลงมาทางใต้ผ่าน \"อนุสาวรีย์ชัยสมรภูมิ\" อีกครั้ง ถึง \"ถนนเยาวราช\" (1. เยาวราช) และ \"ถ.ราชดำเนิน\" ปลายทางที่ \"หัวลำโพง\" ใกล้ \"ถ.หมอมี\" \"ถนนพระราม 4\" และ \"ตลาดน้อย\"</p>\n</figure>\n\n(๒)",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a Thai document into Markdown. The image is a faded, typewritten document with some handwritten notes and a route map diagram. I need to transcribe the Thai text as accurately as possible and represent the figure with an HTML `<figure>` element containing a description.\n\nLet me read the text carefully.\n\nHeader:\nเส้นทางการโดยสารประจำทาง ในเขตกรุงเทพมหานคร ระหว่างท่าเรือ กับ ท่าเรือ\nหมวด 1 สายที่ 34 ingsil - แยกถนนโยธี - หัวลำโพง ระยะทาง 3.2 กม.\nคำสั่งองค์การขนส่งมวลชนกรุงเทพ\n\n1. รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ท่าเรือingsil (เชิงสะพานกษัตริย์ศึก) ไปตามถนนมาบุญครอง อุรุทัยขึ้นถนนภูริ\nถนเพชรบุรี เลี้ยวขวาไปถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไฟ...\nถนนเจริญเมือง เลี้ยวขวาไปถนนແຈรtsเมือง เลี้ยวซ้ายไปถนนพระราม 4 ตรงไปถนนเ...งเก็น\nจนถึงingsil\n\n2. แผนที่สังเขป\n\nThen the figure.\n\nThe text is quite faded. Let me do my best. The word \"ingsil\" appears to be \"รังสิต\" (Rangsit). Let me re-read. \"ท่าเรือรังสิต\". Yes, the header says \"ระหว่างท่าเรือรังสิต กับ ท่าเรือหัวลำโพง\" perhaps. Actually header: \"ระหว่างท่าเรือ ... กับ ท่าเรือ ...\". The line \"หมวด 1 สายที่ 34 รังสิต - แยกถนนโยธี - หัวลำโพง ระยะทาง 3.2 กม.\"\n\nLet me look at the figure labels:\n- รังสิต (top)\n- อนุสาวรีย์ชัยสมรภูมิ\n- ถนนวิภาวดีรังสิต\n- ไปนนทบุรี\n- ไปปทุมฯ / ไปนครนายก\n- ถนนพหลโยธิน\n- ทางคู่ขนาน\n- ไปบางกะปิ\n- สะพานควาย\n- อนุสาวรีย์ชัยสมรภูมิ (again lower)\n- 1. เยาวราช (1. เยาวราช?)\n- ถนนเยาวราช\n- ถ.ราชดำเนิน\n- หัวลำโพง\n- ถ.หมอมี\n- ถนนพระราม 4\n- ตลาดน้อย\n\nI'll write a description in the figure.\n\nNow produce Markdown. The instruction: \"Output only the Markdown, with no commentary.\"\n\nLet me transcribe faithfully with the faded parts approximated.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a Thai document into Markdown. The image is a faded, typewritten document with some handwritten notes and a route map diagram. I need to transcribe the Thai text as accurately as possible and represent the figure with an HTML `<figure>` element containing a description.\n\nLet me read the text carefully.\n\nHeader:\nเส้นทางการโดยสารประจำทาง ในเขตกรุงเทพมหานคร ระหว่างท่าเรือ กับ ท่าเรือ\nหมวด 1 สายที่ 34 ingsil - แยกถนนโยธี - หัวลำโพง ระยะทาง 3.2 กม.\nคำสั่งองค์การขนส่งมวลชนกรุงเทพ\n\n1. รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ท่าเรือingsil (เชิงสะพานกษัตริย์ศึก) ไปตามถนนมาบุญครอง อุรุทัยขึ้นถนนภูริ\nถนเพชรบุรี เลี้ยวขวาไปถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไฟ...\nถนนเจริญเมือง เลี้ยวขวาไปถนนແຈรtsเมือง เลี้ยวซ้ายไปถนนพระราม 4 ตรงไปถนนเ...งเก็น\nจนถึงingsil\n\n2. แผนที่สังเขป\n\nThen the figure.\n\nThe text is quite faded. Let me do my best. The word \"ingsil\" appears to be \"รังสิต\" (Rangsit). Let me re-read. \"ท่าเรือรังสิต\". Yes, the header says \"ระหว่างท่าเรือรังสิต กับ ท่าเรือหัวลำโพง\" perhaps. Actually header: \"ระหว่างท่าเรือ ... กับ ท่าเรือ ...\". The line \"หมวด 1 สายที่ 34 รังสิต - แยกถนนโยธี - หัวลำโพง ระยะทาง 3.2 กม.\"\n\nLet me look at the figure labels:\n- รังสิต (top)\n- อนุสาวรีย์ชัยสมรภูมิ\n- ถนนวิภาวดีรังสิต\n- ไปนนทบุรี\n- ไปปทุมฯ / ไปนครนายก\n- ถนนพหลโยธิน\n- ทางคู่ขนาน\n- ไปบางกะปิ\n- สะพานควาย\n- อนุสาวรีย์ชัยสมรภูมิ (again lower)\n- 1. เยาวราช (1. เยาวราช?)\n- ถนนเยาวราช\n- ถ.ราชดำเนิน\n- หัวลำโพง\n- ถ.หมอมี\n- ถนนพระราม 4\n- ตลาดน้อย\n\nI'll write a description in the figure.\n\nNow produce Markdown. The instruction: \"Output only the Markdown, with no commentary.\"\n\nLet me transcribe faithfully with the faded parts approximated.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2608,
+    "completion_tokens": 922,
+    "total_tokens": 3530,
+    "cost": 0.0008162946,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00082454,
+      "upstream_inference_prompt_cost": 0.0003912,
+      "upstream_inference_completions_cost": 0.00043334
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 549,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

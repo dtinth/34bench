@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683706-RXIVqGAFwvxB2LQHMthi",
+  "object": "chat.completion",
+  "created": 1790683706,
+  "model": "qwen/qwen3.8-27b",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แบบโครงรูปสถาปัตยกรรมพระธาตุ... จังหวัด... พ.ศ. ...\nหมวด 1 จากที่ 34 จังหวัด – ถนน... – วัด... ระย... 32 กม.\nรายชื่ออาคารสำคัญ... จังหวัด...\n\n---\n\n1. วัตถุประสงค์และแนวทาง\n\n*เนื้อหา*\n\nเนื้อเรื่องที่จะกล่าวถึงนี้ (เชิงวิเคราะห์... วิจักษ์) เป็นแบบแผน... วิหาร เจดีย์... เจดีย์... พระธาตุ...\nแผน... ใช้ เนื้อ... ว่าไป... และพระธาตุ 4 จุด... ของ... ที่... และ... ใน... วัด...\n\n*เนื้อหาอื่นๆ*\n\nเนื้อ... ที่... วัด... ใช้... เป็น... ... เปรียบ... ไป... และ... พระธาตุ... เจดีย์... เจดีย์... ไม้...\nแผน... เจดีย์... เนื้อ... ว่าไป... และ... เจดีย์... เจดีย์... ไป... และ... พระธาตุ 4 ... ไป... ...\nวนถึง...\n\n2. แผนผัง...\n\n<figure>\n<figcaption>แผนผังแสดงแนวแกนหลักของวัด ซึ่งมีรัตนเจดีย์อยู่ปลายบนสุด และมีเจดีย์ (พระธาตุ) อยู่ปลายล่างสุด โดยมีป้ายชื่อประกอบตลอดแนว ได้แก่ อนุสาวรีย์จังหวัด, ปีนับ..., ถนน..., จักขุ..., ประตู..., ฐาน..., อนุสาวรีย์..., ถนนพระธาตุ 4 และชื่อจังหวัด/อำเภอตามจุดต่างๆ</figcaption>\n</figure>\n\nแบบแผนผัง... ที่ ... พ.ศ. ...\n(6)\nระย... กม. ...\nแผนที่... ... พ.ศ. ...\n\nชื่อผู้จัดทำแผนผัง...",
+        "refusal": null,
+        "reasoning": "The user wants a Markdown transcription of a Thai document. I need to carefully transcribe the text, including the header, numbered sections, and the figure with its labels. The figure is a hand-drawn diagram of a temple stupa (chedi) with various labeled parts in Thai. I will create an HTML figure element with a description.\n\nLet me transcribe the text carefully. The image is quite faded in places. I will do my best.\n\nHeader text (faded):\n\"แบบโครงรูปสถาปัตยกรรมพระธาตุ... จังหวัด... พ.ศ. ...\nหมวด 1 จากที่ 34 จังหวัด – ถนน... – วัด... ระย... 32 กม.\nรายชื่ออาคารสำคัญ... จังหวัด...\"\n\nSection 1:\n\"1. วัตถุประสงค์และแนวทาง\"\n\"เนื้อหา\"\n\"เนื้อเรื่องที่จะกล่าวถึงนี้ (เชิงวิเคราะห์... วิจักษ์) เป็นแบบแผน... วิหาร เจดีย์... เจดีย์... พระธาตุ...\nแผน... ใช้ เนื้อ... ว่าไป... และพระธาตุ 4 จุด... ของ... ที่... และ... ใน... วัด...\nเนื้อหาอื่นๆ\nเนื้อ... ที่... วัด... ใช้... เป็น... ... เปรียบ... ไป... และ... พระธาตุ... เจดีย์... เจดีย์... ไม้...\nแผน... เจดีย์... เนื้อ... ว่าไป... และ... เจดีย์... เจดีย์... ไป... และ... พระธาตุ 4 ... ไป... ...\nวนถึง...\"\n\"2. แผนผัง...\"\n\nThe figure labels:\n- รัตนเจดีย์ (top)\n- อนุสาวรีย์จังหวัด\n- อนุสาวรีย์จังหวัด (?)\n- ปีนับ... (left)\n- ปีนับ... (right)\n- ถนน...\n- จักขุ...\n- ประตู...\n- ฐาน...\n- อนุสาวรีย์...\n- จ. ...\n- ถนน...\n- ...\n- วัด...\n- จ. ...\n- ถนนพระธาตุ 4\n\nThis is very hard to read. I'll provide a reasonable transcription. The exact text is uncertain due to fade. I'll transcribe what I can see.\n\nLet me look more carefully. The figure shows a long axis (a road or path) with a stupa at the bottom. Labels point to various features.\n\nTop label: รัตนเจดีย์\nLeft middle: ปีนับ... (maybe ปีนับ...?)\nRight middle: อนุสาวรีย์จังหวัด\nLeft: ปีนับ...\nRight: ปีนับ...\nMiddle: ถนน...\nMiddle: จักขุ...\nRight: ประตู...\nLeft: ฐาน...\nRight: อนุสาวรีย์...\nLeft bottom: จ. ...\nLeft: ถนน...\nLeft: ...\nBottom left: วัด...\nRight bottom: จ. ...\nBottom: ถนนพระธาตุ 4\nBottom: จ. ...\n\nThis is too uncertain. I'll just transcribe the visible text as best I can and provide a description for the figure.\n\nGiven the difficulty, I'll provide a transcription that captures the structure and the legible parts. The instruction says \"Transcribe this image into a Markdown document.\" I should do my best.\n\nLet me write the markdown.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a Markdown transcription of a Thai document. I need to carefully transcribe the text, including the header, numbered sections, and the figure with its labels. The figure is a hand-drawn diagram of a temple stupa (chedi) with various labeled parts in Thai. I will create an HTML figure element with a description.\n\nLet me transcribe the text carefully. The image is quite faded in places. I will do my best.\n\nHeader text (faded):\n\"แบบโครงรูปสถาปัตยกรรมพระธาตุ... จังหวัด... พ.ศ. ...\nหมวด 1 จากที่ 34 จังหวัด – ถนน... – วัด... ระย... 32 กม.\nรายชื่ออาคารสำคัญ... จังหวัด...\"\n\nSection 1:\n\"1. วัตถุประสงค์และแนวทาง\"\n\"เนื้อหา\"\n\"เนื้อเรื่องที่จะกล่าวถึงนี้ (เชิงวิเคราะห์... วิจักษ์) เป็นแบบแผน... วิหาร เจดีย์... เจดีย์... พระธาตุ...\nแผน... ใช้ เนื้อ... ว่าไป... และพระธาตุ 4 จุด... ของ... ที่... และ... ใน... วัด...\nเนื้อหาอื่นๆ\nเนื้อ... ที่... วัด... ใช้... เป็น... ... เปรียบ... ไป... และ... พระธาตุ... เจดีย์... เจดีย์... ไม้...\nแผน... เจดีย์... เนื้อ... ว่าไป... และ... เจดีย์... เจดีย์... ไป... และ... พระธาตุ 4 ... ไป... ...\nวนถึง...\"\n\"2. แผนผัง...\"\n\nThe figure labels:\n- รัตนเจดีย์ (top)\n- อนุสาวรีย์จังหวัด\n- อนุสาวรีย์จังหวัด (?)\n- ปีนับ... (left)\n- ปีนับ... (right)\n- ถนน...\n- จักขุ...\n- ประตู...\n- ฐาน...\n- อนุสาวรีย์...\n- จ. ...\n- ถนน...\n- ...\n- วัด...\n- จ. ...\n- ถนนพระธาตุ 4\n\nThis is very hard to read. I'll provide a reasonable transcription. The exact text is uncertain due to fade. I'll transcribe what I can see.\n\nLet me look more carefully. The figure shows a long axis (a road or path) with a stupa at the bottom. Labels point to various features.\n\nTop label: รัตนเจดีย์\nLeft middle: ปีนับ... (maybe ปีนับ...?)\nRight middle: อนุสาวรีย์จังหวัด\nLeft: ปีนับ...\nRight: ปีนับ...\nMiddle: ถนน...\nMiddle: จักขุ...\nRight: ประตู...\nLeft: ฐาน...\nRight: อนุสาวรีย์...\nLeft bottom: จ. ...\nLeft: ถนน...\nLeft: ...\nBottom left: วัด...\nRight bottom: จ. ...\nBottom: ถนนพระธาตุ 4\nBottom: จ. ...\n\nThis is too uncertain. I'll just transcribe the visible text as best I can and provide a description for the figure.\n\nGiven the difficulty, I'll provide a transcription that captures the structure and the legible parts. The instruction says \"Transcribe this image into a Markdown document.\" I should do my best.\n\nLet me write the markdown.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2608,
+    "completion_tokens": 1002,
+    "total_tokens": 3610,
+    "cost": 0.0030667626,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00309774,
+      "upstream_inference_prompt_cost": 0.00054264,
+      "upstream_inference_completions_cost": 0.0025551
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 669,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

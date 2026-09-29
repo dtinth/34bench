@@ -1,0 +1,36 @@
+{
+  "model": "bytedance-seed/seed-2-1-turbo",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T12:10:06.284Z",
+  "durationMs": 56118,
+  "cost": 0.00843579,
+  "usage": {
+    "prompt_tokens": 1377,
+    "completion_tokens": 3133,
+    "total_tokens": 4510,
+    "cost": 0.00843579,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1336,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008521,
+      "upstream_inference_prompt_cost": 0.0006885,
+      "upstream_inference_completions_cost": 0.0078325
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2570,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Seed",
+  "finishReason": "stop"
+}

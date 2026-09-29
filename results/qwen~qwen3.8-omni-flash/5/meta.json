@@ -1,0 +1,36 @@
+{
+  "model": "qwen/qwen3.8-omni-flash",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T12:08:54.005Z",
+  "durationMs": 32934,
+  "cost": 0.0009838719,
+  "usage": {
+    "prompt_tokens": 1352,
+    "completion_tokens": 1683,
+    "total_tokens": 3035,
+    "cost": 0.0009838719,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00099381,
+      "upstream_inference_prompt_cost": 0.0002028,
+      "upstream_inference_completions_cost": 0.00079101
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 487,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Alibaba",
+  "finishReason": "stop"
+}

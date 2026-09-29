@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683750-x58RX3wsc3jX4dB8xyoN",
+  "object": "chat.completion",
+  "created": 1790683750,
+  "model": "bytedance-seed/seed-2-1-turbo",
+  "provider": "Seed",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "*(ส่วนหัวเนื้อหาจางมาก อ่านได้บางส่วน)*\nแผนกจราจร ..........................................................................\nหมวด 1 วางที่ 34  รังสิต - รถแหลมทองอิน - หัวลำโพง ระยะทาง 34 กม.\nสำหรับองค์กรอนึ่งตามระบุในร่างงาน\n\n---\n\n## 1. รายละเอียดเส้นทาง\n\n### เที่ยวไป\nเริ่มต้นที่ท่ารถรังสิต (เชิงเขาตามแกวนิมิตร) ไปตามถนนยานนิวิยนต์ ผ่านอนุสาวรีย์ชัยสมรภูมิ ดอนตะลูกไท เลี้ยวขวาไปตามถนนพระราม 4 จุดสุดท้ายที่สถานีรถไฟหัวลำโพง\n\n### เที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนบางกะปิ  เลี้ยวซ้ายไปตามถนนพระรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนแจ้งสีเมือง แล้วเข้าไปตามถนนพระราม 4 แล้วเดินทางกลับไปจนถึงท่ารถรังสิต\n\n## 2. แผนที่เส้นทาง\n\n<figure>\nแผนผังวาดมือแสดงเส้นทางรถโดยสาร: จุดเริ่มต้นคือท่ารถรังสิตที่ด้านบนของแผนผัง เส้นทางหลักเดินทางลงไปทางใต้ มีฉลากกำกับแยกย้ายถนนสาขาและจุดสำคัญที่ตัดกัน ได้แก่ ถนนวิภาวดีรังสิต (ไปนนทบุรี), อนุสาวรีย์หม่อม (ไปอู่นรี, ถนนพหลโยธิน), ย่านราดพาราว (ไปบางกะปิ), สะพานควาย, ดอนตะลูกไท, หัวลำโพง, และถนนพระราม 4 ที่ด้านล่างสุดของแผนผัง\n</figure>",
+        "refusal": null,
+        "reasoning": "Got it,\n\nI plan to transcribe this old Thai document step by step, starting with the header, followed by Section 1 and the figure. I found the top text is faded and needs rechecking.\n\nI've corrected my earlier misreading of the header's route section, confirmed the first line is the traffic department's Chiang Mai route business scope, and verified the \"เที่ยวไป\" (outbound) label is accurate.\n\nI've confirmed the specific details of both the outbound and return routes, verified the label for the return trip section is correct, and fixed the earlier misreading of the route title to confirm it reads \"แผนที่เส้นทาง\" (route schedule map).\n\nI've clarified the figure is a hand-drawn bus route map from Rangsit to Hua Lamphong with marked landmarks and connecting roads. I've confirmed the transcription output format needs to be Markdown, and will add a note indicating the text is faded and only partial content is legible. I've completed the header recheck and fixed my earlier misreading of the header's route section, confirming the header records the 34km Rangsit-Hua Lamphong bus route business scope.\n\nI have completed the transcription of the route details section, including both the outbound and return trip itineraries. I also finished the transcription for the route map section, and confirmed the final output is required to be a Markdown document.\n\nI've verified the header's official department affiliation and route parameters, corrected the earlier misreading of the route title, and confirmed the transcription will be pure Markdown content without any extra commentary.\n\nI have finished the transcription of the header and route details sections, and a note indicating the top text is faded with only partial content legible has been added. The outbound route description is also completed, and I will proceed to transcribe the rest of the document.\n\nI've finished the transcription for the route map section, confirmed the faded text in the lower right corner is completely unreadable and excluded it from transcription, and the entire document transcription work has been fully completed.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Got it,\n\nI plan to transcribe this old Thai document step by step, starting with the header, followed by Section 1 and the figure. I found the top text is faded and needs rechecking.\n\nI've corrected my earlier misreading of the header's route section, confirmed the first line is the traffic department's Chiang Mai route business scope, and verified the \"เที่ยวไป\" (outbound) label is accurate.\n\nI've confirmed the specific details of both the outbound and return routes, verified the label for the return trip section is correct, and fixed the earlier misreading of the route title to confirm it reads \"แผนที่เส้นทาง\" (route schedule map).\n\nI've clarified the figure is a hand-drawn bus route map from Rangsit to Hua Lamphong with marked landmarks and connecting roads. I've confirmed the transcription output format needs to be Markdown, and will add a note indicating the text is faded and only partial content is legible. I've completed the header recheck and fixed my earlier misreading of the header's route section, confirming the header records the 34km Rangsit-Hua Lamphong bus route business scope.\n\nI have completed the transcription of the route details section, including both the outbound and return trip itineraries. I also finished the transcription for the route map section, and confirmed the final output is required to be a Markdown document.\n\nI've verified the header's official department affiliation and route parameters, corrected the earlier misreading of the route title, and confirmed the transcription will be pure Markdown content without any extra commentary.\n\nI have finished the transcription of the header and route details sections, and a note indicating the top text is faded with only partial content legible has been added. The outbound route description is also completed, and I will proceed to transcribe the rest of the document.\n\nI've finished the transcription for the route map section, confirmed the faded text in the lower right corner is completely unreadable and excluded it from transcription, and the entire document transcription work has been fully completed.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1377,
+    "completion_tokens": 3133,
+    "total_tokens": 4510,
+    "cost": 0.00843579,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1336,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008521,
+      "upstream_inference_prompt_cost": 0.0006885,
+      "upstream_inference_completions_cost": 0.0078325
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2570,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

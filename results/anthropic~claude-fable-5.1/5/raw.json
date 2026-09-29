@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790683700-srnTz6HzVz7nCRavYetP",
+  "object": "chat.completion",
+  "created": 1790683700,
+  "model": "anthropic/claude-fable-5.1",
+  "provider": "Anthropic",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "แผนที่เส้นทางรถโดยสารประจำทางในกรุงเทพมหานคร จังหวัดปทุมธานีและปริมณฑล\nหมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. รายละเอียดเส้นทาง\n\nเที่ยวไป\n\nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\nเที่ยวกลับ\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. แผนที่สังเขป\n\n<figure>\nHand-drawn sketch map of bus route 34 from รังสิต (Rangsit) at the top down to หัวลำโพง (Hua Lamphong) at the bottom. The route runs along ถนนพหลโยธิน (Phahonyothin Road), passing มหาวิทยาลัยรังสิต / ถนนวิภาวดีรังสิต, อนุสาวรีย์หลักสี่ (Lak Si Monument) with side roads labelled ไปนนทบุรี, ไปมีนบุรี, then ลาดพร้าว (Lat Phrao), ไปบางกะปิ, สะพานควาย (Saphan Khwai), อนุสาวรีย์ชัยฯ (Victory Monument), then ถนนพญาไท (Phaya Thai Road), with handwritten notes ถ.เจริญเมือง, ถ.รองเมือง, ถ.พญาไท, ถ.จรัสเมือง near หัวลำโพง, ending at ถนนพระราม 4 (Rama IV Road). The route is drawn as a double line with dashed connecting roads.\n</figure>\n\nผู้อำนวยการฝ่ายวิชาการและแผนงาน\nลงนาม ..........(ลายเซ็น).........\nวันที่ .......... พ.ศ. 2529\nกองวิชาการและวางแผน",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 975,
+    "total_tokens": 5800,
+    "cost": 0.09603,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.097,
+      "upstream_inference_prompt_cost": 0.04825,
+      "upstream_inference_completions_cost": 0.04875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

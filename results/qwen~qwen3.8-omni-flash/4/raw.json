@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683667-DZ4NVDHVrJylqnpH0r2T",
+  "object": "chat.completion",
+  "created": 1790683667,
+  "model": "qwen/qwen3.8-omni-flash",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แบบร่างโครงการก่อสร้างทางหลวงพิเศษระหว่างเมือง สายบางขุนเทียน – บางบัวทอง\nตอนแยกต่างระดับบางขุนเทียน – ต่างระดับบางใหญ่ ระยะทาง ๓๒ กม.\nต่างระดับบางใหญ่ ถึง ต่างระดับบางบัวทอง\n\n## ๑. รายละเอียดแนวแปลง\n\n**เดิม**\n\nเริ่มจากต่างระดับรังสิต (เชิงสะพานข้ามคลองรังสิต) ไปตามถนนบางบัวทอง – ปทุมธานี จนถึงบริเวณที่มีถนนปทุมธานี – บางปะหัน (ทางหลวงหมายเลข ๓๒) ตัดผ่าน แล้วเลี้ยวซ้ายไปตามถนนสายนี้ประมาณ ๔ กิโลเมตร ถึงที่ว่าการอำเภอเมืองจังหวัดปทุมธานี\n\n**ปัจจุบัน**\n\nเริ่มจากต่างระดับบางบัวทอง ไปตามถนนสายเดิม จนถึงบริเวณที่มีถนนปทุมธานี – บางปะหัน ตัดผ่าน แล้วเลี้ยวซ้ายไปตามถนนสายนี้ประมาณ ๔ กิโลเมตร ถึงที่ว่าการอำเภอเมืองจังหวัดปทุมธานี แล้วเลี้ยวขวาไปตามถนนสายนี้ต่อไปจนถึงรังสิต\n\n## ๒. แผนที่สังเขป\n\n<figure>\n\nแผนผังแสดงแนวเส้นทางโครงการ มีป้ายกำกับต่าง ๆ ดังนี้\n\n- ราชพฤกษ์ (ด้านบนสุดของแนวเส้นทาง)\n- ถ.ป๊อปูลารี่รังสิต\n- ถ.ป๊อปูลารี่หลักหก\n- ไปบางใหญ่ (ด้านซ้าย)\n- ไปปทุมธานี (ด้านขวา)\n- สะพานลอยไปรณ\n- ทางยกระดับ\n- ไปบางกะปิ (ด้านขวา)\n- สะพานกว่าย\n- ต.ไผ่ต่ำ\n- ถนนป๊อปูลาไท / ดอนเมือง / หัวลำโพง (กลุ่มด้านซ้ายล่าง)\n- ถ.วิภาวดี (ด้านขวาล่าง)\n- ถนนวิภาวดีรังสิต\n- ถนนพหลโยธิน ๔ (ด้านล่าง)\n- ดากเหนือ (ล่างสุด)\n\n</figure>\n\nแบบรายงานนี้จัดทำขึ้นเพื่อใช้ในการประชุมรับฟังความคิดเห็นของประชาชน\n\nลงชื่อ ....................................................... ผู้จัดทำรายงาน\n(ลงชื่อ) ....................................................... ตำแหน่ง .......................................................",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a Thai document containing text and a map/diagram. I need to preserve the structure: header info, numbered sections with \"เดิม\" (original) and \"ปัจจุบัน\" (current) subsections, and then a figure with labels. The figure contains a hand-drawn map with Thai labels pointing to various roads and locations. I'll transcribe the text as accurately as possible given the image quality, and represent the map as a figure with a description of its labels.\n\nLet me read carefully. Top lines seem to be about road construction project \"ทางหลวงสาย...\" with kilometer markers 34, 32 etc. Then section 1 \"รายละเอียดแนวแปลง\" with เดิม/ปัจจุบัน paragraphs. Section 2 \"แผนที่สังเขป\" followed by the map figure. The map labels include: ราชพฤกษ์, ถ.ป๊อปูลารี่รังสิต, ถ.ป๊อปูลารี่หลักหก, ไปบางใหญ่, ไปปทุมธานี, สะพานลอยไปรณ, ทางยกระดับ, ไปบางกะปิ, สะพานกว่าย, ต.ไผ่ต่ำ, ถนนป๊อปูลาไท, ดอนเมือง, หัวลำโพง, ถ.วิภาวดี, ถนนวิภาวดีรังสิต, ถนนพหลโยธิน 4, ดากเหนือ. Bottom right has signature block with (ล.) and title.\n\nI'll produce markdown with a figure element describing the map.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a Thai document containing text and a map/diagram. I need to preserve the structure: header info, numbered sections with \"เดิม\" (original) and \"ปัจจุบัน\" (current) subsections, and then a figure with labels. The figure contains a hand-drawn map with Thai labels pointing to various roads and locations. I'll transcribe the text as accurately as possible given the image quality, and represent the map as a figure with a description of its labels.\n\nLet me read carefully. Top lines seem to be about road construction project \"ทางหลวงสาย...\" with kilometer markers 34, 32 etc. Then section 1 \"รายละเอียดแนวแปลง\" with เดิม/ปัจจุบัน paragraphs. Section 2 \"แผนที่สังเขป\" followed by the map figure. The map labels include: ราชพฤกษ์, ถ.ป๊อปูลารี่รังสิต, ถ.ป๊อปูลารี่หลักหก, ไปบางใหญ่, ไปปทุมธานี, สะพานลอยไปรณ, ทางยกระดับ, ไปบางกะปิ, สะพานกว่าย, ต.ไผ่ต่ำ, ถนนป๊อปูลาไท, ดอนเมือง, หัวลำโพง, ถ.วิภาวดี, ถนนวิภาวดีรังสิต, ถนนพหลโยธิน 4, ดากเหนือ. Bottom right has signature block with (ล.) and title.\n\nI'll produce markdown with a figure element describing the map.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1352,
+    "completion_tokens": 734,
+    "total_tokens": 2086,
+    "cost": 0.0005423022,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00054778,
+      "upstream_inference_prompt_cost": 0.0002028,
+      "upstream_inference_completions_cost": 0.00034498
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 303,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

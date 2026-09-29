@@ -1,0 +1,14 @@
+{
+  "model": "iapp/document-ocr",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": null,
+  "date": "2026-09-29T12:07:49.704Z",
+  "durationMs": 6450,
+  "cost": null,
+  "credits": 1,
+  "usage": null,
+  "provider": "iApp",
+  "finishReason": null
+}

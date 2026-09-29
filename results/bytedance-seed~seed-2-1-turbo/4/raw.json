@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683667-INL99t3juEDVxEShVyHf",
+  "object": "chat.completion",
+  "created": 1790683667,
+  "model": "bytedance-seed/seed-2-1-turbo",
+  "provider": "Seed",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "# แผนจัดโอนสายไฟฟ้าเส้นทางรังสิต - หัวลำโพง\nหมวด 1 ระยะทาง 34 กม. เส้นทาง รังสิต - ถนนพหลโยธิน - หัวลำโพง ระยะทางรวม 34 กม.\nสำหรับองค์กรมหานครกรุงเทพ\n---\n## 1. รายละเอียดเส้นทาง\n### เส้นทางไป\nเริ่มที่สะพานรังสิต (เชิงสะพานตากนิมิต) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมบูรณ์\nถนนพญาไท เลี้ยวขวาไปทางถนนพระราม 4 จุดสิ้นสุดที่ถนนประปาหัวลำโพง\n### เส้นทางกลับ\nเริ่มที่หัวลำโพง ไปตามถนนตุเรืองเมือง เลี้ยวซ้ายไปทางถนนรองเมือง เลี้ยวขวาไปทาง\nถนนเจริญเมือง เลี้ยวขวาไปทางถนนเจรัสทรัพย์ เลี้ยวซ้ายไปทางถนนพระราม 4 แล้วไปจนถึงทางเดิน\nวนถึงรังสิต\n## 2. แผนที่เส้นทาง\n<figure>\nHand-drawn annotated route map in Thai, oriented with the northern terminus at Rangsit (top of the map) and southern terminus at the Hua Lamphong / Rama IV intersection (bottom of the map). The map labels major roads and landmarks along the north-south corridor, including Vibhavadi Rangsit Road, Phahonyothin Road, and side connections to Nonthaburi (west/left side) and Bang Kapi / Lat Phrao (east/right side). Handwritten annotations mark the 4-lane road section at the southern end of the route.\n</figure>\n\n*(ข)*",
+        "refusal": null,
+        "reasoning": "Got it,\n\nI’ve confirmed the transcription order will follow the sequence: top preamble text, Section 1, the figure, and the remaining content. I’m currently working on the faded Thai document, with the transcription for the top preamble and the first section on route details already completed.\n\nI have clarified the content of the figure segment to be transcribed: it is a hand-drawn route map for the power line transfer and road route, and I have sorted out the partial location labels on the map.\n\nI’ve finalized the full details of the target hand-drawn route map, and will follow the required formatting rules for transcription: only use standard Markdown, with no extra explanatory content, and transcribe all Thai content as accurately as possible.\n\nI’ve finished transcribing the Thai text for the preamble and Section 1 covering route details, including the specific northbound and southbound travel routes, and confirmed the figure segment to be transcribed is a Thai annotated hand-drawn map showing the north-south power line transfer corridor from Rangsit to Hua Lamphong.\n\nThis hand-drawn map includes labels for key roads and intersections along the route, a note on the 4-lane road section at the southern terminus, and faded original annotations. I’ve confirmed the transcription rules: only the required Markdown content should be output without any extra commentary, and the figure segment should be wrapped in a standard HTML figure element with a description of the map included.\n\nI’ve spotted earlier transcription errors and will correct the Thai content as accurately as possible. After rechecking, I’ve confirmed this is a power line relocation plan for the Bangkok Metropolitan Administration.\n\nI’ve verified the Thai text of the top preamble and Section 1’s title, confirming they match the actual content. The outbound route details are also fully correct and accurate.\n\nI corrected my earlier misreading of the handwritten text, confirming the road referred to is Phahonyothin Road.\n\nI’ve confirmed the return route details, Section 2 title, and the map is to be wrapped in the figure element. I’ve also clarified the transcription rules for faded text: transcribe the visible content directly, with the figure description accurate.\n\nI have completed the full transcription of the power line relocation plan document, which covers the project title, 34km total route details from Rangsit to Hua Lamphong (including specific northbound and southbound travel paths), and the hand-drawn route map with relevant annotations. The output strictly follows the required formatting rules with no extra content.\n\nI’ve confirmed the transcription rules strictly require no extra commentary. I’ve verified the faded lower-right handwritten text with a circled marker, and the first line of the document are fully legible. The hand-drawn map figure and faded text transcription will follow the required formatting.\n\nI have completed the full output of the required Markdown document. It includes the Thai title of the power line relocation project, the statutory note in the document, the detailed northbound and southbound route descriptions, and the corresponding hand-drawn route map with complete annotations.\n\nI’ve confirmed the transcription details: the circled visible Thai text in the lower right corner will be marked as (ข), binder holes on the left of the document will not be included, and all outputs strictly follow the rule of only providing required content without any extra commentary.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Got it,\n\nI’ve confirmed the transcription order will follow the sequence: top preamble text, Section 1, the figure, and the remaining content. I’m currently working on the faded Thai document, with the transcription for the top preamble and the first section on route details already completed.\n\nI have clarified the content of the figure segment to be transcribed: it is a hand-drawn route map for the power line transfer and road route, and I have sorted out the partial location labels on the map.\n\nI’ve finalized the full details of the target hand-drawn route map, and will follow the required formatting rules for transcription: only use standard Markdown, with no extra explanatory content, and transcribe all Thai content as accurately as possible.\n\nI’ve finished transcribing the Thai text for the preamble and Section 1 covering route details, including the specific northbound and southbound travel routes, and confirmed the figure segment to be transcribed is a Thai annotated hand-drawn map showing the north-south power line transfer corridor from Rangsit to Hua Lamphong.\n\nThis hand-drawn map includes labels for key roads and intersections along the route, a note on the 4-lane road section at the southern terminus, and faded original annotations. I’ve confirmed the transcription rules: only the required Markdown content should be output without any extra commentary, and the figure segment should be wrapped in a standard HTML figure element with a description of the map included.\n\nI’ve spotted earlier transcription errors and will correct the Thai content as accurately as possible. After rechecking, I’ve confirmed this is a power line relocation plan for the Bangkok Metropolitan Administration.\n\nI’ve verified the Thai text of the top preamble and Section 1’s title, confirming they match the actual content. The outbound route details are also fully correct and accurate.\n\nI corrected my earlier misreading of the handwritten text, confirming the road referred to is Phahonyothin Road.\n\nI’ve confirmed the return route details, Section 2 title, and the map is to be wrapped in the figure element. I’ve also clarified the transcription rules for faded text: transcribe the visible content directly, with the figure description accurate.\n\nI have completed the full transcription of the power line relocation plan document, which covers the project title, 34km total route details from Rangsit to Hua Lamphong (including specific northbound and southbound travel paths), and the hand-drawn route map with relevant annotations. The output strictly follows the required formatting rules with no extra content.\n\nI’ve confirmed the transcription rules strictly require no extra commentary. I’ve verified the faded lower-right handwritten text with a circled marker, and the first line of the document are fully legible. The hand-drawn map figure and faded text transcription will follow the required formatting.\n\nI have completed the full output of the required Markdown document. It includes the Thai title of the power line relocation project, the statutory note in the document, the detailed northbound and southbound route descriptions, and the corresponding hand-drawn route map with complete annotations.\n\nI’ve confirmed the transcription details: the circled visible Thai text in the lower right corner will be marked as (ข), binder holes on the left of the document will not be included, and all outputs strictly follow the rule of only providing required content without any extra commentary.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1377,
+    "completion_tokens": 4782,
+    "total_tokens": 6159,
+    "cost": 0.012517065,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0126435,
+      "upstream_inference_prompt_cost": 0.0006885,
+      "upstream_inference_completions_cost": 0.011955
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4310,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

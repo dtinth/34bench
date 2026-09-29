@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683682-8GLFmAIL1aLcOijKOAZn",
+  "object": "chat.completion",
+  "created": 1790683682,
+  "model": "qwen/qwen3.8-flash",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แผนทางรถไฟในการปฏิบัติงาน ... จังหวัด ...\nหมวด 1 ทางที่ 34 รังสิต – ... – หัวลำโพง ระยะทาง 32 กม.\nสำนักรถไฟ ...\n\n---\n\n**1. รายละเอียดเส้นทาง**\n\n**เที่ยวไป**\n\nเริ่มต้นที่ทางรังสิต (เชิงสะพานกูนิกสร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปทางถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n**เที่ยวกลับ**\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปทางถนนเจริญเมือง เลี้ยวขวาไป...\nถนนเจริญเมือง เลี้ยวขวาไปทางถนนกรุงเมือง เลี้ยวซ้ายไปทางถนนพระราม 4 ตรงไปทางถนนบาง...\nจนถึงรังสิต\n\n**2. แผนที่เส้นทาง**\n\n<figure>\n<figcaption>แผนที่เส้นทางแบบวาดด้วยมือ แสดงแนวถนนหลักเป็นเส้นโค้งในแนวตั้ง โดยมียอดบนสุดระบุ \"รังสิต\" ตามแนวเส้นทางมีป้ายกำกับจุดสำคัญเรียงจากบนลงล่าง ได้แก่ \"อนุสาวรีย์ชัยฯ\" (พร้อมเส้นแยกไป \"ถนนวิภาวดีรังสิต\" และป้าย \"ไปบ่่นบุรี\" สองด้าน), \"ถนนพหลโยธิน\", \"สะพานควาย\", \"อนุสาวรีย์ชัยฯ\" อีกครั้ง, \"ถนนพญาไท\", \"หัวลำโพง\" และ \"ถนนพระราม 4\" ที่ส่วนล่างสุดของแผนที่มีเส้นประและป้ายกำกับย่อยหลายจุด เช่น \"1.ไผ่สิงห์(1)\", \"1.รอยแยก\", \"1.หมอ 2 ไท\" และ \"จากแนว\" เพื่อแสดงตำแหน่งแยกหรือจุดสังเกตตามเส้นทาง</figcaption>\n</figure>\n\n(๒)",
+        "refusal": null,
+        "reasoning": "The user wants a transcription of a Thai document into Markdown. The document is a faded, typewritten Thai text with a hand-drawn map figure. I need to transcribe the Thai text accurately and represent the figure as an HTML `<figure>` element with a description.\n\nLet me read the Thai text carefully. It's quite faded.\n\nHeader area:\nแผนทางรถไฟในการปฏิบัติงาน... จังหวัด...\nหมวด 1 ทางที่ 34 ingsil - on... - หัวลำโพง ระยะทาง 32 กม.\nสำนักรถไฟ...\n\nLet me look more carefully. The top lines are very faded.\n\nLine 1: แผนทางรถไฟในการปฏิบัติงาน ... จังหวัด...\nLine 2: หมวด 1 ทางที่ 34 ingsil – ... – หัวลำโพง ระยะทาง 32 กม.\nLine 3: สำนักงาน...\n\nSection 1: รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ทางรังสิต (เชิงสะพานกูนิกสร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปทางถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปทางถนนเจริญเมือง เลี้ยวขวาไป...\nถนนเจริญเมือง เลี้ยวขวาไปทางถนนกรุงเมื่อง เลี้ยวซ้ายไปทางถนนพระราม 4 ตรงไปทางถนนบาง...\nจนถึงรังสิต\n\nSection 2: แผนที่เส้นทาง\n\nThen the figure (map).\n\nThe map labels: รังสิต, อนุสาวรีย์ชัยฯ, ถนนวิภาวดีรังสิต, ไปบ่่นบุรี(?), ถนนพหลโยธิน, ไปบ่่นบุรี, จากแนว(?)... Let me look. The map shows a route line with labels.\n\nMap labels I can read:\n- รังสิต (top)\n- อนุสาวรีย์ชัยฯ\n- ถนนวิภาวดีรังสิต\n- ไปบ่่นบุรี / ไปบ่่นบุรี (two labels, maybe \"ไปนครสวรรค์\" and \"ไปบุรีรัมย์\"? Hard. Looks like \"ไปบ่่นบุรี\" and \"ไปบ่่นบุรี\". Possibly \"ไปนครสวรรค์\" and \"ไปบุรีรัมย์\". The text reads \"ไปบ่่นบุรี\" on left and \"ไปบ่่นบุรี\" on right. Hmm.)\n- ถนนพหลโยธิน\n- จากแนว / จากแนว\n- ไปมาบตะพื(?)\n- สะพานควาย\n- อนุสาวรีย์ชัยฯ\n- 1.ไผ่สิงห์(1) / 1.ไผ่สิงห์\n- ถนนพญาไท\n- 1.รอยแยก\n- หัวลำโพง\n- 1.หมอไท / 1.หมอ 2 ไท\n- ถนนพระราม 4\n- จากแนว\n\nThis is too uncertain. For the figure, I'll provide a description rather than transcribe every label perfectly. The instruction: \"For each figure, write an HTML <figure> element with a description of the figure inside it.\" So the figure content is a description, not OCR of the map. Good.\n\nSo I'll transcribe the body text and put a <figure> with a description of the map.\n\nLet me settle the body text transcription as best I can.\n\nHeader:\n\"แผนทางรถไฟในการปฏิบัติงาน ... จังหวัด ...\" — too faded. I'll transcribe what's legible.\n\nActually the top might be: \"แผนทางรถไฟในการปฏิบัติงาน รถยนต์... จังหวัด...\" Hmm.\n\nLet me look at line 2: \"หมวด 1 ทางที่ 34 รังสิต – ... – หัวลำโพง ระยะทาง 32 กม.\" The middle word faded, maybe \"สะพาน...\". Could be \"รังสิต – พหลโยธิน – หัวลำโพง\". Hard.\n\nLine 3: \"สำนักรถไฟ... กรุงเทพฯ\" maybe.\n\nI'll transcribe with the legible parts and use ellipses for illegible.\n\nGiven the difficulty, I'll produce a reasonable transcription.\n\nLet me write the markdown.\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants a transcription of a Thai document into Markdown. The document is a faded, typewritten Thai text with a hand-drawn map figure. I need to transcribe the Thai text accurately and represent the figure as an HTML `<figure>` element with a description.\n\nLet me read the Thai text carefully. It's quite faded.\n\nHeader area:\nแผนทางรถไฟในการปฏิบัติงาน... จังหวัด...\nหมวด 1 ทางที่ 34 ingsil - on... - หัวลำโพง ระยะทาง 32 กม.\nสำนักรถไฟ...\n\nLet me look more carefully. The top lines are very faded.\n\nLine 1: แผนทางรถไฟในการปฏิบัติงาน ... จังหวัด...\nLine 2: หมวด 1 ทางที่ 34 ingsil – ... – หัวลำโพง ระยะทาง 32 กม.\nLine 3: สำนักงาน...\n\nSection 1: รายละเอียดเส้นทาง\nเที่ยวไป\nเริ่มต้นที่ทางรังสิต (เชิงสะพานกูนิกสร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปทางถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\nเที่ยวกลับ\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปทางถนนเจริญเมือง เลี้ยวขวาไป...\nถนนเจริญเมือง เลี้ยวขวาไปทางถนนกรุงเมื่อง เลี้ยวซ้ายไปทางถนนพระราม 4 ตรงไปทางถนนบาง...\nจนถึงรังสิต\n\nSection 2: แผนที่เส้นทาง\n\nThen the figure (map).\n\nThe map labels: รังสิต, อนุสาวรีย์ชัยฯ, ถนนวิภาวดีรังสิต, ไปบ่่นบุรี(?), ถนนพหลโยธิน, ไปบ่่นบุรี, จากแนว(?)... Let me look. The map shows a route line with labels.\n\nMap labels I can read:\n- รังสิต (top)\n- อนุสาวรีย์ชัยฯ\n- ถนนวิภาวดีรังสิต\n- ไปบ่่นบุรี / ไปบ่่นบุรี (two labels, maybe \"ไปนครสวรรค์\" and \"ไปบุรีรัมย์\"? Hard. Looks like \"ไปบ่่นบุรี\" and \"ไปบ่่นบุรี\". Possibly \"ไปนครสวรรค์\" and \"ไปบุรีรัมย์\". The text reads \"ไปบ่่นบุรี\" on left and \"ไปบ่่นบุรี\" on right. Hmm.)\n- ถนนพหลโยธิน\n- จากแนว / จากแนว\n- ไปมาบตะพื(?)\n- สะพานควาย\n- อนุสาวรีย์ชัยฯ\n- 1.ไผ่สิงห์(1) / 1.ไผ่สิงห์\n- ถนนพญาไท\n- 1.รอยแยก\n- หัวลำโพง\n- 1.หมอไท / 1.หมอ 2 ไท\n- ถนนพระราม 4\n- จากแนว\n\nThis is too uncertain. For the figure, I'll provide a description rather than transcribe every label perfectly. The instruction: \"For each figure, write an HTML <figure> element with a description of the figure inside it.\" So the figure content is a description, not OCR of the map. Good.\n\nSo I'll transcribe the body text and put a <figure> with a description of the map.\n\nLet me settle the body text transcription as best I can.\n\nHeader:\n\"แผนทางรถไฟในการปฏิบัติงาน ... จังหวัด ...\" — too faded. I'll transcribe what's legible.\n\nActually the top might be: \"แผนทางรถไฟในการปฏิบัติงาน รถยนต์... จังหวัด...\" Hmm.\n\nLet me look at line 2: \"หมวด 1 ทางที่ 34 รังสิต – ... – หัวลำโพง ระยะทาง 32 กม.\" The middle word faded, maybe \"สะพาน...\". Could be \"รังสิต – พหลโยธิน – หัวลำโพง\". Hard.\n\nLine 3: \"สำนักรถไฟ... กรุงเทพฯ\" maybe.\n\nI'll transcribe with the legible parts and use ellipses for illegible.\n\nGiven the difficulty, I'll produce a reasonable transcription.\n\nLet me write the markdown.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2608,
+    "completion_tokens": 1246,
+    "total_tokens": 3854,
+    "cost": 0.00064442268,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 2432,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000650932,
+      "upstream_inference_prompt_cost": 0.000065312,
+      "upstream_inference_completions_cost": 0.00058562
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 871,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

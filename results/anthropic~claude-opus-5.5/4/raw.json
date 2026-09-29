@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790683667-62mIts80gwePOk0loedO",
+  "object": "chat.completion",
+  "created": 1790683667,
+  "model": "anthropic/claude-opus-5.5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "# เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานคร และจังหวัดที่มีเขตติดต่อต่อเนื่อง\n\n## หมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\n\n### สำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. <u>รายละเอียดเส้นทาง</u>\n\n<u>เที่ยวไป</u>\n\nเริ่มต้นที่ตลาดรังสิต (เชิงสะพาน[ไม่ชัด]) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n<u>เที่ยวกลับ</u>\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนน**รองเมือง เลี้ยวขวาไป**ตามถนนเจริญเมือง เลี้ยวขวาไปตามถนน**จรัสเมือง เลี้ยวซ้าย**ไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. <u>แผนที่สังเขป</u>\n\n<figure>\nA hand-drawn sketch map of the bus route, running diagonally from Rangsit (รังสิต) at the top right down to Hua Lamphong (หัวลำโพง) at the bottom left. The route follows ถนนพหลโยธิน, with ถนนวิภาวดีรังสิต drawn alongside it. Along the way are marked: อนุสาวรีย์หลักสี่ (with a cross road leading to ไปนนทบุรี on the left and ไปมีนบุรี on the right), ลาดพร้าว (with a road ไปบางกะปิ), สะพานควาย, and อนุสาวรีย์ชัยฯ (marked with a circle). Near the southern end, the labels ถนนพญาไท, ถ.เจริญเมือง, ถ.รองเมือง, ถ.จรัสเมือง, ถ.พญาไท and ถนนพระราม 4 mark the loop around หัวลำโพง. Some labels are added in handwriting.\n</figure>\n\n---\n\nแนบท้ายประกาศคณะกรรมการควบคุมการขนส่งทางบก\n\nตามประกาศ ฉบับที่ ........ (2) ........\n\nลงวันที่ ........ พ.ศ. 25..\n\n(ลงชื่อ) ..............................\n\nอธิบดีกรมการขนส่งทางบก\n\n[ลายมือชื่อ]",
+        "refusal": null,
+        "reasoning": "This looks like a Thai document detailing Bangkok bus route 34, running from Rangsit through Phahonyothin to Hua Lamphong, covering about 32 kilometers, and I'm working through transcribing its route category heading as best I can.\n\nThe outbound trip starts at Rangsit market, follows Phahonyothin Road past the Victory Monument onto Phya Thai Road, then turns right onto Rama IV Road to end at Hua Lamphong station; the return trip retraces through Rong Mueang, Charoen Mueang, and Jarat Mueang roads before rejoining Rama IV back to Rangsit. There's also a simplified map showing landmarks like Vibhavadi Rangsit Road, the Lak Si Monument, Lat Phrao, Saphan Khwai, and the Victory Monument along the route.\n\nI'm also noting the signature block attached to the Land Transport Control Committee's announcement, including the notice number, date, and the Director-General's signature line, though parts of it are hard to make out clearly.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "This looks like a Thai document detailing Bangkok bus route 34, running from Rangsit through Phahonyothin to Hua Lamphong, covering about 32 kilometers, and I'm working through transcribing its route category heading as best I can.\n\nThe outbound trip starts at Rangsit market, follows Phahonyothin Road past the Victory Monument onto Phya Thai Road, then turns right onto Rama IV Road to end at Hua Lamphong station; the return trip retraces through Rong Mueang, Charoen Mueang, and Jarat Mueang roads before rejoining Rama IV back to Rangsit. There's also a simplified map showing landmarks like Vibhavadi Rangsit Road, the Lak Si Monument, Lat Phrao, Saphan Khwai, and the Victory Monument along the route.\n\nI'm also noting the signature block attached to the Land Transport Control Committee's announcement, including the notice number, date, and the Director-General's signature line, though parts of it are hard to make out clearly.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "CAQS1BsKEAgSGAI4AUIIdGhpbmtpbmcSDIeQty5VGDE01z9+xRoMSy51KrpoPf9oyTUUIjBX1SlhrLMzFFCszp93KRcGUw6DLkkU2deZAj1RRGbdau25501+oHht57YRPITxGg8q8Rpg+WOxPCQhgjiFPWi7eZ2f+zampF4eJV2A/SI7s878r7YYeb4CWdE5d4zaH4YsylejBZa9adTD/t8sWG1/Q4M9izs0OWcNWon9nxxOHHW8+BcoBjlowoQU3UeUzCgkByMA3hbfx2tXv2Iwfb41zQUaTmYI/3rfOVhM+COSh5/cyexnvKhwhqTv0Y1F9o+J7Ukkw3bHlbP50Bsdqhx7BcBwpRCSDqc8XPMa94PN3RrqaVEy455YgXulbfOzk/LaHGkw8/uUzekH/WXoGdpzkunmeRm6+AeiI8gh5h8eVf5YJ9xL07XktvDHHwHx8SrM9AA230+XyJ2MX7W+TrxZU0/PPciBNR7H1NIgdR0J9WOkWSFYlcRWAbp5RWqAoMrlZIX8tlb8LJFOZRu34v1nup5Lt0QNO5CYtEno9zitKQr7kzCjX593RyXvpu6qFPPStZz97ORQ7e4EC0hiW0CgNJYCZqx7t7L9DgJ0gZy/paQHObRIaefHYV7QdISCZGp7lFpY3zjcqXu8F6tmqIeQRrGGCrjRaVLOiFMOIEzMuBcx3NOTrWG8yMMy3F/uyw1SLs3bEFRtYJdw3df8ykltdW20lKpUqpgUHu69HaOJPUDV82Vj8wNWQbBzaEgw32Zqd94TWw80GVtw6jv97e41Qxben2kiQywJaIz2qM2pA2/mfQxJAOey6SeIB24T92pwecCDw+snnZis+JIKeJgv/GPZW+L5tJxu7Ke8NNN0v7x7S3Zf4/lKX1BpGz5TsV9zUjbdrhfqSTuBLSJ9Rbdvmgt6T5nzJuTnx37U7v8CpyxHkC6E92leFmQiDXmFGivieolVjV3ztbb/klttSh56AW0ZGDKtUrx2OZC6SRmRs1ZuGUrODHDYfEAWJq11/yORuh0M+CdNO2kmiyuOaeGlCkq7X5J9e7KchsxB3YyAcTjKXBL1gyzJJB/VRtniDb/E2jD2b9yzDQgO7K6+388bTz85xobucNdMdmZKHP1sYY/BlOtCYLlh4SJN06pY5r2GYJ5Qc+jjlIXfRHKBIu7fxy406Kxw8L7NXCj699dO6/uWHe3qTtbijCvicUgH4FB0L63eT0BQSsiV1H2/M1vYr62Dpz76haVEjybNvWx+Yb51R6PbsinutQs97Bqc/01I0tiTuTUnkecVmwm5VnAoDsZwEpOvBh8DmPFBvDLwtGSRVGYelDv9RMQhT4R+b/wiAdxPqWDzMdsdm7FpY+xukI5IZ/x9FJpbBfX7qKZXIKVg4FYiK8Fa7yoiRGpO8lqYiTh+vJw3NTLK4fuIVaZ4NWOf93t6JmgjKtofy73NrBpj7UeC5MtnvbBpe8Hn0A0e68id3qtyIhGAbvnbWtci0JyN5fnfXEV7NmK3WIq1KbraEm8Lhgcv30p4tEHhYLtfceqEnXOkZh4JxFFpq6iqxmBXxqNaKm7F/TWyOC4SJIvSmqniAKkYzhPwRWSiRNZFcx3OO3d7I2Xtiogg6wV+jxbuNzN1EVwhAXlKSad5XMwwVAevhGzpkPtpQt6MndYpzFuuVHFbwIo25LFtTW6LY06PlvpWMLJku5Pk7pgJBYPQ9/2ntF+g67A7T3Kq0svpuHFTHxqKqOKbQerU0eQLm/4VO4FvQ6SeMrK95ixXZGECHQfSH5c8z3YBmISRJkIH21VulliGD2b6aVW/k5CRpymTnVC5UO5DE4jA62ZAS8BkGTJxGlSIkMkQLiCPbzfFiSvRrAT01dFUqkIghPXBcGZWr5gIm8cBsRh7YB9nSj07nmssg9pK6n/AWmXScGmiDeD+FEoqKLVW1jyv9JoVwf/IcZTHOwMmQ0Bkf7KBVvfx6axYQj5TrBscuFY7v9TtSjG8nPoRDAuyNSLyy7dmUYjv3E1GBUb9ganlY8z1k2ZuluwhsMyEDnp+mI+gqj1WCYO7JVAfYTvLm4Qy7E0St00FZGOZeiXGZrJ/HxcPBvXkpizqAwAihGYrx74ERv+HLMi2bzVKNE58jNSyTligKC3frmWilB4MXEV6iFw6Ew41ivu2K3VIs4YsOg0Ebi8UgPNbpAHBXUsLQX7k5UQrMhvj5HmLp2hzjW70CBBUhkMUPpdBtdrqJLSqdvXUz2DUMOoA0NuR5GPzYul3DyzgyNGuTPHFKGjgt/vMaqKk/tvc1OcdKk9cl+1pcRvQygceZEfYhqvqzF8oxMP9yWXGAp6p+tJP/g6hed6NvHl+a4szgxDEBv86SZ9tMuvrdVRv79sX/fGU5CDPve+W93k0Wh9hFBj9dyu8mvbRcp55btpbvGYxopyAE9H3TWh8Jbmr46C3JsEuXRxTQ8CdAKZDLZMLGdFgs2SpoJkNhzEsRP5i9ufaNVWLeR4FGIDULOp5alH7nbXUqpScIFxMRkLU0F5XbE2P/AXXGoCEz8zvrIfnaMDJw3pP4KyezxGZktAabf8J7JcgIUII7kjFv84ANJ9VcYO/2F+4NbtBwKrhL+kn+jnYzjb4tfy9zQHOQslM6ScW7+l8Cs5hzg1u5BR0XOl9m76Go2MXbxiLW3+pFe2dSTOEyL4H7AFF47mmsvbwBUK8WkI/y7RDE4aNRp7SuIW1B5p1ltsA5QZLXLm0vHtt86tUTmu0LM09YNuZHnMqxBlfvxf9IQc4JVlmRb3jQ6iHytVUXz+6gf7EOKoRc/JmF/pnoM4rtkQdqEIk69P8OdqW03l3vgAR874d6USZ9mKZvKf5mvrnD3VUGtqciO563wDKgh6GbYyVEjTjMajeJecGofU4mD/7HhvSh3U7yzClWDpuzXMznvdscGIaB3hr00CBZ2XJMk16bp95+YM+P/kvFOIuxuEDd+hGz91UF6zZ3qdwc5kR1vyoOCbQFekCF9xbTm4QQ+gCLCPCLg+UwrbVZIQXEMz2GBPVyeVYK3V+H4CGJrOGWziimoKjZURXqc7AQ7fyGCNA2Tu+RLBnPks43vq/gNW3cnFB0iHkJQklE2oTRi5Qt9DbG+IQB4EffPcGawARLu01YrC1dgZsSYX1U4mJ0MbRb0Bw4ioTNELHPTcbIkxNcisKOcze7eqiH7nw6ax/nQRaCTrF/I8acJIyeezZQxNSJdJr46rzoPylFShO5+RIR5XWYg6eaBzqu+YTRy8WwVH3UIyoHnjcYmQUwxZpXcfrhuuUH3XZywiiK/JP69n0Y/SFL+PozdfjBoZq3zABC0qa4r4FFNg1PsIH6A2HDbUoiU2oFtwnYdHHYBZ38c23PghXPxLprr8vhqEHlFHRhpx84euzeoK92384OvOAa+jEMeVL3EhfpXe4+XZhF+2zJv3z/7iOqdnJT4ayuGaVIvuPa8LIOSSRkULlEfEkSgm+v/SRCocoMbjp/pUUCxwGgtvCpd6mcw3YPvDGHD4ftGnls+lq4F0n9PHa6eD06r+TY7+cBq/hHvDcWvQlTJTLHmnr6eFvqHAiMT9cu39EuhRzwItncAqHfysdaobC3xe8Hliwmf7ujSxBKXwCtkCkEJxx9BHn+l+4R1flWcEz0Iqtj91VEnGrYOEL6Ey1BPUw55YDNl+Cu850rzOuCoTJTFve7I9W0jaD495MwRlUko2LJE/SPS0LiYpY95GKKsfPvIezUvnXnLFwaueTHIHyQn51fwLouexT/bJvPFsIZ/PaY+IY5ebmipnavkcxFF3b2qpW3OwUubN4pLwIk1o4PhOT6WuxHpo/bAqJvvX6ZNCN8CCOvMF+3OAoBqjkWHlMV7gr39+QqHmsoND8CkeiakTTPvO42gk+HVoijG+LC0NUJVH3q6kT1z6UJSzQOZJME3N8ibAFhhdsExT0HZIW760h0Ms7inEOh2d1PjNCTlM6Xka8qQVhMLswxalApiaHNK9dqO1z7bEQATJPHZZ63NO+fQGd8R5P/iSgyd1pMcnPoT6LIWoykkDpPAUzFC51dKQy9hJhNOy2VrrezTxnlP6Upntm3v2Qow3NHpt4/Yy82A4sM40T2jNp1idO+5M7d6O91LYtGs90hvlJK7Y6xkEvYwHfdlFV7NWn3/0Z6uE+K5pTUSmcZFbYI2ECfvyQFe6v/PtYwKOA6y4z6RwOn+xfhpX0STPXFwXjdCmvVWURmj8EHlNxMZQZq0KIEk5OpC4AX6K7WyesPD87WUZtN9qjAlwLpPPVxR+rlwmodfhFUUUp6r7rksFCarBByNQIxXBe/RJQOOnA/3/QpgKA3+v2543kg9keWKVzKo70z0CzHulGEfshVc3xiUAI3yNtnIfPW5vPhK+RZ9jsdZvwZ/sBRxeZD6DYv8smS1scxyapi/1Kz+xSCLLZxsZ9KEB2IwD1XycM793Ms4723NIYQdSc4MYYJygx1ApI1AU5HDJv92CAMd7sOV0M4SsOhbzk3t6l0y6msk0SanHUKagoGMfJami+CgOxlHuZORWBzrTU9YbKYf5a9BVnwlD0WP0S4w27TGpIA4wdFyO80fGSz2pSr9KRyECgYWj1XzkxodwYI21CBvxYow/4DetHqDmF0oCXCl9/sCJmsRWs3HgK/Ahubl9mUw5Qo+uAQTmFSIQAitnKWhTQK/6nWhr8irKz9Chj6CCGuEcFjYoDR/14LMu7YAxX/HJkNckYAQ=="
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 2040,
+    "total_tokens": 6865,
+    "cost": 0.059499,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0601,
+      "upstream_inference_prompt_cost": 0.0193,
+      "upstream_inference_completions_cost": 0.0408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1023,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

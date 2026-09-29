@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683667-o2b72KZ2sSa1bW90CKxj",
+  "object": "chat.completion",
+  "created": 1790683667,
+  "model": "minimax/minimax-m3",
+  "provider": "Minimax",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แผนการสถิตย์ การประจำทหาร 1 นิ้ว ขนาด 1 นิ้ว 34 ชนิด รังสิต - ระเบียง - ปากกิ่วไทย ระยะทาง 32 ซม.\n\nค่าขนาดจากตำราทหารอเมริกัน\n\n---\n\n1. รายละเอียดปลอกกระสุน\n\n**เนื้อปลอก**\n\nเนื้อเหล็กที่ดีดี (เชื่อมเชยเชือบทึก) ไม่ชบชนมาใบดีน และชุบทองแดงขนาด 4 ชุดเล่นครูที่ตกไม่คิดให้คอไถง\n\n**เบ้าขนาด**\n\nเบ้าพิมพ์ขนาด ไม่ตามคุณของเนื้อ เบ้าครอบปลอกเบ้าชนิงซอง เนื้อขนาดไถลงควบแบบรัชฏ์เมือง เนื้อชดชองไปควบชนิงขนาด 4 กองคำควบในบลงกับ รถนิรโรงสึก\n\n2. ตามแบบรูป\n\n<figure>\nแผนภาพแสดงส่วนประกอบของปืนไรเฟิล พร้อมป้ายชื่อชิ้นส่วนต่างๆ ในภาษาไทย ได้แก่ รังสิต, ชุยชิวิการรังสิต, ชุยชายรังสิต, ชุยชิวิการรังสิต, ไปขนาบรู, ไปลินรู, ระแวนใบรับ, รางชารา, ระแวนกาย, ไปมางคบิ, ค. เฟงฟี, ชุยชาวริสึก, ชนิงชุยไถ, ครอบเฟลี, รังสิตไถล, ค. ผลไถ, ลนนพระกาย, และ รางฟลี\n</figure>",
+        "refusal": null,
+        "reasoning": "Let me analyze this image. It appears to be a Thai document, possibly a military report about a weapon (looks like a rifle). The document contains:\n1. Some header text\n2. A section about shell production\n3. A detailed diagram of a rifle with labeled parts in Thai\n\nLet me transcribe this carefully. The document appears to be about ammunition shells and a rifle diagram.\n\nThe Thai text mentions:\n- Header about shelling\n- \"ขนาด 1 นิ้ว 34 ชนิด\" (Size 1 inch 34 type)\n- \"ค่าขนาดจากตำราทหารอเมริกัน\" (Size from American military textbook)\n- \"1. รายละเอียดปลอกกระสุน\" (1. Shell casing details)\n- \"เนื้อปลอก\" (Casing material)\n- \"เนื้อเหล็กที่ดีดี (เชื่อมเชยเชือบทึก) ไม่ชบชนมาใบดีน และชุบทองแดงขนาด 4 ชุดเล่นครูที่ตกไม่คิดให้คอไถง\" \n- \"เบ้าขนาด\" (Mold size)\n- \"2. ตามแบบรูป\" (2. As per design/diagram)\n- Various labels on the rifle diagram\n\nLet me transcribe this as best I can:",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Let me analyze this image. It appears to be a Thai document, possibly a military report about a weapon (looks like a rifle). The document contains:\n1. Some header text\n2. A section about shell production\n3. A detailed diagram of a rifle with labeled parts in Thai\n\nLet me transcribe this carefully. The document appears to be about ammunition shells and a rifle diagram.\n\nThe Thai text mentions:\n- Header about shelling\n- \"ขนาด 1 นิ้ว 34 ชนิด\" (Size 1 inch 34 type)\n- \"ค่าขนาดจากตำราทหารอเมริกัน\" (Size from American military textbook)\n- \"1. รายละเอียดปลอกกระสุน\" (1. Shell casing details)\n- \"เนื้อปลอก\" (Casing material)\n- \"เนื้อเหล็กที่ดีดี (เชื่อมเชยเชือบทึก) ไม่ชบชนมาใบดีน และชุบทองแดงขนาด 4 ชุดเล่นครูที่ตกไม่คิดให้คอไถง\" \n- \"เบ้าขนาด\" (Mold size)\n- \"2. ตามแบบรูป\" (2. As per design/diagram)\n- Various labels on the rifle diagram\n\nLet me transcribe this as best I can:",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3960,
+    "completion_tokens": 1101,
+    "total_tokens": 5061,
+    "cost": 0.0024536952,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00247848,
+      "upstream_inference_prompt_cost": 0.00115728,
+      "upstream_inference_completions_cost": 0.0013212
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 370,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

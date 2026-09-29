@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683681-yKwgJnQvkyyQv78Fhp8z",
+  "object": "chat.completion",
+  "created": 1790683681,
+  "model": "minimax/minimax-m3",
+  "provider": "Minimax",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\nแผนที่ถนนสาย วรจักร บริเวณวัดราชบุรณะ ตั้งอยู่ในซอยวรจักร ตำบล\nหมวก ๑ ช่อ ๓๔ รหัส - ๓๑๑๑๐ เฉิน - ที่ว่าการอำเภอพระประแดง ๓๒ ซอย\nค่าที่ดินหลักละ ประมาณ บาท ขนาด บาท\n\n## 1. ชื่อและที่ตั้งวัด\n\n### ที่ตั้ง\n\nวัดราชบุรณะตั้งอยู่ (เชิงสะพานข้ามคลอง) ฝั่งตะวันตกในตำบล บางหว้า ถนนข้ามคลอง\nถนนพระไไ ลิงบางอำเภอคุมพระประแดง ๔ จุดเขตแดกศักดิ์ของวัดประทับ\n\n### ประวัติ\n\nวัดราชบุรณะตั้ง ในแขวงเมืองหริง เดิมชื่อ วัดราชกุฎาราม แล้วตามตำรา กล่าวว่า\nถนนเจริญเมือง เมืองบางประดิษฐ์ ในพระราชพงศาวดาร กล่าวว่า เริ่มสร้างวัดในแผ่นดินพระราม ๔\n๒. แผนที่\n\n<figure>\nแผนที่วัดราชบุรณะ แสดงแผนผังของวัดพร้อมฉลากระบุตำแหน่งต่าง ๆ ได้แก่ รั้ววัด กุฏิการเลี้ยงคิด กุฏิจาวายผักผีไม้ ใบสมุรี ใบสมุรี กำแพงในรั้ว ทางเข้าวัด ใบบางกว้า อะคะควาย อะคะควาย ใบสมุรี กำแพงในรั้ว ถนนพระไท ตัวสำโรง วาสุเทพ ศาลาการเปรียญ และแผนที่วัดตามแนวถนนสายวรจักร\n</figure>\n```",
+        "refusal": null,
+        "reasoning": "The user wants me to transcribe a Thai document image into Markdown format. Let me analyze the image carefully.\n\nThe document appears to be an old, handwritten/typewritten Thai document. The text is somewhat faded and difficult to read clearly. Let me try to transcribe what I can see.\n\nThe document seems to be about a temple/wat and includes:\n1. A header section\n2. Section 1 with location details (ที่ตั้ง and ประวัติ)\n3. Section 2 with map/diagram\n\nLet me try to transcribe the visible text as best I can:\n\nHeader text mentions \"แผนที่ถนนสาย วรจักร\" (map of Worajak Road), and mentions \"หมวก ๑ ช่อ ๓๔\" and \"๓๒ ซอย\"\n\nSection 1:\n- ที่ตั้ง (Location)\n- ประวัติ (History)\n- Section about temple location on Worajak Road\n\nSection 2:\n- แผนที่ (Map)\n- Contains a diagram with labels pointing to various parts of a temple/wat\n\nLet me formatthis in Markdown.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants me to transcribe a Thai document image into Markdown format. Let me analyze the image carefully.\n\nThe document appears to be an old, handwritten/typewritten Thai document. The text is somewhat faded and difficult to read clearly. Let me try to transcribe what I can see.\n\nThe document seems to be about a temple/wat and includes:\n1. A header section\n2. Section 1 with location details (ที่ตั้ง and ประวัติ)\n3. Section 2 with map/diagram\n\nLet me try to transcribe the visible text as best I can:\n\nHeader text mentions \"แผนที่ถนนสาย วรจักร\" (map of Worajak Road), and mentions \"หมวก ๑ ช่อ ๓๔\" and \"๓๒ ซอย\"\n\nSection 1:\n- ที่ตั้ง (Location)\n- ประวัติ (History)\n- Section about temple location on Worajak Road\n\nSection 2:\n- แผนที่ (Map)\n- Contains a diagram with labels pointing to various parts of a temple/wat\n\nLet me formatthis in Markdown.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3960,
+    "completion_tokens": 1090,
+    "total_tokens": 5050,
+    "cost": 0.0015303816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 3959,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00154584,
+      "upstream_inference_prompt_cost": 0.00023784,
+      "upstream_inference_completions_cost": 0.001308
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 265,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

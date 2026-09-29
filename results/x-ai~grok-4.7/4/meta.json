@@ -1,0 +1,36 @@
+{
+  "model": "x-ai/grok-4.7",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T12:09:21.502Z",
+  "durationMs": 98191,
+  "cost": 0.05160276,
+  "usage": {
+    "prompt_tokens": 3697,
+    "completion_tokens": 7743,
+    "total_tokens": 11440,
+    "cost": 0.05160276,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.052124,
+      "upstream_inference_prompt_cost": 0.005666,
+      "upstream_inference_completions_cost": 0.046458
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7215,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "xAI",
+  "finishReason": "stop"
+}

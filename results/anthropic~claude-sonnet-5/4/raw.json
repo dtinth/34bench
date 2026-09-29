@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790683668-ZZ050V6kaZaCrEHpTzov",
+  "object": "chat.completion",
+  "created": 1790683668,
+  "model": "anthropic/claude-sonnet-5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "# เส้นทางรถโดยสารประจำทาง ปรับอากาศกรุงเทพ กรุงธนบุรี จังหวัดปทุมธานี และเมือง\n\n## หมวด 1 สาย 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\n\n### สำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n**1. รายละเอียดเส้นทาง**\n\n**เที่ยวไป**\n\nเริ่มต้นที่สถานีรังสิต (เชิงสะพานแยกบิ๊กซี) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนเพชรบุรีใหม่ เลี้ยวขวาไปตามถนนพระราม 4 บุคเส้นทางที่สถานีรถไฟหัวลำโพง\n\n**เที่ยวกลับ**\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนบรรทัดทอง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตาม ถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิม จนถึงรังสิต\n\n**2. แผนที่สังเขป**\n\n<figure>\n  <p>Hand-drawn sketch map illustrating the bus route between Rangsit and Hua Lamphong. The map shows a road running roughly north-south with the following labeled points from top to bottom:</p>\n  <ul>\n    <li><strong>รังสิต</strong> (Rangsit) - starting point at the top</li>\n    <li><strong>ถนนวิภาวดีรังสิต</strong> (Vibhavadi Rangsit Road) with a branch labeled <strong>ไปนพบุรี</strong> (to Nopburi/Saraburi)</li>\n    <li><strong>อนุสาวรีย์หลักสี่</strong> (Lak Si Monument) with <strong>ถนนพหลโยธิน</strong> (Phahonyothin Road) label nearby</li>\n    <li><strong>จตุจักร</strong> (Chatuchak) with a branch labeled <strong>ไปนางกะปิ</strong> (to Nang/Bang Kapi)</li>\n    <li><strong>สะพานควาย</strong> (Saphan Khwai) area, with annotation <strong>อ.เกษมเมือง</strong>\n    <li><strong>ถนนเพชรบุรี</strong> (Phetchaburi Road) and <strong>ดอกเบี้ย</strong> annotation near the label <strong>หัวลำโพง</strong> (Hua Lamphong)</li>\n    <li><strong>อนุสาวรีย์ชัยฯ</strong> (Victory Monument)</li>\n    <li><strong>ถนนหลวไท</strong> (Luang Thai Road) branching off</li>\n    <li><strong>ถนนพระราม 4</strong> (Phra Ram 4 Road) at the bottom, with <strong>อ.กายเมือง</strong> annotation</li>\n    <li><strong>หัวลำโพง</strong> (Hua Lamphong) marked at the base of the route</li>\n  </ul>\n  <p>The route is drawn as a curving line with small circles marking key junctions/stations along the path from Rangsit at the top to Hua Lamphong at the bottom, with several side roads and landmarks labeled with arrows pointing to their positions on the map.</p>\n</figure>\n\n---\n\n*(signature block area with stamped seal, illegible official title and signature line, dated notation)*",
+        "refusal": null,
+        "reasoning": "This looks like a Thai document describing a bus route, complete with a route map. I'll transcribe the Thai text into Markdown and include a figure element to represent the accompanying diagram.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "This looks like a Thai document describing a bus route, complete with a route map. I'll transcribe the Thai text into Markdown and include a figure element to represent the accompanying diagram.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "EoQECrABCBIYAipA3WPAZn2DDn5Pao59xDh46EO7GKeZA2HLdMY73yzLtTfRvcamYC0l0IX4hNLGV7pSKtBT5A7Ls2yjF3cO9ScAHTIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQ0YzBmMDQ2Zi0yNWZkLTQ1ZmItYmZiMy1hMDhhOGUyNDljYTd6HnVwcm9mXzAxMUNlanRINUpRZFdiRGlQdlRYVXRCZKgBm9Tu1QYSDGsNG4DLMY+IBzfojxoMzfbjCgeL0pIEsxtRIjC+LuOJ8lDGvtCyxjh30ZdtSAOzi1VHQLXBwtw1/5GcyptDLERF40eCm7qXmat/EBUqgAJWX7hSBMUIv9CfWwcIUTP8xTDUzLyDSr4vq7ESZCJecSAjrK7WSCpweFXzEroeXSCVRWAzLxhSjFxfyoZkmPf+TZQ61V1+99tKcPC7I8oRK9d7p42E4tyvJR4PJbrrhb7dsOPGGkdRI3XSmfqXlk04qcmrTqat4QwhzLat4xkKRlDjHjGx1vo5q43//jnLVN9+NlwJ3wQ0H0pwwzEIpmkiOujqYW4b9e4rprvOSxUbTH9TzQXOH8gXB307R0HC3dB5cFRb3sE+UzbKGv6ApNIL3DcVTRGjyjDgBjoUSIaoU25xIvW9kBlCOXQbv6OpAI+j7x6UPSlib4CRbB1QDYiUGAE="
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4823,
+    "completion_tokens": 1408,
+    "total_tokens": 6231,
+    "cost": 0.02348874,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023726,
+      "upstream_inference_prompt_cost": 0.009646,
+      "upstream_inference_completions_cost": 0.01408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

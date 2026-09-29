@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790683664-TCnEOIGMF7cLisNGxES9",
+  "object": "chat.completion",
+  "created": 1790683664,
+  "model": "openai/gpt-6-sol",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทาง [ข้อความเลือนราง]\n\nหมวด 1 สายที่ 34 รังสิต – [ข้อความเลือนราง] – [ข้อความเลือนราง] ระยะทาง 32 กม.\n\nสำนักงานองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. **รายละเอียดเส้นทาง**\n\n**เที่ยวไป**\n\nเริ่มต้นจากรังสิต (บริเวณทางแยก) ไปตามถนนพหลโยธิน ผ่าน [ข้อความเลือนราง] ระยะทาง 4 [ข้อความเลือนราง]\n\n**เที่ยวกลับ**\n\nเริ่มต้นจาก [ข้อความเลือนราง] ไปตามถนน [ข้อความเลือนราง] เลี้ยวขวาไปตามถนนพหลโยธิน ระยะทาง 4 [ข้อความเลือนราง] จนถึงรังสิต\n\n2. **แผนที่สังเขป**\n\n<figure>\nแผนที่สังเขปที่เขียนด้วยมือ แสดงแนวเส้นทางถนนและทางแยกจากบริเวณรังสิต มีเส้นทึบและเส้นประกำกับทิศทาง พร้อมชื่อถนนและจุดสังเกตหลายแห่ง เช่น ถนนพหลโยธิน อนุสาวรีย์หลักสี่ และลูกศรบอกทางไปสระบุรี\n</figure>",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "gAAAAABqu6oh9MSkNHJBlZKIXvGeq5ErG4XxwdJpDRocrlaFmouqmOfksCo8E1LX2m1L0P7vW1CnsaPu9HBqGPTdAd-43vrZ1mdgKGObOrKGxtx7xq-b6PgTxYJbN0SkEbVTMxKLVOawyafOGBHvHHJsukwy881Z-G3rmmB3NXpQSGN4nQVDyjseqePQ2Ib6Boo8HD__uQhj_SPKakN4VPPAFJzR7h4YlnecxN_wZe0yM8TZsROofjKGGOLqDaRU8sM4iV42wUKD_HvtJolBzDaqacmkXUJdg1umkOpHOFatIBwuTTCaSp2zpQJjsSLe3Y7FdC1FPMSiFox2VUjeDIdSB58rmF6l1T6oY4Q2Nhj-Yi0Gze-NxthePB5qxps31mu3Z7qDqr-bELaYheJ04Q8FK8A9E2ttefDsiAoCvscX4DvibZeHah58k4sjvx6qhJKCllSGP7K9hjenFUwnsWXT-AgAtv_qfC6XUVNDmguLYSADlGB3zVxZY0DLBcIwN3-6iJa_YWmTtMvhpJKt6kXMu88LNpR3_-FW_QH1eZdSDNSVeko0u6Lxe67HiPs4ac5k3jFQDvt5xd5ahDBsa2-ZPjTY--TnIPUqlP6IoTP45tedmhRUO-nQnMeWLZoqO9VO7wLHPU0X2eXsMzdLnSWbdN-mfRZmqanfueQ8-PnJ6LoqwkeYRy7040qqCigckcvY0iy79IsZep7cTuFuN4N--y3Z5htyuSxQ7eHZNRytRZLp9WoXGpzsXMFJ23wMSGqJDledhslsx3gwvzRpSJRS0QR_Z7v7NadtwImKdp4uj695JFeykq2_coGtiHMHgJMsONYrKyJZsdxXmdp-BM3WEbqTpsgGw4FfdZEUDBDeNt0SV2m3JGlgs3RQ34yS9gp4cNVGVDiEs7sr4dzb1FznD56SQ2vUeWG32M4MOYGsS8IOmtEmcwnUBQO-dmpg4b3Ba8jB4NNlusFH62W4DJPNhMhBYcvvkrqyILpRfIFdr47gvO3abm3ocC9IScydzMLpHFSQR_YLP1J3QotxWLRxDYEdM3snN1ik6_sqix8zXFXIbo4m7p-pY3VnXDnvf9XkFrcMcXS724drE_U2TdD3QqTeE4C6nabo9Gk8PeysOtznQH0t_CoBmWnhBlvBaIqNG9SmXlYYemkUhfip9JzL8Y49Wn5RE5VHYcBX4kqu0zhZgL1LxVRG8lW8T1dSJPrAft29g77hj0XXvN1WH1PFowpgHqnhjAOzD1olc9KSpnakhmFTCQMvrpdNOwcUTxxySlyAYSeJnmGR5b3ihg0X_3DeThaCDGPtnY75_iHP5MiQ4dJivV30oa-Uj0gcW5J6vHbL7f7qUsh0vxJrGxVfWHtejfSgSm9yWL6_AYrFezwNrwEeIMA1EyFgy9XSjXSQr8Y8wWFU6pAqPVKhbNVBQDWSZGBujidrEjJ4y59uefM6uu8Ek4_6Cr4j5oH5y0aIJmqTTSwPmM3s6Qq2QLBOtOHR02I0F2a_rDO-MP9JapflxJ0QK58p2zeJ1yVwctzsGAeJVwnaiupeadriQgwmsns58h3tPdkB45TlJaKi2xJvdnlsTt133PqYzA-NDTB-523iD03kh4ECwhmHs2MZJKkBZ1Ojtqqa7KPn5F62Vm0T3j9xXqIRLdTH4OhkHy3-JTnLZbbFznp8uOTMdjzwCDzz8im5kOE5VcBWutZQgUZBNs6PHL7T-31X6G6OP99vZR4YQm-RqsEWHA9HN6eBV5GmbC4mcs_6WtXpdM1E5pclEWNMGX7eNhMpwBTD1ujAWW3EcVDor5J6DkjvT6g6X2fP0AcBLGdr0pAlD_adacm5GAf5QfrpzLkljba3V5CoNVZzqXNFfsCoW4Q_Q4mUmCBRI9M7UJHh6jNvJlovRWPk2fE2eG6GbX6ofNelcsWCGJnWropWbgXORceGlj94d-SF98VlJb9Mez0Gp5LviFkVm7VcNtxLa41TuYR8hD1HE_e3bRZNg55de8Mb8DVp8aftns8ZmJKb945vHsdySMNgiAiOmdGfpkwwAVgP8ZESjl9y0JK35jsdEDlCBwmp_-qAm-HdRbzyMOBBJvtlByQIXU5RTNvnSH6RmGPJnUFqL-4SeCTH3DCGauHIiVnaqirF4nx7EgGfHu3snzJw6G8gn-i5Q_jHfo5_6IKwK172InD7Du6qpMBQU9ALtsed0xCDz0RQhSXlHmvO67VcyiKdL5Z5XWoIfH3au8uK21XRDo8PC9XhZ-PrnjQpxmfXWTpTk4NuhJzZPQXEiQkZ_bfWbZJqMHpAKBGo4RzPhgX7jz10C8lRthyQAaigydBP9c5K_ztjvBpq6-cFwd_tm1lBULnJW50YNwNa9Mp5pCVYoSXFgBqyW60EG6CnuHTvXEJXsNGBJIL6MnFAXHWgefh50_rB17uHMGFmRiHHWqFJ8Lw8oYPR462PUz4Ypj5pLcc5bdi7NPLKnXNfcPKppbHmEty2QWVXnyPSqBokCMuzjkafE4iH5j9mGE2AmCTLzwLiDAH3tSZJlySYKwsLs-xNyB3-kyijVdpisKOJ-DXHflc-R-TF0k8fWvASaaPfUogChJn9JflhDqjl29CBGpwNYIpFzM9rj9bEyogtMFE2JiQmoQk1ngF-IBS8hfbAxIwlMeKnvMXRTrwQxN1HAFQc-dQknUF78nqBtv6dpf22jF9PFH_ou1LKWe20RAeCBU809stt5RejTzFdjlNHb828ixv7NEDQvM8mVaaUCnBUVLEXUhJjRdqlPeSRTvWWOv4tfjUwByLoPLTSwEwUdKGmwaaJ3O4PQm8bRq2fut8CogwtgpGTULvR-puf9gH_6CUi_p2_zcl-32LUIcylk9kHhdqSoMErOcJhzOReihuoOtjzl5ypa2AyGYi2s5qyKGvVp8p7vnAxJYvtBQEZP9Co8oE2yQM1L6UDCIJne3o4pgAjbzlQnmKnUcAlmNOObuSjW0m0AN3kuiumanPtz_AoHgH2NFoP5IbrG3JVU_fkyBsTUd6VwSidpzc1EUcqXTVC2IpLR5ljMNiBdlXQIXAoFr4x2nqjlSrLwpIe4E4f7TvESKciNzzgLIfHRlDvV1g7MYfKD0rv6e_KtvrlCp15if3Ou3R71z6Ypkb_jr2cmFT7PCO3ed5JVPk4_KK9NH_a_l10qKxFkH6UC21EY0QWaQxyeunvQFdVJAUwSEedq1p2sxpQl3kwYhzYnFQs2jXLqXgGOqIcf_U0DbgAvImRfl6VYG07z4d_lNCLmGRvK4tHzYX6kxE2u42c0HZhSJitEpYCrjMeyBlVboSHBes5AIk6WEph5gxx1jmNSW4iIVxoUomn-hXrfsU8HAYjBBDXwe-aTtufA54HDaUJdIrqBN3_mj78B6p_pkY1xW-49TBloj59PSb3u9NWwMO7m8zoBnH25oe1ke9J0uz2gwmg_CgPs0brSbxV1i7FUDhkgXI5kMND6C4_zI8uJ99r0qlM11OCS3udy2GcQwRNzVPNLTVmiErshX2hSyDYhtuNFb5Pv3IC1zoLXyEuTIfYKrYa0DS2ZiwA_qE_FbGdVenxLu_MVDRXMrZOCQCNr3WWpvgbjevS-n-sXiECQApYNQvEhV0jCSJc7rsM9j_lnfmYTr7cJrCPJdC04XOtlFuqSpWWMwT8s9pjdfCOdNUDYas8k2JrKoARQIghMERIi0C8PmwgrEcAIt0vLAj8iAwqxpVwcH-n6EBCBkqSiKbxogrF9yNzf9Jc3BJzUJkjWo9bBqt0ZUG0yWz3kEauzfsB6Re1u2NTrLMdC9DB3uabMSrHoFhtN9Hd0-QzzDtEW-lk4CCNk7i3jCkjhD0GVPp0JPVDHaPfzYvQ91zkTcJQ2DA2vF_h6WV9u8JnTXtXlu16-Jl-aW2g0askZTEGIxl5oEmhh9PuEhAcL9mGyqB3qZ-UJBBftRCi-X2HdrpI2JO1IGGkicufq8WYWOrswAfwPt8JMOcGS8watqtJ7uXpUsAJDMvZo7geiGaTUunndoFTd2nRMA4J55cQbf5JoERsd-v0_Alijio4hV4TffPkgDMWRg7FsJgHrrrOPLjcyFrvVBBPfOTSBdZPDAqhe8vt3GjJRuoDnkSRJTvya9ZQcclYAVRzpqI-gpIcs6QzAOlaZymf0WNMi5jV59vz6oYCc3GYcSe9RFpLg6aHatiKu6n6sddFMgU_n2RSytn_Y0rmlX-njniaPWzp771ykHmedmCteziY8yah9t0xH05LDqftmT_WlXJCT4jxljhwhC4ixnej0u_idw8XaDQiWeimSccJ9LKlX7M2m5nOA0QdRlO3vd5tf2zzUEbamEndfhOZg-dHbFPduMMctB6LDeH4pyX0TglvLDix3heGx0FzjnZecqObAx1lvYv-Wq0k9ZS_VEq5mINiOq9ksYbMjDQ2NC3eRHwbmiMOpCWaDKx67C81o0A976h8Py_kpnObq7izR5LdisXJteu71PmypSGuh8OMyfwFgcLJasEvqSUAYozg4R5C8Q6pvo1FT3MfgrXtsBgNKGMmWveZ7Q72eF2HuxkqdvQFn1SWUMOc1Vs2GiWcAGXXbjDXlI-__iCiTE1tOoYALg5xM1RGV66lIC9O5EdVJ8bCP5xwSslBXZTnLbifyAGABDlmvjAE9SLdRLUCODzXwSslI4bK8wi46MCkDaioYKmdXRRNxGa3sO2wuFuRRIOyK84_MExcQt9wOxI1q1CwPXLfz9Ul9O4jJkua7TEFFa84fQrnINnMOId5ZFwbpCYinoZNttTxzRO9scTEmNDNEXMyqh9P03AEI6TZdxAxPZZX7_9C1TarDJYuxPY4erOblZoGtmz5Gud4n1GmvsZ-WxPTUA7JhQTEBJL_iERK8r2pYcVFVCBvZrBJIhcZnU_-62EFUAz8bRxVGiCm_5l6JDf8rEuJEeGFbV6wL2G2d30h_iAdu6UIfODX3Bexc1xgJA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LXNvbC0yMDI2MDkyMnxvcGVuYWkifQ",
+            "format": "openai-responses-v1",
+            "id": "rs_09eacefc763a434e016abbaa15cac087d1928fccb7344b93d7",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10341,
+    "completion_tokens": 818,
+    "total_tokens": 11159,
+    "cost": 0.03369069,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 10338,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.034031,
+      "upstream_inference_prompt_cost": 0.025851,
+      "upstream_inference_completions_cost": 0.00818
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 516,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

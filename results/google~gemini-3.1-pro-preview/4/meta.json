@@ -1,0 +1,36 @@
+{
+  "model": "google/gemini-3.1-pro-preview",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T12:08:38.692Z",
+  "durationMs": 55680,
+  "cost": 0.0809424,
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 6625,
+    "total_tokens": 7755,
+    "cost": 0.0809424,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.08176,
+      "upstream_inference_prompt_cost": 0.00226,
+      "upstream_inference_completions_cost": 0.0795
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6116,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Google",
+  "finishReason": "stop"
+}

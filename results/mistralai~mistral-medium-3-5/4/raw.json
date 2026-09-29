@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790683664-CDNvzV9Ra2AkjImsp0g5",
+  "object": "chat.completion",
+  "created": 1790683664,
+  "model": "mistralai/mistral-medium-3-5",
+  "provider": "Mistral",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\n# 1. เรื่องที่เกี่ยวข้อง\n\n## 1.1. เรื่องที่เกี่ยวข้อง\n\n### 1.1.1. เรื่องที่เกี่ยวข้อง\n\n<figure>\n  <img src=\"image_url\" alt=\"Diagram of a river system with various labeled points and lines.\">\n  <figcaption>A diagram illustrating a river system with multiple labeled points and lines, likely representing different sections or features of the river.</figcaption>\n</figure>\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2255,
+    "completion_tokens": 111,
+    "total_tokens": 2366,
+    "cost": 0.00417285,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004215,
+      "upstream_inference_prompt_cost": 0.0033825,
+      "upstream_inference_completions_cost": 0.0008325
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

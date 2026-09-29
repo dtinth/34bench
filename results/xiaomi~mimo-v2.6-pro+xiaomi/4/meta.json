@@ -1,0 +1,36 @@
+{
+  "model": "xiaomi/mimo-v2.6-pro",
+  "effort": null,
+  "requestedProvider": "xiaomi",
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T12:08:54.923Z",
+  "durationMs": 71643,
+  "cost": 0.00413983845,
+  "usage": {
+    "prompt_tokens": 4075,
+    "completion_tokens": 2769,
+    "total_tokens": 6844,
+    "cost": 0.00413983845,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004181655,
+      "upstream_inference_prompt_cost": 0.001772625,
+      "upstream_inference_completions_cost": 0.00240903
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2234,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Xiaomi",
+  "finishReason": "stop"
+}

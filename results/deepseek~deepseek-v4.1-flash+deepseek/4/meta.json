@@ -1,0 +1,36 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash",
+  "effort": null,
+  "requestedProvider": "deepseek",
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-09-29T12:07:49.829Z",
+  "durationMs": 6866,
+  "cost": 0.0004756455,
+  "usage": {
+    "prompt_tokens": 1071,
+    "completion_tokens": 533,
+    "total_tokens": 1604,
+    "cost": 0.0004756455,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00048045,
+      "upstream_inference_prompt_cost": 0.00016065,
+      "upstream_inference_completions_cost": 0.0003198
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 162,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "DeepSeek",
+  "finishReason": "stop"
+}

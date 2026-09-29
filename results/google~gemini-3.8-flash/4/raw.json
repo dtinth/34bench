@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683667-ZwAiyKVyVBagRcnKcWFG",
+  "object": "chat.completion",
+  "created": 1790683667,
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "provisioned",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและจังหวัดที่มีการต่อเนื่อง\nหมวด 1 สายที่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n1. **รายละเอียดเส้นทาง**\n\n**เที่ยวไป**\nเริ่มต้นที่ตลาดรังสิต (เชิงสะพานแก้วนิมิตร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 สุดเส้นทางที่สถานีรถไฟหัวลำโพง\n\n**เที่ยวกลับ**\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n2. **แผนที่สังเขป**\n\n<figure>\nA hand-drawn route map of Bus Line 34 connecting Rangsit to Hua Lamphong. Key locations and roads labeled include Rangsit (รังสิต), Vibhavadi Rangsit Road (ถ.วิภาวดีรังสิต), Lak Si Monument (อนุสาวรีย์หลักสี่), directions to Nonthaburi (ไปนนทบุรี) and Min Buri (ไปมีนบุรี), Phahon Yothin Road (ถนนพหลโยธิน), Lat Phrao (ลาดพร้าว), direction to Bang Kapi (ไปบางกะปิ), Saphan Khwai (สะพานควาย), Victory Monument (อนุสาวรีย์ชัยฯ), Phaya Thai Road (ถนนพญาไท / ถ.พญาไท), Rama IV Road (ถนนพระราม 4), Rong Mueang Road (ถ.รองเมือง), and Hua Lamphong terminus (หัวลำโพง).\n</figure>\n\n---\n\nคณะกรรมการควบคุมการขนส่งทางบกกลาง\nตามมติที่ประชุมครั้งที่............ (6)\nเมื่อวันที่... พ.ศ. 2521\nกองวิชาการและวางแผน",
+        "refusal": null,
+        "reasoning": "**Transcribing Bus Routes**\n\nI'm currently focused on accurately transcribing the Thai bus route information from the image into Markdown. My analysis of the header, \"เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและ,\" is complete.\n\n**Analyzing Route Details**\n\nMy focus has shifted to dissecting the details of route 34. I've identified its origin at Rangsit Market and its route along Phahonyothin Road, passing Victory Monument and continuing to Hua Lamphong Railway Station. The return journey's starting point is also noted.\n\n**Mapping Route Variations**\n\nI'm now processing the textual description of route 34's return path, noting turns onto Rong Mueang Road and Charoen Mueang Road before rejoining the original route. I've also identified a section detailing a schematic map and an associated hand-drawn illustration of the route.\n\n**Mapping Phahonyothin**\n\nI'm now detailing the Phahonyothin road section, noting key points like Lat Phrao and Saphan Khwai. I'm also clarifying the specific road names near Victory Monument and heading towards Hua Lamphong, cross-referencing to ensure accuracy of the route's progression.\n\n**Detailing Route 34's Path**\n\nI've successfully detailed route 34, from its start at Rangsit Market to Hua Lamphong. I'm now meticulously documenting the return journey, specifically noting the turns onto Rong Mueang and Charoen Mueang roads, before it rejoins the original path back to Rangsit.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "**Transcribing Bus Routes**\n\nI'm currently focused on accurately transcribing the Thai bus route information from the image into Markdown. My analysis of the header, \"เส้นทางรถโดยสารประจำทางในเขตกรุงเทพมหานครและ,\" is complete.\n\n**Analyzing Route Details**\n\nMy focus has shifted to dissecting the details of route 34. I've identified its origin at Rangsit Market and its route along Phahonyothin Road, passing Victory Monument and continuing to Hua Lamphong Railway Station. The return journey's starting point is also noted.\n\n**Mapping Route Variations**\n\nI'm now processing the textual description of route 34's return path, noting turns onto Rong Mueang Road and Charoen Mueang Road before rejoining the original route. I've also identified a section detailing a schematic map and an associated hand-drawn illustration of the route.\n\n**Mapping Phahonyothin**\n\nI'm now detailing the Phahonyothin road section, noting key points like Lat Phrao and Saphan Khwai. I'm also clarifying the specific road names near Victory Monument and heading towards Hua Lamphong, cross-referencing to ensure accuracy of the route's progression.\n\n**Detailing Route 34's Path**\n\nI've successfully detailed route 34, from its start at Rangsit Market to Hua Lamphong. I'm now meticulously documenting the return journey, specifically noting the turns onto Rong Mueang and Charoen Mueang roads, before it rejoins the original path back to Rangsit.\n\n",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 1413,
+    "total_tokens": 2543,
+    "cost": 0.0060847875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00614625,
+      "upstream_inference_prompt_cost": 0.0008475,
+      "upstream_inference_completions_cost": 0.00529875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 950,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

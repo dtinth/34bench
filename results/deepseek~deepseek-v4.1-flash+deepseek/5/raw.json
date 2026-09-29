@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790683670-jaHbRhP3ymClPcT9VmiO",
+  "object": "chat.completion",
+  "created": 1790683670,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "provider": "DeepSeek",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "service_tier": null,
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "แนบท้ายใบสั่งจ้าง งานจ้างเหมาก่อสร้างผิวทางแอสฟัลต์คอนกรีตเสริมเหล็ก\nโครงการ 1 จ้างเหมา ฯลฯ สายบ้านเก่า - บ้านหนองเลิง - บ้านกุดจอก ตอนบ้านกุดจอก หมู่ที่ 2 ต.กุดจอก\nอ.บึงสามพัน จ.เพชรบูรณ์\n\n1. ลักษณะงานก่อสร้าง\nผิวทางแอสฟัลต์คอนกรีตเสริมเหล็ก (สายทางเดิม) กว้างประมาณ 4.00 - 5.00 เมตร ยาวประมาณ 1.800 กิโลเมตร\nหนา 0.05 เมตร หรือมีพื้นที่ไม่น้อยกว่า 8,000 ตารางเมตร\nรายละเอียดตามแบบแปลนที่แนบท้าย\n\n2. วัสดุและวิธีทำ\nให้ใช้แอสฟัลต์คอนกรีตผสมเสร็จ ชั้น Quality Level ก่อนปูผิวทางแอสฟัลต์คอนกรีตเดิมจะต้องทำความสะอาดผิวทางเดิม\nและทำการ Tack Coat ก่อนปูผิวทางแอสฟัลต์คอนกรีตเสริมเหล็ก ให้ได้ความหนาแน่นตามที่กำหนดในมาตรฐานงานทาง\nสำหรับงานก่อสร้างชั้นทาง\n\n*หมายเหตุ: ข้อความในส่วนท้ายของภาพค่อนข้างเลือนลาง ไม่สามารถอ่านได้ชัดเจน*\n\n<figure>\n  <img src=\"https://via.placeholder.com/400x600?text=Figure\" alt=\"แผนผังแสดงลักษณะการก่อสร้างผิวทางแอสฟัลต์คอนกรีตเสริมเหล็ก\">\n  <figcaption>\n    แผนผังหน้าตัดถนนและรายละเอียดวัสดุ:\n    - ผิวทางแอสฟัลต์คอนกรีตเสริมเหล็ก (หนา 0.05 ม.)\n    - รอยต่อตามขวาง (ทุกๆ 4 ม.)\n    - วัสดุรองพื้นทางเดิม\n    - ไหล่ทาง\n    - ลูกศรแสดงทิศทางน้ำไหล\n    - ระดับดินเดิม\n    - ชั้น Quality Level\n    - ผิวจราจรเดิม\n    - คันทางเดิม\n    - หลักเขตทาง\n  </figcaption>\n</figure>",
+        "refusal": null,
+        "reasoning": "Oh, I need to extract the text from the image.\nThe image shows a scanned document with Thai text, handwritten and typed, describing a construction project for a reinforced concrete road. The text is clear but slightly rotated; I'll need to read it carefully. The content includes a title, location details, and two sections: one on construction methods for base and surface layers, and another with a figure diagram. The figure has labels in Thai, which I'll describe in an HTML `<figure>` element. I'll transcribe all text accurately, ensuring the Markdown output is clean and matches the user's request for only Markdown with no commentary. I will output the Markdown directly.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "Oh, I need to extract the text from the image.\nThe image shows a scanned document with Thai text, handwritten and typed, describing a construction project for a reinforced concrete road. The text is clear but slightly rotated; I'll need to read it carefully. The content includes a title, location details, and two sections: one on construction methods for base and surface layers, and another with a figure diagram. The figure has labels in Thai, which I'll describe in an HTML `<figure>` element. I'll transcribe all text accurately, ensuring the Markdown output is clean and matches the user's request for only Markdown with no commentary. I will output the Markdown directly.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1071,
+    "completion_tokens": 664,
+    "total_tokens": 1735,
+    "cost": 0.00042306462,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 896,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000427338,
+      "upstream_inference_prompt_cost": 0.000028938,
+      "upstream_inference_completions_cost": 0.0003984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 138,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

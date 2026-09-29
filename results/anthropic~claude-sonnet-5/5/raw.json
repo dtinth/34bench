@@ -1,0 +1,55 @@
+{
+  "id": "gen-1790683694-2y2alJrJI3PcR4RvCVON",
+  "object": "chat.completion",
+  "created": 1790683694,
+  "model": "anthropic/claude-sonnet-5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "# เส้นทางรถโดยสารประจำทาง ไปกลับกรุงเทพ ... จังหวัด...ท้าวเนื้อง\n\n## หมวด 1 สาย 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\n### สำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n**1. รายละเอียดเส้นทาง**\n\n**เที่ยวไป**\n\nเริ่มต้นที่สถานีรังสิต (เชิงสะพานแยกบิดร) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 จนถึงสถานีรถไฟหัวลำโพง\n\n**เที่ยวกลับ**\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตาม ถนนเจริญเมือง เลี้ยวขวาไปตามถนนจรัสเมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามถนนพหลโยธิน จนถึงรังสิต\n\n**2. แผนที่สังเขป**\n\n<figure>\nHand-drawn sketch map showing a bus route. The map depicts a road running roughly north-south connecting \"รังสิต\" (Rangsit) at the top to \"หัวลำโพง\" (Hua Lamphong) at the bottom. Along the route, several landmarks are labeled with lines pointing to locations on the road, including:\n- รังสิต (top)\n- ถนนวิภาวดีรังสิต, อนุสาวรีย์หลักสี่ (with branches to ไปนนทบุรี and ไปปทุมธานี)\n- ถนนพหลโยธิน\n- จตุจักร\n- สะพานควาย, ไปบางกะปิ\n- อนุสาวรีย์ชัยฯ (with a note จ.เกษมเฟื่อง)\n- ถนนพญาไท (ดอกม่อน)\n- หัวลำโพง (at bottom, with จ.กาชื่อ note)\n- ถ.หลานหลวง\n- ถนนพระราม 4\n\nThe route is drawn as a curving line with small circles marking key stops/nodes, illustrating the path of Bus Route 34 between Rangsit and Hua Lamphong via Phahonyothin Road and Rama IV Road.\n</figure>\n\n---\n\n*(ลายมือชื่อและตราประทับที่มุมขวาล่างของเอกสาร)*\n\n...........................................................\n\n(ลงชื่อ) ..................................\n\nตำแหน่ง ..................................\n\nวันที่ ..................................",
+        "refusal": null,
+        "reasoning": "This looks like a Thai document describing a bus route with a hand-drawn map, though the scan quality is quite poor. I'll try to transcribe the visible Thai text as accurately as I can and describe the accompanying figure.\n\n",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "This looks like a Thai document describing a bus route with a hand-drawn map, though the scan quality is quite poor. I'll try to transcribe the visible Thai text as accurately as I can and describe the accompanying figure.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "EpYECrABCBIYAipAAhZ26Qvk9ArrvEY5WKvvLEzUdfqBsksFYWHXepxl2Z1qrj2GtMkv+DewAC0QufaYOK+p11PVEKXSTPedTSWaqzIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQ0YzBmMDQ2Zi0yNWZkLTQ1ZmItYmZiMy1hMDhhOGUyNDljYTd6HnVwcm9mXzAxMUNlanRINUpRZFdiRGlQdlRYVXRCZKgBtNTu1QYSDNti0PIYpD88d/AvlhoM6cXzudC9hFsNX3LVIjD215CLAQ3uBMbqMzv2svpxH2LrcQLJTJ/50AaiGfvpEUTqTRTYg7Iy/vfomlK/GfoqkgLz1m2VybNxP7UxagzuxSTlnsijw4Ghz0kqsnkPqN3fBPnNQ2YGPh47MdFy6HzV5m2ksywJfBrp6zC6jd8R/tnIx8yKMhKUhSdRI6bT38oZIsNq1C8tf2VT2LReHLgwlgOkzRZa6Izc9+oRS53FFeB0IfD50lEC7bIOGO+gMBXxCTUzFLo8Bdk2bbj1AkDFcsMpVtPUHHKjEAVGmVzbeST3f1bqMsQ5OACYP2A5VKWLsmfZ4aPqlfUN/mXOrmCPIUi2LeJWFK1iNRUg/4buCJya+tDl4PnqKkfengUk9C3wDNYnmKP6kPevN55X7+2hpXQjuMqsItAMhR8leVN8C1f7jF3VOA9HENzQxgXamxdzbE3eGAE="
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4823,
+    "completion_tokens": 1095,
+    "total_tokens": 5918,
+    "cost": 0.02039004,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.020596,
+      "upstream_inference_prompt_cost": 0.009646,
+      "upstream_inference_completions_cost": 0.01095
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
