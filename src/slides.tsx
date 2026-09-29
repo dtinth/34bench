@@ -758,7 +758,7 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
   padding: 0 7px; border-radius: 999px; background: #e3e6dc; color: var(--soft); }
 .gt-card { position: absolute; z-index: 4; padding: 12px 16px; border: 3px solid;
   box-shadow: 0 12px 34px rgba(40,50,30,.20), 0 0 0 1px rgba(0,0,0,.04); }
-.gt-card .truth { font-size: 17px; line-height: 26px; margin-top: 2px; }
+.gt-card .truth { font-size: 20px; line-height: 30px; margin-top: 2px; }
 
 .model-head h2 { display: flex; align-items: center; gap: 16px; margin-top: 30px; }
 .model-head .rank { font-size: 30px; line-height: 50px; padding: 0 14px; border-radius: 12px;
