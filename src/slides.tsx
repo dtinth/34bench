@@ -398,6 +398,15 @@ function GroundTruthSlide({ gt, half, cards, configs }: {
   );
 }
 
+/**
+ * The size of a model slide heading: 69 px, or smaller if the model name would not fit next to the
+ * rank badge.
+ */
+function headingSize(model: string) {
+  const available = SIZE - 2 * M - 150; // the rank badge and the gap
+  return Math.min(69, Math.floor(available / (model.length * 0.6)));
+}
+
 function ModelSlide({ c, configs, gt }: {
   c: ConfigScore;
   configs: ConfigScore[];
@@ -425,7 +434,7 @@ function ModelSlide({ c, configs, gt }: {
   return (
     <Slide>
       <header class="head model-head">
-        <h2>
+        <h2 style={{ fontSize: `${headingSize(model)}px` }}>
           <span class="rank">#{configs.indexOf(c) + 1}</span>
           {model}
         </h2>
@@ -589,7 +598,6 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
     }
   });
   const best = frontier.at(-1)!;
-  const runnerUp = [...pts].sort((a, b) => b.acc - a.acc)[1];
   const prev = frontier.at(-2) ?? best;
   const flx = x(best.cost) + 12, fly = (y(best.acc) + y(prev.acc)) / 2 + 5;
   segments.push([flx, fly - 13, flx + 120, fly + 3]);
@@ -611,14 +619,7 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
   const mid = (freeX + x0) / 2;
   return (
     <Slide>
-      <Head
-        title="The best model is not the most expensive"
-        sub={`${describe(best.c.config).model} is the most accurate (${
-          METRICS[0].format(best.acc)
-        }) at ${METRICS[1].format(best.cost)} per page. The next best, ${
-          describe(runnerUp.c.config).model
-        }, costs ${Math.round(runnerUp.cost / best.cost)}× more.`}
-      />
+      <Head title="Pareto Frontier" />
       <svg class="chart" width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
         {[0, 0.25, 0.5, 0.75, 1].map((a) => (
           <g>
@@ -731,9 +732,9 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .head .sub { font-size: 17px; line-height: 1.45; color: var(--soft); margin-top: 8px;
   max-width: 900px; }
 
-.title h1 { position: absolute; left: ${M}px; top: ${M - 6}px; font-size: 56px; line-height: 72px;
+.title h1 { position: absolute; left: ${M}px; top: ${M - 14}px; font-size: 84px; line-height: 104px;
   font-weight: 800; letter-spacing: -0.025em; }
-.title h1 .hl { background: var(--lime); padding: 0 12px; border-radius: 10px; }
+.title h1 .hl { background: var(--lime); padding: 0 16px; border-radius: 14px; }
 .title .page-map { position: absolute; left: ${M}px; bottom: 0; border-radius: 4px 4px 0 0;
   background: white; box-shadow: 0 20px 50px rgba(40,50,30,.18), 0 0 0 1px rgba(0,0,0,.06); }
 .title .credit { position: absolute; right: ${M}px; bottom: ${M}px; width: 190px; text-align: right;
@@ -761,8 +762,8 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
   box-shadow: 0 12px 34px rgba(40,50,30,.20), 0 0 0 1px rgba(0,0,0,.04); }
 .gt-card .truth { font-size: 24px; line-height: 34px; margin-top: 4px; }
 
-.model-head h2 { display: flex; align-items: center; gap: 16px; margin-top: 30px; }
-.model-head .rank { font-size: 30px; line-height: 50px; padding: 0 14px; border-radius: 12px;
+.model-head h2 { display: flex; align-items: center; gap: 20px; margin-top: 14px; line-height: 88px; }
+.model-head .rank { font-size: 42px; line-height: 70px; padding: 0 18px; border-radius: 16px;
   background: var(--lime); color: var(--ink); letter-spacing: -0.01em; }
 
 .preview { position: absolute; left: ${M}px; top: ${TOP}px; background: white; z-index: 2;
@@ -827,7 +828,7 @@ mark.wrong { background: var(--wrong-bg); box-shadow: inset 0 -2px 0 var(--wrong
 .tile-rank span:last-child { color: var(--muted); }
 .how { margin-top: 4px; font-size: 13px; line-height: 1.5; color: var(--soft); }
 
-.chart { position: absolute; left: ${M}px; top: 212px; z-index: 2; font-family: "Deck"; }
+.chart { position: absolute; left: ${M}px; top: 172px; z-index: 2; font-family: "Deck"; }
 .grid { stroke: var(--line); stroke-width: 1; }
 .axis { font-size: 14px; fill: var(--muted); }
 .axis-title { font-size: 13px; font-weight: 700; fill: var(--muted); letter-spacing: .14em;
