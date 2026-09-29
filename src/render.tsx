@@ -66,9 +66,9 @@ tr.truth td { border-bottom: 2px solid #8c959f; }
 img { display: block; width: 100%; }
 `;
 
-/** Accuracy = 1 − CER, as a percentage. It is 0% when the CER is more than 100%. */
-function accuracy(cer: number) {
-  return `${(Math.max(0, 1 - cer) * 100).toFixed(1)}%`;
+/** Accuracy as a percentage. */
+function accuracy(value: number) {
+  return `${(value * 100).toFixed(1)}%`;
 }
 
 /** Color class of the median accuracy: the best, middle, or worst third of the ranking. */
@@ -225,9 +225,10 @@ async function main() {
     >
       <style>{fonts + CSS}</style>
       <div class="legend" style={{ height: `${legendHeight}px` }}>
-        34bench: transcription of the Bangkok bus route 34 document. Ranked by accuracy (1 −
-        character error rate) of the median run. Best and worst: the other runs.{" "}
-        <span class="ins">Red</span>: wrong or extra text.{" "}
+        34bench: transcription of the Bangkok bus route 34 document. Ranked by accuracy of the
+        median run: the accuracy of each part (1 − character error rate), weighted by the part
+        length. Best and worst: the other runs. <span class="ins">Red</span>: wrong or extra text.
+        {" "}
         <span class="miss" />: missing text. Whitespace is ignored. Prices in THB (1 USD = 35 THB).
       </div>
       <table>
@@ -287,10 +288,10 @@ async function main() {
                   <div class="model">{name}</div>
                   {tags.map((t) => <span class="tag">{t}</span>)}
                 </td>
-                <td class="num cer">{c.runs.length > 1 ? accuracy(c.runs[0].cer) : ""}</td>
-                <td class={`num cer median ${grade(i, rows.length)}`}>{accuracy(m.cer)}</td>
+                <td class="num cer">{c.runs.length > 1 ? accuracy(c.runs[0].accuracy) : ""}</td>
+                <td class={`num cer median ${grade(i, rows.length)}`}>{accuracy(m.accuracy)}</td>
                 <td class="num cer">
-                  {c.runs.length > 1 ? accuracy(c.runs[c.runs.length - 1].cer) : ""}
+                  {c.runs.length > 1 ? accuracy(c.runs[c.runs.length - 1].accuracy) : ""}
                 </td>
                 <td class={`num metric ${timeClass(c)}`}>
                   {(m.meta.durationMs / 1000).toFixed(1)} s

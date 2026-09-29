@@ -33,7 +33,7 @@ const GUTTER_X = CONTENT_X - 40;
 // ---------------------------------------------------------------------------------------------
 // Data
 
-const accuracy = (r: RunScore) => Math.max(0, 1 - r.cer);
+const accuracy = (r: RunScore) => r.accuracy;
 const partAccuracy = (r: RunScore, c: Column) =>
   Math.max(0, 1 - r.columns[c].distance / r.columns[c].length);
 

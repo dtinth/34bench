@@ -25,14 +25,16 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
 - From each response, the header, forward trip, return trip, and footer are extracted into
   `extracted.json`. The map (section 2) is not scored. See
   [`results/README.md`](results/README.md#extraction-rules).
-- The score is the character error rate (CER): the sum of the edit distances of the 4 parts, divided
-  by the total length of the [ground truth](data/route34/ground-truth.json). The unit is a grapheme
-  cluster (`Intl.Segmenter`), so a Thai mark counts with its base character. Before scoring, markup
-  is removed, all dashes are the same, dot leaders are removed, and whitespace is ignored. Thai and
-  Arabic digits are the same.
+- The score is the accuracy. For each of the 4 parts, the character error rate (CER) is the edit
+  distance divided by the length of the [ground truth](data/route34/ground-truth.json) part, and the
+  part's accuracy is `max(0, 1 − CER)`. The score is the average of the 4 part accuracies, with the
+  length of each part as its weight. So a part costs at most its own weight: a long made-up footer
+  does not reduce the score of the other parts. The unit is a grapheme cluster (`Intl.Segmenter`),
+  so a Thai mark counts with its base character. Before scoring, markup is removed, all dashes are
+  the same, dot leaders are removed, and whitespace is ignored. Thai and Arabic digits are the same.
 - Each model runs with its default reasoning effort. Each configuration has 3 runs (1 for the most
-  expensive models). The table shows the accuracy (1 − CER) of the median run, and of the best and
-  the worst run.
+  expensive models). The table shows the accuracy of the median run, and of the best and the worst
+  run.
 - Prices are in THB: 1 USD = 35 THB; Paxa: 329 THB per 10,000 credits; iApp: 1.25 THB per IC (list
   prices).
 

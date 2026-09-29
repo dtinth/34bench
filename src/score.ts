@@ -40,9 +40,14 @@ export interface RunScore {
   config: string;
   run: string;
   meta: Meta;
+  /** Character error rate over the 4 parts together (for reference). */
   cer: number;
-  /** CER of the header, forward trip, and return trip only. */
-  cerNoFooter: number;
+  /**
+   * The score: the accuracy of each part, max(0, 1 − CER of the part), averaged with the length of
+   * each ground truth part as its weight. A part costs at most its own weight, so a long made-up
+   * part does not reduce the score of the other parts.
+   */
+  accuracy: number;
   costThb: number | null;
   columns: Record<Column, ColumnScore>;
   /** The extracted text, before normalization. */
@@ -68,7 +73,7 @@ export function costThb(meta: Meta): number | null {
 export function scoreRun(
   groundTruth: Columns,
   extracted: Columns,
-): { cer: number; cerNoFooter: number; columns: Record<Column, ColumnScore> } {
+): { cer: number; accuracy: number; columns: Record<Column, ColumnScore> } {
   let distance = 0;
   let length = 0;
   const columns = {} as Record<Column, ColumnScore>;
@@ -81,12 +86,11 @@ export function scoreRun(
     distance += d;
     length += l;
   }
-  const f = columns.footer;
-  return {
-    cer: distance / length,
-    cerNoFooter: (distance - f.distance) / (length - f.length),
-    columns,
-  };
+  let weighted = 0;
+  for (const c of Object.values(columns)) {
+    weighted += c.length * Math.max(0, 1 - c.distance / c.length);
+  }
+  return { cer: distance / length, accuracy: weighted / length, columns };
 }
 
 export async function loadScores(root = new URL("../", import.meta.url)): Promise<ConfigScore[]> {
@@ -120,13 +124,13 @@ export async function loadScores(root = new URL("../", import.meta.url)): Promis
       });
     }
     if (runs.length === 0) continue;
-    runs.sort((a, b) => a.cer - b.cer);
+    runs.sort((a, b) => b.accuracy - a.accuracy);
     configs.push({ config: config.name, runs, median: runs[Math.floor((runs.length - 1) / 2)] });
   }
   // No ties: with the same CER, the cheaper model is first, then the faster one.
   const cost = (c: ConfigScore) => c.median.costThb ?? Infinity;
   configs.sort((a, b) =>
-    a.median.cer - b.median.cer || cost(a) - cost(b) ||
+    b.median.accuracy - a.median.accuracy || cost(a) - cost(b) ||
     a.median.meta.durationMs - b.median.meta.durationMs || a.config.localeCompare(b.config)
   );
   return configs;
@@ -134,11 +138,10 @@ export async function loadScores(root = new URL("../", import.meta.url)): Promis
 
 if (import.meta.main) {
   for (const c of await loadScores()) {
-    const cols = COLUMNS.map((k) => `${k}=${c.median.columns[k].distance}`).join(" ") +
-      ` noFooter=${(c.median.cerNoFooter * 100).toFixed(1)}%`;
+    const cols = COLUMNS.map((k) => `${k}=${c.median.columns[k].distance}`).join(" ");
     console.log(
-      `${(c.median.cer * 100).toFixed(1).padStart(6)}%  ${c.config.padEnd(45)} runs=${
-        c.runs.map((r) => (r.cer * 100).toFixed(1)).join(",")
+      `${(c.median.accuracy * 100).toFixed(1).padStart(6)}%  ${c.config.padEnd(45)} runs=${
+        c.runs.map((r) => (r.accuracy * 100).toFixed(1)).join(",")
       }  ${cols}`,
     );
   }
