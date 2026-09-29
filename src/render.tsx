@@ -58,6 +58,8 @@ tr.truth td { border-bottom: 2px solid #8c959f; }
 .cer.median { font-size: 16px; font-weight: 700; color: #1f2328; }
 .cer.median.good { color: #4d8a00; } .cer.median.okay { color: #b86e00; }
 .cer.median.poor { color: #c8352a; }
+.metric { font-weight: 600; }
+.metric.good { color: #4d8a00; } .metric.okay { color: #b86e00; } .metric.poor { color: #c8352a; }
 .remarks { font-size: 12px; line-height: 17px; color: #57606a; }
 .empty { color: #8c959f; font-style: italic; }
 .legend { padding: ${PAD}px; font-size: 12px; color: #57606a; }
@@ -187,6 +189,18 @@ async function main() {
   const truthHeight = rowHeight(
     Object.fromEntries(COLUMNS.map((c) => [c, truth[c].expected])) as Record<Column, string>,
   );
+  /**
+   * Color class of a model's cost or time: its third among all models, from the lowest (best) to
+   * the highest. Models with the same value keep the order of the ranking.
+   */
+  const thirds = (value: (c: ConfigScore) => number | null) => {
+    const order = configs.filter((c) => value(c) !== null)
+      .sort((a, b) => value(a)! - value(b)! || configs.indexOf(a) - configs.indexOf(b));
+    return (c: ConfigScore) => value(c) === null ? "" : grade(order.indexOf(c), order.length);
+  };
+  const costClass = thirds((c) => c.median.costThb);
+  const timeClass = thirds((c) => c.median.meta.durationMs);
+
   const rows = configs.map((c) => {
     // The cell shows the model's own text, plus one narrow marker for each missing part.
     const texts = Object.fromEntries(
@@ -278,8 +292,10 @@ async function main() {
                 <td class="num cer">
                   {c.runs.length > 1 ? accuracy(c.runs[c.runs.length - 1].cer) : ""}
                 </td>
-                <td class="num">{(m.meta.durationMs / 1000).toFixed(1)} s</td>
-                <td class="num">
+                <td class={`num metric ${timeClass(c)}`}>
+                  {(m.meta.durationMs / 1000).toFixed(1)} s
+                </td>
+                <td class={`num metric ${costClass(c)}`}>
                   {m.costThb === null
                     ? "—"
                     : m.costThb === 0

@@ -18,5 +18,8 @@
   "bytedance-seed~seed-2-1-turbo": "Much of the text is made up.",
   "moonshotai~kimi-k3+moonshotai": "A different, made-up document. 1 run (cost).",
   "x-ai~grok-4.7": "Writes placeholders such as \"[อ่านไม่ออก]\" for unreadable text.",
-  "anthropic~claude-sonnet-5.5": "Run 3 has no header: it starts at section 1. Runs 1 and 2 describe the footer as unreadable, instead of transcribing it."
+  "anthropic~claude-sonnet-5.5": "Run 3 has no header: it starts at section 1. Runs 1 and 2 describe the footer as unreadable, instead of transcribing it.",
+  "thinkingmachines~inkling+deepinfra": "Mostly placeholders and descriptions (\"[ข้อความจาง…]\"), or a different, made-up document.",
+  "minimax~minimax-m3+minimax": "Correct structure, but the text is garbled or made up.",
+  "mistralai~mistral-medium-3-5": "Very short answers: a different, made-up document, or only headings and a figure."
 }

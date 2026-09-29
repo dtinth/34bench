@@ -18,6 +18,7 @@ export function stripMarkup(text: string): string {
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/^[ \t]*#{1,6}[ \t]+/gm, "")
+    .replace(/^[ \t]*-{3,}[ \t]*$/gm, "") // a horizontal rule
     .replace(/\*+|__+/g, "");
 }
 

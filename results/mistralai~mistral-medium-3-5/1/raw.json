@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790672153-xLz9j9qUjFOdMy1jS9It",
+  "object": "chat.completion",
+  "created": 1790672153,
+  "model": "mistralai/mistral-medium-3-5",
+  "provider": "Mistral",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\n# 1. เรื่องที่ชอบ\n\n## 1.1 เรื่องที่ชอบ\n\nเรื่องที่ชอบของจังหวัด (เช่น อาหารท้องถิ่น) คืออาหารที่มีชื่อเสียงและเป็นที่นิยมของจังหวัดนั้น ๆ\n\n<figure>\n  <img src=\"image_url\" alt=\"แผนที่จังหวัด\">\n  <figcaption>แผนที่จังหวัด</figcaption>\n</figure>\n\n## 1.2 เรื่องที่ชอบ\n\nเรื่องที่ชอบของจังหวัด (เช่น สถานที่ท่องเที่ยว) คือสถานที่ที่มีชื่อเสียงและเป็นที่นิยมของจังหวัดนั้น ๆ\n\n<figure>\n  <img src=\"image_url\" alt=\"สถานที่ท่องเที่ยว\">\n  <figcaption>สถานที่ท่องเที่ยว</figcaption>\n</figure>\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2255,
+    "completion_tokens": 200,
+    "total_tokens": 2455,
+    "cost": 0.004833675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0048825,
+      "upstream_inference_prompt_cost": 0.0033825,
+      "upstream_inference_completions_cost": 0.0015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

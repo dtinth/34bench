@@ -1,0 +1,46 @@
+{
+  "id": "gen-1790672173-SJpXEoRlZdSSsQA2opMC",
+  "object": "chat.completion",
+  "created": 1790672173,
+  "model": "mistralai/mistral-medium-3-5",
+  "provider": "Mistral",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\n# 1. เรื่องที่เสนอ\n\n## 1.1 ความเป็นมา\n\nจังหวัดจันทบุรี (เฉพาะอำเภอมะขาม) มีพื้นที่ปลูกมันสำปะหลังจำนวน 4,000 ไร่ โดยมีผลผลิตมันสำปะหลัง 4,000 ตันต่อปี ซึ่งมีการส่งออกไปยังต่างประเทศเป็นจำนวนมาก\n\n## 1.2 วัตถุประสงค์\n\nเพื่อศึกษาวิธีการผลิตมันสำปะหลังให้มีคุณภาพดีขึ้น และเพื่อเพิ่มปริมาณการผลิตมันสำปะหลังให้มากขึ้น\n\n# 2. ขอบเขตของโครงการ\n\n<figure>\n  <img src=\"image_url\" alt=\"แผนที่แสดงพื้นที่ปลูกมันสำปะหลังในจังหวัดจันทบุรี\">\n  <figcaption>แผนที่แสดงพื้นที่ปลูกมันสำปะหลังในจังหวัดจันทบุรี</figcaption>\n</figure>\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2255,
+    "completion_tokens": 265,
+    "total_tokens": 2520,
+    "cost": 0.0053163,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 2176,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00537,
+      "upstream_inference_prompt_cost": 0.0033825,
+      "upstream_inference_completions_cost": 0.0019875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

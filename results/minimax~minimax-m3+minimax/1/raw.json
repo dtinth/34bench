@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790672153-rDz0LNL1EKyaisWLFBIK",
+  "object": "chat.completion",
+  "created": 1790672153,
+  "model": "minimax/minimax-m3",
+  "provider": "Minimax",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "# เอกสารเกี่ยวกับหน้าไม้\n\nหมายความว่า การประจำหน้าไม้จากในบ้านที่ 10มีหน้าที่เป็นมาแล้ว สมมุติว่า หน้า 1 หน้าที่ 34 รังจือ – ระเบิดนติน – นัดไม้หวด ความยาวของ 32 ซม.\n\nคว่ำข้างองค์ธมหารจวกของขุนหลาบ ฯลฯ\n\n---\n\n## 1. ขนาดเครื่องประดับของหน้าไม้\n\n### แม่ไม้\nเรียกแม่ไม้หลักว่าไม้เอก (เซียว, ดอนแตกเมืองตรา) ไม้สองแผ่นในต้น เรียกกองรังจือมอนเตอร์ ถนนขยุงไก่ เลือกเอาไม้เกาะกลางคุมคุมมอน 4 ขุดเข้มภาจะหนักหรือปลอยปาล้อมจ้อนให้หลอ\n\n### ไม้หลัก\nเรียกแม่ไม้ปลายว่าไม้ทอง เรียกแม่ไม้ลายท้องมือ เรียกแม่ไม้แถวของขอย เรียกจักไม้อย่างของถนนขยุงไก่ เลือกเอาไม้เกาะกลางลายลายท้องมือ เรียกแม่ไม้ของเขา 4 ขยุดแม่ไม้ลายท้องหลาย จุนเสีกำรังจือ\n\n### หนังรังจือ\n\n## 2. ยุงเกาไม้\n\n<figure>\nแผนภาพหน้าไม้พร้อมป้ายชื่อส่วนประกอบต่างๆ ได้แก่ รังลาย, ถนนขยุงไก่ตรงรังงอะ, ถนนขยุงไก่ทอง, ไม้แม่ขยุง, ส่วนแม่ไม้ปลาย, ส่วนแม่ไม้ลาย, รอยแถวตรง, ไม้มากลางของ, เส้นกลาง, จอยแกลบของ, ระดับข้อธิน, ถนนขยุงไก่, ดาวกลางไม้, แผ่นพรรณไม้, ตรงแม่ไม้\n</figure>\n\nขนาดยาวเท่าหน้าไม้......\n\nสูงกว้าง.............(2)................\n\nเหนือของธุลย...........\n\nตาข้างสาม......................\n\n.........รังลายให้......\n\n.............เมตร.........",
+        "refusal": null,
+        "reasoning": "The image shows a Thai document about a bow (หน้าไม้) - specifically appears to be about traditional Thai/Karen craftsmanship. The document contains some text and a hand-drawn diagram of a bow with various parts labeled. The image quality is quite poor with much of the text being faded/illegible. Let me transcribe what I can see.\n\nThe document appears to have:\n1. A header at the top\n2. Section 1 about \"แม่ไม้\" (main wood)\n3. Section 2 about \"ยุงเกา\" (binding/wrapping) with subcategories \"ไม้ใจ\" and \"ไม้กลาง\" and \"หนังรังจือ\"\n4. A section \"2. ยุงเกาไม้\" (bow binding)\n5. A hand-drawn diagram showing the bow with various parts labeled\n6. Some text at the bottom right\n\nLet me transcribe thisinto Markdown format.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The image shows a Thai document about a bow (หน้าไม้) - specifically appears to be about traditional Thai/Karen craftsmanship. The document contains some text and a hand-drawn diagram of a bow with various parts labeled. The image quality is quite poor with much of the text being faded/illegible. Let me transcribe what I can see.\n\nThe document appears to have:\n1. A header at the top\n2. Section 1 about \"แม่ไม้\" (main wood)\n3. Section 2 about \"ยุงเกา\" (binding/wrapping) with subcategories \"ไม้ใจ\" and \"ไม้กลาง\" and \"หนังรังจือ\"\n4. A section \"2. ยุงเกาไม้\" (bow binding)\n5. A hand-drawn diagram showing the bow with various parts labeled\n6. Some text at the bottom right\n\nLet me transcribe thisinto Markdown format.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3960,
+    "completion_tokens": 1169,
+    "total_tokens": 5129,
+    "cost": 0.0025344792,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 128,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00256008,
+      "upstream_inference_prompt_cost": 0.00115728,
+      "upstream_inference_completions_cost": 0.0014028
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 214,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,5 +1,13 @@
 import { assertEquals } from "jsr:@std/assert@1";
-import { align, alignIgnoringWhitespace, cer, cleanupOps, graphemes, normalize } from "./cer.ts";
+import {
+  align,
+  alignIgnoringWhitespace,
+  cer,
+  cleanupOps,
+  graphemes,
+  normalize,
+  stripMarkup,
+} from "./cer.ts";
 
 Deno.test("graphemes keeps Thai marks with the base character", () => {
   assertEquals(graphemes("ที่"), ["ที่"]);
@@ -61,4 +69,9 @@ Deno.test("alignIgnoringWhitespace ignores spaces but keeps them for display", (
     { type: "equal", text: "ถนนพญา ไท " },
     { type: "insert", text: "X" },
   ]);
+});
+
+Deno.test("stripMarkup removes a horizontal rule, but not a dash in text", () => {
+  assertEquals(stripMarkup("(5)\n\n---\n[ข้อความ]").replace(/\s+/g, " "), "(5) [ข้อความ]");
+  assertEquals(stripMarkup("รังสิต --- หัวลำโพง"), "รังสิต --- หัวลำโพง");
 });

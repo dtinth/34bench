@@ -1,0 +1,54 @@
+{
+  "id": "gen-1790672207-BLQzba9giKbDqoTnQv3f",
+  "object": "chat.completion",
+  "created": 1790672207,
+  "model": "minimax/minimax-m3",
+  "provider": "Minimax",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "```markdown\nแผนกงานโคมา งานประจำหน้า... ต.จ่อย ๒๔๕๖\nหมาก 1 ข้อ 34 รังผึก - แผนกงานเดิม - เกิดว่าใหม่ ระหว่าง 32 ชม.\n\nคำชี้แจงของแผนกงานโคมางานศุกรุนเยาว์\n\n---\n\n1. <u>โคมานำเกี่ยบเอียมการ</u>\n\n<u>ฝีกงานปฏิบัติงานจริงฝึก</u>\n\nฝีกงานปฏิบัติงานจริงฝึก (เรียกว่าตามแผนผีก) ปฏิบัติงานแผนในถิ่น งานถูกย้ายถังผีกเฉพาะของ ณแขยงไป เมืองวางไปทางดูแลนผนก 4 ชุดเสนอกรรมการฝึกเสริมเพื่อทำโครง\n\n<u>ฝีกงานผีกฝัก</u>\n\nฝีกงานผีกฝัก เมืองผีกไปทางดูแลนผนก เผื่อวผิตที่ไปทางดูแลนผนกนเฉราะซ่อง เผื่อวชิ้อตาไป ตามแผนกรัฐผีก เมืองผีกว่าไปทางดูแลนผนกฝึกในผนก เผื่อวผิตตาไปทางดูแลนผนกราม 4 แล้วผีกตามผนกของขัวาเริงวิถี\n\n2. <u>แผนผีกชิ้นใหม่</u>\n\n<figure>\nA hand-drawn diagram showing what appears to be a long staff or measuring rod with various labeled points and markings. The diagram shows a curved/wavy line representing a staff or stick with multiple Thai labels pointing to different sections, including annotations for training areas, military divisions, and locations along the length. Labels include: รังผึก (Rang Phuk), ถนนวิภาวผีกรังผึก, ถนนว่ารับผีกฝึก, ไปแขยงรู้, กองทหารกองรับมือ, ไปผีกนรู้, รามเกาะไปรับ, ขวงขนทาย, ไปแนวขลปี, 1.เมืองรู, ล.เมืองรู, ดายแขยงไป, ดายเฉราะ, รังผึกใหม่, ถนนพระราม 4, กวพเฉราะ, and ก.หลาไ. The staff appears to have measurement marks and divisions indicated along its length.\n</figure>\n\n&nbsp;\n\n&nbsp;\n\nลายเซนต์.....................................\n...................(๔).....................\n\nเทสชื่อผู้สอน........................\n\nต.กิกิกการรรมการผึก..........\n\nลิงควยท์ทุกงวด.............................\n```",
+        "refusal": null,
+        "reasoning": "The user wants me to transcribe a Thai document image into Markdown. Let me analyze the image carefully.\n\nThe document appears to be an aged, worn paper with Thai text and a hand-drawn diagram. The document has:\n1. A header section at the top with some text\n2. A main content section divided into numbered items\n3. A hand-drawn diagram with labels in the middle-lower portion\n4. Some form fields at the bottom right\n\nLet me transcribe the visible Thai text:\n\nTop section:\n- แผนกงานโคมา งานประจำหน้า... (some text)\n- หมวด 1 วิช้ย 34 รังผึก - แผนกงานเดิม - เกิดว่าใหม่... 32 ชม.\n- คำชี้แจงของแผนกงานโคมางานทุกสิ่งรุน\n\nMain content:\n1. โคมานำเกี่ยบเอียมการ\n- ฝีกงานปฏิบัติงานจริงฝึก (เรียกว่าตามแผนผีก) ปฏิบัติงานแผนในถิ่น งานถูกย้ายถังผีกเฉพาะของ ณแขยงไป เมืองวางไปทางดูแลนผนก 4 ชุดเสนอกรรมการฝึกเสริมเพื่อทำโครง\n\n- ฝีกงานผีกฝัก เมืองผีกไปทางดูแลนผนก เผื่อวผิตที่ไปทางดูแลนผนกนเฉราะซ่อง เผื่อวชิ้อตาไป ตามแผนกรัฐผีก เมืองผีกว่าไปทางดูแลนผนกฝึกในผนก เผื่อวผิตตาไปทางดูแลนผนกราม 4 แล้วผีกตามผนกของ ขัวาเริงวิถี\n\n2. แผนผีกชิ้นใหม่\n\nDiagram labels (these are labels pointing to a diagram that looks like a staff or rod with marks):\n- รังผึก\n- ถนนวิภาวผีกรังผีก\n- ถนนว่ารับผีกฝึก\n- ไปแขยงรู้\n- กองทหารกองรับมีอ\n- ไปผีกนรู้\n- รามเกาะไปรับ\n- ขวงขนทาย\n- ไปแนวขลปี\n- 1. เมืองรู\n- ล.เมืองรู\n- ถนนว่ารับผีกฝึก\n- ดายแขยงไป\n- ดายเฉราะ\n- รังผึกไหม\n- ถนนพระราม 4\n- กวพเฉราะ\n- ก. หลาไ\n\nBottom right form fields:\n- ลายเซนต์ (?)\n- (4).....\n- เทสชื่อผู้สอน (?)\n- ต.กิกิกการรรมการผึก (?)\n- ลิงควยท์ทุกงวด\n\nThe document is heavily degraded and much of the text is not legible. I'll do my best to transcribe what I can see.\n\nLet me organize this into Markdown format with appropriate structure.",
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants me to transcribe a Thai document image into Markdown. Let me analyze the image carefully.\n\nThe document appears to be an aged, worn paper with Thai text and a hand-drawn diagram. The document has:\n1. A header section at the top with some text\n2. A main content section divided into numbered items\n3. A hand-drawn diagram with labels in the middle-lower portion\n4. Some form fields at the bottom right\n\nLet me transcribe the visible Thai text:\n\nTop section:\n- แผนกงานโคมา งานประจำหน้า... (some text)\n- หมวด 1 วิช้ย 34 รังผึก - แผนกงานเดิม - เกิดว่าใหม่... 32 ชม.\n- คำชี้แจงของแผนกงานโคมางานทุกสิ่งรุน\n\nMain content:\n1. โคมานำเกี่ยบเอียมการ\n- ฝีกงานปฏิบัติงานจริงฝึก (เรียกว่าตามแผนผีก) ปฏิบัติงานแผนในถิ่น งานถูกย้ายถังผีกเฉพาะของ ณแขยงไป เมืองวางไปทางดูแลนผนก 4 ชุดเสนอกรรมการฝึกเสริมเพื่อทำโครง\n\n- ฝีกงานผีกฝัก เมืองผีกไปทางดูแลนผนก เผื่อวผิตที่ไปทางดูแลนผนกนเฉราะซ่อง เผื่อวชิ้อตาไป ตามแผนกรัฐผีก เมืองผีกว่าไปทางดูแลนผนกฝึกในผนก เผื่อวผิตตาไปทางดูแลนผนกราม 4 แล้วผีกตามผนกของ ขัวาเริงวิถี\n\n2. แผนผีกชิ้นใหม่\n\nDiagram labels (these are labels pointing to a diagram that looks like a staff or rod with marks):\n- รังผึก\n- ถนนวิภาวผีกรังผีก\n- ถนนว่ารับผีกฝึก\n- ไปแขยงรู้\n- กองทหารกองรับมีอ\n- ไปผีกนรู้\n- รามเกาะไปรับ\n- ขวงขนทาย\n- ไปแนวขลปี\n- 1. เมืองรู\n- ล.เมืองรู\n- ถนนว่ารับผีกฝึก\n- ดายแขยงไป\n- ดายเฉราะ\n- รังผึกไหม\n- ถนนพระราม 4\n- กวพเฉราะ\n- ก. หลาไ\n\nBottom right form fields:\n- ลายเซนต์ (?)\n- (4).....\n- เทสชื่อผู้สอน (?)\n- ต.กิกิกการรรมการผึก (?)\n- ลิงควยท์ทุกงวด\n\nThe document is heavily degraded and much of the text is not legible. I'll do my best to transcribe what I can see.\n\nLet me organize this into Markdown format with appropriate structure.",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3960,
+    "completion_tokens": 2051,
+    "total_tokens": 6011,
+    "cost": 0.0026720496,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 3959,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00269904,
+      "upstream_inference_prompt_cost": 0.00023784,
+      "upstream_inference_completions_cost": 0.0024612
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1045,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
