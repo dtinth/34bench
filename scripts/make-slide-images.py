@@ -17,7 +17,7 @@ PAGE_HEIGHT = 900
 # Slide 1 shows the page at this width, from its top edge to the bottom of the slide.
 TITLE_WIDTH, TITLE_HEIGHT = 729, 912
 # The ground truth slides show the top or the bottom of the page at this size.
-PART_WIDTH, PART_HEIGHT = 968, 912
+PART_WIDTH, PART_HEIGHT = 968, 832
 
 BOXES = json.loads((DIR / "crop-boxes.json").read_text())
 image = Image.open(DIR / "route34.png")

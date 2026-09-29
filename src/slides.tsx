@@ -345,7 +345,8 @@ function GroundTruthSlide({ gt, half, cards, configs }: {
 }) {
   // The bottom half continues the page of the top half, from the top edge of the slide.
   const [w, h] = images.sizes[`page-${half}`];
-  const top = half === "top" ? PART_TOP : 0;
+  // The paper starts 80 px below the top edge on the bottom half, to leave room for the cards.
+  const top = half === "top" ? PART_TOP : 80;
   // The first row of route34.png that is in the image.
   const y0 = half === "top" ? 0 : Math.round(PART_H / PART_K);
   return (
@@ -358,7 +359,7 @@ function GroundTruthSlide({ gt, half, cards, configs }: {
         height={h}
         style={{ left: `${M}px`, top: `${top}px` }}
       />
-      {configs && <ConfigList configs={configs} top={h + 76} />}
+      {configs && <ConfigList configs={configs} top={top + h + 40} />}
       {(Object.keys(cards) as Column[]).map((c) => {
         const [l, t, r, b] = boxes[c];
         const pos = cards[c]!;
@@ -745,20 +746,20 @@ body { font-family: "Deck", sans-serif; color: var(--ink); -webkit-print-color-a
 .gt-slide .rays { z-index: 6; }
 .config-list { position: absolute; left: ${M}px; right: ${M}px; z-index: 2; }
 .config-list h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 22px; }
+  color: var(--muted); margin-bottom: 14px; }
 .config-list ol { list-style: none; columns: 3; column-gap: 28px; }
-.config-list li { font-size: 16.5px; line-height: 24px; padding: 5px 0; break-inside: avoid;
+.config-list li { font-size: 16.5px; line-height: 24px; padding: 3px 0; break-inside: avoid;
   border-bottom: 1px solid var(--line); }
 .config-list .vendor { color: var(--muted); }
 .config-list b { font-weight: 700; }
-.config-list .links { margin-top: 36px; font-size: 16px; line-height: 1.6; color: var(--soft); }
+.config-list .links { margin-top: 22px; font-size: 16px; line-height: 1.6; color: var(--soft); }
 .config-list .links a { color: var(--ink); font-weight: 700; text-decoration: none;
   border-bottom: 3px solid var(--lime); }
 .config-list .tag { display: inline-block; margin-left: 6px; font-size: 11.5px; line-height: 18px;
   padding: 0 7px; border-radius: 999px; background: #e3e6dc; color: var(--soft); }
 .gt-card { position: absolute; z-index: 4; padding: 12px 16px; border: 3px solid;
   box-shadow: 0 12px 34px rgba(40,50,30,.20), 0 0 0 1px rgba(0,0,0,.04); }
-.gt-card .truth { font-size: 20px; line-height: 30px; margin-top: 2px; }
+.gt-card .truth { font-size: 24px; line-height: 34px; margin-top: 4px; }
 
 .model-head h2 { display: flex; align-items: center; gap: 16px; margin-top: 30px; }
 .model-head .rank { font-size: 30px; line-height: 50px; padding: 0 14px; border-radius: 12px;
@@ -947,15 +948,15 @@ async function main() {
       gt={gt}
       half="top"
       cards={{
-        header: { left: 430, top: 76, width: SIZE - M - 430 },
-        forward: { left: M + 16, top: 720, width: 460, route: "left" },
-        return: { left: SIZE - M - 16 - 460, top: 720, width: 460 },
+        header: { left: 400, top: 76, width: SIZE - M - 400 },
+        forward: { left: M + 16, top: 780, width: 460, route: "left" },
+        return: { left: SIZE - M - 16 - 460, top: 780, width: 460 },
       }}
     />,
     <GroundTruthSlide
       gt={gt}
       half="bottom"
-      cards={{ footer: { left: M + 16, top: 150, width: 460 } }}
+      cards={{ footer: { left: M + 16, top: 170, width: 480 } }}
       configs={configs}
     />,
     ...top.map((c, i) => ({ c, r: i + 1 })).reverse().map(({ c, r }) => (
