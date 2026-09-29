@@ -564,6 +564,9 @@ function rankLabel(configs: ConfigScore[], c: ConfigScore) {
   return `#${configs.indexOf(c) + 1}`;
 }
 
+/** Size of the QR code on the last slide. */
+const QR_SIZE = 112;
+
 function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
   const W = SIZE - 2 * M, H = 720, L = 58, R = 8, T = 16, B = 56;
   const pts = configs
@@ -672,6 +675,9 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
       <p class="repo">
         <a href="https://github.com/dtinth/34bench">github.com/dtinth/34bench</a>
       </p>
+      <a class="qr" href="https://d4h.cc/34bench">
+        <img src="images/qr.svg" width={QR_SIZE} height={QR_SIZE} />
+      </a>
     </Slide>
   );
 }
@@ -844,8 +850,11 @@ mark.wrong { background: var(--wrong-bg); box-shadow: inset 0 -2px 0 var(--wrong
 .lab.top { fill: var(--soft); }
 .lab.dim { fill: var(--faint); }
 .leader { stroke: #9aa294; stroke-width: 1; }
-.note { position: absolute; left: ${M}px; bottom: ${M + 44}px; font-size: 13px;
+.note { position: absolute; left: ${M}px; bottom: ${M + 44}px; max-width: 800px; font-size: 13px;
   color: var(--muted); }
+.qr { position: absolute; right: ${M}px; bottom: ${M - 10}px; line-height: 0; padding: 8px;
+  background: white; border-radius: 10px; box-shadow: 0 4px 16px rgba(40,50,30,.10); }
+.qr img { display: block; }
 .repo { position: absolute; left: ${M}px; bottom: ${M - 10}px; font-size: 22px; font-weight: 700; }
 .repo a { color: var(--ink); text-decoration: none; border-bottom: 4px solid var(--lime); }
 `;

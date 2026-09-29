@@ -4,7 +4,7 @@ The slides show the results as square slides, in `slides/34bench.pdf`. The PDF a
 not in the repository. Build them with:
 
 ```sh
-uvx --with pillow python scripts/make-slide-images.py   # images/ (crops, preview, page)
+uvx --with pillow --with segno python scripts/make-slide-images.py   # images/ (crops, preview, page)
 scripts/build-slides.sh                                 # 34bench.pdf (needs Chromium and Poppler)
 ```
 

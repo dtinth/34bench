@@ -1,9 +1,10 @@
 # Make the images for the slides: the whole page, a mini preview, and the 4 crops. All crops use
 # the same zoom, so that the text has the same size on the slide.
-# Run: uvx --with pillow python scripts/make-slide-images.py
+# Run: uvx --with pillow --with segno python scripts/make-slide-images.py
 import json
 from pathlib import Path
 
+import segno
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -55,6 +56,11 @@ sizes = {
 for name, box in BOXES.items():
     crop = image.crop(tuple(box))
     sizes[name] = save(crop, f"{name}.jpg", round(crop.width * ZOOM))
+
+# A QR code for the last slide. It goes to the repository.
+segno.make("https://d4h.cc/34bench", error="m").save(
+    OUT / "qr.svg", border=0, dark="#161b12", light=None, xmldecl=False
+)
 
 (OUT / "sizes.json").write_text(json.dumps({"zoom": ZOOM, "sizes": sizes}, indent=2) + "\n")
 print(sizes)
