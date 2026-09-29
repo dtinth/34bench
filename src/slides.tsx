@@ -603,10 +603,6 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
       segments.push([x(p.cost), y(q.acc), x(p.cost), y(p.acc)]);
     }
   });
-  const best = frontier.at(-1)!;
-  const prev = frontier.at(-2) ?? best;
-  const flx = x(best.cost) + 12, fly = (y(best.acc) + y(prev.acc)) / 2 + 5;
-  segments.push([flx, fly - 13, flx + 120, fly + 3]);
   const ticks = [0.01, 0.1, 1, 10].filter((t) => Math.log10(t) >= lo && Math.log10(t) <= hi);
   const labels = placeLabels(
     pts.map((p) => ({
@@ -673,7 +669,6 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
           </text>
         ))}
         <path class="frontier" d={line} />
-        <text class="frontier-label" x={flx} y={fly}>← Pareto frontier</text>
         {frontier.map((p) => <circle class="pt on" cx={x(p.cost)} cy={y(p.acc)} r={8} />)}
       </svg>
       <p class="note">
@@ -845,7 +840,6 @@ mark.wrong { background: var(--wrong-bg); box-shadow: inset 0 -2px 0 var(--wrong
 .hint { font-size: 14px; fill: var(--lime-deep); font-weight: 700; }
 .frontier { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linejoin: round;
   stroke-linecap: round; }
-.frontier-label { font-size: 13px; font-weight: 700; fill: var(--ink); letter-spacing: .04em; }
 .pt { fill: #b9c0b2; } .pt.top { fill: #7d8677; }
 .pt.on { fill: var(--lime); stroke: var(--ink); stroke-width: 2.5; }
 .lab { paint-order: stroke; stroke: var(--bg); stroke-width: 5px; stroke-linejoin: round; }
