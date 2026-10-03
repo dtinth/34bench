@@ -21,5 +21,8 @@
   "thinkingmachines~inkling+deepinfra": "Mostly placeholders and descriptions (\"[ข้อความจาง…]\"), or a different, made-up document.",
   "minimax~minimax-m3+minimax": "Correct structure, but the text is garbled or made up.",
   "mistralai~mistral-medium-3-5": "Very short answers: a different, made-up document, or only headings and a figure.",
-  "aksonocr~aksonocr1.5": "OCR service (Document Parse API, free model). No prompt. Repeats a list \"1. 2. … 64.\" in the return trip and the footer."
+  "aksonocr~aksonocr1.5": "OCR service. Free model, available only through the Document Parse API. No prompt. Repeats a list \"1. 2. … 64.\" in the return trip and the footer.",
+  "aksonocr~AksonOCR-handwriting": "OCR service. No prompt. Forward and return trips exact in all runs. The footer is partly made up.",
+  "aksonocr~AksonOCR-1.0": "OCR service. No prompt. Forward and return trips exact in all runs. The footer is partly made up. Describes the map in English.",
+  "aksonocr~AksonOCR-preview": "OCR service. No prompt. Same output in all runs. Describes the footer (\"เอกสารนี้มีเลขที่กำกับ…\") instead of transcribing it."
 }
