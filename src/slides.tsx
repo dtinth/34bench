@@ -53,7 +53,7 @@ function describe(config: string) {
 type Kind = "vlm" | "ocr-api" | "ocr-model";
 function kind(c: ConfigScore): Kind {
   const v = describe(c.config).vendor;
-  if (v === "paxa" || v === "iapp" || v === "mistral") return "ocr-api";
+  if (v === "paxa" || v === "iapp" || v === "mistral" || v === "aksonocr") return "ocr-api";
   if (v === "typhoon") return "ocr-model";
   return "vlm";
 }
