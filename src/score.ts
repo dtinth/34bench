@@ -16,6 +16,8 @@ export const THB_PER_USD = 35;
 export const THB_PER_PAXA_CREDIT = 329 / 10_000;
 /** iApp: 1.25 THB per IC (list price for the smallest package, VAT excluded). */
 export const THB_PER_IAPP_IC = 1.25;
+/** AksonOCR: 1 THB per credit (list price for the smallest package). */
+export const THB_PER_AKSONOCR_CREDIT = 1;
 
 export interface Meta {
   model: string;
@@ -67,6 +69,7 @@ export function costThb(meta: Meta): number | null {
   if (meta.credits == null) return null;
   if (meta.model.startsWith("paxa/")) return meta.credits * THB_PER_PAXA_CREDIT;
   if (meta.model.startsWith("iapp/")) return meta.credits * THB_PER_IAPP_IC;
+  if (meta.model.startsWith("aksonocr/")) return meta.credits * THB_PER_AKSONOCR_CREDIT;
   return null;
 }
 

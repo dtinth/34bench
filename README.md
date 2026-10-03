@@ -38,8 +38,8 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
   the same, dot leaders are removed, and whitespace is ignored. Thai and Arabic digits are the same.
 - Each model runs with its default reasoning effort. Each configuration has 5 runs. The table shows
   the accuracy of the median run, and of the best and the worst run.
-- Prices are in THB: 1 USD = 35 THB; Paxa: 329 THB per 10,000 credits; iApp: 1.25 THB per IC (list
-  prices).
+- Prices are in THB: 1 USD = 35 THB; Paxa: 329 THB per 10,000 credits; iApp: 1.25 THB per IC;
+  AksonOCR: 1 THB per credit (list prices).
 
 ## Commands
 
@@ -52,6 +52,7 @@ deno task mistral --model mistral-ocr-2512 --runs 3                  # Mistral O
 deno task mistral --model mistral-ocr-4-0 --runs 3                   # Mistral OCR 4
 deno task mistral --model mistral-ocr-4-1 --runs 3                   # Mistral OCR 4.1
 deno task akson --runs 3                                             # AksonOCR 1.5 (free)
+deno task akson --model AksonOCR-handwriting --runs 3                # AksonOCR handwriting
 deno task test                                                       # check extracted.json
 deno run --allow-read src/score.ts                                   # print scores
 deno task render                                                     # write results.svg

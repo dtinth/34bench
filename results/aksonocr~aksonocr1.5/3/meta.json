@@ -6,7 +6,8 @@
   "prompt": null,
   "date": "2026-10-03T06:13:39.737Z",
   "durationMs": 68312,
-  "cost": 0,
+  "cost": null,
+  "credits": 0,
   "usage": {
     "pages_processed": 1,
     "credits_used": 0
