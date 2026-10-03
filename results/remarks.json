@@ -20,5 +20,6 @@
   "anthropic~claude-sonnet-5.5": "Run 3 has no header: it starts at section 1. Runs 1 and 2 describe the footer as unreadable, instead of transcribing it.",
   "thinkingmachines~inkling+deepinfra": "Mostly placeholders and descriptions (\"[ข้อความจาง…]\"), or a different, made-up document.",
   "minimax~minimax-m3+minimax": "Correct structure, but the text is garbled or made up.",
-  "mistralai~mistral-medium-3-5": "Very short answers: a different, made-up document, or only headings and a figure."
+  "mistralai~mistral-medium-3-5": "Very short answers: a different, made-up document, or only headings and a figure.",
+  "aksonocr~aksonocr1.5": "OCR service (Document Parse API, free model). No prompt. Repeats a list \"1. 2. … 64.\" in the return trip and the footer."
 }
