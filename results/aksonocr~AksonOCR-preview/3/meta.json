@@ -1,0 +1,16 @@
+{
+  "model": "aksonocr/AksonOCR-preview",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": null,
+  "date": "2026-10-03T07:17:11.697Z",
+  "durationMs": 6605,
+  "cost": null,
+  "credits": 0.5,
+  "usage": {
+    "pages_processed": 1
+  },
+  "provider": "AksonOCR",
+  "finishReason": null
+}
