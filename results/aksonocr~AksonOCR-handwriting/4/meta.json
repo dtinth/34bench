@@ -1,0 +1,16 @@
+{
+  "model": "aksonocr/AksonOCR-handwriting",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": null,
+  "date": "2026-10-03T07:18:46.972Z",
+  "durationMs": 9408,
+  "cost": null,
+  "credits": 2,
+  "usage": {
+    "pages_processed": 1
+  },
+  "provider": "AksonOCR",
+  "finishReason": null
+}
