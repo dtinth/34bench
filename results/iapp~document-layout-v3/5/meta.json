@@ -1,0 +1,14 @@
+{
+  "model": "iapp/document-layout-v3",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "prompt": null,
+  "date": "2026-10-06T11:56:32.806Z",
+  "durationMs": 5170,
+  "cost": null,
+  "credits": 0.15,
+  "usage": null,
+  "provider": "iApp",
+  "finishReason": null
+}

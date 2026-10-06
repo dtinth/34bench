@@ -9,8 +9,24 @@ import { load } from "jsr:@std/dotenv@0.225";
 import { parseArgs } from "jsr:@std/cli@1/parse-args";
 import { IMAGES, runId, RUNS } from "./run.ts";
 
-/** IC per page for the plain text endpoint (v3). */
-const IC_PER_PAGE = 0.049;
+/**
+ * The endpoints that we use, with the IC per page (v3).
+ * - `ocr`: plain text, as a list of pages.
+ * - `layout`: a list of components (titles, paragraphs, figures, and more) with their positions. We
+ *   join the text of the components, in the order of the response.
+ */
+const ENDPOINTS: Record<string, { model: string; icPerPage: number }> = {
+  ocr: { model: "iapp/document-ocr-v3", icPerPage: 0.049 },
+  layout: { model: "iapp/document-layout-v3", icPerPage: 0.15 },
+};
+
+function contentOf(endpoint: string, raw: { text?: unknown; pages?: unknown }): string | null {
+  if (endpoint === "ocr") return Array.isArray(raw.text) ? raw.text.join("\n\n") : null;
+  if (!Array.isArray(raw.pages)) return null;
+  return raw.pages
+    .flatMap((p: { components: { text: string }[] }) => p.components.map((c) => c.text))
+    .join("\n\n");
+}
 
 async function exists(url: URL) {
   try {
@@ -23,7 +39,7 @@ async function exists(url: URL) {
 }
 
 async function main() {
-  const args = parseArgs(Deno.args, { string: ["image", "runs"] });
+  const args = parseArgs(Deno.args, { string: ["endpoint", "image", "runs"] });
   const imageName = args.image ?? "full";
   if (!(imageName in IMAGES)) throw new Error(`Unknown image: ${imageName}`);
   const runs = Number(args.runs ?? RUNS);
@@ -32,7 +48,9 @@ async function main() {
   const apiKey = Deno.env.get("IAPP_API_KEY") ?? env.IAPP_API_KEY;
   if (!apiKey) throw new Error("IAPP_API_KEY is not set.");
 
-  const model = "iapp/document-ocr-v3";
+  const endpoint = args.endpoint ?? "ocr";
+  if (!(endpoint in ENDPOINTS)) throw new Error(`Unknown endpoint: ${endpoint}`);
+  const { model, icPerPage } = ENDPOINTS[endpoint];
   const id = runId(model, undefined, undefined, imageName);
   const configDir = new URL(`../results/${id}/`, import.meta.url);
   const image = await Deno.readFile(new URL(IMAGES[imageName], import.meta.url));
@@ -45,7 +63,7 @@ async function main() {
     const form = new FormData();
     form.append("file", new Blob([image], { type: "image/png" }), "route34.png");
     const started = performance.now();
-    const res = await fetch("https://api.iapp.co.th/v3/store/ocr/document/ocr", {
+    const res = await fetch(`https://api.iapp.co.th/v3/store/ocr/document/${endpoint}`, {
       method: "POST",
       headers: { apikey: apiKey },
       body: form,
@@ -53,11 +71,11 @@ async function main() {
     });
     const raw = await res.json();
     const durationMs = Math.round(performance.now() - started);
-    if (!res.ok || !Array.isArray(raw.text)) {
+    const content = contentOf(endpoint, raw);
+    if (!res.ok || content == null) {
       throw new Error(`Request failed (${res.status}): ${JSON.stringify(raw)}`);
     }
 
-    const content = raw.text.join("\n\n");
     const pages = Number(res.headers.get("iapp-input-pages") ?? raw.iapp?.page ?? NaN) || null;
     const meta = {
       model,
@@ -69,7 +87,7 @@ async function main() {
       durationMs,
       // iApp bills in IC, not USD.
       cost: null,
-      credits: pages ? pages * IC_PER_PAGE : null,
+      credits: pages ? pages * icPerPage : null,
       usage: raw.iapp ?? null,
       provider: "iApp",
       finishReason: null,

@@ -47,6 +47,7 @@ transcriptions), so it is also under the GFDL 1.3. See [data/COPYING](data/COPYI
 deno task run --model google/gemini-3.8-flash --runs 3                # OpenRouter
 deno task paxa --runs 3                                              # Paxa Labs OCR
 deno task iapp --runs 3                                              # iApp OCR
+deno task iapp --endpoint layout --runs 3                            # iApp OCR, layout
 deno task typhoon --runs 3                                           # Typhoon OCR
 deno task mistral --model mistral-ocr-2512 --runs 3                  # Mistral OCR 3
 deno task mistral --model mistral-ocr-4-0 --runs 3                   # Mistral OCR 4
