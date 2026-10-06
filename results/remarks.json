@@ -8,7 +8,7 @@
   "qwen~qwen3.8-max-0902": "Most of the text is made up. Some runs are a different document.",
   "qwen~qwen3.8-flash": "Most of the text is made up. Some runs are a different document.",
   "qwen~qwen3.8-27b+alibaba": "Most of the text is made up. Some runs are a different document.",
-  "iapp~document-ocr": "OCR service. Plain text output (no Markdown). No prompt. Same output in all runs.",
+  "iapp~document-ocr": "OCR service, v2 (before 2026-10-05, 1 IC per page). Plain text output (no Markdown). No prompt. Same output in all runs.",
   "paxa~paxa-ocr-lite-v1": "OCR service. No prompt. Same output in all runs.",
   "typhoon~typhoon-ocr": "OCR model. Uses its own prompt and a 1800 px image, as its official client does. Free API (rate limited).",
   "cohere~command-a-plus_300dpi": "Rejects the full-size image (more than 20 million pixels), so it gets the 300 dpi copy. Run with max_tokens 65,536. One run looped in English until the limit; the others are a different, made-up document.",
@@ -24,5 +24,6 @@
   "aksonocr~aksonocr1.5": "OCR service. Free model, available only through the Document Parse API. No prompt. Repeats a list \"1. 2. … 64.\" in the return trip and the footer.",
   "aksonocr~AksonOCR-handwriting": "OCR service. No prompt. Forward and return trips exact in all runs. The footer is partly made up.",
   "aksonocr~AksonOCR-1.0": "OCR service. No prompt. Forward and return trips exact in all runs. The footer is partly made up. Describes the map in English.",
-  "aksonocr~AksonOCR-preview": "OCR service. No prompt. Same output in all runs. Describes the footer (\"เอกสารนี้มีเลขที่กำกับ…\") instead of transcribing it."
+  "aksonocr~AksonOCR-preview": "OCR service. No prompt. Same output in all runs. Describes the footer (\"เอกสารนี้มีเลขที่กำกับ…\") instead of transcribing it.",
+  "iapp~document-ocr-v3": "OCR service, v3 (from 2026-10-05, 0.049 IC per page). Plain text output (no Markdown). No prompt. Same output in all runs. Almost the same as v2: 5 small differences."
 }
