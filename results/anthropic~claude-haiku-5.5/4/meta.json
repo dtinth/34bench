@@ -1,0 +1,36 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "effort": null,
+  "requestedProvider": null,
+  "image": "full",
+  "maxTokens": 16384,
+  "prompt": "Transcribe this image into a Markdown document. Output only the Markdown, with no commentary. For each figure, write an HTML `<figure>` element with a description of the figure inside it.",
+  "date": "2026-10-08T03:10:59.111Z",
+  "durationMs": 14558,
+  "cost": 0.001454805,
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 1974,
+    "total_tokens": 6799,
+    "cost": 0.001454805,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014695,
+      "upstream_inference_prompt_cost": 0.0004825,
+      "upstream_inference_completions_cost": 0.000987
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1177,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider": "Claude Platform on AWS",
+  "finishReason": "stop"
+}

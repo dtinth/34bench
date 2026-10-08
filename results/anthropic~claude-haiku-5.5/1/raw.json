@@ -1,0 +1,54 @@
+{
+  "id": "gen-1791428998-ycrckKDR5OAQ6BYrhRfs",
+  "object": "chat.completion",
+  "created": 1791428998,
+  "model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "# เล่มทางรถโดยสารประจำทางในเขตกรุงเทพมหานคร\n\n## หมวด 1 ปากลี่ 34 รังสิต – ถนนพหลโยธิน – หัวลำโพง ระยะทาง 32 กม.\n\nสำหรับองค์การขนส่งมวลชนกรุงเทพ\n\n---\n\n### 1. รายละเอียดเส้นทาง\n\n**เที่ยวไป**\n\nเริ่มต้นที่รังสิต (เชิงสะพานคลองหลวง) ไปตามถนนพหลโยธิน ผ่านอนุสาวรีย์ชัยสมรภูมิ ถนนพญาไท เลี้ยวขวาไปตามถนนพระราม 4 จนถึงสถานีรถไฟหัวลำโพง\n\n**เที่ยวกลับ**\n\nเริ่มต้นที่หัวลำโพง ไปตามถนนรองเมือง เลี้ยวซ้ายไปตามถนนรองเมือง เลี้ยวขวาไปตามถนนเจริญเมือง เลี้ยวขวาไปตามถนนจักรพรรดิ์เมือง เลี้ยวซ้ายไปตามถนนพระราม 4 แล้วไปตามเส้นทางเดิมจนถึงรังสิต\n\n### 2. หยุดสังเกต\n\n<figure>\n  <p>แผนผังเส้นทางแบบร่างด้วยมือ แสดงเส้นทางจากรังสิตลงมาทางใต้ตามถนนพหลโยธิน ผ่านอนุสาวรีย์หลักสี่ อนุสาวรีย์ชัยสมรภูมิ สะพานควาย และถนนพญาไท จนถึงบริเวณหัวลำโพง พร้อมเส้นประและลูกศรแสดงทิศทางและชื่อถนนหรือจุดสังเกตต่าง ๆ เช่น ถนนพระราม 4 ถนนรองเมือง และตัวสถานีรถไฟหัวลำโพง</p>\n</figure>\n\n---\n\n*ลายมือเขียนที่มุมล่างขวา:* เลขที่เอกสาร \"(ข)\" และปีพุทธศักราช 2522 พร้อมลายเซ็นและข้อความกำกับเล็กน้อย",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9",
+            "format": "anthropic-claude-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 2358,
+    "total_tokens": 7183,
+    "cost": 0.001644885,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016615,
+      "upstream_inference_prompt_cost": 0.0004825,
+      "upstream_inference_completions_cost": 0.001179
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1531,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
