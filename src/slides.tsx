@@ -616,9 +616,15 @@ function ParetoSlide({ configs }: { configs: ConfigScore[] }) {
     segments,
   );
   const mid = (freeX + x0) / 2;
+  // The date of the newest run, so that a shared image shows how old the data is.
+  const updated = configs
+    .flatMap((c) => c.runs.map((r) => (r.meta as { date?: string }).date ?? ""))
+    .reduce((a, b) => (a > b ? a : b), "")
+    .slice(0, 10);
   return (
     <Slide>
       <Head title="Pareto Frontier" big />
+      <p class="updated">Updated {updated}</p>
       <svg class="chart" width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
         {[0, 0.25, 0.5, 0.75, 1].map((a) => (
           <g>
@@ -852,6 +858,8 @@ mark.wrong { background: var(--wrong-bg); box-shadow: inset 0 -2px 0 var(--wrong
 .leader { stroke: #9aa294; stroke-width: 1; }
 .note { position: absolute; left: ${M}px; bottom: ${M + 44}px; max-width: 800px; font-size: 13px;
   color: var(--muted); }
+.updated { position: absolute; right: ${M}px; top: ${M + 34}px; font-size: 20px; font-weight: 700;
+  padding: 8px 16px; border-radius: 999px; background: var(--lime); }
 .qr { position: absolute; right: ${M}px; bottom: ${M - 10}px; line-height: 0; padding: 8px;
   background: white; border-radius: 10px; box-shadow: 0 4px 16px rgba(40,50,30,.10); }
 .qr img { display: block; }
